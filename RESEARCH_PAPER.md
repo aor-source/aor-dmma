@@ -100,6 +100,9 @@ All audio was processed through OpenAI's Whisper (medium model) using both stand
 
 Whisper demonstrated **complete normalization** of AAVE phonological markers:
 
+![Human vs AI Comparison](figures/human_vs_ai_comparison.png)
+*Figure 1: Comparison of Human vs AI-generated content across key metrics*
+
 | AAVE Form | SAE Form | Instances Found (AAVE) | Instances Found (SAE) | Preservation Rate |
 |-----------|----------|------------------------|----------------------|-------------------|
 | dis | this | 0 | 12 | 0% |
@@ -124,6 +127,26 @@ Comparison of human vs. AI-generated hip-hop revealed significant differences:
 | TVT (Tonal Complexity) | 588 | 499 | **+18%** |
 
 The 110% gap in Semantic Dissonance Score is particularly significant, indicating that AI-generated content lacks the ironic layering and subversive meaning-making characteristic of authentic hip-hop.
+
+### 4.3 Visualizations
+
+![Reinman Plane - Human Corpus](figures/reinman_plane.png)
+*Figure 2: Reinman Plane showing SDS vs TVT distribution for human-created hip-hop*
+
+![AAVE Distribution](figures/aave_distribution.png)
+*Figure 3: AAVE density distribution across analyzed corpus*
+
+![AAVE Wordcloud](figures/aave_wordcloud.png)
+*Figure 4: Frequency visualization of detected AAVE terms*
+
+![Irony Matrix](figures/irony_matrix.png)
+*Figure 5: Irony matrix showing sentiment-audio alignment patterns*
+
+![Radar Comparison](figures/radar_comparison.png)
+*Figure 6: Multi-dimensional comparison of metric profiles*
+
+![Metric Correlations](figures/metric_correlations.png)
+*Figure 7: Correlation matrix of Reinman metrics*
 
 ---
 
