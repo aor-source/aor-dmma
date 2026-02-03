@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Various Artists/8 Mile (Music from and Inspired By the Motion Picture)/01 Lose Yourself.m4a",
+    "duration": 321.96,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " Look, if you had one shot, or one opportunity, to seize everything you ever wanted, one moment, that you captured, just let it slip. His palms are sweaty, knees weak, arms are heavy, there's vomit on his sweater already, Mom's spaghetti, he's nervous, but on the surface, he looks calm and ready to drop bombs, but he keeps on forgetting what he wrote down, the whole crowd goes so loud, he opens his mouth, but the words won't come out, he's choking, howl, everybody's choking now, the clock's run ...",
+  "cultural_metrics": {
+    "aave_density": 0.0502,
+    "unique_terms": 40,
+    "grammar_patterns": 1,
+    "found_terms": [
+      "hard",
+      "man",
+      "over",
+      "spot",
+      "loud",
+      "make",
+      "getting",
+      "family",
+      "got",
+      "homie",
+      "mo",
+      "go",
+      "dat",
+      "mad",
+      "home",
+      "weak",
+      "dey",
+      "drama",
+      "run",
+      "get"
+    ],
+    "source": "enhanced_v3"
+  },
+  "reinman_metrics": {
+    "sds_score": 0.0162,
+    "tvt_score": 504.71,
+    "spectral_rigidity": 0.203,
+    "lyric_valence": 0.9838,
+    "audio_arousal": 1.0
+  }
+}

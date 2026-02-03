@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Immortal Technique/Revolutionary, Vol. 2/04 Harlem Streets.m4a",
+    "duration": 232.04,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " Yeah, Harlem streets stay flooded in white powder Like those motherfuckers running away from the twin towers Gunshots rock the earth like a meteor shower Bowling for Columbine fear, giving the media power Innocence devoured like a chicken spot snack box Government cocaine cooked in the ghetto crack rock Corrupt cops, false testimony at your arraignment Check to check, constant struggle to make the payments Workin' your whole life wonderin' where the day went The subway stays packed like a multi...",
+  "cultural_metrics": {
+    "aave_density": 0.0749,
+    "unique_terms": 28,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "hang",
+      "stay",
+      "spot",
+      "niggas",
+      "make",
+      "making",
+      "family",
+      "flooded",
+      "white",
+      "sick",
+      "go",
+      "dem",
+      "dat",
+      "home",
+      "dey",
+      "rock",
+      "powder",
+      "fam",
+      "hood",
+      "fo"
+    ],
+    "source": "enhanced_v3"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9948,
+    "tvt_score": 676.82,
+    "spectral_rigidity": 0.2232,
+    "lyric_valence": -0.9948,
+    "audio_arousal": 1.0
+  }
+}

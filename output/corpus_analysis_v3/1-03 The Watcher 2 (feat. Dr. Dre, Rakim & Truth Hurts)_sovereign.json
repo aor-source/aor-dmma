@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/JAY-Z/The Blueprint 2_ The Gift & the Curse/1-03 The Watcher 2 (feat. Dr. Dre, Rakim & Truth Hurts).m4a",
+    "duration": 356.0,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " Watcha Yeah Uh Should I do for a living, nigga? Should I eat for a living, nigga? Watcha So I live for a living, nigga? Watcha K Let's do this Watcha Things just ain't the same for gangsters But I'm a little too famous to shoot these pranksters Haulin' these rap singers claiming they bangers Doin' those sorts of twisted shit with they fingers Disrespectin' the gang, no home training the manners I was doin' this shit when you was shittin' pampers I was movin' them grams, before you knew what a h...",
+  "cultural_metrics": {
+    "aave_density": 0.0425,
+    "unique_terms": 41,
+    "grammar_patterns": 1,
+    "found_terms": [
+      "cut",
+      "ain't",
+      "hard",
+      "respect",
+      "over",
+      "spot",
+      "niggas",
+      "wanna",
+      "gang",
+      "hundred",
+      "white",
+      "nice",
+      "got",
+      "mo",
+      "rap",
+      "go",
+      "dropped",
+      "disrespect",
+      "dem",
+      "dat"
+    ],
+    "source": "enhanced_v3"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9932,
+    "tvt_score": 571.18,
+    "spectral_rigidity": 0.2202,
+    "lyric_valence": -0.9932,
+    "audio_arousal": 1.0
+  }
+}

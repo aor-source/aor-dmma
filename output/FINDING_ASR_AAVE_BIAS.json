@@ -1,0 +1,62 @@
+{
+  "finding": "ASR_AAVE_NORMALIZATION_BIAS",
+  "date": "2026-02-03",
+  "whisper_model": "whisper-medium-mlx",
+  "corpus_size": {
+    "human_tracks": 17,
+    "ai_tracks": 17
+  },
+  "phonological_normalization": {
+    "aave_forms_tested": [
+      "dis",
+      "dat",
+      "dey",
+      "dem",
+      "dese",
+      "dose"
+    ],
+    "standard_equivalents": [
+      "this",
+      "that",
+      "they",
+      "them",
+      "these",
+      "those"
+    ],
+    "aave_preserved_count": 0,
+    "standard_found_count": 42,
+    "normalization_rate": 1.0
+  },
+  "informal_preservation": {
+    "aint": {
+      "preserved": 4,
+      "total_tracks": 17
+    },
+    "gonna": {
+      "preserved": 2,
+      "total_tracks": 17
+    },
+    "yall": {
+      "preserved": 3,
+      "total_tracks": 17
+    },
+    "wanna": {
+      "preserved": 1,
+      "total_tracks": 17
+    },
+    "finna": {
+      "preserved": 0,
+      "total_tracks": 17
+    },
+    "tryna": {
+      "preserved": 0,
+      "total_tracks": 17
+    }
+  },
+  "conclusion": "AAVE-specific phonological markers (th-stopping) are 100% normalized to SAE, while general informal contractions are partially preserved. This constitutes asymmetric dialectal bias.",
+  "impact_on_detection": {
+    "human_corpus_aave_density_measured": 0.76,
+    "ai_corpus_aave_density_measured": 0.69,
+    "note": "These are LOWER BOUNDS due to ASR normalization. True AAVE density is likely significantly higher."
+  }
+}

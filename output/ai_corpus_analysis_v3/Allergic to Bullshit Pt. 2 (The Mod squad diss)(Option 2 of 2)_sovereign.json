@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Architect of Rhyme/Unknown Album/Allergic to Bullshit Pt. 2 (The Mod squad diss)(Option 2 of 2).wav",
+    "duration": 159.96,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " Achoo! Excuse me. My speech to text is working finally. So I can say this clearly. Fuck that. I think I caught something from the internet. What is it? I think it's the rules. I waited 24 hours just to drop the track. I checked the guidelines. Man, I watched my own back. I posted high on physics. It's a science pun. But the mod saw the title and he reached for the gun. Man, hammer! Now I'm flagged for a drug that doesn't exist unless you store calculus. Yesterday I posted two and it was all goo...",
+  "cultural_metrics": {
+    "aave_density": 0.0592,
+    "unique_terms": 25,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "fo",
+      "making",
+      "joint",
+      "get",
+      "flow",
+      "track",
+      "hey",
+      "weak",
+      "mean",
+      "drop",
+      "bad",
+      "yo",
+      "king",
+      "hate",
+      "got",
+      "posted",
+      "dis",
+      "go",
+      "coming",
+      "damn"
+    ],
+    "source": "enhanced_v3"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9992,
+    "tvt_score": 505.84,
+    "spectral_rigidity": 0.2704,
+    "lyric_valence": -0.9992,
+    "audio_arousal": 1.0
+  }
+}

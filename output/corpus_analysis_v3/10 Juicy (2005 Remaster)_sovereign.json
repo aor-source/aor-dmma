@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/The Notorious B.I.G_/Ready to Die (The Remaster)/10 Juicy (2005 Remaster).m4a",
+    "duration": 302.76,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " Fuck all you hoes. Get a grip motherfucker. Yeah, this album is dedicated to all the teachers that told me I never amount to nothing. To all the people that lived above the buildings that I was hustling from that call the police on me when I was just trying to make some money to feed my daughter. And all the niggas in the struggle, know what I'm saying? It's all good baby, baby. It was all a dream, I used to read Word Up magazine. Salt and pepper and heavy D up in the limousine. Hanging picture...",
+  "cultural_metrics": {
+    "aave_density": 0.0752,
+    "unique_terms": 57,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "super",
+      "hard",
+      "man",
+      "smoke",
+      "rhyme",
+      "loud",
+      "niggas",
+      "make",
+      "rapping",
+      "duke",
+      "got",
+      "hanging",
+      "beat",
+      "show",
+      "what i'm saying",
+      "mo",
+      "album",
+      "rap",
+      "go",
+      "dropped"
+    ],
+    "source": "enhanced_v3"
+  },
+  "reinman_metrics": {
+    "sds_score": 0.012,
+    "tvt_score": 547.71,
+    "spectral_rigidity": 0.2171,
+    "lyric_valence": 0.988,
+    "audio_arousal": 1.0
+  }
+}

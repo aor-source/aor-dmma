@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Compilations/Greatest Hits/2-06 California Love (feat. Roger Troutman & Dr. Dre).m4a",
+    "duration": 284.91,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " California love California, no sign of party California, no sign of party In the city of L.A. In the city, no good old ones In the city, city of content We keep it rockin', we keep it rockin' Now let me welcome everybody to the wild wild west A state that's untouchable like Elliot Nest The track hits your eardrum like a slug to your chest Like a vest for your Jimmy in the city of sex We in that sunshine state where the bomb ass him be The state where you'll never find a dance floor empty In pim...",
+  "cultural_metrics": {
+    "aave_density": 0.048,
+    "unique_terms": 34,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "area",
+      "man",
+      "fresh",
+      "make",
+      "making",
+      "player",
+      "rap",
+      "dem",
+      "dat",
+      "dey",
+      "bad",
+      "house",
+      "straight",
+      "bomb",
+      "mission",
+      "ass",
+      "get",
+      "love",
+      "jam",
+      "watch"
+    ],
+    "source": "enhanced_v3"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9322,
+    "tvt_score": 344.8,
+    "spectral_rigidity": 0.2985,
+    "lyric_valence": -0.9322,
+    "audio_arousal": 1.0
+  }
+}

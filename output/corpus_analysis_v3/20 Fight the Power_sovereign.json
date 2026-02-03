@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Public Enemy/Fear of a Black Planet/20 Fight the Power.m4a",
+    "duration": 285.45,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " Yet our best trained, best educated, best equipped, best prepared troops refused to fight. Matter of fact, it's safe to say that they would rather switch than fight. 1989, another summer Sound of the funky drummer, music hitting your heart cause I know you got soul Listen if you're missing y'all, swinging while I'm singing, giving what you're getting, knowing what I'm knowing While the black band's sweating, in the rhythm I'm rolling, gotta give us what we want, gotta give us what we need Our f...",
+  "cultural_metrics": {
+    "aave_density": 0.044,
+    "unique_terms": 25,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "man",
+      "slap",
+      "make",
+      "getting",
+      "got",
+      "show",
+      "sucker",
+      "go",
+      "dat",
+      "dey",
+      "hitting",
+      "bounce",
+      "straight",
+      "rolling",
+      "get",
+      "work",
+      "jam",
+      "fo",
+      "come",
+      "gotta"
+    ],
+    "source": "enhanced_v3"
+  },
+  "reinman_metrics": {
+    "sds_score": 0.0016,
+    "tvt_score": 371.77,
+    "spectral_rigidity": 0.25,
+    "lyric_valence": 0.9984,
+    "audio_arousal": 1.0
+  }
+}

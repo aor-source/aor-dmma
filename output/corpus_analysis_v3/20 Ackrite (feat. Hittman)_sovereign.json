@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Dr. Dre/2001/20 Ackrite (feat. Hittman).m4a",
+    "duration": 219.93,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " It was just one of those days when I wanted to catch sun rays Finally get blunted on a Sunday afternoon Nigga babe got groomed, grabbed a gap for misbehaviors And the chaka fave boom, boss in hip hop tones Zoom zoom like the Commodores Wonder where we have drama or end up clowning whores Around the four good to go girls, like the barbie co's girls Riding shotgun baby I be posting all world in the ride Sipping 151 to get me too much pride to back down Soon as we get to the beach I'ma put my fuck...",
+  "cultural_metrics": {
+    "aave_density": 0.0704,
+    "unique_terms": 49,
+    "grammar_patterns": 1,
+    "found_terms": [
+      "ain't",
+      "sister",
+      "man",
+      "team",
+      "mack",
+      "fake",
+      "hoe",
+      "blood",
+      "spot",
+      "grab",
+      "niggas",
+      "make",
+      "wanna",
+      "getting",
+      "drank",
+      "got",
+      "break",
+      "show",
+      "kicking",
+      "sucker"
+    ],
+    "source": "enhanced_v3"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9962,
+    "tvt_score": 672.5,
+    "spectral_rigidity": 0.2622,
+    "lyric_valence": -0.9962,
+    "audio_arousal": 1.0
+  }
+}

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.env
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test/temp files
+test-audio/
+*.log
+
+# Large output files (keep analytics, exclude raw)
+output/corpus_analysis/visualizations/
+output/ai_corpus_analysis/visualizations/
+output/corpus_analysis_v3/visualizations/
+output/ai_corpus_analysis_v3/visualizations/
+
+# Backup files
+*_backup.json
+*_BACKUP.py
+*_TAMPERED*.py
+
+# Security scripts (local only)
+.airtight_checksums.txt*
+.file_checksums.sha256

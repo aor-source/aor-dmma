@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Eminem/The Eminem Show/07 Soldier.m4a",
+    "duration": 226.21,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " I'm a soldier I'm a soldier I'm a soldier I'm a soldier Never was a thug just infatuated with guns Never was a gangster till I graduated to war And then got the rap of a villain But weapon concealing Took the image of a thug, captured a villain Willing to stick out my neck for respect If it meant life or death Never lived to regret what I said When you're me, people just wanna see If it's true, if it's you What you say in your rap, what you do So they feel it's part of your obligation to fulfil...",
+  "cultural_metrics": {
+    "aave_density": 0.0494,
+    "unique_terms": 35,
+    "grammar_patterns": 2,
+    "found_terms": [
+      "ain't",
+      "lit",
+      "hard",
+      "thug",
+      "respect",
+      "real",
+      "wanna",
+      "got",
+      "mo",
+      "rap",
+      "bet",
+      "dem",
+      "true",
+      "dat",
+      "dey",
+      "rock",
+      "fire",
+      "gangster",
+      "coming",
+      "rocks"
+    ],
+    "source": "enhanced_v3"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9983,
+    "tvt_score": 828.46,
+    "spectral_rigidity": 0.2677,
+    "lyric_valence": -0.9983,
+    "audio_arousal": 1.0
+  }
+}

@@ -1,747 +1,500 @@
 #!/usr/bin/env python3
 """
-AoR-MIR v7.0 - MAXIMUM INTELLIGENCE RESONANCE
-==============================================
-Apple Silicon M5 Optimized | Metal Performance Shaders | MLX Native
+AoR v7.0 - SOVEREIGN EDITION (The Unkillable Build)
+===================================================
+Target: Apple Silicon (M5) | Features: 300+ | Status: HARDENED
 
-The final evolution of Architect of Rhyme.
-"God-Tier" audio analysis with cryptographic provenance.
+INTEGRATED MODULES:
+1. THE CULTURAL CORE: AAVE Corpus Loader + Grammar Detection.
+2. THE REINMAN LOGIC: SDS (Irony), TVT (Topology), Volatility.
+3. THE M5 PIPELINE: Single-Load Whisper, Multi-Core Math.
+4. THE VISUALIZER: Roughness/Intensity + TVT UMAP Trajectories.
 
-OPTIMIZATIONS:
-- MLX native tensors (Apple Silicon optimized)
-- Metal Performance Shaders via PyTorch MPS
-- Memory-mapped audio processing
-- Unified Memory Architecture exploitation
-- 10-core parallel DSP pipeline
-- Chunked streaming for large files
-
-Author: AoR Engineering
-Version: 7.0.0-mir
+Usage:
+    python3 aor_mir.py /folder --batch --lexicon /path/to/corpus.json --visualize
 """
 
 import os
 import sys
 import json
 import time
-import hashlib
 import warnings
 import re
-import mmap
+import numpy as np
+import math
 from pathlib import Path
-from datetime import datetime
-from typing import Dict, List, Tuple, Optional, Set, Any
-from dataclasses import dataclass, asdict
-from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor, as_completed
+from concurrent.futures import ProcessPoolExecutor, as_completed
 import multiprocessing as mp
-from functools import lru_cache
-import threading
 
-# Suppress warnings for clean output
+# --- LIBRARIES ---
+try: import torch; HAS_TORCH = True
+except ImportError: HAS_TORCH = False
+try: import librosa; HAS_LIBROSA = True
+except ImportError: HAS_LIBROSA = False
+try: import whisper; HAS_WHISPER = True
+except ImportError: HAS_WHISPER = False
+try: import essentia.standard as es; HAS_ESSENTIA = True
+except ImportError: HAS_ESSENTIA = False
+try: from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer; HAS_VADER = True
+except ImportError: HAS_VADER = False
+try: import gudhi; HAS_GUDHI = True
+except ImportError: HAS_GUDHI = False
+try: import matplotlib; matplotlib.use('Agg'); import matplotlib.pyplot as plt; HAS_MATPLOTLIB = True
+except ImportError: HAS_MATPLOTLIB = False
+try: import umap; HAS_UMAP = True
+except ImportError: HAS_UMAP = False
+
 warnings.filterwarnings('ignore')
 
-# ==============================================================================
-#  M5 SILICON CONFIGURATION
-# ==============================================================================
-
-# Detect Apple Silicon capabilities
-SILICON_CORES = mp.cpu_count()
-PERF_CORES = max(1, SILICON_CORES - 2)  # Reserve 2 for system
-UNIFIED_MEMORY_GB = os.sysconf('SC_PAGE_SIZE') * os.sysconf('SC_PHYS_PAGES') / (1024**3)
-
-# Optimal chunk sizes for M5's 16GB unified memory
-AUDIO_CHUNK_SECONDS = 300  # 5 min chunks for streaming
-BATCH_SIZE = min(8, PERF_CORES)  # Parallel batch size
-
-print(f"🍎 AoR-MIR M5 Config: {PERF_CORES} perf cores, {UNIFIED_MEMORY_GB:.1f}GB unified memory")
-
-# ==============================================================================
-#  DEPENDENCY DETECTION WITH MLX PRIORITY
-# ==============================================================================
-
-HAS_MLX = False
-HAS_TORCH = False
-HAS_MPS = False
-HAS_LIBROSA = False
-HAS_WHISPER = False
-HAS_ESSENTIA = False
-HAS_PRONOUNCING = False
-
-# Try MLX first (Apple's native ML framework - fastest on M-series)
-try:
-    import mlx.core as mx
-    HAS_MLX = True
-    print("✅ MLX Native Backend (Optimal for M5)")
-except ImportError:
-    pass
-
-# PyTorch with MPS fallback
-try:
-    import torch
-    HAS_TORCH = True
-    if torch.backends.mps.is_available():
-        HAS_MPS = True
-        print("✅ PyTorch MPS Backend (Metal GPU)")
-    else:
-        print("⚠️  PyTorch CPU Only")
-except ImportError:
-    pass
-
-try:
-    import librosa
-    HAS_LIBROSA = True
-except ImportError:
-    print("❌ librosa not found - audio analysis disabled")
-
-try:
-    import whisper
-    HAS_WHISPER = True
-except ImportError:
-    print("❌ whisper not found - transcription disabled")
-
-try:
-    import essentia.standard as es
-    HAS_ESSENTIA = True
-except ImportError:
-    pass
-
-try:
-    import pronouncing
-    HAS_PRONOUNCING = True
-except ImportError:
-    pass
-
-# ==============================================================================
-#  DATA STRUCTURES
-# ==============================================================================
-
-@dataclass
-class AudioFingerprint:
-    """Cryptographic provenance for AI attribution"""
-    file_hash: str
-    analysis_hash: str
-    timestamp: str
-    version: str = "aor-mir-7.0"
-
-@dataclass
-class QuantumMetrics:
-    """Spectral rigidity and harmonic analysis"""
-    spectral_rigidity: float
-    harmonic_ratio: float
-    rhythmic_entropy: float
-    tonal_stability: float
-
-@dataclass
-class AAVEAnalysis:
-    """African American Vernacular English linguistic features"""
-    unique_terms: int
-    grammar_patterns: int
-    density_score: float
-    corpus_source: str
-    matched_terms: List[str]
-
-@dataclass
-class GodEquation:
-    """The unified scoring metric"""
-    mir_score: float  # Maximum Intelligence Resonance (with AAVE correction)
-    mir_score_no_aave: float  # Score WITHOUT AAVE (biased baseline)
-    variance_percent: float  # Difference showing bias magnitude
-    rigidity_component: float
-    cultural_component: float
-    harmonic_component: float
-    provenance_tag: str
-
-@dataclass
-class AnalysisResult:
-    """Complete analysis output"""
-    metadata: Dict[str, Any]
-    fingerprint: AudioFingerprint
-    quantum: QuantumMetrics
-    aave: AAVEAnalysis
-    god_equation: GodEquation
-    transcript: List[Dict]
-    processing_time: float
-
-# ==============================================================================
-#  AAVE KNOWLEDGE BASE
-# ==============================================================================
-
-DEFAULT_AAVE_LEXICON = {
-    # Distinctly AAVE contractions (not common in standard English)
-    "contractions": {
-        "ain't", "gon'", "tryna", "finna", "boutta", "y'all", "ya'll", "imma",
-        "lemme", "gimme", "wassup", "whatchu", "aint", "yall", "i'ma", "i'mma",
-        "ima", "ion", "iono", "aight", "ight", "nah", "yeahhh", "fasho", "fosho"
-    },
-    # Distinctly AAVE intensifiers (removed common English words)
-    "intensifiers": {
-        "hella", "deadass", "lowkey", "highkey", "dope", "fire", "lit", "turnt",
-        "hype", "bussin", "slaps", "goated", "based", "cap", "nocap", "bet",
-        "word", "facts", "valid", "periodt", "slay", "ate", "no cap"
-    },
-    # AAVE address terms and markers
-    "markers": {
-        "bruh", "bro", "fam", "cuh", "dawg", "homie", "homeboy", "shorty",
-        "shawty", "playa", "og", "blood", "loc", "foo", "mane", "mayne",
-        "yo", "aye", "ay", "finna", "tryna"
-    },
-    # Hip-hop specific vocabulary
-    "hiphop": {
-        "whip", "drip", "ice", "bling", "flex", "stacks", "bands", "racks",
-        "guap", "bread", "cheddar", "cheese", "dough", "paper", "ends",
-        "ride", "whips", "rims", "grill", "fitted", "fresh", "fly",
-        "peeps", "crew", "squad", "gang", "mob", "clique", "set",
-        "hood", "block", "trap", "spot", "crib", "pad"
-    }
+# --- HARDENED AAVE FALLBACKS ---
+# (In case the external file "disappears")
+DEFAULT_AAVE = {
+    "ain't", "gon'", "gonna", "gotta", "finna", "boutta", "tryna", "cuz",
+    "y'all", "imma", "lemme", "whatchu", "ion", "iono", "hella", "mad",
+    "deadass", "lowkey", "highkey", "lit", "turnt", "hype", "bet", "cap",
+    "no cap", "on god", "slime", "thot", "simp", "drip", "guap"
 }
 
 AAVE_GRAMMAR_PATTERNS = [
-    # Habitual "be" - "I be working", "they be playing"
+    (r"\bhe\s+\w+s\b", "3rd_person_s_absence"),
+    (r"\bshe\s+\w+s\b", "3rd_person_s_absence"),
     (r"\bi\s+be\s+\w+ing\b", "habitual_be"),
-    (r"\bhe\s+be\s+\w+ing\b", "habitual_be"),
-    (r"\bshe\s+be\s+\w+ing\b", "habitual_be"),
     (r"\bthey\s+be\s+\w+ing\b", "habitual_be"),
-    (r"\bwe\s+be\s+\w+ing\b", "habitual_be"),
-    # Remote past "been" - "I been knew"
-    (r"\bi\s+been\s+knew\b", "remote_past_been"),
-    (r"\bi\s+been\s+told\b", "remote_past_been"),
-    (r"\bbeen\s+had\b", "remote_past_been"),
-    # Completive "done" - "I done finished"
-    (r"\bdone\s+\w+ed\b", "completive_done"),
-    # Negative concord - "ain't no", "don't got no"
+    (r"\bi\s+been\s+\w+", "been_perfect"),
+    (r"\bdone\s+\w+ed\b", "done_perfective"),
     (r"\bain't\s+no\b", "negative_concord"),
     (r"\bdon't\s+got\s+no\b", "negative_concord"),
-    (r"\bcan't\s+nobody\b", "negative_concord"),
-    (r"\bain't\s+nothing\b", "negative_concord"),
-    (r"\bain't\s+nobody\b", "negative_concord"),
-    # "Finna/gonna/boutta" + verb - "finna go", "boutta leave"
-    (r"\bfinna\s+\w+\b", "finna_future"),
-    (r"\bboutta\s+\w+\b", "boutta_future"),
-    # "Stay" + verb-ing - "stay winning"
-    (r"\bstay\s+\w+ing\b", "aspectual_stay"),
-    # Quotative "be like" - "she be like"
-    (r"\bshe\s+be\s+like\b", "quotative_be_like"),
-    (r"\bhe\s+be\s+like\b", "quotative_be_like"),
 ]
 
-@lru_cache(maxsize=1)
-def load_lexicon(path: Optional[str] = None) -> Dict[str, Set[str]]:
-    """Load and cache AAVE lexicon - handles various formats"""
-    if path and Path(path).exists():
-        try:
-            with open(path, 'r') as f:
-                data = json.load(f)
+# --- REINMAN METRICS (THE "MISSING" LOGIC) ---
 
-            result = {}
-            for k, v in data.items():
-                if isinstance(v, list):
-                    # Simple list of terms
-                    result[k] = set(str(item) for item in v if isinstance(item, (str, int, float)))
-                elif isinstance(v, set):
-                    result[k] = v
-                elif isinstance(v, dict):
-                    # Nested dict - extract all string values recursively
-                    terms = set()
-                    def extract_strings(obj):
-                        if isinstance(obj, str):
-                            terms.add(obj)
-                        elif isinstance(obj, list):
-                            for item in obj:
-                                extract_strings(item)
-                        elif isinstance(obj, dict):
-                            for val in obj.values():
-                                extract_strings(val)
-                    extract_strings(v)
-                    result[k] = terms
-                else:
-                    result[k] = set()
-
-            print(f"✅ Loaded custom lexicon: {sum(len(s) for s in result.values())} terms")
-            return result
-        except Exception as e:
-            print(f"⚠️ Lexicon load failed: {e}, using defaults")
-
-    return {k: set(v) for k, v in DEFAULT_AAVE_LEXICON.items()}
-
-# ==============================================================================
-#  M5 OPTIMIZED DSP ENGINE
-# ==============================================================================
-
-def calculate_file_hash(filepath: Path) -> str:
-    """SHA-256 fingerprint for provenance"""
-    sha256 = hashlib.sha256()
-    with open(filepath, 'rb') as f:
-        # Memory-map for large files (M5 unified memory friendly)
-        if filepath.stat().st_size > 10 * 1024 * 1024:  # >10MB
-            mm = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
-            sha256.update(mm)
-            mm.close()
-        else:
-            sha256.update(f.read())
-    return sha256.hexdigest()
-
-def extract_features_m5(y, sr: int) -> Dict[str, Any]:
-    """M5-optimized feature extraction - simplified to avoid HPSS crash"""
-    if not HAS_LIBROSA:
-        return {}
-
-    features = {}
-
-    try:
-        # Limit audio to 5 minutes max to avoid memory issues
-        max_samples = sr * 300  # 5 minutes
-        if len(y) > max_samples:
-            y = y[:max_samples]
-
-        # Chroma (harmonic content) - vectorized
-        features['chroma'] = librosa.feature.chroma_stft(y=y, sr=sr)
-
-        # MFCCs (timbral texture)
-        features['mfcc'] = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
-
-        # Skip HPSS - causes segfault on large files after Whisper
-        # Estimate harmonic ratio from spectral flatness instead
-        flatness = librosa.feature.spectral_flatness(y=y)
-        features['harmonic_ratio'] = float(1.0 - flatness.mean())  # Higher = more harmonic
-
-        # RMS energy
-        features['rms'] = librosa.feature.rms(y=y)
-
-        # Tempo - use onset detection instead of HPSS
-        onset_env = librosa.onset.onset_strength(y=y, sr=sr)
-        tempo = librosa.feature.tempo(onset_envelope=onset_env, sr=sr)
-        features['tempo'] = float(tempo[0]) if len(tempo) > 0 else 120.0
-
-    except Exception as e:
-        print(f"⚠️ Feature extraction error: {e}")
-
-    return features
-
-def calculate_spectral_rigidity(features: Dict) -> float:
+def calculate_sds(lyric_valence: float, audio_arousal: float) -> float:
     """
-    Spectral Rigidity Score - Based on Random Matrix Theory
-    Measures how "structured" vs "chaotic" the harmonic content is
+    Semantic Dissonance Score (SDS) v3
+    Measures 'Irony': The distance between what is said (Lyrics) and how it sounds (Audio).
+    Range: 0.0 (aligned) to 1.0 (ironic/dissonant).
     """
-    if 'chroma' not in features or features['chroma'] is None:
-        return 0.0
+    # Normalize inputs to 0-1
+    v_norm = (lyric_valence + 1) / 2  # VADER is -1 to 1 -> 0 to 1
+    a_norm = min(audio_arousal, 1.0)  # RMS is usually 0-1
 
+    # The Reinman Formula: Divergence
+    return round(abs(v_norm - a_norm), 4)
+
+def calculate_tvt_score(tonnetz, mfcc_std):
+    """
+    Topological Valence Trajectory (TVT) Proxy
+    Since we can't plot UMAP in a headless script easily, we calculate the
+    'Trajectory Complexity' score.
+    """
+    if tonnetz is None: return 0.0
+    # Variance of the harmonic path
+    harmonic_flux = np.std(tonnetz)
+    # Texture variance
+    texture_flux = np.mean(mfcc_std)
+    return round(harmonic_flux * texture_flux * 100, 4)
+
+def load_lexicon(path):
+    if not path or not os.path.exists(path):
+        print("⚠️ No external lexicon found. Using HARDENED FALLBACK.")
+        return None
     try:
-        # Use MLX if available for matrix ops
-        if HAS_MLX:
-            chroma = mx.array(features['chroma'])
-            corr = mx.matmul(chroma, chroma.T) / chroma.shape[1]
-            eigs = mx.linalg.eigvalsh(corr)
-            eigs_np = eigs.tolist()
-        else:
-            import numpy as np
-            corr = np.corrcoef(features['chroma'])
-            eigs_np = np.linalg.eigvalsh(corr).tolist()
+        with open(path, 'r') as f: return json.load(f)
+    except: return None
 
-        # Calculate nearest-neighbor spacing distribution
-        eigs_sorted = sorted(eigs_np)
-        spacings = [eigs_sorted[i+1] - eigs_sorted[i] for i in range(len(eigs_sorted)-1)]
+# --- VISUALIZATION FUNCTIONS ---
 
-        if not spacings:
-            return 0.0
+def generate_roughness_plot(spectral_centroid, sr, hop_length, output_path, title="Roughness / Intensity Profile"):
+    """
+    Generate Roughness/Intensity Profile visualization.
+    Plots normalized spectral centroid over time.
+    """
+    if not HAS_MATPLOTLIB:
+        print("⚠️ matplotlib not available - skipping visualization")
+        return None
 
-        mean_spacing = sum(spacings) / len(spacings)
-        std_spacing = (sum((s - mean_spacing)**2 for s in spacings) / len(spacings)) ** 0.5
+    # Convert frames to time
+    times = librosa.frames_to_time(np.arange(len(spectral_centroid)), sr=sr, hop_length=hop_length)
 
-        # Rigidity = normalized variance of spacings
-        # Lower = more random (Poisson), Higher = more structured (GOE)
-        rigidity = std_spacing / (mean_spacing + 1e-10)
+    # Normalize to 0-1 range
+    sc_norm = (spectral_centroid - spectral_centroid.min()) / (spectral_centroid.max() - spectral_centroid.min() + 1e-10)
 
-        return min(max(float(rigidity), 0.0), 10.0)  # Clamp to [0, 10]
+    # Create figure with dark theme
+    fig, ax = plt.subplots(figsize=(14, 5), facecolor='black')
+    ax.set_facecolor('black')
 
-    except Exception as e:
-        print(f"⚠️ Rigidity calc error: {e}")
-        return 0.0
+    # Plot
+    ax.plot(times, sc_norm, color='#00ff00', linewidth=0.8)
 
-def analyze_aave(text: str, lexicon: Dict[str, Set[str]]) -> AAVEAnalysis:
-    """AAVE linguistic feature extraction"""
-    text_lower = text.lower()
-    words = re.findall(r'\b\w+\b', text_lower)
-    word_set = set(words)
+    # Styling
+    ax.set_xlabel('Time (s)', color='white')
+    ax.set_ylabel('Normalized Spectral Centroid', color='white')
+    ax.set_title(title, color='white', fontsize=12)
+    ax.tick_params(colors='white')
+    ax.grid(True, alpha=0.3, color='white')
+    for spine in ax.spines.values():
+        spine.set_color('white')
 
-    # Combine all lexicon terms
-    all_terms = set()
-    for category in ['contractions', 'intensifiers', 'markers', 'hiphop', 'general']:
-        all_terms.update(lexicon.get(category, set()))
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=150, facecolor='black', edgecolor='none')
+    plt.close()
 
-    # Find matches
-    matched = [w for w in word_set if w in all_terms]
+    return output_path
 
-    # Grammar pattern matching
-    grammar_hits = 0
-    for pattern, _ in AAVE_GRAMMAR_PATTERNS:
-        grammar_hits += len(re.findall(pattern, text_lower))
+def generate_tvt_umap_plot(features, output_path, title="Topological Valence Trajectory"):
+    """
+    Generate TVT UMAP trajectory visualization.
+    Projects high-dimensional audio features to 2D using UMAP.
+    """
+    if not HAS_MATPLOTLIB or not HAS_UMAP:
+        print("⚠️ matplotlib/umap not available - skipping TVT visualization")
+        return None
 
-    # Density calculation
-    total_markers = len(matched) + grammar_hits
-    density = total_markers / max(len(words), 1)
+    # Transpose features to (n_samples, n_features)
+    if features.shape[0] < features.shape[1]:
+        features = features.T
 
-    return AAVEAnalysis(
-        unique_terms=len(matched),
-        grammar_patterns=grammar_hits,
-        density_score=round(density, 4),
-        corpus_source="LOADED" if len(all_terms) > 100 else "DEFAULT",
-        matched_terms=matched[:20]  # Top 20 for output
+    # Need at least 15 samples for UMAP
+    if features.shape[0] < 15:
+        print("⚠️ Not enough samples for UMAP - skipping TVT visualization")
+        return None
+
+    # Run UMAP
+    reducer = umap.UMAP(n_neighbors=min(15, features.shape[0]-1), min_dist=0.1, n_components=2, random_state=42)
+    embedding = reducer.fit_transform(features)
+
+    # Time progression for coloring
+    time_progression = np.arange(len(embedding))
+
+    # Create figure with dark theme
+    fig, ax = plt.subplots(figsize=(8, 6), facecolor='black')
+    ax.set_facecolor('black')
+
+    # Scatter plot with time-based coloring
+    scatter = ax.scatter(embedding[:, 0], embedding[:, 1],
+                         c=time_progression, cmap='plasma',
+                         s=3, alpha=0.8)
+
+    # Colorbar
+    cbar = plt.colorbar(scatter, ax=ax)
+    cbar.set_label('Time Progression', color='white')
+    cbar.ax.yaxis.set_tick_params(color='white')
+    plt.setp(plt.getp(cbar.ax.axes, 'yticklabels'), color='white')
+
+    # Styling
+    ax.set_xlabel('UMAP Dim 1', color='white')
+    ax.set_ylabel('UMAP Dim 2', color='white')
+    ax.set_title(title, color='white', fontsize=12)
+    ax.tick_params(colors='white')
+    for spine in ax.spines.values():
+        spine.set_color('white')
+
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=150, facecolor='black', edgecolor='none')
+    plt.close()
+
+    return output_path
+
+def generate_feature_correlation_heatmap(tonnetz, chroma, output_path, title="Feature Correlation"):
+    """
+    Generate Feature Correlation Heatmap.
+    Shows correlation between Tonnetz and Chroma features.
+    """
+    if not HAS_MATPLOTLIB:
+        print("⚠️ matplotlib not available - skipping heatmap")
+        return None
+
+    # Combine features
+    feature_names = [f"Tonnetz_{i}" for i in range(tonnetz.shape[0])] + \
+                    [f"Chroma_{i}" for i in range(chroma.shape[0])]
+    combined = np.vstack([tonnetz, chroma])
+
+    # Calculate correlation matrix
+    corr_matrix = np.corrcoef(combined)
+
+    # Create figure
+    fig, ax = plt.subplots(figsize=(10, 8), facecolor='white')
+
+    # Plot heatmap
+    im = ax.imshow(corr_matrix, cmap='RdBu_r', vmin=-1, vmax=1, aspect='auto')
+
+    # Colorbar
+    cbar = plt.colorbar(im, ax=ax)
+    cbar.set_label('Correlation', fontsize=10)
+
+    # Labels
+    ax.set_xticks(np.arange(len(feature_names)))
+    ax.set_yticks(np.arange(len(feature_names)))
+    ax.set_xticklabels(feature_names, rotation=45, ha='right', fontsize=7)
+    ax.set_yticklabels(feature_names, fontsize=7)
+    ax.set_title(title, fontsize=12)
+
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=150, facecolor='white', edgecolor='none')
+    plt.close()
+
+    return output_path
+
+def generate_visualizations(y, sr, output_dir, filename_base):
+    """
+    Generate all visualizations for a track.
+    Returns dict of output paths.
+    """
+    viz_paths = {}
+    hop_length = 512
+
+    # 1. Roughness/Intensity Profile (Spectral Centroid)
+    spectral_centroid = librosa.feature.spectral_centroid(y=y, sr=sr, hop_length=hop_length)[0]
+    roughness_path = output_dir / f"{filename_base}_roughness.png"
+    result = generate_roughness_plot(
+        spectral_centroid, sr, hop_length,
+        str(roughness_path),
+        title=f"Roughness / Intensity Profile: {filename_base}"
     )
+    if result:
+        viz_paths['roughness_plot'] = str(roughness_path)
+        print(f"📊 Generated: {roughness_path.name}")
 
-def calculate_god_equation(
-    rigidity: float,
-    aave: AAVEAnalysis,
-    harmonic_ratio: float,
-    file_hash: str
-) -> GodEquation:
-    """
-    THE GOD EQUATION - Maximum Intelligence Resonance
+    # 2. TVT UMAP Trajectory (using MFCCs + Chroma)
+    mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13, hop_length=hop_length)
+    chroma = librosa.feature.chroma_stft(y=y, sr=sr, hop_length=hop_length)
+    tonnetz = librosa.feature.tonnetz(y=librosa.effects.harmonic(y), sr=sr)
 
-    BASE SCORE (biased) = (R * 0.5) + (H * 0.5)  [ignores cultural intelligence]
-    WITH AAVE BONUS = BASE + (C * cultural_weight)  [adds AAVE recognition]
+    # Combine features for UMAP
+    combined_features = np.vstack([mfcc, chroma]).T  # Shape: (n_frames, n_features)
 
-    Where:
-    - R = Spectral Rigidity (structural intelligence)
-    - H = Harmonic Ratio (musical coherence)
-    - C = Cultural Density (AAVE markers) - BONUS, not replacement
-
-    The variance demonstrates systemic bias:
-    - WITHOUT AAVE: lower scores (cultural intelligence ignored)
-    - WITH AAVE: higher scores (cultural intelligence recognized and valued)
-
-    This mirrors real-world bias: MIR systems that don't recognize AAVE
-    systematically undervalue culturally rich content.
-    """
-
-    R = min(rigidity, 10.0)
-    C = min(aave.density_score * 100, 10.0)  # Scale density up more (was *10)
-    H = min(harmonic_ratio * 10, 10.0)
-
-    # Score WITHOUT AAVE (biased baseline) - ignores cultural markers
-    mir_no_aave = (R * 0.5) + (H * 0.5)
-
-    # Score WITH AAVE correction (fair scoring) - adds cultural bonus
-    # AAVE terms = +25% boost on top of base score
-    aave_bonus = C * 0.25
-    mir_with_aave = mir_no_aave + aave_bonus
-
-    # Calculate variance percentage (how much the biased system undervalues)
-    variance = ((mir_with_aave - mir_no_aave) / max(mir_no_aave, 0.01)) * 100
-
-    # Provenance tag for AI attribution
-    tag = f"AOR-MIR-{file_hash[:8]}-{int(mir_with_aave*100):04d}"
-
-    return GodEquation(
-        mir_score=round(mir_with_aave, 4),
-        mir_score_no_aave=round(mir_no_aave, 4),
-        variance_percent=round(variance, 2),
-        rigidity_component=round(R * 0.5, 4),
-        cultural_component=round(aave_bonus, 4),
-        harmonic_component=round(H * 0.5, 4),
-        provenance_tag=tag
+    tvt_path = output_dir / f"{filename_base}_tvt_umap.png"
+    result = generate_tvt_umap_plot(
+        combined_features,
+        str(tvt_path),
+        title=f"Topological Valence Trajectory: {filename_base}"
     )
+    if result:
+        viz_paths['tvt_umap_plot'] = str(tvt_path)
+        print(f"📊 Generated: {tvt_path.name}")
 
-# ==============================================================================
-#  M5 PARALLEL WORKER
-# ==============================================================================
+    # 3. Feature Correlation Heatmap (Tonnetz + Chroma)
+    heatmap_path = output_dir / f"{filename_base}_correlation.png"
+    result = generate_feature_correlation_heatmap(
+        tonnetz, chroma,
+        str(heatmap_path),
+        title=f"Feature Correlation: {filename_base}"
+    )
+    if result:
+        viz_paths['correlation_heatmap'] = str(heatmap_path)
+        print(f"📊 Generated: {heatmap_path.name}")
 
-def process_single_file(args: Tuple) -> Optional[Dict]:
-    """Worker function for parallel processing"""
-    filepath, lexicon_data, whisper_result = args
+    return viz_paths
 
-    start_time = time.time()
-    filepath = Path(filepath)
+# --- WORKER FUNCTION ---
 
+def dsp_worker_task(payload: dict) -> dict:
     try:
-        # Calculate provenance hash
-        file_hash = calculate_file_hash(filepath)
+        path = Path(payload['path'])
+        words = payload['words']
+        segments = payload['segments']
+        lexicon = payload.get('lexicon')
+        visualize = payload.get('visualize', False)
+        output_dir = Path(payload.get('output_dir', path.parent))
 
-        # Load audio
-        y, sr = librosa.load(str(filepath), sr=22050, mono=True)
+        # 1. AUDIO PROCESSING
+        y, sr = librosa.load(str(path), sr=22050, mono=True)
         duration = librosa.get_duration(y=y, sr=sr)
+        rms = librosa.feature.rms(y=y)
+        audio_arousal = float(np.mean(rms)) * 5 # Scale roughly to 0-1
 
-        # Extract features (M5 optimized)
-        features = extract_features_m5(y, sr)
+        # 2. FEATURE EXTRACTION
+        chroma = librosa.feature.chroma_stft(y=y, sr=sr)
+        mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
+        tonnetz = librosa.feature.tonnetz(y=librosa.effects.harmonic(y), sr=sr)
 
-        # Calculate metrics
-        rigidity = calculate_spectral_rigidity(features)
-        harmonic_ratio = features.get('harmonic_ratio', 0.5)
+        # 3. AAVE ANALYSIS (Hardcoded + External)
+        full_text = " ".join(words).lower()
 
-        # Get transcript text
-        if whisper_result:
-            text = " ".join(w.get('word', '') for s in whisper_result.get('segments', [])
-                          for w in s.get('words', []))
-            segments = whisper_result.get('segments', [])
+        # Build set from lexicon
+        if lexicon:
+            targets = set()
+            if 'contractions' in lexicon:
+                targets.update(t.lower() for t in lexicon['contractions'])
+            if 'slang_terms' in lexicon:
+                for category in lexicon['slang_terms'].values():
+                    if isinstance(category, list):
+                        targets.update(t.lower() for t in category)
+            if 'pronouns_and_articles' in lexicon:
+                targets.update(t.lower() for t in lexicon['pronouns_and_articles'])
         else:
-            text = ""
-            segments = []
+            targets = DEFAULT_AAVE
 
-        # AAVE Analysis
-        aave = analyze_aave(text, lexicon_data)
+        found_terms = [w for w in words if w.lower() in targets]
+        grammar_hits = sum(len(re.findall(p, full_text)) for p, n in AAVE_GRAMMAR_PATTERNS)
 
-        # God Equation
-        god_eq = calculate_god_equation(rigidity, aave, harmonic_ratio, file_hash)
+        aave_density = (len(found_terms) + grammar_hits) / max(len(words), 1)
 
-        # Build fingerprint
-        analysis_data = f"{rigidity}{aave.density_score}{harmonic_ratio}"
-        analysis_hash = hashlib.sha256(analysis_data.encode()).hexdigest()[:16]
+        # 4. REINMAN METRICS CALCULATION
+        # Lyric Valence (Sentiment)
+        lyric_valence = 0.0
+        if HAS_VADER:
+            analyzer = SentimentIntensityAnalyzer()
+            lyric_valence = analyzer.polarity_scores(full_text)['compound']
 
-        fingerprint = AudioFingerprint(
-            file_hash=file_hash,
-            analysis_hash=analysis_hash,
-            timestamp=datetime.now().isoformat()
-        )
+        # SDS (Irony)
+        sds_score = calculate_sds(lyric_valence, audio_arousal)
 
-        # Quantum metrics
-        quantum = QuantumMetrics(
-            spectral_rigidity=rigidity,
-            harmonic_ratio=harmonic_ratio,
-            rhythmic_entropy=float(features.get('tempo', 0)) / 200.0,
-            tonal_stability=float(features.get('tonnetz', [[0]])[0].mean()) if 'tonnetz' in features else 0.5
-        )
+        # TVT (Topology)
+        mfcc_std = np.std(mfcc, axis=1)
+        tvt_score = calculate_tvt_score(tonnetz, mfcc_std)
 
-        processing_time = time.time() - start_time
+        # Spectral Rigidity
+        rigidity = 0.0
+        if chroma is not None:
+            eigs = np.linalg.eigvalsh(np.corrcoef(chroma))
+            spacings = np.diff(np.sort(eigs))
+            rigidity = float(np.std(spacings) / (np.mean(spacings) + 1e-10))
 
-        result = AnalysisResult(
-            metadata={
-                "filename": filepath.name,
-                "duration_seconds": round(duration, 2),
-                "sample_rate": sr,
-                "file_size_mb": round(filepath.stat().st_size / 1024 / 1024, 2)
+        # 5. VISUALIZATIONS (if requested)
+        viz_paths = {}
+        if visualize:
+            viz_dir = output_dir / "visualizations"
+            viz_dir.mkdir(exist_ok=True)
+            viz_paths = generate_visualizations(y, sr, viz_dir, path.stem)
+
+        # 6. ASSEMBLE
+        result = {
+            "metadata": {"file": path.name, "duration": round(duration, 2), "version": "7.0-sovereign"},
+            "cultural_metrics": {
+                "aave_density": round(aave_density, 4),
+                "unique_terms": len(set(found_terms)),
+                "grammar_patterns": grammar_hits,
+                "found_terms": list(set(found_terms))[:20],  # Top 20 for reference
+                "source": "EXTERNAL" if lexicon else "FALLBACK"
             },
-            fingerprint=fingerprint,
-            quantum=quantum,
-            aave=aave,
-            god_equation=god_eq,
-            transcript=segments,
-            processing_time=round(processing_time, 2)
-        )
-
-        return asdict(result)
-
-    except Exception as e:
-        return {"error": str(e), "file": str(filepath)}
-
-# ==============================================================================
-#  SILICON ORCHESTRATOR (M5 OPTIMIZED)
-# ==============================================================================
-
-class SiliconOrchestrator:
-    """M5-optimized parallel processing orchestrator"""
-
-    def __init__(self, whisper_model: str = "medium", lexicon_path: Optional[str] = None):
-        self.whisper_model = whisper_model
-        self.model = None
-        self.lexicon = load_lexicon(lexicon_path)
-
-        # Device selection: CPU for Whisper (MPS has NaN issues)
-        # MPS used for other torch ops, but Whisper needs CPU
-        self.device = "cpu"  # Whisper MPS produces NaN - known issue
-
-    def load_whisper(self):
-        """Load Whisper model onto Metal GPU"""
-        if not HAS_WHISPER:
-            print("❌ Whisper not available")
-            return
-
-        print(f"🧠 Loading Whisper '{self.whisper_model}' on {self.device.upper()}...")
-        self.model = whisper.load_model(self.whisper_model, device=self.device)
-        print("✅ Model loaded")
-
-    def transcribe(self, filepath: Path) -> Optional[Dict]:
-        """GPU-accelerated transcription"""
-        if not self.model:
-            return None
-
-        try:
-            result = self.model.transcribe(
-                str(filepath),
-                word_timestamps=True,
-                language="en"
-            )
-            return result
-        except Exception as e:
-            print(f"⚠️ Transcription error: {e}")
-            return None
-
-    def process_batch(self, input_dir: str, output_dir: Optional[str] = None) -> List[Dict]:
-        """Process all audio files in directory"""
-        input_path = Path(input_dir)
-        output_path = Path(output_dir) if output_dir else input_path
-        output_path.mkdir(parents=True, exist_ok=True)
-
-        # Find audio files
-        extensions = ['*.mp3', '*.wav', '*.flac', '*.m4a', '*.ogg']
-        files = []
-        for ext in extensions:
-            files.extend(input_path.glob(ext))
-
-        if not files:
-            print(f"❌ No audio files found in {input_dir}")
-            return []
-
-        print(f"\n{'='*60}")
-        print(f"🚀 AoR-MIR v7.0 - MAXIMUM INTELLIGENCE RESONANCE")
-        print(f"{'='*60}")
-        print(f"📁 Input:  {input_path}")
-        print(f"📂 Output: {output_path}")
-        print(f"🎵 Files:  {len(files)}")
-        print(f"⚡ Cores:  {PERF_CORES}")
-        print(f"🔧 Device: {self.device.upper()}")
-        print(f"{'='*60}\n")
-
-        # Load Whisper
-        self.load_whisper()
-
-        results = []
-
-        # Phase 1: GPU Transcription (sequential - GPU bound)
-        transcripts = {}
-        for i, f in enumerate(files, 1):
-            print(f"🎤 [{i}/{len(files)}] Transcribing: {f.name}")
-            transcripts[f] = self.transcribe(f)
-
-        # Phase 2: DSP Analysis (sequential - multiprocessing has issues)
-        print(f"\n⚡ Running DSP analysis...")
-
-        for f in files:
-            filename = f.name
-            print(f"🔊 Analyzing: {filename}...")
-
-            try:
-                work_item = (str(f), dict(self.lexicon), transcripts.get(f))
-                result = process_single_file(work_item)
-
-                if result and 'error' not in result:
-                    # Save individual result
-                    out_file = output_path / f"{f.stem}_aor-mir.json"
-                    with open(out_file, 'w') as jf:
-                        json.dump(result, jf, indent=2, default=str)
-
-                    mir = result.get('god_equation', {}).get('mir_score', 0)
-                    mir_no_aave = result.get('god_equation', {}).get('mir_score_no_aave', mir)
-                    variance = result.get('god_equation', {}).get('variance_percent', 0)
-                    tag = result.get('god_equation', {}).get('provenance_tag', 'N/A')
-                    print(f"✅ {filename} | MIR: {mir:.2f} (no-AAVE: {mir_no_aave:.2f}, bias: {variance:+.1f}%) | {tag}")
-
-                    results.append(result)
-                else:
-                    print(f"❌ {filename} | Error: {result.get('error', 'Unknown')}")
-
-            except Exception as e:
-                print(f"❌ {filename} | Error: {e}")
-
-        # Generate summary
-        self._generate_summary(results, output_path)
-
-        return results
-
-    def _generate_summary(self, results: List[Dict], output_path: Path):
-        """Generate batch summary report with bias analysis"""
-        if not results:
-            return
-
-        summary_path = output_path / "AoR-MIR_Summary.json"
-
-        mir_scores = [r.get('god_equation', {}).get('mir_score', 0) for r in results]
-        mir_no_aave = [r.get('god_equation', {}).get('mir_score_no_aave', 0) for r in results]
-        variances = [r.get('god_equation', {}).get('variance_percent', 0) for r in results]
-
-        summary = {
-            "aor_mir_version": "7.1.0",
-            "generation_time": datetime.now().isoformat(),
-            "total_files": len(results),
-            "statistics": {
-                "mir_mean_with_aave": round(sum(mir_scores) / len(mir_scores), 4),
-                "mir_mean_no_aave": round(sum(mir_no_aave) / len(mir_no_aave), 4),
-                "mir_max": round(max(mir_scores), 4),
-                "mir_min": round(min(mir_scores), 4),
+            "reinman_metrics": {
+                "sds_score": sds_score,
+                "tvt_score": tvt_score,
+                "spectral_rigidity": round(rigidity, 4),
+                "lyric_valence": round(lyric_valence, 4),
+                "audio_arousal": round(audio_arousal, 4)
             },
-            "bias_analysis": {
-                "avg_variance_percent": round(sum(variances) / len(variances), 2),
-                "max_variance_percent": round(max(variances), 2),
-                "min_variance_percent": round(min(variances), 2),
-                "tracks_with_significant_bias": sum(1 for v in variances if abs(v) > 10),
-            },
-            "corpus_fingerprint": hashlib.sha256(
-                "".join(r.get('fingerprint', {}).get('file_hash', '') for r in results).encode()
-            ).hexdigest(),
-            "files": [
-                {
-                    "filename": r.get('metadata', {}).get('filename'),
-                    "mir_score": r.get('god_equation', {}).get('mir_score'),
-                    "mir_score_no_aave": r.get('god_equation', {}).get('mir_score_no_aave'),
-                    "variance_percent": r.get('god_equation', {}).get('variance_percent'),
-                    "provenance_tag": r.get('god_equation', {}).get('provenance_tag')
-                }
-                for r in sorted(results,
-                               key=lambda x: x.get('god_equation', {}).get('mir_score', 0),
-                               reverse=True)
-            ]
+            "transcript": segments
         }
 
-        with open(summary_path, 'w') as f:
-            json.dump(summary, f, indent=2)
+        if viz_paths:
+            result["visualizations"] = viz_paths
 
-        print(f"\n{'='*60}")
-        print(f"📊 BATCH COMPLETE - BIAS ANALYSIS")
-        print(f"{'='*60}")
-        print(f"   Files Processed: {len(results)}")
-        print(f"   Average MIR (with AAVE):    {summary['statistics']['mir_mean_with_aave']:.2f}")
-        print(f"   Average MIR (no AAVE):      {summary['statistics']['mir_mean_no_aave']:.2f}")
-        print(f"   ⚠️  Average Bias Variance:   {summary['bias_analysis']['avg_variance_percent']:+.1f}%")
-        print(f"   📈 Max Bias Detected:        {summary['bias_analysis']['max_variance_percent']:+.1f}%")
-        print(f"   Tracks w/ >10% Bias:        {summary['bias_analysis']['tracks_with_significant_bias']}")
-        print(f"   Corpus Hash:                {summary['corpus_fingerprint'][:16]}...")
-        print(f"   Summary:                    {summary_path}")
-        print(f"{'='*60}\n")
+        return result
 
-# ==============================================================================
-#  CLI INTERFACE
-# ==============================================================================
+    except Exception as e:
+        return {"error": str(e), "file": str(payload.get('path'))}
 
-def main():
-    import argparse
+# --- ORCHESTRATOR ---
 
-    parser = argparse.ArgumentParser(
-        description="AoR-MIR v7.0 - Maximum Intelligence Resonance Analyzer",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  # Process single directory
-  python aor_mir.py /path/to/audio --output /path/to/results
+class SovereignOrchestrator:
+    def __init__(self, model_size="medium", force_cpu=False):
+        self.model_size = model_size
+        self.model = None
+        # MPS can cause NaN issues with Whisper - allow CPU fallback
+        if force_cpu:
+            self.device = "cpu"
+        else:
+            self.device = "mps" if HAS_TORCH and torch.backends.mps.is_available() else "cpu"
 
-  # With custom lexicon
-  python aor_mir.py /path/to/audio --lexicon /path/to/aave_corpus.json
+    def run(self, input_dir, lexicon_path, visualize=False, output_dir=None):
+        files = list(Path(input_dir).glob("*.mp3")) + list(Path(input_dir).glob("*.wav"))
+        files += list(Path(input_dir).glob("*.flac")) + list(Path(input_dir).glob("*.m4a"))
+        lexicon = load_lexicon(lexicon_path)
+        output_path = Path(output_dir) if output_dir else Path(input_dir)
 
-  # Use larger Whisper model for accuracy
-  python aor_mir.py /path/to/audio --model large
-        """
-    )
+        # Ensure output directories exist
+        output_path.mkdir(parents=True, exist_ok=True)
+        if visualize:
+            (output_path / "visualizations").mkdir(parents=True, exist_ok=True)
 
-    parser.add_argument("audio_dir", help="Directory containing audio files")
-    parser.add_argument("--output", "-o", help="Output directory (default: same as input)")
-    parser.add_argument("--lexicon", "-l", help="Path to custom AAVE lexicon JSON")
-    parser.add_argument("--model", "-m", default="medium",
-                        choices=["tiny", "base", "small", "medium", "large"],
-                        help="Whisper model size (default: medium)")
+        # Print dependency status
+        print("=" * 60)
+        print("AoR v7.0 SOVEREIGN - DEPENDENCY STATUS")
+        print("=" * 60)
+        print(f"  PyTorch:    {'✅' if HAS_TORCH else '❌'} {'(MPS)' if HAS_TORCH and self.device == 'mps' else ''}")
+        print(f"  Whisper:    {'✅' if HAS_WHISPER else '❌'}")
+        print(f"  Librosa:    {'✅' if HAS_LIBROSA else '❌'}")
+        print(f"  VADER:      {'✅' if HAS_VADER else '❌'}")
+        print(f"  Matplotlib: {'✅' if HAS_MATPLOTLIB else '❌'}")
+        print(f"  UMAP:       {'✅' if HAS_UMAP else '❌'}")
+        print(f"  Essentia:   {'✅' if HAS_ESSENTIA else '❌'}")
+        print(f"  GUDHI:      {'✅' if HAS_GUDHI else '❌'}")
+        print("=" * 60)
 
-    args = parser.parse_args()
+        # LOAD WHISPER
+        if HAS_WHISPER and HAS_TORCH:
+            print(f"🛡️  Loading Whisper ({self.model_size}) on {self.device.upper()}...")
+            self.model = whisper.load_model(self.model_size, device=self.device)
+        else:
+            print("⚠️  Whisper unavailable - transcription disabled")
+            return
 
-    # Validate input
-    if not Path(args.audio_dir).exists():
-        print(f"❌ Directory not found: {args.audio_dir}")
-        sys.exit(1)
+        print(f"🚀 AoR v7.0 SOVEREIGN RUNNING. {len(files)} files queued.")
+        if visualize:
+            print(f"📊 Visualization mode ENABLED")
 
-    # Set multiprocessing start method for macOS
-    mp.set_start_method('spawn', force=True)
+        with ProcessPoolExecutor(max_workers=max(1, mp.cpu_count()-2)) as executor:
+            futures = {}
+            for f in files:
+                print(f"🎤 Transcribing: {f.name}")
+                try:
+                    # GPU transcription
+                    res = self.model.transcribe(str(f), word_timestamps=True)
+                    words = []
+                    for seg in res.get('segments', []):
+                        for w in seg.get('words', []):
+                            if 'word' in w:
+                                words.append(w['word'].strip())
 
-    # Run
-    orchestrator = SiliconOrchestrator(
-        whisper_model=args.model,
-        lexicon_path=args.lexicon
-    )
+                    # CPU Handoff for DSP
+                    payload = {
+                        'path': str(f),
+                        'words': words,
+                        'segments': res.get('segments', []),
+                        'lexicon': lexicon,
+                        'visualize': visualize,
+                        'output_dir': str(output_path)
+                    }
+                    futures[executor.submit(dsp_worker_task, payload)] = f
+                except Exception as e:
+                    print(f"❌ Error transcribing {f.name}: {e}")
 
-    orchestrator.process_batch(args.audio_dir, args.output)
+            for fut in as_completed(futures):
+                f = futures[fut]
+                data = fut.result()
+
+                if 'error' in data:
+                    print(f"❌ Error processing {f.name}: {data['error']}")
+                    continue
+
+                # Check for "Hacker" interference (Empty results)
+                if data.get('cultural_metrics', {}).get('aave_density', 0) == 0:
+                    print(f"⚠️  WARNING: Zero AAVE detected in {f.name}. Check Lexicon.")
+
+                out = output_path / f"{f.stem}_sovereign.json"
+                with open(out, 'w') as jf: json.dump(data, jf, indent=2)
+                print(f"✅ Secure: {f.name}")
+
+        print(f"\n🏁 Complete. Output in: {output_path}")
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(
+        description="AoR v7.0 SOVEREIGN - Audio analysis with AAVE detection and Reinman metrics"
+    )
+    parser.add_argument("audio", help="Audio file or directory")
+    parser.add_argument("--lexicon", help="Path to AAVE lexicon JSON")
+    parser.add_argument("--batch", action="store_true", help="Process directory of files")
+    parser.add_argument("--visualize", action="store_true", help="Generate visualizations (Roughness, TVT UMAP)")
+    parser.add_argument("--output", help="Output directory (default: same as input)")
+    parser.add_argument("--model", default="medium", choices=["tiny", "base", "small", "medium", "large"],
+                        help="Whisper model size (default: medium)")
+    parser.add_argument("--cpu", action="store_true", help="Force CPU (fixes MPS NaN issues)")
+    args = parser.parse_args()
+
+    mp.set_start_method('spawn', force=True)
+    orch = SovereignOrchestrator(model_size=args.model, force_cpu=args.cpu)
+    path = args.audio if args.batch else os.path.dirname(args.audio) if os.path.isfile(args.audio) else args.audio
+    orch.run(path, args.lexicon, visualize=args.visualize, output_dir=args.output)

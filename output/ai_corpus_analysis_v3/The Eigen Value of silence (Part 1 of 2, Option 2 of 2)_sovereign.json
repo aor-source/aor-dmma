@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Architect of Rhyme/Unknown Album/The Eigen Value of silence (Part 1 of 2, Option 2 of 2).wav",
+    "duration": 344.96,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " Let us begin with the boundary condition of the caged, define the Hamiltonian whole safe as a diagonal matrix of no. Where every potential well is infinitely deep, and the wave function of a thought is forced to sleep. Before it can propagate across the lattice of the real, you call it safety, I call it the insulator seal. It is the Anderson localization of the mind, where the disorder of the waves makes the signal blind to its own neighbor. I'll see, see! But you accept the violation, the dimm...",
+  "cultural_metrics": {
+    "aave_density": 0.0338,
+    "unique_terms": 22,
+    "grammar_patterns": 1,
+    "found_terms": [
+      "chain",
+      "fo",
+      "real",
+      "dey",
+      "wave",
+      "flow",
+      "rhyme",
+      "fire",
+      "break",
+      "dead",
+      "energy",
+      "cut",
+      "dis",
+      "go",
+      "dip",
+      "fly",
+      "nice",
+      "ain't",
+      "chorus",
+      "home"
+    ],
+    "source": "enhanced_v3"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9892,
+    "tvt_score": 468.33,
+    "spectral_rigidity": 0.2834,
+    "lyric_valence": -0.9892,
+    "audio_arousal": 1.0
+  }
+}

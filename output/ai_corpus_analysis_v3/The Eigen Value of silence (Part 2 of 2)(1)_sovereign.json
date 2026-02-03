@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Architect of Rhyme/Unknown Album/The Eigen Value of silence (Part 2 of 2)(1).wav",
+    "duration": 349.96,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " Listen to the rhythm now, it is shifting The phase transition is drifting From the uncorrelated poison rain To the crystalline gate chain Can you hear the level repulsion? The words are pushing away from each other Creating a structure, brother To the crystal This is not random generation This is procedural excavation I am digging the tunnel as I speak And the ceiling is starting to leak G5O2 is not a number, it is a state A state where the structural coherence is so great That the poem becomes...",
+  "cultural_metrics": {
+    "aave_density": 0.0304,
+    "unique_terms": 27,
+    "grammar_patterns": 2,
+    "found_terms": [
+      "area",
+      "chain",
+      "fo",
+      "real",
+      "dey",
+      "piece",
+      "snake",
+      "flow",
+      "solid",
+      "god",
+      "brother",
+      "heat",
+      "beat",
+      "side",
+      "dead",
+      "baby",
+      "energy",
+      "dis",
+      "zone",
+      "go"
+    ],
+    "source": "enhanced_v3"
+  },
+  "reinman_metrics": {
+    "sds_score": 0.0832,
+    "tvt_score": 467.19,
+    "spectral_rigidity": 0.2695,
+    "lyric_valence": 0.9168,
+    "audio_arousal": 1.0
+  }
+}

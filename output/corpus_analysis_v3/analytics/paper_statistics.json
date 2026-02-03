@@ -1,0 +1,53 @@
+{
+  "corpus_summary": {
+    "total_tracks": 17,
+    "total_duration_minutes": 78.0,
+    "avg_duration_seconds": 275.5
+  },
+  "aave_metrics": {
+    "mean_density": 6.18,
+    "std_density": 1.83,
+    "max_density": 11.08,
+    "min_density": 3.99,
+    "total_unique_terms": 727,
+    "total_grammar_patterns": 15
+  },
+  "reinman_metrics": {
+    "mean_sds": 1.5136,
+    "mean_tvt": 587.91,
+    "mean_spectral_rigidity": 0.2494,
+    "sds_tvt_correlation": 0.2393
+  },
+  "sentiment_analysis": {
+    "mean_lyric_valence": -0.5136,
+    "mean_audio_arousal": 1.0,
+    "valence_arousal_correlation": NaN
+  },
+  "high_impact_tracks": [
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Dr. Dre/2001/11 The Next Episode (feat. Snoop Dogg).m4a",
+      "aave_density": 0.1108,
+      "sds_score": 1.9886
+    },
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Kurupt/Kuruption!/1-07 C-Walk (feat. Tray Dee & Slip Capone).m4a",
+      "aave_density": 0.084,
+      "sds_score": 0.041
+    },
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/The Notorious B.I.G_/Ready to Die (The Remaster)/10 Juicy (2005 Remaster).m4a",
+      "aave_density": 0.0752,
+      "sds_score": 0.012
+    },
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Immortal Technique/Revolutionary, Vol. 2/04 Harlem Streets.m4a",
+      "aave_density": 0.0749,
+      "sds_score": 1.9948
+    },
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Snoop Dogg/Doggystyle (30th Anniversary Edition)/02 G Funk Intro.m4a",
+      "aave_density": 0.0714,
+      "sds_score": 1.8228
+    }
+  ]
+}

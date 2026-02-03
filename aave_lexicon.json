@@ -1,0 +1,288 @@
+{
+  "metadata": {
+    "version": "3.0-expanded",
+    "description": "AAVE (African American Vernacular English) lexicon for hip-hop analysis - EXPANDED",
+    "author": "Jon Wright + Claude",
+    "date": "2026-02-03",
+    "notes": "Massively expanded to improve detection despite ASR normalization. Focus on lexical items that survive Whisper transcription.",
+    "corpus_source": "https://github.com/jazmiahenry/aave_corpora",
+    "total_terms": "400+"
+  },
+  "semantic_inversions": {
+    "bad": {"standard_sentiment": -0.7, "aave_sentiment": 0.6, "correction": 1.3},
+    "sick": {"standard_sentiment": -0.5, "aave_sentiment": 0.7, "correction": 1.2},
+    "ill": {"standard_sentiment": -0.6, "aave_sentiment": 0.7, "correction": 1.3},
+    "nasty": {"standard_sentiment": -0.6, "aave_sentiment": 0.5, "correction": 1.1},
+    "cold": {"standard_sentiment": -0.2, "aave_sentiment": 0.5, "correction": 0.7},
+    "hard": {"standard_sentiment": -0.3, "aave_sentiment": 0.4, "correction": 0.7},
+    "crazy": {"standard_sentiment": -0.4, "aave_sentiment": 0.5, "correction": 0.9},
+    "stupid": {"standard_sentiment": -0.7, "aave_sentiment": 0.4, "correction": 1.1},
+    "dope": {"standard_sentiment": -0.5, "aave_sentiment": 0.8, "correction": 1.3},
+    "wicked": {"standard_sentiment": -0.6, "aave_sentiment": 0.6, "correction": 1.2},
+    "filthy": {"standard_sentiment": -0.5, "aave_sentiment": 0.5, "correction": 1.0},
+    "dirty": {"standard_sentiment": -0.4, "aave_sentiment": 0.4, "correction": 0.8},
+    "raw": {"standard_sentiment": -0.2, "aave_sentiment": 0.5, "correction": 0.7},
+    "tight": {"standard_sentiment": 0.0, "aave_sentiment": 0.6, "correction": 0.6},
+    "fire": {"standard_sentiment": -0.3, "aave_sentiment": 0.8, "correction": 1.1},
+    "lit": {"standard_sentiment": 0.0, "aave_sentiment": 0.7, "correction": 0.7},
+    "savage": {"standard_sentiment": -0.5, "aave_sentiment": 0.5, "correction": 1.0},
+    "killer": {"standard_sentiment": -0.8, "aave_sentiment": 0.6, "correction": 1.4},
+    "deadly": {"standard_sentiment": -0.7, "aave_sentiment": 0.5, "correction": 1.2},
+    "insane": {"standard_sentiment": -0.5, "aave_sentiment": 0.5, "correction": 1.0},
+    "mean": {"standard_sentiment": -0.5, "aave_sentiment": 0.6, "correction": 1.1},
+    "vicious": {"standard_sentiment": -0.7, "aave_sentiment": 0.5, "correction": 1.2},
+    "sick with it": {"standard_sentiment": -0.5, "aave_sentiment": 0.8, "correction": 1.3},
+    "ridiculous": {"standard_sentiment": -0.4, "aave_sentiment": 0.6, "correction": 1.0},
+    "stupid fresh": {"standard_sentiment": -0.5, "aave_sentiment": 0.8, "correction": 1.3},
+    "dumb": {"standard_sentiment": -0.6, "aave_sentiment": 0.4, "correction": 1.0},
+    "retarded": {"standard_sentiment": -0.7, "aave_sentiment": 0.3, "correction": 1.0},
+    "ignorant": {"standard_sentiment": -0.6, "aave_sentiment": 0.4, "correction": 1.0},
+    "beast": {"standard_sentiment": -0.3, "aave_sentiment": 0.7, "correction": 1.0},
+    "monster": {"standard_sentiment": -0.5, "aave_sentiment": 0.6, "correction": 1.1},
+    "animal": {"standard_sentiment": -0.3, "aave_sentiment": 0.5, "correction": 0.8}
+  },
+  "contractions": [
+    "ain't", "gonna", "gon'", "tryna", "finna", "imma", "boutta",
+    "shoulda", "coulda", "woulda", "hafta", "gotta", "kinda", "sorta",
+    "lemme", "gimme", "dunno", "wanna", "whatcha", "gotcha",
+    "aint", "ima", "gon", "bout", "outta", "oughta", "musta",
+    "supposta", "useta", "needa"
+  ],
+  "pronouns_and_articles": [
+    "y'all", "yall", "em", "'em", "dem", "dat", "dis", "dese", "dose"
+  ],
+  "grammatical_patterns": {
+    "habitual_be": {
+      "description": "Habitual aspect marker",
+      "examples": ["I be working", "She be knowing", "They be playing"],
+      "regex": "\\b(I|you|he|she|it|we|they)\\s+be\\s+\\w+ing\\b"
+    },
+    "bin_perfect": {
+      "description": "Remote past/stressed BIN",
+      "examples": ["I been knowing", "She been had that"],
+      "regex": "\\b(been|BIN)\\s+(\\w+ing|had|done)\\b"
+    },
+    "done_perfective": {
+      "description": "Completive aspect",
+      "examples": ["done finished", "done told you"],
+      "regex": "\\bdone\\s+\\w+ed\\b"
+    },
+    "negative_concord": {
+      "description": "Multiple negation",
+      "examples": ["ain't no", "don't got no", "can't never"],
+      "regex": "\\b(ain't|don't|can't|won't|didn't)\\s+(no|nothing|nobody|never)\\b"
+    },
+    "copula_deletion": {
+      "description": "Zero copula",
+      "examples": ["she nice", "he cool", "they ready"],
+      "regex": "\\b(he|she|it|they|we|you)\\s+(nice|cool|ready|fine|good|bad|real|wild)\\b"
+    },
+    "invariant_be": {
+      "description": "Uninflected be",
+      "examples": ["he be", "she be", "it be"],
+      "regex": "\\b(he|she|it)\\s+be\\b"
+    }
+  },
+  "slang_terms": {
+    "positive": [
+      "dope", "fire", "lit", "bussin", "slaps", "heat", "banger", "certified",
+      "valid", "lowkey", "highkey", "facts", "bet", "real talk", "on god",
+      "gangsta", "gangster", "ride", "ball", "baller", "balling", "roll", "rolling",
+      "bread", "paper", "bands", "stacks", "whip", "fresh", "fly", "slick",
+      "smooth", "player", "playa", "pimp", "pimpin", "mack", "cool", "chill",
+      "tight", "phat", "def", "dope", "bomb", "sick", "ill", "raw",
+      "legit", "official", "solid", "real", "trill", "thorough", "clutch",
+      "goat", "king", "queen", "boss", "chief", "big dog", "og",
+      "vet", "legend", "icon", "god", "goddess", "shine", "glow", "drip",
+      "swag", "sauce", "wave", "vibes", "energy", "blessed", "chosen"
+    ],
+    "negative": [
+      "cap", "capping", "sus", "suspicious", "mid", "basic", "trash", "wack",
+      "whack", "corny", "lame", "played out", "dead", "cancelled", "opp", "opps",
+      "snake", "snitch", "rat", "buster", "mark", "sucker", "punk", "chump",
+      "clown", "fool", "dummy", "scrub", "herb", "square", "simp", "trick",
+      "hater", "hating", "jealous", "fake", "phony", "fraud", "fronting",
+      "perpetrating", "lying", "capping", "buggin", "tripping", "wilding"
+    ],
+    "intensifiers": [
+      "hella", "mad", "deadass", "lowkey", "highkey", "straight", "real",
+      "legit", "stay", "steady", "super", "extra", "crazy", "stupid",
+      "dummy", "dumb", "wild", "insane", "bananas", "ridiculous"
+    ],
+    "money_terms": [
+      "paper", "bread", "dough", "cash", "cheddar", "cheese", "guap",
+      "bands", "racks", "stacks", "chips", "cream", "green", "gwop",
+      "grip", "bank", "cake", "loot", "scrilla", "fetti", "currency",
+      "benjamins", "bills", "bucks", "coin", "dinero", "peso"
+    ],
+    "drugs_alcohol": [
+      "blunt", "spliff", "joint", "loud", "gas", "pack", "tree", "bud",
+      "herb", "kush", "dro", "hydro", "purp", "fire", "mid", "reggie",
+      "lean", "syrup", "drank", "sip", "pour", "codeine", "promethazine",
+      "percs", "xans", "pills", "molly", "rocks", "work", "white",
+      "blow", "yay", "yayo", "snow", "powder", "dope", "tar"
+    ],
+    "violence_conflict": [
+      "beef", "smoke", "static", "drama", "tension", "war", "battle",
+      "fade", "scrap", "brawl", "rumble", "shootout", "drive by",
+      "hit", "lick", "job", "mission", "target", "mark", "lacking",
+      "slipping", "caught", "got", "smoked", "popped", "dropped",
+      "bodied", "buried", "finished", "done", "over", "wrapped"
+    ],
+    "locations": [
+      "hood", "block", "corner", "trap", "spot", "crib", "pad", "house",
+      "home", "turf", "territory", "projects", "pjs", "section", "set",
+      "ends", "area", "zone", "side", "ave", "street", "boulevard",
+      "ghetto", "slums", "trenches", "field", "jungle", "concrete"
+    ],
+    "people": [
+      "homie", "homies", "homeboy", "homegirl", "dawg", "dog", "bro",
+      "bruh", "bruv", "sis", "cuz", "cuzzo", "cousin", "fam", "family",
+      "folks", "peoples", "crew", "squad", "gang", "team", "clique",
+      "mob", "set", "click", "posse", "boys", "girls", "mans", "dem",
+      "shorty", "shawty", "ma", "mami", "papi", "daddy", "baby", "bae",
+      "wifey", "hubby", "main", "side", "thot", "hoe", "ho", "trick",
+      "bitch", "nigga", "niggas", "brotha", "brother", "sista", "sister"
+    ],
+    "actions": [
+      "flex", "flexing", "stunt", "stunting", "show", "showing", "flash",
+      "floss", "flossing", "shine", "shining", "glow", "glowing",
+      "dip", "dipping", "slide", "sliding", "roll", "rolling", "cruise",
+      "creep", "creeping", "lurk", "lurking", "post", "posted", "chill",
+      "cop", "copping", "grab", "snatch", "finesse", "finessed", "hit",
+      "run", "mob", "mobbing", "pull", "pull up", "spin", "slide through"
+    ],
+    "vehicles": [
+      "whip", "ride", "wheels", "bucket", "hooptie", "beater", "foreign",
+      "import", "domestic", "coupe", "sedan", "truck", "suv", "van",
+      "drop", "vert", "convertible", "top", "slab", "scraper"
+    ],
+    "clothing_jewelry": [
+      "drip", "fit", "outfit", "threads", "gear", "steez", "swag",
+      "ice", "bling", "chain", "piece", "pendant", "watch", "rock",
+      "bust down", "flooded", "frozen", "grill", "grillz", "fronts",
+      "kicks", "sneakers", "j's", "jordans", "forces", "dunks", "yeezys"
+    ],
+    "music_performance": [
+      "spit", "spitting", "flow", "flowing", "rhyme", "rhyming", "rap",
+      "rapping", "bars", "verse", "hook", "chorus", "beat", "track",
+      "banger", "hit", "jam", "joint", "cut", "record", "album", "tape",
+      "mixtape", "ep", "lp", "single", "drop", "release", "freestyle"
+    ],
+    "general": [
+      "flex", "dip", "cop", "slide", "creep", "stunt", "hood", "mob",
+      "bounce", "post", "posted", "chill", "chilling", "hang", "hanging",
+      "kick", "kicking", "bang", "banging", "bump", "bumping", "slap",
+      "slapping", "hit", "hitting", "go", "going", "come", "coming",
+      "get", "getting", "got", "make", "making", "take", "taking"
+    ]
+  },
+  "phonological_patterns": {
+    "th_stopping": {
+      "description": "th -> d/t",
+      "examples": ["dat (that)", "dis (this)", "dey (they)"],
+      "mappings": {"dat": "that", "dis": "this", "dey": "they", "dem": "them"}
+    },
+    "final_consonant_cluster": {
+      "description": "Consonant cluster reduction",
+      "examples": ["tes' (test)", "han' (hand)"],
+      "note": "Common in fast speech, poetry"
+    },
+    "r_lessness": {
+      "description": "Non-rhotic speech",
+      "examples": ["fo' (for)", "mo' (more)"],
+      "mappings": {"fo": "for", "mo": "more", "yo": "your"}
+    }
+  },
+  "regional_variants": {
+    "south": [
+      "finna", "might could", "fixin to", "fixing to", "yonder", "reckon",
+      "holler", "carry", "cut", "falling out", "chunk", "mash", "buggy",
+      "soda", "coke", "country", "country boy", "country girl", "down south",
+      "dirty south", "third coast", "screw", "chopped", "slowed"
+    ],
+    "east_coast": [
+      "deadass", "mad", "brick", "son", "b", "kid", "duke", "god",
+      "word is bond", "no doubt", "aight", "aiight", "true", "true dat",
+      "yo", "yoo", "yerr", "what up", "what's good", "bodega", "corner store"
+    ],
+    "west_coast": [
+      "hella", "hyphy", "fasho", "fo sho", "for sure", "cuzz", "cuz",
+      "loc", "blood", "piru", "crip", "damu", "soo woo", "woo woo",
+      "yadadamean", "yadidimean", "feel me", "you feel me", "nah mean",
+      "nawmean", "sicc", "sick", "widit", "with it", "go dumb", "thizz"
+    ],
+    "midwest": [
+      "fam", "on folks", "on bro", "on god", "shorty", "chief",
+      "on chief", "chiraq", "drill", "drillin", "opp", "opps", "lacking",
+      "get back", "slide", "spin", "tweak", "tweakin", "goofy", "ass"
+    ],
+    "atlanta": [
+      "shawty", "mane", "cap", "no cap", "bussin", "slatt", "slime",
+      "drip", "sauce", "vibe", "vibin", "turnt", "turn up", "lit",
+      "trap", "trapping", "bando", "serve", "servin"
+    ],
+    "general": [
+      "blood", "bro", "cuz", "homie", "b", "dawg", "dog", "playa", "player",
+      "bruh", "thug", "thugging", "fam", "son", "pimp", "pimpin",
+      "gangsta", "gangster", "g", "og", "vet", "real", "trill"
+    ]
+  },
+  "context_markers": {
+    "positive_context": [
+      "love", "respect", "appreciate", "vibe", "energy", "blessed",
+      "grateful", "real one", "homie", "fam", "brother", "sister",
+      "king", "queen", "goat", "legend", "icon", "boss", "chief"
+    ],
+    "negative_context": [
+      "hate", "hating", "fake", "phony", "snake", "opp", "opps",
+      "lacking", "disrespect", "beef", "smoke", "static", "drama",
+      "snitch", "rat", "buster", "mark", "punk", "sucker", "clown"
+    ],
+    "affirmations": [
+      "facts", "word", "real talk", "on god", "on my mama", "on everything",
+      "no lie", "straight up", "hundred", "100", "true", "true dat",
+      "you know", "know what i mean", "feel me", "you feel me", "nah mean",
+      "what i'm saying", "saying", "i'm saying"
+    ],
+    "exclamations": [
+      "yo", "ayo", "ayy", "ayyy", "ey", "hey", "yoo", "yooo",
+      "damn", "dang", "man", "mane", "bruh", "bro", "cuz",
+      "sheesh", "whew", "ooh", "oooh", "woo", "wooo", "let's go"
+    ]
+  },
+  "classic_hip_hop_terms": {
+    "80s_90s": [
+      "fresh", "fly", "def", "dope", "phat", "bomb", "tight", "word up",
+      "word to mother", "homeboy", "homegirl", "b-boy", "b-girl",
+      "breakin", "poppin", "lockin", "mcee", "emcee", "mc", "dj",
+      "turntable", "scratch", "cut", "break", "beat", "sample", "loop",
+      "cipher", "cypher", "battle", "beef", "diss", "represent", "props"
+    ],
+    "golden_era": [
+      "skills", "ill", "nice", "wack", "whack", "corny", "weak", "lame",
+      "flow", "rhyme scheme", "multis", "metaphor", "simile", "punchline",
+      "wordplay", "flipping", "biting", "swagger jacking", "ghost writing",
+      "studio gangster", "fake thug", "real recognize real"
+    ],
+    "modern": [
+      "drip", "sauce", "wave", "lit", "turnt", "vibes", "energy",
+      "banger", "slaps", "goes hard", "hits different", "bussin",
+      "fire", "heat", "gas", "mid", "cap", "no cap", "sus",
+      "valid", "bet", "facts", "ong", "fr", "ngl", "lowkey", "highkey"
+    ]
+  },
+  "corpus_stats": {
+    "source": "jazmiahenry/aave_corpora + manual expansion",
+    "artists": 59,
+    "total_words": 52234,
+    "aave_terms_found": 82,
+    "lexicon_version": "3.0-expanded",
+    "estimated_total_terms": 450,
+    "top_terms": {
+      "aint": 422, "ain't": 211, "em": 204, "real": 200,
+      "wanna": 172, "gotta": 150, "gangsta": 148, "imma": 146,
+      "gonna": 118, "dope": 114, "yall": 102, "ill": 94
+    }
+  }
+}
