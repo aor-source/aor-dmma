@@ -1,4 +1,4 @@
-# AoR-MIR: Architect of Rhyme - Music Information Retrieval
+# AoR-MIR: Music Information Retrieval
 
 **A computational framework for analyzing African American Vernacular English (AAVE) in hip-hop music, with novel Reinman topology metrics for semantic analysis.**
 
@@ -8,7 +8,7 @@
 
 ## Overview
 
-AoR-MIR (Architect of Rhyme - Music Information Retrieval) is a Python-based toolkit for:
+AoR-MIR is a Python-based toolkit for:
 
 1. **AAVE Detection** - Lexicon-based identification of African American Vernacular English in transcribed lyrics
 2. **Reinman Metrics** - Novel semantic topology measurements (SDS, TVT, Spectral Rigidity)
@@ -210,7 +210,7 @@ If you use AoR-MIR in your research, please cite:
 ```bibtex
 @software{aor_mir_2026,
   author = {Wright, Jon},
-  title = {AoR-MIR: Architect of Rhyme Music Information Retrieval},
+  title = {AoR-MIR: Music Information Retrieval},
   year = {2026},
   url = {https://github.com/yourusername/aor-mir}
 }
