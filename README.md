@@ -9,7 +9,7 @@
 
 ## Overview
 
-AoR-MIR is a Python-based toolkit for:
+AoR-DMMA is a Python-based toolkit for:
 
 1. **AAVE Detection** - Lexicon-based identification of African American Vernacular English in transcribed lyrics
 2. **Reinman Metrics** - Novel semantic topology measurements (SDS, TVT, Spectral Rigidity)
@@ -18,7 +18,9 @@ AoR-MIR is a Python-based toolkit for:
 
 ## Key Findings
 
-### ASR Bias Discovery
+This research produced **two critical discoveries** about AI systems and Black linguistic representation:
+
+### Discovery 1: ASR Erasure Bias (Whisper)
 
 During development, we discovered that **OpenAI's Whisper systematically erases AAVE phonological markers**:
 
@@ -28,23 +30,30 @@ During development, we discovered that **OpenAI's Whisper systematically erases 
 | dat       | that          | 0%                |
 | dey       | they          | 0%                |
 | dem       | them          | 0%                |
+| dese      | these         | 0%                |
+| dose      | those         | 0%                |
 
 **100% of AAVE phonological features are normalized to Standard American English.**
 
-This constitutes algorithmic bias that erases Black linguistic identity in transcription. Full documentation in `output/FINDING_ASR_AAVE_BIAS.md`.
+This constitutes **algorithmic whitewashing** - a form of ML bias that erases Black linguistic identity at the transcription layer. Downstream NLP systems trained on Whisper transcripts inherit this bias. Full documentation in `output/FINDING_ASR_AAVE_BIAS.md`.
 
-### Human vs AI Analysis
+### Discovery 2: AI Cultural Intelligence Gap
 
-Using our expanded lexicon (807 terms), we found significant differences between human-created and AI-generated hip-hop:
+Using our expanded lexicon (807 terms) and Reinman metrics, we found that **AI-generated hip-hop demonstrates significantly lower Semantic Cultural Intelligence (SCI)**:
 
-| Metric | Human Artists | AI Generated | Difference |
-|--------|---------------|--------------|------------|
-| AAVE Density | 6.18% | 3.72% | +66% |
-| Unique Terms | 135 | 60 | +125% |
-| SDS (Irony) | 1.51 | 0.72 | +110% |
-| TVT (Complexity) | 588 | 499 | +18% |
+| Metric | Human Artists | AI Generated | Human Advantage |
+|--------|---------------|--------------|-----------------|
+| AAVE Density | 6.18% | 3.72% | **+66%** |
+| Unique AAVE Terms | 135 | 60 | **+125%** |
+| SDS (Semantic Dissonance) | 1.51 | 0.72 | **+110%** |
+| TVT (Tonal Complexity) | 588 | 499 | **+18%** |
 
-**Human artists demonstrate significantly higher AAVE vocabulary diversity and semantic complexity.**
+**Interpretation:** AI systems trained without adequate AAVE representation produce content that:
+- Uses less diverse Black vernacular vocabulary
+- Lacks the ironic/subversive layering (low SDS) characteristic of authentic hip-hop
+- Demonstrates flattened tonal complexity
+
+This suggests current AI models have a **cultural intelligence deficit** when generating content rooted in Black American linguistic traditions. The absence of AAVE in training data results in outputs that are measurably less authentic.
 
 ---
 
