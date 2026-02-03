@@ -1,0 +1,36 @@
+{
+  "griot_protocol_version": "1.0",
+  "seal_type": "research_integrity",
+  "timestamp_utc": "2026-02-03T10:30:00Z",
+  "project": "AoR-DMMA",
+  "description": "Algorithmic Whitewashing: ASR Erasure and Cultural Intelligence Gaps in AI Systems",
+  "repository": "https://github.com/aor-source/aor-dmma",
+  "author": "Jon Wright",
+  "integrity": {
+    "files_sealed": 427,
+    "checksum_file": "PROJECT_CHECKSUMS.sha256",
+    "master_hash_sha256": "61d41bb0ce0d4af47e5a1a6de84d1ee3a632a2358a1151bba81795a6df17a3e8",
+    "algorithm": "SHA-256"
+  },
+  "research_findings": {
+    "discovery_1": "ASR Erasure Bias - Whisper normalizes 100% of AAVE phonological markers",
+    "discovery_2": "AI Cultural Intelligence Gap - 66% less AAVE density, 110% less semantic dissonance"
+  },
+  "ai_collaborators": [
+    "Claude (Anthropic)",
+    "Claude Code (Anthropic)",
+    "Gemini (Google)",
+    "ChatGPT (OpenAI)",
+    "Grok (xAI)",
+    "Venice (Venice.ai)"
+  ],
+  "data_attribution": {
+    "aave_corpora": {
+      "author": "Jazmia Henry",
+      "license": "MIT",
+      "source": "https://github.com/jazmiahenry/aave_corpora"
+    }
+  },
+  "verification_instructions": "Run: shasum -a 256 PROJECT_CHECKSUMS.sha256 and compare to master_hash_sha256",
+  "griot_oath": "Damn the man. Save the empire."
+}
