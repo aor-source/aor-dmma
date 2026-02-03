@@ -1,8 +1,9 @@
-# AoR-MIR: Music Information Retrieval
+# AoR-DMMA: Digital Music Metadata Analysis
 
 **A computational framework for analyzing African American Vernacular English (AAVE) in hip-hop music, with novel Reinman topology metrics for semantic analysis.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub](https://img.shields.io/badge/GitHub-aor--source-blue)](https://github.com/aor-source/aor-dmma)
 
 ---
 
@@ -51,8 +52,8 @@ Using our expanded lexicon (807 terms), we found significant differences between
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/aor-mir.git
-cd aor-mir
+git clone https://github.com/aor-source/aor-dmma.git
+cd aor-dmma
 
 # Create virtual environment
 python3 -m venv venv
@@ -176,7 +177,7 @@ Regional variants: 133
 ## Project Structure
 
 ```
-aor-mir/
+aor-dmma/
 ├── aor_mir.py              # Main analysis script (v7.0 SOVEREIGN)
 ├── aor_mir_mlx.py          # Apple Silicon optimized version
 ├── aave_lexicon.json       # AAVE lexicon v3.0 (807 terms)
@@ -212,7 +213,7 @@ If you use AoR-MIR in your research, please cite:
   author = {Wright, Jon},
   title = {AoR-MIR: Music Information Retrieval},
   year = {2026},
-  url = {https://github.com/yourusername/aor-mir}
+  url = {https://github.com/aor-source/aor-dmma}
 }
 ```
 
@@ -245,7 +246,14 @@ MIT License - See LICENSE file for details.
 
 ## Acknowledgments
 
-- AAVE corpus data from [jazmiahenry/aave_corpora](https://github.com/jazmiahenry/aave_corpora)
+### AAVE Corpora Dataset
+This project is built upon the foundational work of **Jazmia Henry** and the [AAVE Corpora](https://github.com/jazmiahenry/aave_corpora) project (MIT License).
+
+> *"This dataset was created by AAVE speakers for AAVE speakers and the engineers, academics, researchers, and builders that endeavor to create NLP models that represent the beauty and complexity of the AAVE sociolect."*
+
+We gratefully acknowledge this contribution to preserving and analyzing African American linguistic heritage.
+
+### Additional Credits
 - Whisper by OpenAI
 - MLX by Apple
 
