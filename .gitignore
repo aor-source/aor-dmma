@@ -41,6 +41,9 @@ output/ai_corpus_analysis_v3/visualizations/
 *.ogg
 *.aac
 
+# Large binary files
+context_index/embeddings.npy
+
 # Security scripts (local only)
 .airtight_checksums.txt*
 .file_checksums.sha256

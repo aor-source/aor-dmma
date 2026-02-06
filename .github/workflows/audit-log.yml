@@ -1,0 +1,113 @@
+name: Audit Log
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, closed, reopened, synchronize]
+  pull_request_review:
+    types: [submitted]
+  member:
+    types: [added, removed, edited]
+
+permissions:
+  contents: read
+
+jobs:
+  log-push:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log push event
+        run: |
+          echo "=========================================="
+          echo "PUSH EVENT — $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=========================================="
+          echo "Pusher:     ${{ github.actor }}"
+          echo "Branch:     ${{ github.ref_name }}"
+          echo "Commit:     ${{ github.sha }}"
+          echo "Message:    ${{ github.event.head_commit.message }}"
+          echo "Author:     ${{ github.event.head_commit.author.name }} <${{ github.event.head_commit.author.email }}>"
+          echo "Committer:  ${{ github.event.head_commit.committer.name }} <${{ github.event.head_commit.committer.email }}>"
+          echo "Commits:    ${{ github.event.size }} commit(s)"
+          echo "Compare:    ${{ github.event.compare }}"
+          echo "=========================================="
+
+  log-pr:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log PR event
+        run: |
+          echo "=========================================="
+          echo "PULL REQUEST ${{ github.event.action }} — $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=========================================="
+          echo "PR #:       ${{ github.event.pull_request.number }}"
+          echo "Title:      ${{ github.event.pull_request.title }}"
+          echo "Author:     ${{ github.event.pull_request.user.login }}"
+          echo "Action:     ${{ github.event.action }}"
+          echo "Base:       ${{ github.event.pull_request.base.ref }}"
+          echo "Head:       ${{ github.event.pull_request.head.ref }}"
+          echo "Merged:     ${{ github.event.pull_request.merged }}"
+          echo "Merged by:  ${{ github.event.pull_request.merged_by.login }}"
+          echo "=========================================="
+
+  log-review:
+    if: github.event_name == 'pull_request_review'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log review event
+        run: |
+          echo "=========================================="
+          echo "PR REVIEW — $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=========================================="
+          echo "PR #:       ${{ github.event.pull_request.number }}"
+          echo "Reviewer:   ${{ github.event.review.user.login }}"
+          echo "State:      ${{ github.event.review.state }}"
+          echo "=========================================="
+
+  log-member:
+    if: github.event_name == 'member'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log collaborator change
+        run: |
+          echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+          echo "COLLABORATOR CHANGE — $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+          echo "Action:     ${{ github.event.action }}"
+          echo "Member:     ${{ github.event.member.login }}"
+          echo "Changed by: ${{ github.actor }}"
+          echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+  verify-identity:
+    if: github.event_name == 'pull_request' && github.event.action == 'opened'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR author identity
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          echo "Verifying PR author: $PR_AUTHOR"
+          USER_INFO=$(gh api users/$PR_AUTHOR 2>/dev/null || echo '{}')
+          NAME=$(echo "$USER_INFO" | jq -r '.name // "NOT SET"')
+          BIO=$(echo "$USER_INFO" | jq -r '.bio // "NOT SET"')
+          COMPANY=$(echo "$USER_INFO" | jq -r '.company // "NOT SET"')
+          CREATED=$(echo "$USER_INFO" | jq -r '.created_at // "UNKNOWN"')
+
+          echo "=========================================="
+          echo "PR AUTHOR IDENTITY CHECK"
+          echo "=========================================="
+          echo "GitHub Login: $PR_AUTHOR"
+          echo "Display Name: $NAME"
+          echo "Bio:          $BIO"
+          echo "Company:      $COMPANY"
+          echo "Account Created: $CREATED"
+          echo "=========================================="
+
+          if [ "$NAME" = "NOT SET" ] || [ "$NAME" = "null" ]; then
+            echo "WARNING: PR author has no display name set on GitHub."
+            echo "All contributors must use their real name."
+            exit 1
+          fi
