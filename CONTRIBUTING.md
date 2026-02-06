@@ -16,23 +16,11 @@ Before your first contribution, you must:
 
 2. **Your GitHub account must be linked to a verifiable identity.** Pseudonymous accounts, throwaway accounts, and corporate alias accounts (e.g., "a-googler", "user12345") will have their contributions rejected.
 
-3. **Sign your commits.** All commits must be GPG or SSH signed.
-   ```bash
-   # GPG signing
-   git config commit.gpgsign true
-   git config user.signingkey YOUR_GPG_KEY_ID
-
-   # Or SSH signing
-   git config gpg.format ssh
-   git config user.signingkey ~/.ssh/id_ed25519.pub
-   git config commit.gpgsign true
-   ```
-
-4. **Include a sign-off on every commit** (Developer Certificate of Origin):
+3. **Include a sign-off on every commit** (Developer Certificate of Origin):
    ```bash
    git commit -s -m "Your commit message"
    ```
-   This adds a `Signed-off-by: Your Name <email>` line confirming you have the right to submit the code.
+   This adds a `Signed-off-by: Your Name <email>` line confirming you have the right to submit the code and that you are who you say you are.
 
 ## How to Contribute
 
@@ -45,7 +33,7 @@ Before your first contribution, you must:
 
 3. **Make your changes.** Follow existing code style and patterns.
 
-4. **Sign and commit:**
+4. **Commit with sign-off:**
    ```bash
    git commit -s -m "Add description of what you changed and why"
    ```

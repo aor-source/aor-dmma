@@ -25,7 +25,6 @@ The `main` branch is protected with the following rules:
 - **Pull request reviews required** — All changes must go through a PR with at least 1 approving review
 - **Stale review dismissal** — Approvals are dismissed when new commits are pushed
 - **Code owner review required** — The repository owner must approve all PRs
-- **Signed commits required** — All commits to `main` must be GPG or SSH signed
 - **Linear history required** — No merge commits; rebase or squash only
 - **No force pushes** — Force push to `main` is permanently disabled
 - **No branch deletion** — The `main` branch cannot be deleted
@@ -37,8 +36,8 @@ All contributors must:
 
 1. Use their **real, legal name** in git config (not a pseudonym, handle, or corporate alias)
 2. Provide their **GitHub username** linked to a verifiable identity
-3. Sign all commits with a GPG or SSH key registered to their GitHub account
-4. Agree to the Developer Certificate of Origin (see CONTRIBUTING.md)
+3. Include a DCO sign-off on every commit (see CONTRIBUTING.md)
+4. Agree to the Developer Certificate of Origin
 
 Anonymous contributions, bot-authored commits without human sign-off, and pseudonymous accounts (e.g., "a-googler", "dependabot-contributor") are **not accepted**.
 
@@ -53,7 +52,7 @@ Anonymous contributions, bot-authored commits without human sign-off, and pseudo
 - Commits from accounts with no verifiable identity
 - Co-authored-by tags for individuals who did not review or write the code
 - Automated commits from third-party bots without explicit owner authorization
-- Force pushes, history rewrites, or unsigned commits to protected branches
+- Force pushes or history rewrites to protected branches
 
 ## Data Handling
 
