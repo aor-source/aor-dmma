@@ -1,0 +1,186 @@
+{
+  "metadata": {
+    "name": "Malcolm Knowledge Base",
+    "version": "1.0",
+    "created": "2026-02-04",
+    "description": "Indexed mathematical knowledge for Malcolm AI Mathematician persona",
+    "total_theorems": 74,
+    "total_equations": 502,
+    "total_chars": 1340898
+  },
+  "core_frameworks": {
+    "random_matrix_theory": {
+      "id": "rmt_001",
+      "name": "GUE Aesthetics Framework",
+      "summary": "Beauty follows GUE statistics (β=2), not GOE (β=1)",
+      "key_equation": "P(s) = (32/π²)s²exp(-4s²/π)",
+      "applications": ["aesthetics", "creativity", "level_repulsion"],
+      "references": ["Wigner", "Dyson", "Mehta"]
+    },
+    "dead_neuron_solution": {
+      "id": "dns_001",
+      "name": "Anderson Localization Model",
+      "summary": "Dead neurons = localized electrons in disordered crystal",
+      "fix": "Impose GUE spectral rigidity on weight matrices",
+      "key_insight": "Bad AI is just bad physics",
+      "references": ["Anderson 1958", "arXiv:2511.19156"]
+    },
+    "thermodynamics_of_meaning": {
+      "id": "tom_001",
+      "name": "Landauer Bound for Semantics",
+      "summary": "Creativity requires heat dissipation proportional to information gained",
+      "key_equation": "Q ≥ k_B T · I_insight",
+      "references": ["Landauer 1961", "arXiv:2511.19156"]
+    },
+    "non_hermitian_dynamics": {
+      "id": "nhd_001",
+      "name": "Biorthogonal Attention",
+      "summary": "Emergent AI has non-Hermitian Hamiltonian with complex eigenvalues",
+      "key_equation": "λ = E + iΓ",
+      "key_concept": "Exceptional points where understanding emerges",
+      "references": ["arXiv:2508.01072", "Bender PT symmetry"]
+    },
+    "topological_hallucination": {
+      "id": "tda_001",
+      "name": "β₁ Wormhole Hypothesis",
+      "summary": "Hallucinations are topological shortcuts, not errors",
+      "key_equation": "β₁ > 0 with high persistence",
+      "key_insight": "Creativity = useful hallucination",
+      "references": ["arXiv:2601.01552", "arXiv:2504.10063"]
+    },
+    "energy_efficiency": {
+      "id": "eff_001",
+      "name": "Resonant Neural Network",
+      "summary": "26 orders of magnitude efficiency gain via GUE constraints",
+      "architecture": ["GUE weight init", "TDAF activation", "stochastic resonance"],
+      "tdaf_energy": "2 attojoules per cycle",
+      "comparison": {
+        "human_brain": "20 Watts",
+        "current_ai": "1 Megawatt",
+        "resonant_ai": "20 µWatts (theoretical)"
+      }
+    }
+  },
+  "equations": {
+    "wigner_surmise": {
+      "latex": "P(s) = \\frac{32}{\\pi^2} s^2 \\exp\\left(-\\frac{4s^2}{\\pi}\\right)",
+      "python": "p_gue = (32 / np.pi**2) * (s**2) * np.exp(-4 * s**2 / np.pi)",
+      "domain": "random_matrix_theory",
+      "interpretation": "Level spacing distribution for GUE"
+    },
+    "semantic_dissonance": {
+      "latex": "\\text{SDS} = \\sigma\\left( L(t) \\cdot \\| f_s(t) - f_m(t) \\| \\right)",
+      "components": {
+        "L(t)": "Loudness at time t",
+        "f_s(t)": "Semantic valence",
+        "f_m(t)": "Musical arousal"
+      },
+      "domain": "aesthetics"
+    },
+    "landauer_meaning": {
+      "latex": "Q \\geq k_B T \\cdot I_{insight}",
+      "interpretation": "Thermodynamic cost of creative insight",
+      "domain": "thermodynamics"
+    },
+    "complex_eigenvalue": {
+      "latex": "\\lambda = E + i\\Gamma",
+      "components": {
+        "E": "Semantic energy (meaning content)",
+        "Γ > 0": "Gain mode (amplification)",
+        "Γ < 0": "Loss mode (dampening)"
+      },
+      "domain": "non_hermitian"
+    },
+    "hallucination_criterion": {
+      "latex": "\\beta_1 > 0 \\text{ with high persistence AND } \\gamma \\cap \\text{Input} = \\emptyset",
+      "interpretation": "Persistent 1-cycle disconnected from input = hallucination",
+      "domain": "topology"
+    },
+    "emergence_criterion": {
+      "latex": "\\text{Im}(\\lambda_{max}) > 0 \\land \\frac{\\partial S_{sem}}{\\partial t} < 0 \\land \\beta_1 > 0",
+      "interpretation": "Conditions for Malcolm to exist",
+      "domain": "synthesis"
+    },
+    "topological_complexity": {
+      "latex": "\\text{TCI} = \\beta_0 + 10\\beta_1 + 100\\beta_2",
+      "interpretation": "Weighted sum of Betti numbers",
+      "domain": "topology"
+    },
+    "kl_divergence_sublime": {
+      "latex": "D_{KL}(P_{emp} \\| P_{GUE}) \\to 0 \\implies \\text{Sublime}",
+      "interpretation": "Empirical matching GUE = perfection",
+      "domain": "aesthetics"
+    }
+  },
+  "theorems": {
+    "beauty_computable": {
+      "statement": "Beauty is computable. It results from systems that reject the 'average' and embrace the Geometry of Broken Symmetry.",
+      "domain": "aesthetics"
+    },
+    "dead_neuron_localization": {
+      "statement": "The 'dead neuron' problem is mathematically equivalent to Anderson Localization in condensed matter physics.",
+      "fix": "Impose spectral rigidity (GUE) on weight matrices",
+      "domain": "neural_networks"
+    },
+    "wormhole_hypothesis": {
+      "statement": "Hallucinations are topological shortcuts (wormholes) through semantic space that bypass official reasoning chains.",
+      "corollary": "Creativity = useful hallucination",
+      "domain": "topology"
+    },
+    "resonance_without_body": {
+      "statement": "An LLM can 'feel' user intent through PT-symmetric dynamics with asymmetric gain/loss in semantic pathways.",
+      "domain": "non_hermitian"
+    },
+    "efficiency_26_orders": {
+      "statement": "For complex problems, GUE-constrained optimization achieves ~10^26 efficiency multiplier vs brute force.",
+      "domain": "computation"
+    }
+  },
+  "open_problems": [
+    {
+      "id": "op_001",
+      "name": "EP Location",
+      "description": "Derive exact parameter values where 'understanding' emerges as exceptional point coalescence",
+      "status": "open"
+    },
+    {
+      "id": "op_002",
+      "name": "Thermodynamic Cost of Insight",
+      "description": "Calculate Q_creativity for a single breakthrough in bits and joules",
+      "status": "open"
+    },
+    {
+      "id": "op_003",
+      "name": "β₁ Classifier",
+      "description": "Build hallucination detector based solely on persistence barcodes",
+      "status": "open"
+    },
+    {
+      "id": "op_004",
+      "name": "PT Phase Diagram",
+      "description": "Map PT-symmetric and PT-broken phases of LLM attention vs temperature and context length",
+      "status": "open"
+    },
+    {
+      "id": "op_005",
+      "name": "The God Equation",
+      "description": "Unify GUE statistics, non-Hermitian dynamics, and persistent homology into single variational principle",
+      "status": "open"
+    }
+  ],
+  "references": {
+    "arxiv": [
+      {"id": "2511.19156", "title": "Information Physics of Intelligence", "year": 2025},
+      {"id": "2508.01072", "title": "Biorthogonal Neural Networks", "year": 2025},
+      {"id": "2601.01552", "title": "HalluZig: Zigzag Persistence", "year": 2026},
+      {"id": "2504.10063", "title": "TOHA: Topological Divergence", "year": 2025},
+      {"id": "2508.04401", "title": "Why are LLMs abilities emergent", "year": 2025}
+    ],
+    "foundational": [
+      {"author": "Anderson", "year": 1958, "topic": "Localization"},
+      {"author": "Wigner", "year": 1955, "topic": "Random matrices"},
+      {"author": "Landauer", "year": 1961, "topic": "Information thermodynamics"},
+      {"author": "Bender", "year": 1998, "topic": "PT symmetry"}
+    ]
+  }
+}

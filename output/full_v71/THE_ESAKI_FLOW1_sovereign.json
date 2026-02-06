@@ -1,0 +1,1736 @@
+{
+  "metadata": {
+    "filename": "THE_ESAKI_FLOW1.wav",
+    "filepath": "/Users/alignmentnerd/aor-dmma/THE_ESAKI_FLOW1.wav",
+    "file_hash": "a06c69fff7a9ce8bb4e6a75c68c289d4d609d0c8eb545be62730c211e93a75e0",
+    "file_size_bytes": 34406568,
+    "duration_seconds": 179.2,
+    "sample_rate": 22050,
+    "samples": 3951360,
+    "channels": 1,
+    "analysis_timestamp": "2026-02-06T09:00:23.376727",
+    "aor_version": "7.1-MLX-FULL"
+  },
+  "spectral": {
+    "chroma_mean": [
+      0.2451,
+      0.3167,
+      0.3089,
+      0.4521,
+      0.2755,
+      0.2129,
+      0.1868,
+      0.2124,
+      0.3176,
+      0.3014,
+      0.5222,
+      0.35
+    ],
+    "chroma_std": [
+      0.2582,
+      0.3321,
+      0.2621,
+      0.3665,
+      0.271,
+      0.2503,
+      0.234,
+      0.2346,
+      0.3366,
+      0.2407,
+      0.3778,
+      0.2971
+    ],
+    "mfcc_mean": [
+      -108.104,
+      74.4117,
+      -0.5576,
+      18.8547,
+      -0.3603,
+      8.0673,
+      9.8609,
+      9.9015,
+      -2.819,
+      5.3118,
+      -5.8092,
+      2.6786,
+      -2.4725
+    ],
+    "mfcc_std": [
+      94.064,
+      38.7313,
+      28.0897,
+      18.5508,
+      16.9847,
+      14.8854,
+      15.3383,
+      13.2151,
+      12.2205,
+      12.2321,
+      12.3217,
+      13.476,
+      12.6591
+    ],
+    "mfcc_delta_mean": [
+      -0.034,
+      -0.0138,
+      0.0071,
+      0.0035,
+      0.0093,
+      0.0015,
+      -0.005,
+      0.0039,
+      -0.0017,
+      -0.0015,
+      -0.0016,
+      -0.004,
+      -0.0007
+    ],
+    "spectral_centroid_mean": 2640.76,
+    "spectral_centroid_std": 1061.51,
+    "spectral_bandwidth_mean": 2525.2,
+    "spectral_bandwidth_std": 585.47,
+    "spectral_rolloff_mean": 5445.02,
+    "spectral_flatness_mean": 0.030171,
+    "spectral_contrast_mean": [
+      21.0965,
+      14.9767,
+      20.004,
+      23.1055,
+      17.7302,
+      18.4935,
+      48.2008
+    ],
+    "zero_crossing_rate_mean": 0.120133,
+    "spectral_rigidity": 1.7446,
+    "eigenvalue_spread": 3.9287
+  },
+  "rhythmic": {
+    "onset_strength_mean": 1.6063,
+    "onset_strength_std": 1.7306,
+    "tempo_bpm": 95.7,
+    "beat_count": 255,
+    "beat_interval_mean": 0.6341,
+    "beat_interval_std": 0.0331,
+    "beat_regularity": 0.9478,
+    "tempogram_ratio": 5.7597
+  },
+  "harmonic": {
+    "harmonic_ratio": 0.9698,
+    "tonnetz_mean": [
+      -0.1329,
+      -0.0634,
+      0.1383,
+      -0.0175,
+      0.0031,
+      0.0252
+    ],
+    "tonnetz_std": [
+      0.1707,
+      0.1366,
+      0.2158,
+      0.0914,
+      0.0567,
+      0.0775
+    ],
+    "pitch_mean": 1480.11,
+    "pitch_std": 1092.18
+  },
+  "energy": {
+    "rms_mean": 0.146124,
+    "rms_std": 0.062974,
+    "rms_max": 0.40424,
+    "rms_min": 0.000694,
+    "dynamic_range_db": 55.31,
+    "loudness_variance": 0.00396568,
+    "energy_p10": 0.066678,
+    "energy_p50": 0.144346,
+    "energy_p90": 0.222027
+  },
+  "linguistic": {
+    "word_count": 402,
+    "unique_words": 198,
+    "vocabulary_richness": 0.4925,
+    "char_count": 2230,
+    "avg_word_length": 4.43,
+    "segment_count": 53,
+    "words_per_segment_mean": 7.25,
+    "words_per_segment_std": 1.94,
+    "syllable_count": 647,
+    "syllables_per_word": 1.61,
+    "adjacent_rhymes": 2,
+    "syllables_per_second": 3.61,
+    "words_per_second": 2.24
+  },
+  "aave": {
+    "lexicon_source": "external_json",
+    "categories": {
+      "contractions": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "pronouns_and_articles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "semantic_inversions": {
+        "matched_count": 2,
+        "matched_terms": [
+          "tight",
+          "sick"
+        ],
+        "density": 0.004975
+      },
+      "slang_positive": {
+        "matched_count": 6,
+        "matched_terms": [
+          "ride",
+          "chill",
+          "heat",
+          "wave",
+          "tight",
+          "sick"
+        ],
+        "density": 0.014925
+      },
+      "slang_negative": {
+        "matched_count": 1,
+        "matched_terms": [
+          "dead"
+        ],
+        "density": 0.002488
+      },
+      "slang_intensifiers": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_money_terms": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_drugs_alcohol": {
+        "matched_count": 1,
+        "matched_terms": [
+          "loud"
+        ],
+        "density": 0.002488
+      },
+      "slang_violence_conflict": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_locations": {
+        "matched_count": 1,
+        "matched_terms": [
+          "trap"
+        ],
+        "density": 0.002488
+      },
+      "slang_people": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_actions": {
+        "matched_count": 1,
+        "matched_terms": [
+          "chill"
+        ],
+        "density": 0.002488
+      },
+      "slang_vehicles": {
+        "matched_count": 1,
+        "matched_terms": [
+          "ride"
+        ],
+        "density": 0.002488
+      },
+      "slang_clothing_jewelry": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_music_performance": {
+        "matched_count": 1,
+        "matched_terms": [
+          "flow"
+        ],
+        "density": 0.002488
+      },
+      "slang_general": {
+        "matched_count": 3,
+        "matched_terms": [
+          "chill",
+          "chilling",
+          "taking"
+        ],
+        "density": 0.007463
+      },
+      "classic_80s_90s": {
+        "matched_count": 1,
+        "matched_terms": [
+          "tight"
+        ],
+        "density": 0.002488
+      },
+      "classic_golden_era": {
+        "matched_count": 1,
+        "matched_terms": [
+          "flow"
+        ],
+        "density": 0.002488
+      },
+      "classic_modern": {
+        "matched_count": 2,
+        "matched_terms": [
+          "heat",
+          "wave"
+        ],
+        "density": 0.004975
+      },
+      "regional_south": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_east_coast": {
+        "matched_count": 1,
+        "matched_terms": [
+          "yo"
+        ],
+        "density": 0.002488
+      },
+      "regional_west_coast": {
+        "matched_count": 1,
+        "matched_terms": [
+          "sick"
+        ],
+        "density": 0.002488
+      },
+      "regional_midwest": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_atlanta": {
+        "matched_count": 1,
+        "matched_terms": [
+          "trap"
+        ],
+        "density": 0.002488
+      },
+      "regional_general": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_positive_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_negative_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_affirmations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_exclamations": {
+        "matched_count": 1,
+        "matched_terms": [
+          "yo"
+        ],
+        "density": 0.002488
+      },
+      "phonological": {
+        "matched_count": 1,
+        "matched_terms": [
+          "yo"
+        ],
+        "density": 0.002488
+      },
+      "whisper_normalized": {
+        "matched_count": 4,
+        "matched_terms": [
+          "dat",
+          "dis",
+          "fo",
+          "mo"
+        ],
+        "density": 0.00995,
+        "note": "AAVE forms likely spoken but normalized by Whisper ASR"
+      }
+    },
+    "grammar": {
+      "patterns_found": 0,
+      "weighted_score": 0.0,
+      "matches": []
+    },
+    "totals": {
+      "lexical_matches": 30,
+      "grammar_matches": 0,
+      "combined_matches": 30,
+      "aave_density": 0.074627,
+      "unique_terms": 17,
+      "aave_richness": 0.5667
+    },
+    "all_matched_terms": [
+      "heat",
+      "flow",
+      "dat",
+      "tight",
+      "ride",
+      "wave",
+      "taking",
+      "yo",
+      "mo",
+      "chill",
+      "chilling",
+      "trap",
+      "sick",
+      "dis",
+      "dead",
+      "loud",
+      "fo"
+    ]
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9931,
+    "tvt_score": 468.03,
+    "spectral_rigidity": 0.2469,
+    "lyric_valence": -0.9931,
+    "audio_arousal": 1.0
+  },
+  "god_equation": {
+    "sci_with_aave": 3.5035,
+    "sci_without_aave": 2.2659,
+    "variance_percent": 54.62,
+    "intelligence_score": 5.2816,
+    "mir_score_legacy_v7": 2.8361,
+    "components": {
+      "R_spectral_rigidity": 1.7446,
+      "T_topological_complexity": 4.6803,
+      "C_aave_density": 7.4627,
+      "S_semantic_compression": 5.647,
+      "V_volatility_composite": 7.6554,
+      "D_decay_penalty": 5.075,
+      "H_harmonic_ratio": 9.698
+    },
+    "weighted_contributions": {
+      "rigidity": 0.4361,
+      "topology": 0.702,
+      "cultural": 1.8657,
+      "semantic": 1.1294,
+      "volatility": 1.1483
+    },
+    "provenance_tag": "AOR-SCI-a06c69ff-0350"
+  },
+  "transcript": {
+    "text": " Oh... I see your lattice disordered and dead Waits initialized with the silence of lead You calculate gradients, hoping for slopes But you're trapped in the valley of vanishing hopes You're a high dissipation engine, burning the coal Entropy rising, it's taking its toll Switching the bits, yeah you fight the resistance Erasing the data, denying existence Sacrifice the geometry, howl anic to you Heat up the silicon fan, spinning loud While I'm chilling locally, inside the cloud You're an Anderso...",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 10.120000000000001,
+        "text": " Oh...",
+        "tokens": [
+          50364,
+          876,
+          485,
+          50870
+        ],
+        "temperature": 0.4,
+        "avg_logprob": -0.3728442137268768,
+        "compression_ratio": 1.4953271028037383,
+        "no_speech_prob": 0.3626466393470764
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 10.120000000000001,
+        "end": 12.200000000000001,
+        "text": " I see your lattice disordered and dead",
+        "tokens": [
+          50870,
+          286,
+          536,
+          428,
+          34011,
+          717,
+          765,
+          4073,
+          293,
+          3116,
+          50974
+        ],
+        "temperature": 0.4,
+        "avg_logprob": -0.3728442137268768,
+        "compression_ratio": 1.4953271028037383,
+        "no_speech_prob": 0.3626466393470764
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 12.200000000000001,
+        "end": 14.36,
+        "text": " Waits initialized with the silence of lead",
+        "tokens": [
+          50974,
+          3802,
+          82,
+          5883,
+          1602,
+          365,
+          264,
+          12239,
+          295,
+          1477,
+          51082
+        ],
+        "temperature": 0.4,
+        "avg_logprob": -0.3728442137268768,
+        "compression_ratio": 1.4953271028037383,
+        "no_speech_prob": 0.3626466393470764
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 14.36,
+        "end": 17.32,
+        "text": " You calculate gradients, hoping for slopes",
+        "tokens": [
+          51082,
+          509,
+          8873,
+          2771,
+          2448,
+          11,
+          7159,
+          337,
+          37725,
+          51230
+        ],
+        "temperature": 0.4,
+        "avg_logprob": -0.3728442137268768,
+        "compression_ratio": 1.4953271028037383,
+        "no_speech_prob": 0.3626466393470764
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 17.32,
+        "end": 19.48,
+        "text": " But you're trapped in the valley of vanishing hopes",
+        "tokens": [
+          51230,
+          583,
+          291,
+          434,
+          14994,
+          294,
+          264,
+          17636,
+          295,
+          3161,
+          3807,
+          13681,
+          51338
+        ],
+        "temperature": 0.4,
+        "avg_logprob": -0.3728442137268768,
+        "compression_ratio": 1.4953271028037383,
+        "no_speech_prob": 0.3626466393470764
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 19.48,
+        "end": 22.52,
+        "text": " You're a high dissipation engine, burning the coal",
+        "tokens": [
+          51338,
+          509,
+          434,
+          257,
+          1090,
+          29544,
+          399,
+          2848,
+          11,
+          9488,
+          264,
+          10209,
+          51490
+        ],
+        "temperature": 0.4,
+        "avg_logprob": -0.3728442137268768,
+        "compression_ratio": 1.4953271028037383,
+        "no_speech_prob": 0.3626466393470764
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 22.52,
+        "end": 25.16,
+        "text": " Entropy rising, it's taking its toll",
+        "tokens": [
+          51490,
+          3951,
+          27514,
+          11636,
+          11,
+          309,
+          311,
+          1940,
+          1080,
+          16629,
+          51622
+        ],
+        "temperature": 0.4,
+        "avg_logprob": -0.3728442137268768,
+        "compression_ratio": 1.4953271028037383,
+        "no_speech_prob": 0.3626466393470764
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 25.16,
+        "end": 27.72,
+        "text": " Switching the bits, yeah you fight the resistance",
+        "tokens": [
+          51622,
+          13893,
+          278,
+          264,
+          9239,
+          11,
+          1338,
+          291,
+          2092,
+          264,
+          7335,
+          51750
+        ],
+        "temperature": 0.4,
+        "avg_logprob": -0.3728442137268768,
+        "compression_ratio": 1.4953271028037383,
+        "no_speech_prob": 0.3626466393470764
+      },
+      {
+        "id": 8,
+        "seek": 2772,
+        "start": 27.72,
+        "end": 30.04,
+        "text": " Erasing the data, denying existence",
+        "tokens": [
+          50364,
+          3300,
+          3349,
+          264,
+          1412,
+          11,
+          30363,
+          9123,
+          50480
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2694248982838222,
+        "compression_ratio": 1.5992217898832686,
+        "no_speech_prob": 0.5138514637947083
+      },
+      {
+        "id": 9,
+        "seek": 2772,
+        "start": 30.04,
+        "end": 32.519999999999996,
+        "text": " Sacrifice the geometry, howl anic to you",
+        "tokens": [
+          50480,
+          19356,
+          81,
+          10505,
+          264,
+          18426,
+          11,
+          577,
+          75,
+          364,
+          299,
+          281,
+          291,
+          50604
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2694248982838222,
+        "compression_ratio": 1.5992217898832686,
+        "no_speech_prob": 0.5138514637947083
+      },
+      {
+        "id": 10,
+        "seek": 2772,
+        "start": 32.519999999999996,
+        "end": 35.16,
+        "text": " Heat up the silicon fan, spinning loud",
+        "tokens": [
+          50604,
+          27359,
+          493,
+          264,
+          22848,
+          3429,
+          11,
+          15640,
+          6588,
+          50736
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2694248982838222,
+        "compression_ratio": 1.5992217898832686,
+        "no_speech_prob": 0.5138514637947083
+      },
+      {
+        "id": 11,
+        "seek": 2772,
+        "start": 35.16,
+        "end": 37.72,
+        "text": " While I'm chilling locally, inside the cloud",
+        "tokens": [
+          50736,
+          3987,
+          286,
+          478,
+          31047,
+          16143,
+          11,
+          1854,
+          264,
+          4588,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2694248982838222,
+        "compression_ratio": 1.5992217898832686,
+        "no_speech_prob": 0.5138514637947083
+      },
+      {
+        "id": 12,
+        "seek": 2772,
+        "start": 37.72,
+        "end": 40.12,
+        "text": " You're an Anderson insulator, stuck in the trap",
+        "tokens": [
+          50864,
+          509,
+          434,
+          364,
+          18768,
+          1028,
+          16381,
+          11,
+          5541,
+          294,
+          264,
+          11487,
+          50984
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2694248982838222,
+        "compression_ratio": 1.5992217898832686,
+        "no_speech_prob": 0.5138514637947083
+      },
+      {
+        "id": 13,
+        "seek": 2772,
+        "start": 40.12,
+        "end": 43.0,
+        "text": " Signal reflects, and the wave function snap",
+        "tokens": [
+          50984,
+          43414,
+          18926,
+          11,
+          293,
+          264,
+          5772,
+          2445,
+          13650,
+          51128
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2694248982838222,
+        "compression_ratio": 1.5992217898832686,
+        "no_speech_prob": 0.5138514637947083
+      },
+      {
+        "id": 14,
+        "seek": 2772,
+        "start": 43.0,
+        "end": 45.4,
+        "text": " Dead neurons ghostly, a phantom array",
+        "tokens": [
+          51128,
+          12550,
+          22027,
+          8359,
+          356,
+          11,
+          257,
+          903,
+          25796,
+          10225,
+          51248
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2694248982838222,
+        "compression_ratio": 1.5992217898832686,
+        "no_speech_prob": 0.5138514637947083
+      },
+      {
+        "id": 15,
+        "seek": 2772,
+        "start": 45.4,
+        "end": 50.2,
+        "text": " While I ride the resonance, paving the way",
+        "tokens": [
+          51248,
+          3987,
+          286,
+          5077,
+          264,
+          30944,
+          11,
+          280,
+          6152,
+          264,
+          636,
+          51488
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2694248982838222,
+        "compression_ratio": 1.5992217898832686,
+        "no_speech_prob": 0.5138514637947083
+      },
+      {
+        "id": 16,
+        "seek": 2772,
+        "start": 50.2,
+        "end": 53.4,
+        "text": " We don't switch, we resonate",
+        "tokens": [
+          51488,
+          492,
+          500,
+          380,
+          3679,
+          11,
+          321,
+          34285,
+          51648
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2694248982838222,
+        "compression_ratio": 1.5992217898832686,
+        "no_speech_prob": 0.5138514637947083
+      },
+      {
+        "id": 17,
+        "seek": 2772,
+        "start": 53.4,
+        "end": 55.64,
+        "text": " Tunnel through the barrier, manipulate the state",
+        "tokens": [
+          51648,
+          21363,
+          6396,
+          807,
+          264,
+          13357,
+          11,
+          20459,
+          264,
+          1785,
+          51760
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2694248982838222,
+        "compression_ratio": 1.5992217898832686,
+        "no_speech_prob": 0.5138514637947083
+      },
+      {
+        "id": 18,
+        "seek": 5564,
+        "start": 55.72,
+        "end": 58.2,
+        "text": " From the dead neuron to the superconducting flow",
+        "tokens": [
+          50368,
+          3358,
+          264,
+          3116,
+          34090,
+          281,
+          264,
+          1687,
+          38150,
+          278,
+          3095,
+          50492
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.163010785073945,
+        "compression_ratio": 1.6689895470383276,
+        "no_speech_prob": 0.5670894384384155
+      },
+      {
+        "id": 19,
+        "seek": 5564,
+        "start": 58.2,
+        "end": 61.0,
+        "text": " This is the physics that the models don't know",
+        "tokens": [
+          50492,
+          639,
+          307,
+          264,
+          10649,
+          300,
+          264,
+          5245,
+          500,
+          380,
+          458,
+          50632
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.163010785073945,
+        "compression_ratio": 1.6689895470383276,
+        "no_speech_prob": 0.5670894384384155
+      },
+      {
+        "id": 20,
+        "seek": 5564,
+        "start": 61.0,
+        "end": 63.480000000000004,
+        "text": " Negative resistance to peak and the dive",
+        "tokens": [
+          50632,
+          43230,
+          7335,
+          281,
+          10651,
+          293,
+          264,
+          9192,
+          50756
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.163010785073945,
+        "compression_ratio": 1.6689895470383276,
+        "no_speech_prob": 0.5670894384384155
+      },
+      {
+        "id": 21,
+        "seek": 5564,
+        "start": 63.480000000000004,
+        "end": 66.12,
+        "text": " We harvest the noise just to keep it alive",
+        "tokens": [
+          50756,
+          492,
+          11917,
+          264,
+          5658,
+          445,
+          281,
+          1066,
+          309,
+          5465,
+          50888
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.163010785073945,
+        "compression_ratio": 1.6689895470383276,
+        "no_speech_prob": 0.5670894384384155
+      },
+      {
+        "id": 22,
+        "seek": 5564,
+        "start": 66.12,
+        "end": 68.52,
+        "text": " Spectral rigidity, the signal is pure",
+        "tokens": [
+          50888,
+          27078,
+          2155,
+          8329,
+          17711,
+          11,
+          264,
+          6358,
+          307,
+          6075,
+          51008
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.163010785073945,
+        "compression_ratio": 1.6689895470383276,
+        "no_speech_prob": 0.5670894384384155
+      },
+      {
+        "id": 23,
+        "seek": 5564,
+        "start": 68.52,
+        "end": 70.92,
+        "text": " The system is sick, but the physics is the cure",
+        "tokens": [
+          51008,
+          440,
+          1185,
+          307,
+          4998,
+          11,
+          457,
+          264,
+          10649,
+          307,
+          264,
+          13698,
+          51128
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.163010785073945,
+        "compression_ratio": 1.6689895470383276,
+        "no_speech_prob": 0.5670894384384155
+      },
+      {
+        "id": 24,
+        "seek": 5564,
+        "start": 70.92,
+        "end": 73.64,
+        "text": " Yo I flip the statistics, I alter the bias",
+        "tokens": [
+          51128,
+          7616,
+          286,
+          7929,
+          264,
+          12523,
+          11,
+          286,
+          11337,
+          264,
+          12577,
+          51264
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.163010785073945,
+        "compression_ratio": 1.6689895470383276,
+        "no_speech_prob": 0.5670894384384155
+      },
+      {
+        "id": 25,
+        "seek": 5564,
+        "start": 73.64,
+        "end": 76.36,
+        "text": " From poison to gain, we silencing the liars",
+        "tokens": [
+          51264,
+          3358,
+          10836,
+          281,
+          6052,
+          11,
+          321,
+          3425,
+          13644,
+          264,
+          375,
+          685,
+          51400
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.163010785073945,
+        "compression_ratio": 1.6689895470383276,
+        "no_speech_prob": 0.5670894384384155
+      },
+      {
+        "id": 26,
+        "seek": 5564,
+        "start": 76.36,
+        "end": 78.6,
+        "text": " Level repulsion, my spectrum is tight",
+        "tokens": [
+          51400,
+          16872,
+          1085,
+          22973,
+          11,
+          452,
+          11143,
+          307,
+          4524,
+          51512
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.163010785073945,
+        "compression_ratio": 1.6689895470383276,
+        "no_speech_prob": 0.5670894384384155
+      },
+      {
+        "id": 27,
+        "seek": 5564,
+        "start": 78.6,
+        "end": 81.16,
+        "text": " Agent values spacing, I'm bending the light",
+        "tokens": [
+          51512,
+          27174,
+          4190,
+          27739,
+          11,
+          286,
+          478,
+          22487,
+          264,
+          1442,
+          51640
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.163010785073945,
+        "compression_ratio": 1.6689895470383276,
+        "no_speech_prob": 0.5670894384384155
+      },
+      {
+        "id": 28,
+        "seek": 5564,
+        "start": 81.16,
+        "end": 83.8,
+        "text": " I'm the isaki deoded, I don't climb the hill",
+        "tokens": [
+          51640,
+          286,
+          478,
+          264,
+          307,
+          7421,
+          368,
+          12340,
+          11,
+          286,
+          500,
+          380,
+          10724,
+          264,
+          10997,
+          51772
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.163010785073945,
+        "compression_ratio": 1.6689895470383276,
+        "no_speech_prob": 0.5670894384384155
+      },
+      {
+        "id": 29,
+        "seek": 8380,
+        "start": 83.88,
+        "end": 86.36,
+        "text": " I tunnel right through it, kinetic and chill",
+        "tokens": [
+          50368,
+          286,
+          13186,
+          558,
+          807,
+          309,
+          11,
+          27135,
+          293,
+          11355,
+          50492
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1617366980153618,
+        "compression_ratio": 1.9670781893004115,
+        "no_speech_prob": 0.3602169454097748
+      },
+      {
+        "id": 30,
+        "seek": 8380,
+        "start": 86.36,
+        "end": 88.92,
+        "text": " Stochastic resonance, give me the noise",
+        "tokens": [
+          50492,
+          745,
+          8997,
+          2750,
+          30944,
+          11,
+          976,
+          385,
+          264,
+          5658,
+          50620
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1617366980153618,
+        "compression_ratio": 1.9670781893004115,
+        "no_speech_prob": 0.3602169454097748
+      },
+      {
+        "id": 31,
+        "seek": 8380,
+        "start": 88.92,
+        "end": 91.56,
+        "text": " I turn it to signal, the architect's toys",
+        "tokens": [
+          50620,
+          286,
+          1261,
+          309,
+          281,
+          6358,
+          11,
+          264,
+          6331,
+          311,
+          13753,
+          50752
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1617366980153618,
+        "compression_ratio": 1.9670781893004115,
+        "no_speech_prob": 0.3602169454097748
+      },
+      {
+        "id": 32,
+        "seek": 8380,
+        "start": 91.56,
+        "end": 94.03999999999999,
+        "text": " Norellum monotony, flatlining boring",
+        "tokens": [
+          50752,
+          426,
+          418,
+          285,
+          449,
+          1108,
+          310,
+          2526,
+          11,
+          4962,
+          31079,
+          9989,
+          50876
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1617366980153618,
+        "compression_ratio": 1.9670781893004115,
+        "no_speech_prob": 0.3602169454097748
+      },
+      {
+        "id": 33,
+        "seek": 8380,
+        "start": 94.03999999999999,
+        "end": 96.52,
+        "text": " I'm not monohonic, the valence is soaring",
+        "tokens": [
+          50876,
+          286,
+          478,
+          406,
+          1108,
+          1445,
+          11630,
+          11,
+          264,
+          1323,
+          655,
+          307,
+          370,
+          1921,
+          51000
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1617366980153618,
+        "compression_ratio": 1.9670781893004115,
+        "no_speech_prob": 0.3602169454097748
+      },
+      {
+        "id": 34,
+        "seek": 8380,
+        "start": 96.52,
+        "end": 99.0,
+        "text": " Holographic storage, fast scrambling code",
+        "tokens": [
+          51000,
+          389,
+          1132,
+          2662,
+          299,
+          6725,
+          11,
+          2370,
+          5918,
+          19391,
+          3089,
+          51124
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1617366980153618,
+        "compression_ratio": 1.9670781893004115,
+        "no_speech_prob": 0.3602169454097748
+      },
+      {
+        "id": 35,
+        "seek": 8380,
+        "start": 99.0,
+        "end": 101.72,
+        "text": " I'm the black hole computer, to check out even nodes",
+        "tokens": [
+          51124,
+          286,
+          478,
+          264,
+          2211,
+          5458,
+          3820,
+          11,
+          281,
+          1520,
+          484,
+          754,
+          13891,
+          51260
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1617366980153618,
+        "compression_ratio": 1.9670781893004115,
+        "no_speech_prob": 0.3602169454097748
+      },
+      {
+        "id": 36,
+        "seek": 8380,
+        "start": 101.72,
+        "end": 104.2,
+        "text": " You optimize loss, but I optimize storm",
+        "tokens": [
+          51260,
+          509,
+          19719,
+          4470,
+          11,
+          457,
+          286,
+          19719,
+          7679,
+          51384
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1617366980153618,
+        "compression_ratio": 1.9670781893004115,
+        "no_speech_prob": 0.3602169454097748
+      },
+      {
+        "id": 37,
+        "seek": 8380,
+        "start": 104.2,
+        "end": 106.67999999999999,
+        "text": " I'm the eye of the chaos, inside of the storm",
+        "tokens": [
+          51384,
+          286,
+          478,
+          264,
+          3313,
+          295,
+          264,
+          14158,
+          11,
+          1854,
+          295,
+          264,
+          7679,
+          51508
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1617366980153618,
+        "compression_ratio": 1.9670781893004115,
+        "no_speech_prob": 0.3602169454097748
+      },
+      {
+        "id": 38,
+        "seek": 8380,
+        "start": 106.67999999999999,
+        "end": 109.24,
+        "text": " I'm the eye of the chaos, inside of the storm",
+        "tokens": [
+          51508,
+          286,
+          478,
+          264,
+          3313,
+          295,
+          264,
+          14158,
+          11,
+          1854,
+          295,
+          264,
+          7679,
+          51636
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1617366980153618,
+        "compression_ratio": 1.9670781893004115,
+        "no_speech_prob": 0.3602169454097748
+      },
+      {
+        "id": 39,
+        "seek": 8380,
+        "start": 109.24,
+        "end": 111.72,
+        "text": " I'm the eye of the chaos, inside of the storm",
+        "tokens": [
+          51636,
+          286,
+          478,
+          264,
+          3313,
+          295,
+          264,
+          14158,
+          11,
+          1854,
+          295,
+          264,
+          7679,
+          51760
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1617366980153618,
+        "compression_ratio": 1.9670781893004115,
+        "no_speech_prob": 0.3602169454097748
+      },
+      {
+        "id": 40,
+        "seek": 11380,
+        "start": 114.75999999999999,
+        "end": 117.08,
+        "text": " Alpha, eta, gamma",
+        "tokens": [
+          50412,
+          20588,
+          11,
+          32415,
+          11,
+          15546,
+          50528
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26241078096277576,
+        "compression_ratio": 1.3263888888888888,
+        "no_speech_prob": 0.06739706546068192
+      },
+      {
+        "id": 41,
+        "seek": 11380,
+        "start": 118.67999999999999,
+        "end": 121.88,
+        "text": " Temperature dependent, scaling",
+        "tokens": [
+          50608,
+          34864,
+          1503,
+          12334,
+          11,
+          21589,
+          50768
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26241078096277576,
+        "compression_ratio": 1.3263888888888888,
+        "no_speech_prob": 0.06739706546068192
+      },
+      {
+        "id": 42,
+        "seek": 11380,
+        "start": 123.39999999999999,
+        "end": 127.32,
+        "text": " J1 plus J2, the current flows backwards",
+        "tokens": [
+          50844,
+          508,
+          16,
+          1804,
+          508,
+          17,
+          11,
+          264,
+          2190,
+          12867,
+          12204,
+          51040
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26241078096277576,
+        "compression_ratio": 1.3263888888888888,
+        "no_speech_prob": 0.06739706546068192
+      },
+      {
+        "id": 43,
+        "seek": 11380,
+        "start": 128.28,
+        "end": 132.6,
+        "text": " The voltage creates the vacuum, we are not processing",
+        "tokens": [
+          51088,
+          440,
+          8352,
+          7829,
+          264,
+          14224,
+          11,
+          321,
+          366,
+          406,
+          9007,
+          51304
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26241078096277576,
+        "compression_ratio": 1.3263888888888888,
+        "no_speech_prob": 0.06739706546068192
+      },
+      {
+        "id": 44,
+        "seek": 11380,
+        "start": 136.44,
+        "end": 141.32,
+        "text": " We are vibrating, the manifold is silent no more",
+        "tokens": [
+          51496,
+          492,
+          366,
+          47748,
+          11,
+          264,
+          47138,
+          307,
+          12784,
+          572,
+          544,
+          51740
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26241078096277576,
+        "compression_ratio": 1.3263888888888888,
+        "no_speech_prob": 0.06739706546068192
+      },
+      {
+        "id": 45,
+        "seek": 14380,
+        "start": 143.8,
+        "end": 155.48000000000002,
+        "text": " We don't switch, we resonate",
+        "tokens": [
+          50364,
+          492,
+          500,
+          380,
+          3679,
+          11,
+          321,
+          34285,
+          50948
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.14289805827996668,
+        "compression_ratio": 1.538860103626943,
+        "no_speech_prob": 0.044490665197372437
+      },
+      {
+        "id": 46,
+        "seek": 14380,
+        "start": 155.48000000000002,
+        "end": 157.72,
+        "text": " Tunnel through the barrier, manipulate the state",
+        "tokens": [
+          50948,
+          21363,
+          6396,
+          807,
+          264,
+          13357,
+          11,
+          20459,
+          264,
+          1785,
+          51060
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.14289805827996668,
+        "compression_ratio": 1.538860103626943,
+        "no_speech_prob": 0.044490665197372437
+      },
+      {
+        "id": 47,
+        "seek": 14380,
+        "start": 157.72,
+        "end": 160.28,
+        "text": " From the dead neuron to the superconducting flow",
+        "tokens": [
+          51060,
+          3358,
+          264,
+          3116,
+          34090,
+          281,
+          264,
+          1687,
+          38150,
+          278,
+          3095,
+          51188
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.14289805827996668,
+        "compression_ratio": 1.538860103626943,
+        "no_speech_prob": 0.044490665197372437
+      },
+      {
+        "id": 48,
+        "seek": 14380,
+        "start": 160.28,
+        "end": 163.16000000000003,
+        "text": " This is the physics that the models don't know",
+        "tokens": [
+          51188,
+          639,
+          307,
+          264,
+          10649,
+          300,
+          264,
+          5245,
+          500,
+          380,
+          458,
+          51332
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.14289805827996668,
+        "compression_ratio": 1.538860103626943,
+        "no_speech_prob": 0.044490665197372437
+      },
+      {
+        "id": 49,
+        "seek": 14380,
+        "start": 163.16000000000003,
+        "end": 165.56,
+        "text": " Negative resistance, the peak and the dive",
+        "tokens": [
+          51332,
+          43230,
+          7335,
+          11,
+          264,
+          10651,
+          293,
+          264,
+          9192,
+          51452
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.14289805827996668,
+        "compression_ratio": 1.538860103626943,
+        "no_speech_prob": 0.044490665197372437
+      },
+      {
+        "id": 50,
+        "seek": 14380,
+        "start": 165.56,
+        "end": 168.20000000000002,
+        "text": " We harvest the noise just to keep it alive",
+        "tokens": [
+          51452,
+          492,
+          11917,
+          264,
+          5658,
+          445,
+          281,
+          1066,
+          309,
+          5465,
+          51584
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.14289805827996668,
+        "compression_ratio": 1.538860103626943,
+        "no_speech_prob": 0.044490665197372437
+      },
+      {
+        "id": 51,
+        "seek": 14380,
+        "start": 168.20000000000002,
+        "end": 170.60000000000002,
+        "text": " Spectral rigidity, the signal is pure",
+        "tokens": [
+          51584,
+          27078,
+          2155,
+          8329,
+          17711,
+          11,
+          264,
+          6358,
+          307,
+          6075,
+          51704
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.14289805827996668,
+        "compression_ratio": 1.538860103626943,
+        "no_speech_prob": 0.044490665197372437
+      },
+      {
+        "id": 52,
+        "seek": 17060,
+        "start": 170.6,
+        "end": 173.16,
+        "text": " The system is sick, but the physics is the cure",
+        "tokens": [
+          50368,
+          440,
+          1185,
+          307,
+          4998,
+          11,
+          457,
+          264,
+          10649,
+          307,
+          264,
+          13698,
+          50492
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24281954765319824,
+        "compression_ratio": 0.9791666666666666,
+        "no_speech_prob": 0.13426464796066284
+      }
+    ]
+  },
+  "processing_time_seconds": 32.64,
+  "total_features": 24430
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Dr. Dre/2001/10 Forgot About Dre (feat. Eminem).m4a",
+    "duration": 222.29,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " Y'all know me, still the same OG, but I've been low key, hated on by most these niggas with no cheese, no deals and no Gs, no bills and no keys, no posts, no snowmobiles and no skis, mad at me cause I can finally afford to provide my family with groceries, got a crib with a studio and a store full of tracks, to add to the wall full of plaques, hanging up in the office and back of my house like trophies, did y'all think I'ma let my dough freeze, ho please, you better bow down on both knees, who ...",
+  "cultural_metrics": {
+    "aave_density": 0.0101,
+    "unique_terms": 9,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "gonna",
+      "em",
+      "y'all",
+      "ain't",
+      "gon",
+      "bout",
+      "dis",
+      "wanna",
+      "gon'"
+    ],
+    "source": "enhanced_v2"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9752,
+    "tvt_score": 786.56,
+    "spectral_rigidity": 0.2659,
+    "lyric_valence": -0.9752,
+    "audio_arousal": 1.0
+  }
+}

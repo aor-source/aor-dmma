@@ -398,11 +398,26 @@ class SovereignOrchestrator:
         else:
             self.device = "mps" if HAS_TORCH and torch.backends.mps.is_available() else "cpu"
 
-    def run(self, input_dir, lexicon_path, visualize=False, output_dir=None):
-        files = list(Path(input_dir).glob("*.mp3")) + list(Path(input_dir).glob("*.wav"))
-        files += list(Path(input_dir).glob("*.flac")) + list(Path(input_dir).glob("*.m4a"))
+    def run(self, input_source, lexicon_path, visualize=False, output_dir=None):
+        input_path = Path(input_source)
+
+        # Support tracks.txt: if input is a .txt file, read paths from it
+        if input_path.suffix == '.txt' and input_path.is_file():
+            print(f"📋 Reading track list from: {input_path}")
+            with open(input_path, 'r') as f:
+                files = [Path(line.strip()) for line in f if line.strip() and not line.strip().startswith('#')]
+            # Validate paths
+            missing = [f for f in files if not f.exists()]
+            if missing:
+                for m in missing:
+                    print(f"⚠️  Track not found: {m}")
+                files = [f for f in files if f.exists()]
+        else:
+            files = list(input_path.glob("*.mp3")) + list(input_path.glob("*.wav"))
+            files += list(input_path.glob("*.flac")) + list(input_path.glob("*.m4a"))
+
         lexicon = load_lexicon(lexicon_path)
-        output_path = Path(output_dir) if output_dir else Path(input_dir)
+        output_path = Path(output_dir) if output_dir else (input_path.parent if input_path.suffix == '.txt' else input_path)
 
         # Ensure output directories exist
         output_path.mkdir(parents=True, exist_ok=True)
@@ -484,7 +499,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="AoR v7.0 SOVEREIGN - Audio analysis with AAVE detection and Reinman metrics"
     )
-    parser.add_argument("audio", help="Audio file or directory")
+    parser.add_argument("audio", help="Audio file, directory, or tracks.txt (one path per line)")
     parser.add_argument("--lexicon", help="Path to AAVE lexicon JSON")
     parser.add_argument("--batch", action="store_true", help="Process directory of files")
     parser.add_argument("--visualize", action="store_true", help="Generate visualizations (Roughness, TVT UMAP)")
@@ -496,5 +511,14 @@ if __name__ == "__main__":
 
     mp.set_start_method('spawn', force=True)
     orch = SovereignOrchestrator(model_size=args.model, force_cpu=args.cpu)
-    path = args.audio if args.batch else os.path.dirname(args.audio) if os.path.isfile(args.audio) else args.audio
+    # If input is a .txt file, pass directly (tracks list mode)
+    # Otherwise, use directory for batch or file's parent dir for single file
+    if args.audio.endswith('.txt'):
+        path = args.audio
+    elif args.batch:
+        path = args.audio
+    elif os.path.isfile(args.audio):
+        path = os.path.dirname(args.audio)
+    else:
+        path = args.audio
     orch.run(path, args.lexicon, visualize=args.visualize, output_dir=args.output)

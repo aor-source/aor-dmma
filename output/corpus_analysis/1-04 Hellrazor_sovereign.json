@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/2Pac/R U Still Down_ (Remember Me)/1-04 Hellrazor.m4a",
+    "duration": 255.0,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " Major, hell motherfuckin' yeah This one goes out to my nigga Mike Cooley Yeah, he's crazy Boom and thuggin', heartless and mean Muggin' at 16 on the scene, watch the beans buggin' Kickin' up dust with the older G's Soakin' up the game that we're told to meet I ain't never touched a gap that I couldn't shoot I learned not to trust a bitch from the prostitutes with tall lessons A young nigga askin' questions while the suckers was guessin' I was gangsta sexy Elementary wasn't meant for me, can't r...",
+  "cultural_metrics": {
+    "aave_density": 0.0063,
+    "unique_terms": 5,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "gotta",
+      "em",
+      "ain't",
+      "wanna",
+      "tryna"
+    ],
+    "source": "enhanced_v2"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9995,
+    "tvt_score": 623.33,
+    "spectral_rigidity": 0.2633,
+    "lyric_valence": -0.9995,
+    "audio_arousal": 1.0
+  }
+}

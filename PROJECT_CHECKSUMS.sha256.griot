@@ -1,0 +1,10 @@
+{
+  "protocol": "Griot Protocol v1.0",
+  "type": "blockchain_anchor",
+  "filename": "PROJECT_CHECKSUMS.sha256",
+  "filepath": "/Users/alignmentnerd/aor-dmma/PROJECT_CHECKSUMS.sha256",
+  "sha256": "61d41bb0ce0d4af47e5a1a6de84d1ee3a632a2358a1151bba81795a6df17a3e8",
+  "size_bytes": 62172,
+  "sealed_at": "2026-02-03T10:52:13.446745+00:00",
+  "anchors": []
+}

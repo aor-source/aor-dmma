@@ -32,6 +32,15 @@ output/ai_corpus_analysis_v3/visualizations/
 *_BACKUP.py
 *_TAMPERED*.py
 
+# Audio files (too large for git)
+*.wav
+*.mp3
+*.m4a
+*.mp4
+*.flac
+*.ogg
+*.aac
+
 # Security scripts (local only)
 .airtight_checksums.txt*
 .file_checksums.sha256

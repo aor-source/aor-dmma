@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/2Pac/All Eyez On Me/1-06 2 Of Amerikaz Most Wanted (feat. Snoop Dogg).m4a",
+    "duration": 246.53,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " A body there Ain't nothing but against the party Oh shit You didn't put two of america's most important in the same motherfucking place at the same motherfucking time Y'all niggas about to feel this break out the champagne glasses Everyone on the side ain't nobody No Showed up I keep my head on the gun cuz they got me on the run now i'm back in the courtroom waiting on the outcome Free two pockets all this on the niggas mind, but at the same time it seemed they trying to take mine So i'ma get s...",
+  "cultural_metrics": {
+    "aave_density": 0.0094,
+    "unique_terms": 5,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "em",
+      "y'all",
+      "ain't",
+      "dis",
+      "bout"
+    ],
+    "source": "enhanced_v2"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9968,
+    "tvt_score": 681.24,
+    "spectral_rigidity": 0.3042,
+    "lyric_valence": -0.9968,
+    "audio_arousal": 1.0
+  }
+}

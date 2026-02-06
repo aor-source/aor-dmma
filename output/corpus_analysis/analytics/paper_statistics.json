@@ -1,0 +1,53 @@
+{
+  "corpus_summary": {
+    "total_tracks": 17,
+    "total_duration_minutes": 78.0,
+    "avg_duration_seconds": 275.5
+  },
+  "aave_metrics": {
+    "mean_density": 0.76,
+    "std_density": 0.27,
+    "max_density": 1.27,
+    "min_density": 0.25,
+    "total_unique_terms": 89,
+    "total_grammar_patterns": 0
+  },
+  "reinman_metrics": {
+    "mean_sds": 1.4095,
+    "mean_tvt": 587.91,
+    "mean_spectral_rigidity": 0.2494,
+    "sds_tvt_correlation": 0.4517
+  },
+  "sentiment_analysis": {
+    "mean_lyric_valence": -0.4095,
+    "mean_audio_arousal": 1.0,
+    "valence_arousal_correlation": NaN
+  },
+  "high_impact_tracks": [
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Kurupt/Kuruption!/1-07 C-Walk (feat. Tray Dee & Slip Capone).m4a",
+      "aave_density": 0.0127,
+      "sds_score": 0.041
+    },
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Snoop Dogg/Doggystyle (30th Anniversary Edition)/02 G Funk Intro.m4a",
+      "aave_density": 0.0119,
+      "sds_score": 1.8228
+    },
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Immortal Technique/Revolutionary, Vol. 2/04 Harlem Streets.m4a",
+      "aave_density": 0.0107,
+      "sds_score": 1.9948
+    },
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Dr. Dre/2001/10 Forgot About Dre (feat. Eminem).m4a",
+      "aave_density": 0.0101,
+      "sds_score": 1.9752
+    },
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/2Pac/All Eyez On Me/1-06 2 Of Amerikaz Most Wanted (feat. Snoop Dogg).m4a",
+      "aave_density": 0.0094,
+      "sds_score": 1.9968
+    }
+  ]
+}

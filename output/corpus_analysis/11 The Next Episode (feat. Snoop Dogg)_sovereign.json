@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Dr. Dre/2001/11 The Next Episode (feat. Snoop Dogg).m4a",
+    "duration": 161.51,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " [\"D.R.E.\" by Snoop Dogg plays in the background.] Top dog, buy them all, nigga burning shit up. DP, GC, my nigga turn that shit up. CPT, LBC, yeah we hooking back up. And when they bang us in the club, baby, you got to get up. Bug niggas, drug dealers, yeah they giving it up. Low life, your life, boy we living it up. Taking chances while we dancing in the party for sure. Slip my hoe a 44 when she got in the back door. Bitches looking at me strange, but you know I don't care. Step up in this mot...",
+  "cultural_metrics": {
+    "aave_density": 0.0079,
+    "unique_terms": 3,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "em",
+      "gon'",
+      "gon"
+    ],
+    "source": "enhanced_v2"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9886,
+    "tvt_score": 473.44,
+    "spectral_rigidity": 0.2561,
+    "lyric_valence": -0.9886,
+    "audio_arousal": 1.0
+  }
+}

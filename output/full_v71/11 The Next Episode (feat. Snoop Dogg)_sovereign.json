@@ -1,0 +1,1800 @@
+{
+  "metadata": {
+    "filename": "11 The Next Episode (feat. Snoop Dogg).m4a",
+    "filepath": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/11 The Next Episode (feat. Snoop Dogg).m4a",
+    "file_hash": "55eb313d17b63e58d614dd2229e4f570330278558e1a67005b3e1eacdacc71d4",
+    "file_size_bytes": 5906312,
+    "duration_seconds": 161.51,
+    "sample_rate": 22050,
+    "samples": 3561222,
+    "channels": 1,
+    "analysis_timestamp": "2026-02-06T08:55:15.379515",
+    "aor_version": "7.1-MLX-FULL"
+  },
+  "spectral": {
+    "chroma_mean": [
+      0.4064,
+      0.4166,
+      0.4779,
+      0.5323,
+      0.4942,
+      0.5046,
+      0.4678,
+      0.406,
+      0.4069,
+      0.416,
+      0.5011,
+      0.4322
+    ],
+    "chroma_std": [
+      0.2877,
+      0.2763,
+      0.2989,
+      0.3294,
+      0.2934,
+      0.3165,
+      0.3032,
+      0.2827,
+      0.2993,
+      0.2729,
+      0.3104,
+      0.2958
+    ],
+    "mfcc_mean": [
+      -71.6597,
+      76.9423,
+      14.671,
+      29.9363,
+      11.3502,
+      8.5442,
+      -2.3216,
+      10.78,
+      -2.4258,
+      3.6964,
+      -1.6914,
+      2.0516,
+      -1.1337
+    ],
+    "mfcc_std": [
+      100.9158,
+      45.5532,
+      29.7892,
+      26.992,
+      21.8691,
+      15.252,
+      15.7256,
+      11.3923,
+      13.1796,
+      10.978,
+      10.6196,
+      9.331,
+      8.9976
+    ],
+    "mfcc_delta_mean": [
+      -0.0445,
+      -0.0122,
+      -0.001,
+      -0.0087,
+      -0.0,
+      -0.0021,
+      -0.0007,
+      -0.0007,
+      0.0008,
+      -0.0014,
+      0.0006,
+      -0.0,
+      -0.0008
+    ],
+    "spectral_centroid_mean": 2573.08,
+    "spectral_centroid_std": 1137.09,
+    "spectral_bandwidth_mean": 2665.78,
+    "spectral_bandwidth_std": 620.06,
+    "spectral_rolloff_mean": 5647.73,
+    "spectral_flatness_mean": 0.027232,
+    "spectral_contrast_mean": [
+      19.9802,
+      15.0661,
+      18.0732,
+      17.6268,
+      18.1953,
+      18.195,
+      48.045
+    ],
+    "zero_crossing_rate_mean": 0.120334,
+    "spectral_rigidity": 0.9576,
+    "eigenvalue_spread": 3.277
+  },
+  "rhythmic": {
+    "onset_strength_mean": 1.9048,
+    "onset_strength_std": 2.5953,
+    "tempo_bpm": 95.7,
+    "beat_count": 255,
+    "beat_interval_mean": 0.63,
+    "beat_interval_std": 0.0145,
+    "beat_regularity": 0.977,
+    "tempogram_ratio": 7.3429
+  },
+  "harmonic": {
+    "harmonic_ratio": 0.9728,
+    "tonnetz_mean": [
+      -0.057,
+      -0.0128,
+      0.046,
+      -0.0298,
+      0.0033,
+      0.0217
+    ],
+    "tonnetz_std": [
+      0.1397,
+      0.0687,
+      0.1399,
+      0.0553,
+      0.0357,
+      0.0546
+    ],
+    "pitch_mean": 1167.88,
+    "pitch_std": 988.39
+  },
+  "energy": {
+    "rms_mean": 0.26338,
+    "rms_std": 0.143626,
+    "rms_max": 0.68506,
+    "rms_min": 2.8e-05,
+    "dynamic_range_db": 87.85,
+    "loudness_variance": 0.02062848,
+    "energy_p10": 0.088547,
+    "energy_p50": 0.242255,
+    "energy_p90": 0.457773
+  },
+  "linguistic": {
+    "word_count": 399,
+    "unique_words": 208,
+    "vocabulary_richness": 0.5213,
+    "char_count": 1957,
+    "avg_word_length": 3.65,
+    "segment_count": 51,
+    "words_per_segment_mean": 7.43,
+    "words_per_segment_std": 3.09,
+    "syllable_count": 495,
+    "syllables_per_word": 1.24,
+    "adjacent_rhymes": 0,
+    "syllables_per_second": 3.06,
+    "words_per_second": 2.47
+  },
+  "aave": {
+    "lexicon_source": "external_json",
+    "categories": {
+      "contractions": {
+        "matched_count": 1,
+        "matched_terms": [
+          "gon'"
+        ],
+        "density": 0.002506
+      },
+      "pronouns_and_articles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "semantic_inversions": {
+        "matched_count": 2,
+        "matched_terms": [
+          "dope",
+          "sick"
+        ],
+        "density": 0.005013
+      },
+      "slang_positive": {
+        "matched_count": 6,
+        "matched_terms": [
+          "ride",
+          "rolling",
+          "real",
+          "dope",
+          "sick",
+          "king"
+        ],
+        "density": 0.015038
+      },
+      "slang_negative": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_intensifiers": {
+        "matched_count": 2,
+        "matched_terms": [
+          "straight",
+          "real"
+        ],
+        "density": 0.005013
+      },
+      "slang_money_terms": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_drugs_alcohol": {
+        "matched_count": 1,
+        "matched_terms": [
+          "dope"
+        ],
+        "density": 0.002506
+      },
+      "slang_violence_conflict": {
+        "matched_count": 2,
+        "matched_terms": [
+          "smoke",
+          "got"
+        ],
+        "density": 0.005013
+      },
+      "slang_locations": {
+        "matched_count": 2,
+        "matched_terms": [
+          "trap",
+          "home"
+        ],
+        "density": 0.005013
+      },
+      "slang_people": {
+        "matched_count": 7,
+        "matched_terms": [
+          "dog",
+          "hoe",
+          "nigga",
+          "niggas",
+          "baby",
+          "bitch",
+          "gang"
+        ],
+        "density": 0.017544
+      },
+      "slang_actions": {
+        "matched_count": 3,
+        "matched_terms": [
+          "rolling",
+          "dip",
+          "mobbing"
+        ],
+        "density": 0.007519
+      },
+      "slang_vehicles": {
+        "matched_count": 3,
+        "matched_terms": [
+          "ride",
+          "top",
+          "wheels"
+        ],
+        "density": 0.007519
+      },
+      "slang_clothing_jewelry": {
+        "matched_count": 1,
+        "matched_terms": [
+          "rock"
+        ],
+        "density": 0.002506
+      },
+      "slang_music_performance": {
+        "matched_count": 2,
+        "matched_terms": [
+          "hook",
+          "rap"
+        ],
+        "density": 0.005013
+      },
+      "slang_general": {
+        "matched_count": 9,
+        "matched_terms": [
+          "take",
+          "go",
+          "coming",
+          "come",
+          "get",
+          "dip",
+          "got",
+          "taking",
+          "bang"
+        ],
+        "density": 0.022556
+      },
+      "classic_80s_90s": {
+        "matched_count": 1,
+        "matched_terms": [
+          "dope"
+        ],
+        "density": 0.002506
+      },
+      "classic_golden_era": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_modern": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_south": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_east_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_west_coast": {
+        "matched_count": 1,
+        "matched_terms": [
+          "sick"
+        ],
+        "density": 0.002506
+      },
+      "regional_midwest": {
+        "matched_count": 1,
+        "matched_terms": [
+          "ass"
+        ],
+        "density": 0.002506
+      },
+      "regional_atlanta": {
+        "matched_count": 1,
+        "matched_terms": [
+          "trap"
+        ],
+        "density": 0.002506
+      },
+      "regional_general": {
+        "matched_count": 2,
+        "matched_terms": [
+          "dog",
+          "real"
+        ],
+        "density": 0.005013
+      },
+      "context_positive_context": {
+        "matched_count": 2,
+        "matched_terms": [
+          "love",
+          "king"
+        ],
+        "density": 0.005013
+      },
+      "context_negative_context": {
+        "matched_count": 1,
+        "matched_terms": [
+          "smoke"
+        ],
+        "density": 0.002506
+      },
+      "context_affirmations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_exclamations": {
+        "matched_count": 1,
+        "matched_terms": [
+          "hey"
+        ],
+        "density": 0.002506
+      },
+      "phonological": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "whisper_normalized": {
+        "matched_count": 6,
+        "matched_terms": [
+          "dat",
+          "dis",
+          "dey",
+          "dem",
+          "fo",
+          "yo"
+        ],
+        "density": 0.015038,
+        "note": "AAVE forms likely spoken but normalized by Whisper ASR"
+      }
+    },
+    "grammar": {
+      "patterns_found": 0,
+      "weighted_score": 0.0,
+      "matches": []
+    },
+    "totals": {
+      "lexical_matches": 57,
+      "grammar_matches": 0,
+      "combined_matches": 57,
+      "aave_density": 0.142857,
+      "unique_terms": 42,
+      "aave_richness": 0.7368
+    },
+    "all_matched_terms": [
+      "hook",
+      "ride",
+      "dem",
+      "dog",
+      "yo",
+      "hoe",
+      "take",
+      "trap",
+      "go",
+      "gon'",
+      "coming",
+      "come",
+      "dat",
+      "nigga",
+      "love",
+      "dis",
+      "fo",
+      "home",
+      "get",
+      "rolling",
+      "straight",
+      "top",
+      "smoke",
+      "hey",
+      "wheels",
+      "dip",
+      "real",
+      "got",
+      "rock",
+      "niggas",
+      "dey",
+      "taking",
+      "bang",
+      "mobbing",
+      "ass",
+      "dope",
+      "baby",
+      "bitch",
+      "rap",
+      "sick",
+      "king",
+      "gang"
+    ]
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9886,
+    "tvt_score": 473.44,
+    "spectral_rigidity": 0.2561,
+    "lyric_valence": -0.9886,
+    "audio_arousal": 1.0
+  },
+  "god_equation": {
+    "sci_with_aave": 3.9959,
+    "sci_without_aave": 2.3052,
+    "variance_percent": 73.34,
+    "intelligence_score": 5.9087,
+    "mir_score_legacy_v7": 2.9472,
+    "components": {
+      "R_spectral_rigidity": 0.9576,
+      "T_topological_complexity": 4.7344,
+      "C_aave_density": 10.0,
+      "S_semantic_compression": 5.825,
+      "V_volatility_composite": 8.6279,
+      "D_decay_penalty": 4.787,
+      "H_harmonic_ratio": 9.728
+    },
+    "weighted_contributions": {
+      "rigidity": 0.2394,
+      "topology": 0.7102,
+      "cultural": 2.5,
+      "semantic": 1.165,
+      "volatility": 1.2942
+    },
+    "provenance_tag": "AOR-SCI-55eb313d-0399"
+  },
+  "transcript": {
+    "text": " [\"D.R.E.\" by Snoop Dogg plays in the background.] Top dog, buy them all, nigga burning shit up. DP, GC, my nigga turn that shit up. CPT, LBC, yeah we hooking back up. And when they bang us in the club, baby, you got to get up. Bug niggas, drug dealers, yeah they giving it up. Low life, your life, boy we living it up. Taking chances while we dancing in the party for sure. Slip my hoe a 44 when she got in the back door. Bitches looking at me strange, but you know I don't care. Step up in this mot...",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 10.0,
+        "text": " [\"D.R.E.\" by Snoop Dogg plays in the background.]",
+        "tokens": [
+          50364,
+          29799,
+          35,
+          13,
+          49,
+          13,
+          36,
+          889,
+          538,
+          42902,
+          404,
+          13472,
+          70,
+          5749,
+          294,
+          264,
+          3678,
+          8147,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.8159886360168457,
+        "compression_ratio": 0.8596491228070176,
+        "no_speech_prob": 0.23670242726802826
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 32.0,
+        "text": " Top dog, buy them all, nigga burning shit up.",
+        "tokens": [
+          50364,
+          8840,
+          3000,
+          11,
+          2256,
+          552,
+          439,
+          11,
+          41626,
+          9488,
+          4611,
+          493,
+          13,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1683783672265047,
+        "compression_ratio": 1.7192429022082019,
+        "no_speech_prob": 0.8582683205604553
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 32.0,
+        "end": 35.0,
+        "text": " DP, GC, my nigga turn that shit up.",
+        "tokens": [
+          50464,
+          42796,
+          11,
+          29435,
+          11,
+          452,
+          41626,
+          1261,
+          300,
+          4611,
+          493,
+          13,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1683783672265047,
+        "compression_ratio": 1.7192429022082019,
+        "no_speech_prob": 0.8582683205604553
+      },
+      {
+        "id": 3,
+        "seek": 3000,
+        "start": 35.0,
+        "end": 37.0,
+        "text": " CPT, LBC, yeah we hooking back up.",
+        "tokens": [
+          50614,
+          22431,
+          51,
+          11,
+          441,
+          7869,
+          11,
+          1338,
+          321,
+          1106,
+          5953,
+          646,
+          493,
+          13,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1683783672265047,
+        "compression_ratio": 1.7192429022082019,
+        "no_speech_prob": 0.8582683205604553
+      },
+      {
+        "id": 4,
+        "seek": 3000,
+        "start": 37.0,
+        "end": 40.0,
+        "text": " And when they bang us in the club, baby, you got to get up.",
+        "tokens": [
+          50714,
+          400,
+          562,
+          436,
+          8550,
+          505,
+          294,
+          264,
+          6482,
+          11,
+          3186,
+          11,
+          291,
+          658,
+          281,
+          483,
+          493,
+          13,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1683783672265047,
+        "compression_ratio": 1.7192429022082019,
+        "no_speech_prob": 0.8582683205604553
+      },
+      {
+        "id": 5,
+        "seek": 3000,
+        "start": 40.0,
+        "end": 42.0,
+        "text": " Bug niggas, drug dealers, yeah they giving it up.",
+        "tokens": [
+          50864,
+          23821,
+          297,
+          6249,
+          296,
+          11,
+          4110,
+          25955,
+          11,
+          1338,
+          436,
+          2902,
+          309,
+          493,
+          13,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1683783672265047,
+        "compression_ratio": 1.7192429022082019,
+        "no_speech_prob": 0.8582683205604553
+      },
+      {
+        "id": 6,
+        "seek": 3000,
+        "start": 42.0,
+        "end": 45.0,
+        "text": " Low life, your life, boy we living it up.",
+        "tokens": [
+          50964,
+          17078,
+          993,
+          11,
+          428,
+          993,
+          11,
+          3237,
+          321,
+          2647,
+          309,
+          493,
+          13,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1683783672265047,
+        "compression_ratio": 1.7192429022082019,
+        "no_speech_prob": 0.8582683205604553
+      },
+      {
+        "id": 7,
+        "seek": 3000,
+        "start": 45.0,
+        "end": 47.0,
+        "text": " Taking chances while we dancing in the party for sure.",
+        "tokens": [
+          51114,
+          17837,
+          10486,
+          1339,
+          321,
+          8898,
+          294,
+          264,
+          3595,
+          337,
+          988,
+          13,
+          51214
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1683783672265047,
+        "compression_ratio": 1.7192429022082019,
+        "no_speech_prob": 0.8582683205604553
+      },
+      {
+        "id": 8,
+        "seek": 3000,
+        "start": 47.0,
+        "end": 50.0,
+        "text": " Slip my hoe a 44 when she got in the back door.",
+        "tokens": [
+          51214,
+          6187,
+          647,
+          452,
+          19709,
+          257,
+          16408,
+          562,
+          750,
+          658,
+          294,
+          264,
+          646,
+          2853,
+          13,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1683783672265047,
+        "compression_ratio": 1.7192429022082019,
+        "no_speech_prob": 0.8582683205604553
+      },
+      {
+        "id": 9,
+        "seek": 3000,
+        "start": 50.0,
+        "end": 52.0,
+        "text": " Bitches looking at me strange, but you know I don't care.",
+        "tokens": [
+          51364,
+          40678,
+          279,
+          1237,
+          412,
+          385,
+          5861,
+          11,
+          457,
+          291,
+          458,
+          286,
+          500,
+          380,
+          1127,
+          13,
+          51464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1683783672265047,
+        "compression_ratio": 1.7192429022082019,
+        "no_speech_prob": 0.8582683205604553
+      },
+      {
+        "id": 10,
+        "seek": 3000,
+        "start": 52.0,
+        "end": 55.0,
+        "text": " Step up in this motherfucker just to swing in my hair.",
+        "tokens": [
+          51464,
+          5470,
+          493,
+          294,
+          341,
+          47069,
+          445,
+          281,
+          11173,
+          294,
+          452,
+          2578,
+          13,
+          51614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1683783672265047,
+        "compression_ratio": 1.7192429022082019,
+        "no_speech_prob": 0.8582683205604553
+      },
+      {
+        "id": 11,
+        "seek": 3000,
+        "start": 55.0,
+        "end": 57.0,
+        "text": " Bitch quit talking, quick walk if you're down with the sick.",
+        "tokens": [
+          51614,
+          40678,
+          10366,
+          1417,
+          11,
+          1702,
+          1792,
+          498,
+          291,
+          434,
+          760,
+          365,
+          264,
+          4998,
+          13,
+          51714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1683783672265047,
+        "compression_ratio": 1.7192429022082019,
+        "no_speech_prob": 0.8582683205604553
+      },
+      {
+        "id": 12,
+        "seek": 5700,
+        "start": 57.0,
+        "end": 60.0,
+        "text": " Take a bullet with some dick and take this dope on this jet.",
+        "tokens": [
+          50364,
+          3664,
+          257,
+          11632,
+          365,
+          512,
+          18659,
+          293,
+          747,
+          341,
+          23383,
+          322,
+          341,
+          14452,
+          13,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12315182213310723,
+        "compression_ratio": 1.5401785714285714,
+        "no_speech_prob": 0.3269669711589813
+      },
+      {
+        "id": 13,
+        "seek": 5700,
+        "start": 60.0,
+        "end": 62.0,
+        "text": " Out of town, put it down for the father of rap.",
+        "tokens": [
+          50514,
+          5925,
+          295,
+          3954,
+          11,
+          829,
+          309,
+          760,
+          337,
+          264,
+          3086,
+          295,
+          5099,
+          13,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12315182213310723,
+        "compression_ratio": 1.5401785714285714,
+        "no_speech_prob": 0.3269669711589813
+      },
+      {
+        "id": 14,
+        "seek": 5700,
+        "start": 62.0,
+        "end": 65.0,
+        "text": " And if your ass get crack, bitch shut your trap.",
+        "tokens": [
+          50614,
+          400,
+          498,
+          428,
+          1256,
+          483,
+          6226,
+          11,
+          11960,
+          5309,
+          428,
+          11487,
+          13,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12315182213310723,
+        "compression_ratio": 1.5401785714285714,
+        "no_speech_prob": 0.3269669711589813
+      },
+      {
+        "id": 15,
+        "seek": 5700,
+        "start": 65.0,
+        "end": 67.0,
+        "text": " Come back, get back, that's the part of success.",
+        "tokens": [
+          50764,
+          2492,
+          646,
+          11,
+          483,
+          646,
+          11,
+          300,
+          311,
+          264,
+          644,
+          295,
+          2245,
+          13,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12315182213310723,
+        "compression_ratio": 1.5401785714285714,
+        "no_speech_prob": 0.3269669711589813
+      },
+      {
+        "id": 16,
+        "seek": 5700,
+        "start": 67.0,
+        "end": 70.0,
+        "text": " If you believe in the ass, you'll be relieving the stress.",
+        "tokens": [
+          50864,
+          759,
+          291,
+          1697,
+          294,
+          264,
+          1256,
+          11,
+          291,
+          603,
+          312,
+          21680,
+          798,
+          264,
+          4244,
+          13,
+          51014
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12315182213310723,
+        "compression_ratio": 1.5401785714285714,
+        "no_speech_prob": 0.3269669711589813
+      },
+      {
+        "id": 17,
+        "seek": 5700,
+        "start": 70.0,
+        "end": 81.0,
+        "text": " [\"D.R.E.\" by Snoop Dogg plays in the background.]",
+        "tokens": [
+          51014,
+          29799,
+          35,
+          13,
+          49,
+          13,
+          36,
+          889,
+          538,
+          42902,
+          404,
+          13472,
+          70,
+          5749,
+          294,
+          264,
+          3678,
+          8147,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12315182213310723,
+        "compression_ratio": 1.5401785714285714,
+        "no_speech_prob": 0.3269669711589813
+      },
+      {
+        "id": 18,
+        "seek": 5700,
+        "start": 81.0,
+        "end": 84.0,
+        "text": " It's the motherfucking D.R.E.",
+        "tokens": [
+          51564,
+          467,
+          311,
+          264,
+          29537,
+          33260,
+          413,
+          13,
+          49,
+          13,
+          36,
+          13,
+          51714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12315182213310723,
+        "compression_ratio": 1.5401785714285714,
+        "no_speech_prob": 0.3269669711589813
+      },
+      {
+        "id": 19,
+        "seek": 8400,
+        "start": 84.0,
+        "end": 86.0,
+        "text": " Dr. Dre motherfucker.",
+        "tokens": [
+          50364,
+          2491,
+          13,
+          31635,
+          47069,
+          13,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2410221511511494,
+        "compression_ratio": 1.525925925925926,
+        "no_speech_prob": 0.6273930668830872
+      },
+      {
+        "id": 20,
+        "seek": 8400,
+        "start": 86.0,
+        "end": 89.0,
+        "text": " You know I'm mobbing with the D-O-Double G.",
+        "tokens": [
+          50464,
+          509,
+          458,
+          286,
+          478,
+          4298,
+          4324,
+          365,
+          264,
+          413,
+          12,
+          46,
+          12,
+          35,
+          33147,
+          460,
+          13,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2410221511511494,
+        "compression_ratio": 1.525925925925926,
+        "no_speech_prob": 0.6273930668830872
+      },
+      {
+        "id": 21,
+        "seek": 8400,
+        "start": 89.0,
+        "end": 92.0,
+        "text": " Straight off the fucking streets of CPT.",
+        "tokens": [
+          50614,
+          26908,
+          766,
+          264,
+          5546,
+          8481,
+          295,
+          22431,
+          51,
+          13,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2410221511511494,
+        "compression_ratio": 1.525925925925926,
+        "no_speech_prob": 0.6273930668830872
+      },
+      {
+        "id": 22,
+        "seek": 8400,
+        "start": 92.0,
+        "end": 94.0,
+        "text": " King of the beach, you ride to him in your fleet.",
+        "tokens": [
+          50764,
+          3819,
+          295,
+          264,
+          7534,
+          11,
+          291,
+          5077,
+          281,
+          796,
+          294,
+          428,
+          19396,
+          13,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2410221511511494,
+        "compression_ratio": 1.525925925925926,
+        "no_speech_prob": 0.6273930668830872
+      },
+      {
+        "id": 23,
+        "seek": 8400,
+        "start": 94.0,
+        "end": 97.0,
+        "text": " Hook the veal rolling on tubs.",
+        "tokens": [
+          50864,
+          33132,
+          264,
+          1241,
+          304,
+          9439,
+          322,
+          256,
+          5432,
+          13,
+          51014
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2410221511511494,
+        "compression_ratio": 1.525925925925926,
+        "no_speech_prob": 0.6273930668830872
+      },
+      {
+        "id": 24,
+        "seek": 8400,
+        "start": 97.0,
+        "end": 99.0,
+        "text": " How you feel? Whoopty whoop, nigga what?",
+        "tokens": [
+          51014,
+          1012,
+          291,
+          841,
+          30,
+          2102,
+          404,
+          874,
+          567,
+          404,
+          11,
+          41626,
+          437,
+          30,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2410221511511494,
+        "compression_ratio": 1.525925925925926,
+        "no_speech_prob": 0.6273930668830872
+      },
+      {
+        "id": 25,
+        "seek": 8400,
+        "start": 99.0,
+        "end": 102.0,
+        "text": " Drain Snoop, chronic dial in the lock.",
+        "tokens": [
+          51114,
+          413,
+          7146,
+          42902,
+          404,
+          11,
+          14493,
+          5502,
+          294,
+          264,
+          4017,
+          13,
+          51264
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2410221511511494,
+        "compression_ratio": 1.525925925925926,
+        "no_speech_prob": 0.6273930668830872
+      },
+      {
+        "id": 26,
+        "seek": 8400,
+        "start": 102.0,
+        "end": 104.0,
+        "text": " With Doc in the back sipping on Yak.",
+        "tokens": [
+          51264,
+          2022,
+          16024,
+          294,
+          264,
+          646,
+          1511,
+          3759,
+          322,
+          31484,
+          13,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2410221511511494,
+        "compression_ratio": 1.525925925925926,
+        "no_speech_prob": 0.6273930668830872
+      },
+      {
+        "id": 27,
+        "seek": 8400,
+        "start": 104.0,
+        "end": 107.0,
+        "text": " Clip in the strap, dip it through hoods.",
+        "tokens": [
+          51364,
+          2033,
+          647,
+          294,
+          264,
+          18359,
+          11,
+          10460,
+          309,
+          807,
+          13376,
+          82,
+          13,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2410221511511494,
+        "compression_ratio": 1.525925925925926,
+        "no_speech_prob": 0.6273930668830872
+      },
+      {
+        "id": 28,
+        "seek": 8400,
+        "start": 107.0,
+        "end": 109.0,
+        "text": " Compton, Long Beach, Inglewood.",
+        "tokens": [
+          51514,
+          2432,
+          21987,
+          11,
+          8282,
+          14866,
+          11,
+          682,
+          22631,
+          6092,
+          13,
+          51614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2410221511511494,
+        "compression_ratio": 1.525925925925926,
+        "no_speech_prob": 0.6273930668830872
+      },
+      {
+        "id": 29,
+        "seek": 8400,
+        "start": 109.0,
+        "end": 112.0,
+        "text": " South Central out to the websites.",
+        "tokens": [
+          51614,
+          4242,
+          9701,
+          484,
+          281,
+          264,
+          12891,
+          13,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2410221511511494,
+        "compression_ratio": 1.525925925925926,
+        "no_speech_prob": 0.6273930668830872
+      },
+      {
+        "id": 30,
+        "seek": 11200,
+        "start": 112.0,
+        "end": 114.0,
+        "text": " This California love, this California bug.",
+        "tokens": [
+          50364,
+          639,
+          5384,
+          959,
+          11,
+          341,
+          5384,
+          7426,
+          13,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20772309864268584,
+        "compression_ratio": 1.507462686567164,
+        "no_speech_prob": 0.273917019367218
+      },
+      {
+        "id": 31,
+        "seek": 11200,
+        "start": 114.0,
+        "end": 116.0,
+        "text": " Got a nigga gang a pug.",
+        "tokens": [
+          50464,
+          5803,
+          257,
+          41626,
+          10145,
+          257,
+          47900,
+          13,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20772309864268584,
+        "compression_ratio": 1.507462686567164,
+        "no_speech_prob": 0.273917019367218
+      },
+      {
+        "id": 32,
+        "seek": 11200,
+        "start": 116.0,
+        "end": 118.0,
+        "text": " I'm on one, I might bell up in the Century Club.",
+        "tokens": [
+          50564,
+          286,
+          478,
+          322,
+          472,
+          11,
+          286,
+          1062,
+          4549,
+          493,
+          294,
+          264,
+          28555,
+          11288,
+          13,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20772309864268584,
+        "compression_ratio": 1.507462686567164,
+        "no_speech_prob": 0.273917019367218
+      },
+      {
+        "id": 33,
+        "seek": 11200,
+        "start": 118.0,
+        "end": 121.0,
+        "text": " With my jeans on and my team's room.",
+        "tokens": [
+          50664,
+          2022,
+          452,
+          18880,
+          322,
+          293,
+          452,
+          1469,
+          311,
+          1808,
+          13,
+          50814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20772309864268584,
+        "compression_ratio": 1.507462686567164,
+        "no_speech_prob": 0.273917019367218
+      },
+      {
+        "id": 34,
+        "seek": 11200,
+        "start": 121.0,
+        "end": 123.0,
+        "text": " Get my drink on and my smoke on.",
+        "tokens": [
+          50814,
+          3240,
+          452,
+          2822,
+          322,
+          293,
+          452,
+          8439,
+          322,
+          13,
+          50914
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20772309864268584,
+        "compression_ratio": 1.507462686567164,
+        "no_speech_prob": 0.273917019367218
+      },
+      {
+        "id": 35,
+        "seek": 11200,
+        "start": 123.0,
+        "end": 126.0,
+        "text": " Then go home with something to poke on.",
+        "tokens": [
+          50914,
+          1396,
+          352,
+          1280,
+          365,
+          746,
+          281,
+          19712,
+          322,
+          13,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20772309864268584,
+        "compression_ratio": 1.507462686567164,
+        "no_speech_prob": 0.273917019367218
+      },
+      {
+        "id": 36,
+        "seek": 11200,
+        "start": 126.0,
+        "end": 128.0,
+        "text": " Locus on for the two triple O.",
+        "tokens": [
+          51064,
+          12859,
+          301,
+          322,
+          337,
+          264,
+          732,
+          15508,
+          422,
+          13,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20772309864268584,
+        "compression_ratio": 1.507462686567164,
+        "no_speech_prob": 0.273917019367218
+      },
+      {
+        "id": 37,
+        "seek": 11200,
+        "start": 128.0,
+        "end": 130.0,
+        "text": " Coming real, it's the next episode.",
+        "tokens": [
+          51164,
+          12473,
+          957,
+          11,
+          309,
+          311,
+          264,
+          958,
+          3500,
+          13,
+          51264
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20772309864268584,
+        "compression_ratio": 1.507462686567164,
+        "no_speech_prob": 0.273917019367218
+      },
+      {
+        "id": 38,
+        "seek": 11200,
+        "start": 130.0,
+        "end": 134.0,
+        "text": " [\"D.R.E.\" by Snoop Dogg plays in the background.]",
+        "tokens": [
+          51264,
+          29799,
+          35,
+          13,
+          49,
+          13,
+          36,
+          889,
+          538,
+          42902,
+          404,
+          13472,
+          70,
+          5749,
+          294,
+          264,
+          3678,
+          8147,
+          51464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20772309864268584,
+        "compression_ratio": 1.507462686567164,
+        "no_speech_prob": 0.273917019367218
+      },
+      {
+        "id": 39,
+        "seek": 11200,
+        "start": 134.0,
+        "end": 135.0,
+        "text": " Hold up.",
+        "tokens": [
+          51464,
+          6962,
+          493,
+          13,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20772309864268584,
+        "compression_ratio": 1.507462686567164,
+        "no_speech_prob": 0.273917019367218
+      },
+      {
+        "id": 40,
+        "seek": 11200,
+        "start": 135.0,
+        "end": 137.0,
+        "text": " Boom, hey.",
+        "tokens": [
+          51514,
+          15523,
+          11,
+          4177,
+          13,
+          51614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20772309864268584,
+        "compression_ratio": 1.507462686567164,
+        "no_speech_prob": 0.273917019367218
+      },
+      {
+        "id": 41,
+        "seek": 11200,
+        "start": 137.0,
+        "end": 139.0,
+        "text": " All my niggas should be thinking we soft.",
+        "tokens": [
+          51614,
+          1057,
+          452,
+          297,
+          6249,
+          296,
+          820,
+          312,
+          1953,
+          321,
+          2787,
+          13,
+          51714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20772309864268584,
+        "compression_ratio": 1.507462686567164,
+        "no_speech_prob": 0.273917019367218
+      },
+      {
+        "id": 42,
+        "seek": 13900,
+        "start": 139.0,
+        "end": 142.0,
+        "text": " We gon' play.",
+        "tokens": [
+          50364,
+          492,
+          26307,
+          6,
+          862,
+          13,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12661762760110098,
+        "compression_ratio": 1.3154362416107384,
+        "no_speech_prob": 0.2321377545595169
+      },
+      {
+        "id": 43,
+        "seek": 13900,
+        "start": 142.0,
+        "end": 144.0,
+        "text": " We gon' rock it till the wheels fall off.",
+        "tokens": [
+          50514,
+          492,
+          26307,
+          6,
+          3727,
+          309,
+          4288,
+          264,
+          10046,
+          2100,
+          766,
+          13,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12661762760110098,
+        "compression_ratio": 1.3154362416107384,
+        "no_speech_prob": 0.2321377545595169
+      },
+      {
+        "id": 44,
+        "seek": 13900,
+        "start": 144.0,
+        "end": 145.0,
+        "text": " Hold up.",
+        "tokens": [
+          50614,
+          6962,
+          493,
+          13,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12661762760110098,
+        "compression_ratio": 1.3154362416107384,
+        "no_speech_prob": 0.2321377545595169
+      },
+      {
+        "id": 45,
+        "seek": 13900,
+        "start": 145.0,
+        "end": 147.0,
+        "text": " Boom, hey.",
+        "tokens": [
+          50664,
+          15523,
+          11,
+          4177,
+          13,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12661762760110098,
+        "compression_ratio": 1.3154362416107384,
+        "no_speech_prob": 0.2321377545595169
+      },
+      {
+        "id": 46,
+        "seek": 13900,
+        "start": 147.0,
+        "end": 149.0,
+        "text": " All my niggas should be acting too bold.",
+        "tokens": [
+          50764,
+          1057,
+          452,
+          297,
+          6249,
+          296,
+          820,
+          312,
+          6577,
+          886,
+          11928,
+          13,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12661762760110098,
+        "compression_ratio": 1.3154362416107384,
+        "no_speech_prob": 0.2321377545595169
+      },
+      {
+        "id": 47,
+        "seek": 13900,
+        "start": 149.0,
+        "end": 152.0,
+        "text": " Take a seat.",
+        "tokens": [
+          50864,
+          3664,
+          257,
+          6121,
+          13,
+          51014
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12661762760110098,
+        "compression_ratio": 1.3154362416107384,
+        "no_speech_prob": 0.2321377545595169
+      },
+      {
+        "id": 48,
+        "seek": 13900,
+        "start": 152.0,
+        "end": 154.0,
+        "text": " Hope you're ready for the next episode.",
+        "tokens": [
+          51014,
+          6483,
+          291,
+          434,
+          1919,
+          337,
+          264,
+          958,
+          3500,
+          13,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12661762760110098,
+        "compression_ratio": 1.3154362416107384,
+        "no_speech_prob": 0.2321377545595169
+      },
+      {
+        "id": 49,
+        "seek": 13900,
+        "start": 154.0,
+        "end": 156.0,
+        "text": " Hey.",
+        "tokens": [
+          51114,
+          1911,
+          13,
+          51214
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12661762760110098,
+        "compression_ratio": 1.3154362416107384,
+        "no_speech_prob": 0.2321377545595169
+      },
+      {
+        "id": 50,
+        "seek": 13900,
+        "start": 159.0,
+        "end": 161.0,
+        "text": " Smoke weed every day.",
+        "tokens": [
+          51364,
+          36191,
+          20852,
+          633,
+          786,
+          13,
+          51464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12661762760110098,
+        "compression_ratio": 1.3154362416107384,
+        "no_speech_prob": 0.2321377545595169
+      }
+    ]
+  },
+  "processing_time_seconds": 24.55,
+  "total_features": 24001
+}

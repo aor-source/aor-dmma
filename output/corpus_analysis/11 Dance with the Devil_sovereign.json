@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Immortal Technique/Revolutionary, Vol. 1 (Bonus Edition)/11 Dance with the Devil.m4a",
+    "duration": 579.29,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " I once knew a nigga whose real name was William His primary concern was making a million He used to be an illest hustler that the world ever seen He used to fuck movie stars and sniff coke in his dreams A corrupted young mind at the age of 13 Niggas never had a father and his mom was a fiend She put the pipe down but for every year she was sober Her son's heart simultaneously grew colder He started hanging out selling bags into projects Checking the young chicks looking for hit and run prospect...",
+  "cultural_metrics": {
+    "aave_density": 0.0053,
+    "unique_terms": 9,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "gonna",
+      "em",
+      "y'all",
+      "ima",
+      "ain't",
+      "gon",
+      "dis",
+      "bout",
+      "dem"
+    ],
+    "source": "enhanced_v2"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9999,
+    "tvt_score": 577.96,
+    "spectral_rigidity": 0.183,
+    "lyric_valence": -0.9999,
+    "audio_arousal": 1.0
+  }
+}

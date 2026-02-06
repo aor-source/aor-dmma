@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIF Flow Visualizer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #e8e8e8;
+            padding: 20px;
+        }
+        
+        .container { max-width: 1400px; margin: 0 auto; }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf, #ff006e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle { text-align: center; color: #888; margin-bottom: 30px; }
+        
+        .upload-zone {
+            border: 3px dashed #555;
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: rgba(0,0,0,0.2);
+        }
+        
+        .upload-zone:hover, .upload-zone.dragover {
+            border-color: #00d4ff;
+            background: rgba(0, 212, 255, 0.1);
+        }
+        
+        .upload-icon { font-size: 4em; margin-bottom: 20px; }
+        
+        #error-msg {
+            background: rgba(255, 0, 0, 0.2);
+            border: 1px solid #f00;
+            color: #ff6666;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: none;
+        }
+        
+        #success-msg {
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid #0f0;
+            color: #66ff66;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: none;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .stat-value {
+            font-size: 2.2em;
+            font-weight: bold;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .stat-label { color: #888; font-size: 0.9em; margin-top: 8px; }
+        
+        .section {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 4px solid #00d4ff;
+        }
+        
+        .section-desc { color: #666; margin-bottom: 15px; font-size: 0.9em; }
+        
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        
+        .canvas-container {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        #flow-container { height: 250px; }
+        #rhyme-container { height: 400px; }
+        #surface-container { height: 450px; }
+        
+        .groove-meter {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 12px 0;
+        }
+        
+        .groove-label { min-width: 120px; text-align: right; color: #888; }
+        
+        .groove-bar {
+            flex: 1;
+            height: 28px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+        
+        .groove-fill { height: 100%; border-radius: 14px; transition: width 0.5s ease; }
+        
+        .groove-value { min-width: 70px; font-weight: bold; }
+        
+        #lyrics-container {
+            max-height: 350px;
+            overflow-y: auto;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 20px;
+            line-height: 2.2;
+        }
+        
+        .word {
+            display: inline-block;
+            padding: 3px 8px;
+            margin: 3px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            font-size: 1.05em;
+        }
+        
+        .word:hover { transform: scale(1.15); }
+        .word.rhyme { border-bottom: 2px solid #ffd700; }
+        
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 15px 0;
+            justify-content: center;
+        }
+        
+        .legend-item { display: flex; align-items: center; gap: 8px; color: #888; }
+        .legend-color { width: 20px; height: 20px; border-radius: 5px; }
+        
+        .tooltip {
+            position: fixed;
+            background: rgba(0, 0, 0, 0.95);
+            border: 1px solid #00d4ff;
+            border-radius: 10px;
+            padding: 15px;
+            pointer-events: none;
+            z-index: 1000;
+            max-width: 280px;
+            display: none;
+            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+        }
+        
+        .tooltip-title { font-weight: bold; color: #00d4ff; margin-bottom: 10px; font-size: 1.1em; }
+        .tooltip div { margin: 4px 0; }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .btn:hover { background: rgba(0, 212, 255, 0.2); border-color: #00d4ff; }
+        .btn.active { background: linear-gradient(90deg, #00d4ff, #7b2cbf); }
+        
+        .hidden { display: none !important; }
+        
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 5px; }
+        ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎤 MAIF Flow Visualizer</h1>
+        <p class="subtitle">Visualize hip-hop flow data from MAIF JSON files</p>
+        
+        <div class="upload-zone" id="upload-zone">
+            <div class="upload-icon">📁</div>
+            <p style="font-size: 1.3em; margin-bottom: 10px;">Drop MAIF JSON file here</p>
+            <p style="color: #666;">or click to select file</p>
+            <input type="file" id="file-input" accept=".json" style="display:none;">
+        </div>
+        
+        <div id="error-msg"></div>
+        <div id="success-msg"></div>
+        
+        <div id="content" class="hidden">
+            <div class="stats-grid" id="stats-grid"></div>
+            
+            <div class="section">
+                <div class="section-title">🎯 Groove & Pocket</div>
+                <div class="section-desc">How the flow sits in relation to the beat</div>
+                <div id="groove-meters"></div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">📈 Flow Dynamics</div>
+                <div class="section-desc">Syllables per second over time — peaks = rapid fire, valleys = pauses</div>
+                <div class="canvas-container" id="flow-container">
+                    <canvas id="flow-canvas"></canvas>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">🔗 Rhyme Network</div>
+                <div class="section-desc">Words connected by rhyme — denser web = more complex scheme</div>
+                <div class="canvas-container" id="rhyme-container">
+                    <canvas id="rhyme-canvas"></canvas>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">🏔️ Acoustic Feature Landscape</div>
+                <div class="section-desc">19 dimensions compressed to 3D terrain — mountains show feature correlations</div>
+                <div class="controls">
+                    <button class="btn active" data-view="perspective">Perspective</button>
+                    <button class="btn" data-view="top">Top Down</button>
+                    <button class="btn" data-view="side">Side View</button>
+                    <button class="btn" id="rotate-btn">⟳ Auto Rotate</button>
+                </div>
+                <div class="canvas-container" id="surface-container">
+                    <canvas id="surface-canvas"></canvas>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">📝 Lyrics Flow</div>
+                <div class="section-desc">Words colored by delivery speed — hover for details</div>
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-color" style="background:#00d4ff;"></div> Slow</div>
+                    <div class="legend-item"><div class="legend-color" style="background:#7b2cbf;"></div> Medium</div>
+                    <div class="legend-item"><div class="legend-color" style="background:#ff006e;"></div> Fast</div>
+                    <div class="legend-item"><div class="legend-color" style="border:2px solid #ffd700;background:transparent;"></div> Rhyme</div>
+                </div>
+                <div id="lyrics-container"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tooltip" id="tooltip"></div>
+    
+    <script>
+        // Global state
+        let data = null;
+        let rotating = false;
+        let angle = 0.5;
+        let animId = null;
+        
+        // DOM elements
+        const uploadZone = document.getElementById('upload-zone');
+        const fileInput = document.getElementById('file-input');
+        const errorMsg = document.getElementById('error-msg');
+        const successMsg = document.getElementById('success-msg');
+        const content = document.getElementById('content');
+        const tooltip = document.getElementById('tooltip');
+        
+        // File handling
+        uploadZone.onclick = function(e) {
+            console.log('Upload zone clicked');
+            fileInput.click();
+        };
+        
+        fileInput.onchange = function(e) {
+            console.log('File input changed', e.target.files);
+            if (e.target.files && e.target.files[0]) {
+                handleFile(e.target.files[0]);
+            }
+        };
+        
+        uploadZone.ondragover = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            uploadZone.classList.add('dragover');
+        };
+        
+        uploadZone.ondragleave = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            uploadZone.classList.remove('dragover');
+        };
+        
+        uploadZone.ondrop = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            uploadZone.classList.remove('dragover');
+            console.log('File dropped', e.dataTransfer.files);
+            if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+                handleFile(e.dataTransfer.files[0]);
+            }
+        };
+        
+        function handleFile(file) {
+            console.log('Handling file:', file.name, file.type, file.size);
+            errorMsg.style.display = 'none';
+            successMsg.style.display = 'none';
+            
+            if (!file.name.endsWith('.json')) {
+                showError('Please select a JSON file');
+                return;
+            }
+            
+            const reader = new FileReader();
+            
+            reader.onload = function(e) {
+                console.log('File loaded, length:', e.target.result.length);
+                
+                try {
+                    // Sanitize JSON - replace NaN/Infinity with null (Python outputs these but JS doesn't accept them)
+                    let jsonText = e.target.result;
+                    jsonText = jsonText.replace(/:\s*NaN/g, ': null');
+                    jsonText = jsonText.replace(/:\s*Infinity/g, ': null');
+                    jsonText = jsonText.replace(/:\s*-Infinity/g, ': null');
+                    
+                    data = JSON.parse(jsonText);
+                    console.log('Parsed successfully! Keys:', Object.keys(data));
+                    
+                    if (!data.metadata) {
+                        showError('Invalid MAIF JSON: missing "metadata" key. Found keys: ' + Object.keys(data).join(', '));
+                        return;
+                    }
+                    
+                    showSuccess('Loaded: ' + (data.metadata.file_name || 'Unknown'));
+                    render();
+                } catch (err) {
+                    console.error('Parse error:', err);
+                    console.error('Raw content preview:', e.target.result.substring(0, 500));
+                    showError('JSON Parse Error: ' + err.message + ' (check console for details)');
+                }
+            };
+            
+            reader.onerror = function(err) {
+                console.error('Read error:', err);
+                showError('Failed to read file');
+            };
+            
+            reader.readAsText(file);
+        }
+        
+        function showError(msg) {
+            errorMsg.textContent = '❌ ' + msg;
+            errorMsg.style.display = 'block';
+        }
+        
+        function showSuccess(msg) {
+            successMsg.textContent = '✓ ' + msg;
+            successMsg.style.display = 'block';
+        }
+        
+        function render() {
+            content.classList.remove('hidden');
+            renderStats();
+            renderGroove();
+            renderFlow();
+            renderRhymes();
+            renderSurface();
+            renderLyrics();
+        }
+        
+        function renderStats() {
+            const segs = data.transcript_segments || [];
+            const dur = data.metadata.duration || 1;
+            const words = segs.length;
+            const sylls = segs.reduce((s, x) => s + (x.syllables || 1), 0);
+            const wpm = (words / dur) * 60;
+            const rhymes = segs.filter(s => s.rhymes_with && s.rhymes_with.length).length;
+            const density = words > 0 ? (rhymes / words) * 100 : 0;
+            
+            const stats = [
+                { v: (data.metadata.tempo || 0).toFixed(0), l: 'BPM' },
+                { v: words, l: 'Words' },
+                { v: wpm.toFixed(0), l: 'Words/Min' },
+                { v: density.toFixed(1) + '%', l: 'Rhyme Density' },
+                { v: data.metadata.key?.key || '?', l: 'Key' },
+                { v: (data.volatility?.sds_score || 0).toFixed(2), l: 'SDS Score' }
+            ];
+            
+            document.getElementById('stats-grid').innerHTML = stats.map(s => 
+                `<div class="stat-card"><div class="stat-value">${s.v}</div><div class="stat-label">${s.l}</div></div>`
+            ).join('');
+        }
+        
+        function renderGroove() {
+            const g = data.groove || {};
+            const meters = [
+                { l: 'On Beat', v: g.on_beat_percentage || 0, c: '#00d4ff' },
+                { l: 'On Downbeat', v: g.on_downbeat_percentage || 0, c: '#7b2cbf' },
+                { l: 'Syncopation', v: g.syncopation_score || 0, c: '#ff006e' }
+            ];
+            
+            document.getElementById('groove-meters').innerHTML = meters.map(m => `
+                <div class="groove-meter">
+                    <span class="groove-label">${m.l}</span>
+                    <div class="groove-bar">
+                        <div class="groove-fill" style="width:${Math.min(m.v, 100)}%;background:${m.c};"></div>
+                    </div>
+                    <span class="groove-value" style="color:${m.c};">${m.v.toFixed(1)}%</span>
+                </div>
+            `).join('');
+        }
+        
+        function renderFlow() {
+            const canvas = document.getElementById('flow-canvas');
+            const container = document.getElementById('flow-container');
+            const ctx = canvas.getContext('2d');
+            
+            const w = container.clientWidth;
+            const h = container.clientHeight;
+            canvas.width = w * 2;
+            canvas.height = h * 2;
+            ctx.scale(2, 2);
+            
+            const segs = data.transcript_segments || [];
+            if (!segs.length) return;
+            
+            const dur = data.metadata.duration;
+            const pad = 50;
+            const spsVals = segs.map(s => s.syllables_per_second || 0);
+            const maxSps = Math.max(...spsVals, 1);
+            
+            // Gradient fill
+            const grad = ctx.createLinearGradient(0, h - pad, 0, pad);
+            grad.addColorStop(0, 'rgba(0, 212, 255, 0.1)');
+            grad.addColorStop(0.5, 'rgba(123, 44, 191, 0.4)');
+            grad.addColorStop(1, 'rgba(255, 0, 110, 0.6)');
+            
+            ctx.beginPath();
+            ctx.moveTo(pad, h - pad);
+            segs.forEach((seg, i) => {
+                const x = pad + (seg.start / dur) * (w - 2 * pad);
+                const y = h - pad - (seg.syllables_per_second / maxSps) * (h - 2 * pad);
+                ctx.lineTo(x, y);
+            });
+            ctx.lineTo(w - pad, h - pad);
+            ctx.closePath();
+            ctx.fillStyle = grad;
+            ctx.fill();
+            
+            // Line
+            ctx.beginPath();
+            segs.forEach((seg, i) => {
+                const x = pad + (seg.start / dur) * (w - 2 * pad);
+                const y = h - pad - (seg.syllables_per_second / maxSps) * (h - 2 * pad);
+                i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            });
+            ctx.strokeStyle = '#00d4ff';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            
+            // Axes
+            ctx.strokeStyle = '#444';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(pad, pad);
+            ctx.lineTo(pad, h - pad);
+            ctx.lineTo(w - pad, h - pad);
+            ctx.stroke();
+            
+            // Labels
+            ctx.fillStyle = '#888';
+            ctx.font = '13px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('Time →', w / 2, h - 15);
+            ctx.save();
+            ctx.translate(18, h / 2);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('Syllables/Sec', 0, 0);
+            ctx.restore();
+        }
+        
+        function renderRhymes() {
+            const canvas = document.getElementById('rhyme-canvas');
+            const container = document.getElementById('rhyme-container');
+            const ctx = canvas.getContext('2d');
+            
+            const w = container.clientWidth;
+            const h = container.clientHeight;
+            canvas.width = w * 2;
+            canvas.height = h * 2;
+            ctx.scale(2, 2);
+            
+            const segs = data.transcript_segments || [];
+            const rhymeSegs = segs.filter(s => s.rhymes_with && s.rhymes_with.length);
+            
+            if (!rhymeSegs.length) {
+                ctx.fillStyle = '#666';
+                ctx.font = '18px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText('No rhymes detected', w / 2, h / 2);
+                return;
+            }
+            
+            const cx = w / 2;
+            const cy = h / 2;
+            const r = Math.min(w, h) / 2 - 80;
+            
+            // Position nodes
+            const nodes = rhymeSegs.map((seg, i) => {
+                const a = (i / rhymeSegs.length) * 2 * Math.PI - Math.PI / 2;
+                return {
+                    word: seg.word,
+                    x: cx + Math.cos(a) * r,
+                    y: cy + Math.sin(a) * r,
+                    rhymes: seg.rhymes_with || []
+                };
+            });
+            
+            // Draw edges
+            ctx.strokeStyle = 'rgba(0, 212, 255, 0.25)';
+            ctx.lineWidth = 1;
+            nodes.forEach(node => {
+                node.rhymes.forEach(rhyme => {
+                    const target = nodes.find(n => 
+                        n.word.toLowerCase().replace(/[^a-z]/g, '') === rhyme.toLowerCase().replace(/[^a-z]/g, '')
+                    );
+                    if (target) {
+                        ctx.beginPath();
+                        ctx.moveTo(node.x, node.y);
+                        ctx.lineTo(target.x, target.y);
+                        ctx.stroke();
+                    }
+                });
+            });
+            
+            // Draw nodes
+            nodes.forEach(node => {
+                ctx.beginPath();
+                ctx.arc(node.x, node.y, 6, 0, 2 * Math.PI);
+                ctx.fillStyle = '#7b2cbf';
+                ctx.fill();
+                ctx.strokeStyle = '#fff';
+                ctx.lineWidth = 1;
+                ctx.stroke();
+                
+                ctx.fillStyle = '#fff';
+                ctx.font = '11px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText(node.word, node.x, node.y - 12);
+            });
+        }
+        
+        function renderSurface() {
+            const canvas = document.getElementById('surface-canvas');
+            const container = document.getElementById('surface-container');
+            const ctx = canvas.getContext('2d');
+            
+            const w = container.clientWidth;
+            const h = container.clientHeight;
+            canvas.width = w * 2;
+            canvas.height = h * 2;
+            ctx.scale(2, 2);
+            
+            const stats = data.feature_statistics || [];
+            if (!stats.length) {
+                ctx.fillStyle = '#666';
+                ctx.font = '18px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText('No feature data', w / 2, h / 2);
+                return;
+            }
+            
+            const n = stats.length;
+            const matrix = [];
+            
+            // Build correlation proxy matrix
+            for (let i = 0; i < n; i++) {
+                matrix[i] = [];
+                for (let j = 0; j < n; j++) {
+                    if (i === j) {
+                        matrix[i][j] = 1;
+                    } else {
+                        const a = stats[i], b = stats[j];
+                        const mDiff = Math.abs(a.mean - b.mean) / (Math.abs(a.mean) + Math.abs(b.mean) + 0.001);
+                        const sRatio = Math.min(a.std, b.std) / (Math.max(a.std, b.std) + 0.001);
+                        matrix[i][j] = (1 - mDiff) * sRatio;
+                    }
+                }
+            }
+            
+            const cx = w / 2;
+            const cy = h / 2;
+            const scale = Math.min(w, h) / (n + 6);
+            const hScale = 60;
+            
+            function project(x, y, z) {
+                const cosA = Math.cos(angle), sinA = Math.sin(angle);
+                const x2 = x * cosA - z * sinA;
+                const z2 = x * sinA + z * cosA;
+                const cosX = Math.cos(0.5), sinX = Math.sin(0.5);
+                const y2 = y * cosX - z2 * sinX;
+                const z3 = y * sinX + z2 * cosX;
+                const p = 400 / (400 + z3);
+                return { x: cx + x2 * scale * p, y: cy + y2 * scale * p, z: z3 };
+            }
+            
+            // Collect faces
+            const faces = [];
+            for (let i = 0; i < n - 1; i++) {
+                for (let j = 0; j < n - 1; j++) {
+                    const x1 = i - n/2, x2 = i + 1 - n/2;
+                    const y1 = j - n/2, y2 = j + 1 - n/2;
+                    const z1 = matrix[i][j] * hScale;
+                    const z2 = matrix[i+1][j] * hScale;
+                    const z3 = matrix[i+1][j+1] * hScale;
+                    const z4 = matrix[i][j+1] * hScale;
+                    
+                    const p1 = project(x1, z1, y1);
+                    const p2 = project(x2, z2, y1);
+                    const p3 = project(x2, z3, y2);
+                    const p4 = project(x1, z4, y2);
+                    
+                    const avgZ = (p1.z + p2.z + p3.z + p4.z) / 4;
+                    const avgV = (matrix[i][j] + matrix[i+1][j] + matrix[i+1][j+1] + matrix[i][j+1]) / 4;
+                    
+                    faces.push({ pts: [p1, p2, p3, p4], z: avgZ, v: avgV });
+                }
+            }
+            
+            // Sort back-to-front
+            faces.sort((a, b) => b.z - a.z);
+            
+            // Draw
+            faces.forEach(f => {
+                ctx.beginPath();
+                ctx.moveTo(f.pts[0].x, f.pts[0].y);
+                f.pts.forEach(p => ctx.lineTo(p.x, p.y));
+                ctx.closePath();
+                
+                const hue = 200 + f.v * 100;
+                const light = 25 + f.v * 35;
+                ctx.fillStyle = `hsl(${hue}, 70%, ${light}%)`;
+                ctx.fill();
+                ctx.strokeStyle = 'rgba(255,255,255,0.1)';
+                ctx.lineWidth = 0.5;
+                ctx.stroke();
+            });
+            
+            // Feature labels
+            ctx.fillStyle = '#666';
+            ctx.font = '11px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('Tonnetz (T0-T5) & MFCCs (M0-M12)', cx, h - 15);
+            
+            if (rotating) {
+                angle += 0.008;
+                animId = requestAnimationFrame(renderSurface);
+            }
+        }
+        
+        function renderLyrics() {
+            const container = document.getElementById('lyrics-container');
+            const segs = data.transcript_segments || [];
+            
+            if (!segs.length) {
+                container.innerHTML = '<p style="color:#666;">No lyrics found</p>';
+                return;
+            }
+            
+            const maxSps = Math.max(...segs.map(s => s.syllables_per_second || 0), 1);
+            
+            container.innerHTML = segs.map(seg => {
+                const sps = seg.syllables_per_second || 0;
+                const t = sps / maxSps;
+                const r = Math.round(t * 255);
+                const g = Math.round((1 - t) * 80);
+                const b = Math.round((1 - t) * 255);
+                const hasRhyme = seg.rhymes_with && seg.rhymes_with.length;
+                
+                return `<span class="word${hasRhyme ? ' rhyme' : ''}" 
+                    style="background:rgba(${r},${g},${b},0.25);color:rgb(${r},${g},${b});"
+                    data-word="${seg.word}"
+                    data-sps="${sps.toFixed(2)}"
+                    data-syll="${seg.syllables || 1}"
+                    data-rhymes="${(seg.rhymes_with || []).join(', ')}"
+                    data-time="${(seg.start || 0).toFixed(2)}s"
+                >${seg.word}</span>`;
+            }).join(' ');
+            
+            // Add hover handlers
+            container.querySelectorAll('.word').forEach(el => {
+                el.onmouseenter = function(e) {
+                    tooltip.innerHTML = `
+                        <div class="tooltip-title">"${this.dataset.word}"</div>
+                        <div>⏱ Time: ${this.dataset.time}</div>
+                        <div>📊 Syllables: ${this.dataset.syll}</div>
+                        <div>⚡ Speed: ${this.dataset.sps} syll/sec</div>
+                        ${this.dataset.rhymes ? `<div>🔗 Rhymes: ${this.dataset.rhymes}</div>` : ''}
+                    `;
+                    tooltip.style.left = (e.pageX + 15) + 'px';
+                    tooltip.style.top = (e.pageY + 15) + 'px';
+                    tooltip.style.display = 'block';
+                };
+                el.onmouseleave = function() {
+                    tooltip.style.display = 'none';
+                };
+            });
+        }
+        
+        // View controls
+        document.querySelectorAll('.btn[data-view]').forEach(btn => {
+            btn.onclick = function() {
+                document.querySelectorAll('.btn[data-view]').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                rotating = false;
+                document.getElementById('rotate-btn').classList.remove('active');
+                if (animId) cancelAnimationFrame(animId);
+                
+                switch(this.dataset.view) {
+                    case 'perspective': angle = 0.5; break;
+                    case 'top': angle = 0; break;
+                    case 'side': angle = Math.PI / 2; break;
+                }
+                renderSurface();
+            };
+        });
+        
+        document.getElementById('rotate-btn').onclick = function() {
+            rotating = !rotating;
+            this.classList.toggle('active');
+            if (rotating) renderSurface();
+        };
+        
+        // Resize handler
+        window.onresize = function() {
+            if (data) {
+                renderFlow();
+                renderRhymes();
+                renderSurface();
+            }
+        };
+        
+        console.log('MAIF Visualizer loaded. Waiting for file...');
+    </script>
+</body>
+</html>

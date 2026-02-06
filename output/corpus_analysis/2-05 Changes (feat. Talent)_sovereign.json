@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Compilations/Greatest Hits/2-05 Changes (feat. Talent).m4a",
+    "duration": 268.83,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " I see no changes, wake up in the morning and I ask myself It's like worth living should I blast myself I'm tired of being poor and even worse I'm black My stomach hurts so I'm looking for a purse to snatch Cops give a damn about a negro Pull a trigger kill a nigga he's a hero Get a crack to the kids who the hell cares One less hungry mouth one no welfare First ship em dope let em deal with brothers Give em gun step back watch em kill each other It's time to fight back that's what Huey said Two ...",
+  "cultural_metrics": {
+    "aave_density": 0.0069,
+    "unique_terms": 5,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "gotta",
+      "em",
+      "ain't",
+      "dis",
+      "bout"
+    ],
+    "source": "enhanced_v2"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9977,
+    "tvt_score": 543.93,
+    "spectral_rigidity": 0.2936,
+    "lyric_valence": -0.9977,
+    "audio_arousal": 1.0
+  }
+}

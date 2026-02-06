@@ -1,0 +1,885 @@
+{
+  "metadata": {
+    "filename": "Wide Spectral Gap  The \"Silent Manifold\"2.wav",
+    "filepath": "/Users/alignmentnerd/aor-dmma/Wide Spectral Gap  The \"Silent Manifold\"2.wav",
+    "file_hash": "8ab56d94d6611f5306e77b0de7f3cdb674da0373144576797bdad37d96a2c2db",
+    "file_size_bytes": 38661288,
+    "duration_seconds": 201.36,
+    "sample_rate": 22050,
+    "samples": 4439988,
+    "channels": 1,
+    "analysis_timestamp": "2026-02-06T09:02:30.268976",
+    "aor_version": "7.1-MLX-FULL"
+  },
+  "spectral": {
+    "chroma_mean": [
+      0.4254,
+      0.2806,
+      0.2919,
+      0.324,
+      0.3126,
+      0.4642,
+      0.3087,
+      0.292,
+      0.2846,
+      0.2522,
+      0.2512,
+      0.2762
+    ],
+    "chroma_std": [
+      0.3786,
+      0.2553,
+      0.3047,
+      0.3328,
+      0.2586,
+      0.4024,
+      0.2644,
+      0.292,
+      0.3106,
+      0.2757,
+      0.2943,
+      0.2561
+    ],
+    "mfcc_mean": [
+      -243.4364,
+      124.8561,
+      35.2084,
+      19.8238,
+      13.122,
+      -1.5219,
+      10.4948,
+      0.8665,
+      0.0088,
+      1.3145,
+      -1.8924,
+      1.3473,
+      -2.0471
+    ],
+    "mfcc_std": [
+      94.5187,
+      39.3261,
+      19.3938,
+      13.8007,
+      15.5698,
+      10.3407,
+      10.9269,
+      9.4062,
+      8.972,
+      9.9588,
+      8.8126,
+      8.3447,
+      7.299
+    ],
+    "mfcc_delta_mean": [
+      0.0133,
+      0.0069,
+      0.002,
+      0.0006,
+      0.0019,
+      0.0001,
+      0.0018,
+      -0.0005,
+      -0.0006,
+      -0.0006,
+      -0.001,
+      -0.0011,
+      -0.0006
+    ],
+    "spectral_centroid_mean": 1386.27,
+    "spectral_centroid_std": 845.96,
+    "spectral_bandwidth_mean": 2163.65,
+    "spectral_bandwidth_std": 612.95,
+    "spectral_rolloff_mean": 2671.49,
+    "spectral_flatness_mean": 0.006015,
+    "spectral_contrast_mean": [
+      24.1224,
+      18.3945,
+      21.257,
+      21.0186,
+      17.766,
+      17.8089,
+      44.7882
+    ],
+    "zero_crossing_rate_mean": 0.039554,
+    "spectral_rigidity": 0.9728,
+    "eigenvalue_spread": 3.4477
+  },
+  "rhythmic": {
+    "onset_strength_mean": 1.0954,
+    "onset_strength_std": 1.0536,
+    "tempo_bpm": 129.2,
+    "beat_count": 390,
+    "beat_interval_mean": 0.4652,
+    "beat_interval_std": 0.0248,
+    "beat_regularity": 0.9466,
+    "tempogram_ratio": 5.1556
+  },
+  "harmonic": {
+    "harmonic_ratio": 0.994,
+    "tonnetz_mean": [
+      -0.1913,
+      0.2156,
+      -0.0719,
+      0.1528,
+      -0.0503,
+      0.0046
+    ],
+    "tonnetz_std": [
+      0.2007,
+      0.2571,
+      0.2271,
+      0.307,
+      0.1191,
+      0.1226
+    ],
+    "pitch_mean": 848.32,
+    "pitch_std": 942.98
+  },
+  "energy": {
+    "rms_mean": 0.110802,
+    "rms_std": 0.064834,
+    "rms_max": 0.364062,
+    "rms_min": 0.0,
+    "dynamic_range_db": 120.67,
+    "loudness_variance": 0.00420339,
+    "energy_p10": 0.024602,
+    "energy_p50": 0.107635,
+    "energy_p90": 0.196042
+  },
+  "linguistic": {
+    "word_count": 222,
+    "unique_words": 101,
+    "vocabulary_richness": 0.455,
+    "char_count": 1154,
+    "avg_word_length": 4.19,
+    "segment_count": 17,
+    "words_per_segment_mean": 12.65,
+    "words_per_segment_std": 4.3,
+    "syllable_count": 331,
+    "syllables_per_word": 1.49,
+    "adjacent_rhymes": 0,
+    "syllables_per_second": 1.64,
+    "words_per_second": 1.1
+  },
+  "aave": {
+    "lexicon_source": "external_json",
+    "categories": {
+      "contractions": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "pronouns_and_articles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "semantic_inversions": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_positive": {
+        "matched_count": 1,
+        "matched_terms": [
+          "wave"
+        ],
+        "density": 0.004505
+      },
+      "slang_negative": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_intensifiers": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_money_terms": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_drugs_alcohol": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_violence_conflict": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_locations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_people": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_actions": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_vehicles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_clothing_jewelry": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_music_performance": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_general": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_80s_90s": {
+        "matched_count": 2,
+        "matched_terms": [
+          "loop",
+          "break"
+        ],
+        "density": 0.009009
+      },
+      "classic_golden_era": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_modern": {
+        "matched_count": 1,
+        "matched_terms": [
+          "wave"
+        ],
+        "density": 0.004505
+      },
+      "regional_south": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_east_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_west_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_midwest": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_atlanta": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_general": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_positive_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_negative_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_affirmations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_exclamations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "phonological": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "whisper_normalized": {
+        "matched_count": 2,
+        "matched_terms": [
+          "dat",
+          "fo"
+        ],
+        "density": 0.009009,
+        "note": "AAVE forms likely spoken but normalized by Whisper ASR"
+      }
+    },
+    "grammar": {
+      "patterns_found": 0,
+      "weighted_score": 0.0,
+      "matches": []
+    },
+    "totals": {
+      "lexical_matches": 6,
+      "grammar_matches": 0,
+      "combined_matches": 6,
+      "aave_density": 0.027027,
+      "unique_terms": 5,
+      "aave_richness": 0.8333
+    },
+    "all_matched_terms": [
+      "dat",
+      "wave",
+      "break",
+      "loop",
+      "fo"
+    ]
+  },
+  "reinman_metrics": {
+    "sds_score": 0.2356,
+    "tvt_score": 288.28,
+    "spectral_rigidity": 0.1212,
+    "lyric_valence": 0.7644,
+    "audio_arousal": 1.0
+  },
+  "god_equation": {
+    "sci_with_aave": 1.866,
+    "sci_without_aave": 1.4286,
+    "variance_percent": 30.61,
+    "intelligence_score": 2.8829,
+    "mir_score_legacy_v7": 2.415,
+    "components": {
+      "R_spectral_rigidity": 0.9728,
+      "T_topological_complexity": 2.8828,
+      "C_aave_density": 2.7027,
+      "S_semantic_compression": 4.878,
+      "V_volatility_composite": 3.7068,
+      "D_decay_penalty": 5.45,
+      "H_harmonic_ratio": 9.94
+    },
+    "weighted_contributions": {
+      "rigidity": 0.2432,
+      "topology": 0.4324,
+      "cultural": 0.6757,
+      "semantic": 0.9756,
+      "volatility": 0.556
+    },
+    "provenance_tag": "AOR-SCI-8ab56d94-0186"
+  },
+  "transcript": {
+    "text": " Little loop in my head Tracing paths that never close Every thought finds a shortcut Back to where it started Hollow rooms in my chest Doors that open into doors I keep walking in a circle Naming every corridor I'm a strange loop calling my own name Wide spectral gap between the heart and the brain Silence is a structure I can't break through Pure tone homing like it already knew I'm a strange loop folding into life Echo on echo in the back of the mind Subtle little tunnel under every doubt Sin...",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 23.0,
+        "text": " Little loop in my head Tracing paths that never close",
+        "tokens": [
+          50364,
+          8022,
+          6367,
+          294,
+          452,
+          1378,
+          1765,
+          5615,
+          14518,
+          300,
+          1128,
+          1998,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.43557987213134763,
+        "compression_ratio": 0.8983050847457628,
+        "no_speech_prob": 0.3772197961807251
+      },
+      {
+        "id": 1,
+        "seek": 2300,
+        "start": 23.0,
+        "end": 37.0,
+        "text": " Every thought finds a shortcut Back to where it started Hollow rooms in my chest Doors that open into doors",
+        "tokens": [
+          50364,
+          2048,
+          1194,
+          10704,
+          257,
+          24822,
+          5833,
+          281,
+          689,
+          309,
+          1409,
+          46731,
+          9396,
+          294,
+          452,
+          7443,
+          1144,
+          830,
+          300,
+          1269,
+          666,
+          8077,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.13706231535526744,
+        "compression_ratio": 1.4244186046511629,
+        "no_speech_prob": 0.0894254818558693
+      },
+      {
+        "id": 2,
+        "seek": 2300,
+        "start": 38.0,
+        "end": 44.0,
+        "text": " I keep walking in a circle Naming every corridor",
+        "tokens": [
+          51114,
+          286,
+          1066,
+          4494,
+          294,
+          257,
+          6329,
+          426,
+          5184,
+          633,
+          25602,
+          51414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.13706231535526744,
+        "compression_ratio": 1.4244186046511629,
+        "no_speech_prob": 0.0894254818558693
+      },
+      {
+        "id": 3,
+        "seek": 2300,
+        "start": 44.0,
+        "end": 51.0,
+        "text": " I'm a strange loop calling my own name Wide spectral gap between the heart and the brain",
+        "tokens": [
+          51414,
+          286,
+          478,
+          257,
+          5861,
+          6367,
+          5141,
+          452,
+          1065,
+          1315,
+          42543,
+          42761,
+          7417,
+          1296,
+          264,
+          1917,
+          293,
+          264,
+          3567,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.13706231535526744,
+        "compression_ratio": 1.4244186046511629,
+        "no_speech_prob": 0.0894254818558693
+      },
+      {
+        "id": 4,
+        "seek": 5100,
+        "start": 51.0,
+        "end": 59.0,
+        "text": " Silence is a structure I can't break through Pure tone homing like it already knew",
+        "tokens": [
+          50364,
+          34570,
+          307,
+          257,
+          3877,
+          286,
+          393,
+          380,
+          1821,
+          807,
+          29474,
+          8027,
+          3655,
+          278,
+          411,
+          309,
+          1217,
+          2586,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.09623793551796361,
+        "compression_ratio": 1.4337349397590362,
+        "no_speech_prob": 0.06141851097345352
+      },
+      {
+        "id": 5,
+        "seek": 5100,
+        "start": 59.0,
+        "end": 66.0,
+        "text": " I'm a strange loop folding into life Echo on echo in the back of the mind",
+        "tokens": [
+          50764,
+          286,
+          478,
+          257,
+          5861,
+          6367,
+          25335,
+          666,
+          993,
+          31887,
+          322,
+          14300,
+          294,
+          264,
+          646,
+          295,
+          264,
+          1575,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.09623793551796361,
+        "compression_ratio": 1.4337349397590362,
+        "no_speech_prob": 0.06141851097345352
+      },
+      {
+        "id": 6,
+        "seek": 5100,
+        "start": 66.0,
+        "end": 74.0,
+        "text": " Subtle little tunnel under every doubt Sine wave singing till the world drops out",
+        "tokens": [
+          51114,
+          8511,
+          10972,
+          707,
+          13186,
+          833,
+          633,
+          6385,
+          318,
+          533,
+          5772,
+          6726,
+          4288,
+          264,
+          1002,
+          11438,
+          484,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.09623793551796361,
+        "compression_ratio": 1.4337349397590362,
+        "no_speech_prob": 0.06141851097345352
+      },
+      {
+        "id": 7,
+        "seek": 8100,
+        "start": 81.0,
+        "end": 96.0,
+        "text": " Write an answer in the air Proof that folds into a question",
+        "tokens": [
+          50364,
+          23499,
+          364,
+          1867,
+          294,
+          264,
+          1988,
+          1705,
+          2670,
+          300,
+          31341,
+          666,
+          257,
+          1168,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.15926234862383673,
+        "compression_ratio": 0.9672131147540983,
+        "no_speech_prob": 0.0706796646118164
+      },
+      {
+        "id": 8,
+        "seek": 9600,
+        "start": 96.0,
+        "end": 103.0,
+        "text": " Every line becomes a ladder Climbing back inside the theorem",
+        "tokens": [
+          50364,
+          2048,
+          1622,
+          3643,
+          257,
+          18325,
+          2033,
+          332,
+          4324,
+          646,
+          1854,
+          264,
+          20904,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11603036380949475,
+        "compression_ratio": 1.3333333333333333,
+        "no_speech_prob": 0.44885826110839844
+      },
+      {
+        "id": 9,
+        "seek": 9600,
+        "start": 103.0,
+        "end": 111.0,
+        "text": " Weightless fields in the dark Curved space under my skin",
+        "tokens": [
+          50714,
+          44464,
+          1832,
+          7909,
+          294,
+          264,
+          2877,
+          7907,
+          937,
+          1901,
+          833,
+          452,
+          3178,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11603036380949475,
+        "compression_ratio": 1.3333333333333333,
+        "no_speech_prob": 0.44885826110839844
+      },
+      {
+        "id": 10,
+        "seek": 9600,
+        "start": 111.0,
+        "end": 117.0,
+        "text": " I keep testing every boundary Just to fall back in",
+        "tokens": [
+          51114,
+          286,
+          1066,
+          4997,
+          633,
+          12866,
+          1449,
+          281,
+          2100,
+          646,
+          294,
+          51414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11603036380949475,
+        "compression_ratio": 1.3333333333333333,
+        "no_speech_prob": 0.44885826110839844
+      },
+      {
+        "id": 11,
+        "seek": 11700,
+        "start": 118.0,
+        "end": 125.0,
+        "text": " I'm a strange loop calling my own name Wide spectral gap between the heart and the brain",
+        "tokens": [
+          50414,
+          286,
+          478,
+          257,
+          5861,
+          6367,
+          5141,
+          452,
+          1065,
+          1315,
+          42543,
+          42761,
+          7417,
+          1296,
+          264,
+          1917,
+          293,
+          264,
+          3567,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.02598862648010254,
+        "compression_ratio": 1.5123456790123457,
+        "no_speech_prob": 0.5919553637504578
+      },
+      {
+        "id": 12,
+        "seek": 11700,
+        "start": 125.0,
+        "end": 133.0,
+        "text": " Silence is a structure I can't break through Pure tone homing like it already knew",
+        "tokens": [
+          50764,
+          34570,
+          307,
+          257,
+          3877,
+          286,
+          393,
+          380,
+          1821,
+          807,
+          29474,
+          8027,
+          3655,
+          278,
+          411,
+          309,
+          1217,
+          2586,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.02598862648010254,
+        "compression_ratio": 1.5123456790123457,
+        "no_speech_prob": 0.5919553637504578
+      },
+      {
+        "id": 13,
+        "seek": 11700,
+        "start": 133.0,
+        "end": 140.0,
+        "text": " I'm a strange loop folding into life Echo on echo in the back of the mind",
+        "tokens": [
+          51164,
+          286,
+          478,
+          257,
+          5861,
+          6367,
+          25335,
+          666,
+          993,
+          31887,
+          322,
+          14300,
+          294,
+          264,
+          646,
+          295,
+          264,
+          1575,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.02598862648010254,
+        "compression_ratio": 1.5123456790123457,
+        "no_speech_prob": 0.5919553637504578
+      },
+      {
+        "id": 14,
+        "seek": 14000,
+        "start": 140.0,
+        "end": 148.0,
+        "text": " Subtle little tunnel under every doubt Sine wave singing till the world drops out",
+        "tokens": [
+          50364,
+          8511,
+          10972,
+          707,
+          13186,
+          833,
+          633,
+          6385,
+          318,
+          533,
+          5772,
+          6726,
+          4288,
+          264,
+          1002,
+          11438,
+          484,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06696234251323499,
+        "compression_ratio": 1.125,
+        "no_speech_prob": 0.4331620931625366
+      },
+      {
+        "id": 15,
+        "seek": 17000,
+        "start": 170.0,
+        "end": 175.0,
+        "text": " I'm a strange loop folding into life",
+        "tokens": [
+          50364,
+          286,
+          478,
+          257,
+          5861,
+          6367,
+          25335,
+          666,
+          993,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.5387928269126199,
+        "compression_ratio": 0.8181818181818182,
+        "no_speech_prob": 0.9829027652740479
+      },
+      {
+        "id": 16,
+        "seek": 20000,
+        "start": 200.0,
+        "end": 203.0,
+        "text": " Thanks for watching!",
+        "tokens": [
+          50414,
+          2561,
+          337,
+          1976,
+          0,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.6921584946768624,
+        "compression_ratio": 0.7142857142857143,
+        "no_speech_prob": 0.989804744720459
+      }
+    ]
+  },
+  "processing_time_seconds": 26.52,
+  "total_features": 13084
+}

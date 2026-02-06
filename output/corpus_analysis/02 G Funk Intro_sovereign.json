@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Snoop Dogg/Doggystyle (30th Anniversary Edition)/02 G Funk Intro.m4a",
+    "duration": 144.11,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " Yeah, this is another story about dogs For the dog that don't pee on trees Is a bitch, so say it's Snoop Dogg So get your poop or scoop Because the niggas talkin' shit Roof, roof I'm steppin' on Tangeray With my mind on my money And I'm out feelin' ganje R-A-G to the motherfuckin' E Back with my nigga S-N-D-O-V Yeah, and you don't stop Rage in the fact that you's begun to rot I said yeah, and you don't quit Hey yo, rage with your best cups and gangsta shit I rock rough and stuff with my Afro Pu...",
+  "cultural_metrics": {
+    "aave_density": 0.0119,
+    "unique_terms": 5,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "em",
+      "ain't",
+      "bout",
+      "wanna",
+      "tryna"
+    ],
+    "source": "enhanced_v2"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.8228,
+    "tvt_score": 516.94,
+    "spectral_rigidity": 0.3108,
+    "lyric_valence": -0.8228,
+    "audio_arousal": 1.0
+  }
+}

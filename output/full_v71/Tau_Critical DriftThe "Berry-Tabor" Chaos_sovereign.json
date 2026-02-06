@@ -1,0 +1,387 @@
+{
+  "metadata": {
+    "filename": "Tau_Critical DriftThe \"Berry-Tabor\" Chaos.wav",
+    "filepath": "/Users/alignmentnerd/aor-dmma/Tau_Critical DriftThe \"Berry-Tabor\" Chaos.wav",
+    "file_hash": "01a3ffa6d8e4006e81bdf90803dac3ff713e9f2a554f00f7619cd36e422f3608",
+    "file_size_bytes": 37432488,
+    "duration_seconds": 194.96,
+    "sample_rate": 22050,
+    "samples": 4298868,
+    "channels": 1,
+    "analysis_timestamp": "2026-02-06T08:59:02.127132",
+    "aor_version": "7.1-MLX-FULL"
+  },
+  "spectral": {
+    "chroma_mean": [
+      0.3068,
+      0.3896,
+      0.3003,
+      0.3275,
+      0.2906,
+      0.4006,
+      0.4802,
+      0.2829,
+      0.2282,
+      0.3165,
+      0.5574,
+      0.3403
+    ],
+    "chroma_std": [
+      0.2873,
+      0.346,
+      0.2558,
+      0.3292,
+      0.2667,
+      0.3187,
+      0.3694,
+      0.2636,
+      0.2651,
+      0.2625,
+      0.3839,
+      0.2945
+    ],
+    "mfcc_mean": [
+      -136.2808,
+      104.3037,
+      16.99,
+      22.2827,
+      2.3809,
+      -0.4808,
+      0.5312,
+      5.7031,
+      1.9515,
+      1.7294,
+      -6.2486,
+      1.8339,
+      -3.1248
+    ],
+    "mfcc_std": [
+      99.5644,
+      41.5053,
+      24.7665,
+      17.2228,
+      12.138,
+      12.7062,
+      9.3891,
+      8.7162,
+      8.5943,
+      7.5533,
+      8.2399,
+      8.409,
+      7.3514
+    ],
+    "mfcc_delta_mean": [
+      -0.007,
+      0.0084,
+      0.0046,
+      -0.0043,
+      0.0001,
+      -0.0017,
+      0.0002,
+      0.0001,
+      -0.0015,
+      -0.0018,
+      -0.0015,
+      0.0001,
+      0.0007
+    ],
+    "spectral_centroid_mean": 2046.62,
+    "spectral_centroid_std": 1013.3,
+    "spectral_bandwidth_mean": 2397.39,
+    "spectral_bandwidth_std": 682.11,
+    "spectral_rolloff_mean": 4463.77,
+    "spectral_flatness_mean": 0.026195,
+    "spectral_contrast_mean": [
+      21.9479,
+      15.0102,
+      17.1138,
+      17.3274,
+      14.8659,
+      14.9462,
+      45.6027
+    ],
+    "zero_crossing_rate_mean": 0.063723,
+    "spectral_rigidity": 1.8693,
+    "eigenvalue_spread": 5.4705
+  },
+  "rhythmic": {
+    "onset_strength_mean": 2.4068,
+    "onset_strength_std": 3.1796,
+    "tempo_bpm": 143.6,
+    "beat_count": 468,
+    "beat_interval_mean": 0.4163,
+    "beat_interval_std": 0.0191,
+    "beat_regularity": 0.9541,
+    "tempogram_ratio": 7.6457
+  },
+  "harmonic": {
+    "harmonic_ratio": 0.9738,
+    "tonnetz_mean": [
+      -0.1103,
+      -0.0578,
+      0.0527,
+      -0.1207,
+      0.0173,
+      0.018
+    ],
+    "tonnetz_std": [
+      0.1033,
+      0.1181,
+      0.1562,
+      0.0961,
+      0.0515,
+      0.0646
+    ],
+    "pitch_mean": 604.4,
+    "pitch_std": 573.31
+  },
+  "energy": {
+    "rms_mean": 0.140886,
+    "rms_std": 0.0571,
+    "rms_max": 0.360485,
+    "rms_min": 7e-06,
+    "dynamic_range_db": 94.56,
+    "loudness_variance": 0.00326044,
+    "energy_p10": 0.084795,
+    "energy_p50": 0.130757,
+    "energy_p90": 0.202839
+  },
+  "linguistic": {
+    "word_count": 0,
+    "unique_words": 0,
+    "vocabulary_richness": 0.0,
+    "char_count": 1,
+    "avg_word_length": 0.0,
+    "segment_count": 1,
+    "words_per_segment_mean": 1,
+    "words_per_segment_std": 0,
+    "syllable_count": 0,
+    "syllables_per_word": 0.0,
+    "adjacent_rhymes": 0,
+    "syllables_per_second": 0.0,
+    "words_per_second": 0.0
+  },
+  "aave": {
+    "lexicon_source": "external_json",
+    "categories": {
+      "contractions": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "pronouns_and_articles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "semantic_inversions": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_positive": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_negative": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_intensifiers": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_money_terms": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_drugs_alcohol": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_violence_conflict": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_locations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_people": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_actions": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_vehicles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_clothing_jewelry": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_music_performance": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_general": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_80s_90s": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_golden_era": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_modern": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_south": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_east_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_west_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_midwest": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_atlanta": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_general": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_positive_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_negative_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_affirmations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_exclamations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "phonological": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      }
+    },
+    "grammar": {
+      "patterns_found": 0,
+      "weighted_score": 0.0,
+      "matches": []
+    },
+    "totals": {
+      "lexical_matches": 0,
+      "grammar_matches": 0,
+      "combined_matches": 0,
+      "aave_density": 0.0,
+      "unique_terms": 0,
+      "aave_richness": 0.0
+    },
+    "all_matched_terms": []
+  },
+  "reinman_metrics": {
+    "sds_score": 1.0,
+    "tvt_score": 557.26,
+    "spectral_rigidity": 0.2024,
+    "lyric_valence": 0.0,
+    "audio_arousal": 1.0
+  },
+  "god_equation": {
+    "sci_with_aave": 1.0915,
+    "sci_without_aave": 1.0915,
+    "variance_percent": 0.0,
+    "intelligence_score": 2.183,
+    "mir_score_legacy_v7": 2.5084,
+    "components": {
+      "R_spectral_rigidity": 1.8693,
+      "T_topological_complexity": 5.5726,
+      "C_aave_density": 0.0,
+      "S_semantic_compression": 0.0,
+      "V_volatility_composite": 5.8655,
+      "D_decay_penalty": 10.0,
+      "H_harmonic_ratio": 9.738
+    },
+    "weighted_contributions": {
+      "rigidity": 0.4673,
+      "topology": 0.8359,
+      "cultural": 0.0,
+      "semantic": 0.0,
+      "volatility": 0.8798
+    },
+    "provenance_tag": "AOR-SCI-01a3ffa6-0109"
+  },
+  "transcript": {
+    "text": "!",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "!",
+        "tokens": [
+          50364,
+          0,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": NaN,
+        "compression_ratio": 0.1111111111111111,
+        "no_speech_prob": 0.4301263093948364
+      }
+    ]
+  },
+  "processing_time_seconds": 20.12,
+  "total_features": 6136
+}

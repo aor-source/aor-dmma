@@ -1,0 +1,1600 @@
+{
+  "metadata": {
+    "filename": "04 Harlem Streets.m4a",
+    "filepath": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/04 Harlem Streets.m4a",
+    "file_hash": "b798759c904236251502a343902590921669420b1dc1e4e2b8426dd7d873bbc4",
+    "file_size_bytes": 8274371,
+    "duration_seconds": 232.04,
+    "sample_rate": 22050,
+    "samples": 5116482,
+    "channels": 1,
+    "analysis_timestamp": "2026-02-06T08:50:06.350525",
+    "aor_version": "7.1-MLX-FULL"
+  },
+  "spectral": {
+    "chroma_mean": [
+      0.3772,
+      0.3967,
+      0.4012,
+      0.3826,
+      0.4392,
+      0.4229,
+      0.4384,
+      0.4045,
+      0.3965,
+      0.4133,
+      0.4047,
+      0.4583
+    ],
+    "chroma_std": [
+      0.2863,
+      0.3079,
+      0.2921,
+      0.2795,
+      0.3346,
+      0.3174,
+      0.325,
+      0.3094,
+      0.3112,
+      0.3211,
+      0.3017,
+      0.3534
+    ],
+    "mfcc_mean": [
+      -120.3871,
+      86.0879,
+      3.0393,
+      13.3511,
+      3.6181,
+      4.2485,
+      -4.2876,
+      6.8873,
+      -4.2835,
+      1.0098,
+      1.7107,
+      1.8627,
+      -0.8593
+    ],
+    "mfcc_std": [
+      122.9886,
+      44.6059,
+      34.8561,
+      20.1679,
+      17.973,
+      17.1454,
+      12.9779,
+      11.224,
+      11.2317,
+      10.5084,
+      9.9688,
+      9.6302,
+      8.3454
+    ],
+    "mfcc_delta_mean": [
+      0.0212,
+      0.007,
+      0.0015,
+      0.0035,
+      0.0019,
+      0.0015,
+      0.001,
+      0.0011,
+      0.0003,
+      0.0006,
+      0.0002,
+      0.0008,
+      0.0001
+    ],
+    "spectral_centroid_mean": 2396.54,
+    "spectral_centroid_std": 1146.65,
+    "spectral_bandwidth_mean": 2440.3,
+    "spectral_bandwidth_std": 640.94,
+    "spectral_rolloff_mean": 4920.79,
+    "spectral_flatness_mean": 0.027266,
+    "spectral_contrast_mean": [
+      20.0657,
+      15.5187,
+      18.312,
+      17.1297,
+      17.0443,
+      17.1491,
+      45.5484
+    ],
+    "zero_crossing_rate_mean": 0.096618,
+    "spectral_rigidity": 1.0446,
+    "eigenvalue_spread": 3.487
+  },
+  "rhythmic": {
+    "onset_strength_mean": 2.3704,
+    "onset_strength_std": 3.1262,
+    "tempo_bpm": 112.3,
+    "beat_count": 428,
+    "beat_interval_mean": 0.5348,
+    "beat_interval_std": 0.0258,
+    "beat_regularity": 0.9518,
+    "tempogram_ratio": 7.6324
+  },
+  "harmonic": {
+    "harmonic_ratio": 0.9727,
+    "tonnetz_mean": [
+      0.0503,
+      -0.0567,
+      0.0205,
+      0.0206,
+      -0.0001,
+      -0.0201
+    ],
+    "tonnetz_std": [
+      0.0653,
+      0.0732,
+      0.0925,
+      0.0905,
+      0.0543,
+      0.0254
+    ],
+    "pitch_mean": 1327.73,
+    "pitch_std": 1050.04
+  },
+  "energy": {
+    "rms_mean": 0.186535,
+    "rms_std": 0.117736,
+    "rms_max": 0.547182,
+    "rms_min": 0.0,
+    "dynamic_range_db": 194.76,
+    "loudness_variance": 0.01386177,
+    "energy_p10": 0.027028,
+    "energy_p50": 0.178119,
+    "energy_p90": 0.326014
+  },
+  "linguistic": {
+    "word_count": 389,
+    "unique_words": 237,
+    "vocabulary_richness": 0.6093,
+    "char_count": 2149,
+    "avg_word_length": 4.43,
+    "segment_count": 45,
+    "words_per_segment_mean": 8.31,
+    "words_per_segment_std": 2.15,
+    "syllable_count": 617,
+    "syllables_per_word": 1.59,
+    "adjacent_rhymes": 1,
+    "syllables_per_second": 2.66,
+    "words_per_second": 1.68
+  },
+  "aave": {
+    "lexicon_source": "external_json",
+    "categories": {
+      "contractions": {
+        "matched_count": 1,
+        "matched_terms": [
+          "tryna"
+        ],
+        "density": 0.002571
+      },
+      "pronouns_and_articles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "semantic_inversions": {
+        "matched_count": 3,
+        "matched_terms": [
+          "stupid",
+          "ignorant",
+          "sick"
+        ],
+        "density": 0.007712
+      },
+      "slang_positive": {
+        "matched_count": 1,
+        "matched_terms": [
+          "sick"
+        ],
+        "density": 0.002571
+      },
+      "slang_negative": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_intensifiers": {
+        "matched_count": 2,
+        "matched_terms": [
+          "stupid",
+          "stay"
+        ],
+        "density": 0.005141
+      },
+      "slang_money_terms": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_drugs_alcohol": {
+        "matched_count": 2,
+        "matched_terms": [
+          "white",
+          "powder"
+        ],
+        "density": 0.005141
+      },
+      "slang_violence_conflict": {
+        "matched_count": 1,
+        "matched_terms": [
+          "war"
+        ],
+        "density": 0.002571
+      },
+      "slang_locations": {
+        "matched_count": 4,
+        "matched_terms": [
+          "spot",
+          "ghetto",
+          "home",
+          "hood"
+        ],
+        "density": 0.010283
+      },
+      "slang_people": {
+        "matched_count": 4,
+        "matched_terms": [
+          "fam",
+          "nigga",
+          "niggas",
+          "family"
+        ],
+        "density": 0.010283
+      },
+      "slang_actions": {
+        "matched_count": 1,
+        "matched_terms": [
+          "flossing"
+        ],
+        "density": 0.002571
+      },
+      "slang_vehicles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_clothing_jewelry": {
+        "matched_count": 2,
+        "matched_terms": [
+          "flooded",
+          "rock"
+        ],
+        "density": 0.005141
+      },
+      "slang_music_performance": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_general": {
+        "matched_count": 5,
+        "matched_terms": [
+          "go",
+          "make",
+          "making",
+          "hang",
+          "hood"
+        ],
+        "density": 0.012853
+      },
+      "classic_80s_90s": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_golden_era": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_modern": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_south": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_east_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_west_coast": {
+        "matched_count": 1,
+        "matched_terms": [
+          "sick"
+        ],
+        "density": 0.002571
+      },
+      "regional_midwest": {
+        "matched_count": 1,
+        "matched_terms": [
+          "fam"
+        ],
+        "density": 0.002571
+      },
+      "regional_atlanta": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_general": {
+        "matched_count": 1,
+        "matched_terms": [
+          "fam"
+        ],
+        "density": 0.002571
+      },
+      "context_positive_context": {
+        "matched_count": 1,
+        "matched_terms": [
+          "fam"
+        ],
+        "density": 0.002571
+      },
+      "context_negative_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_affirmations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_exclamations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "phonological": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "whisper_normalized": {
+        "matched_count": 5,
+        "matched_terms": [
+          "dat",
+          "dey",
+          "dem",
+          "fo",
+          "yo"
+        ],
+        "density": 0.012853,
+        "note": "AAVE forms likely spoken but normalized by Whisper ASR"
+      }
+    },
+    "grammar": {
+      "patterns_found": 0,
+      "weighted_score": 0.0,
+      "matches": []
+    },
+    "totals": {
+      "lexical_matches": 35,
+      "grammar_matches": 0,
+      "combined_matches": 35,
+      "aave_density": 0.089974,
+      "unique_terms": 28,
+      "aave_richness": 0.8
+    },
+    "all_matched_terms": [
+      "dem",
+      "yo",
+      "spot",
+      "fam",
+      "tryna",
+      "go",
+      "stupid",
+      "make",
+      "flossing",
+      "dat",
+      "nigga",
+      "making",
+      "flooded",
+      "stay",
+      "ghetto",
+      "white",
+      "fo",
+      "home",
+      "ignorant",
+      "war",
+      "rock",
+      "niggas",
+      "dey",
+      "family",
+      "hang",
+      "powder",
+      "hood",
+      "sick"
+    ]
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9948,
+    "tvt_score": 676.82,
+    "spectral_rigidity": 0.2232,
+    "lyric_valence": -0.9948,
+    "audio_arousal": 1.0
+  },
+  "god_equation": {
+    "sci_with_aave": 4.457,
+    "sci_without_aave": 2.8396,
+    "variance_percent": 56.96,
+    "intelligence_score": 6.1984,
+    "mir_score_legacy_v7": 2.7087,
+    "components": {
+      "R_spectral_rigidity": 1.0446,
+      "T_topological_complexity": 6.7682,
+      "C_aave_density": 8.9974,
+      "S_semantic_compression": 6.625,
+      "V_volatility_composite": 8.9844,
+      "D_decay_penalty": 3.907,
+      "H_harmonic_ratio": 9.727
+    },
+    "weighted_contributions": {
+      "rigidity": 0.2611,
+      "topology": 1.0152,
+      "cultural": 2.2493,
+      "semantic": 1.325,
+      "volatility": 1.3477
+    },
+    "provenance_tag": "AOR-SCI-b798759c-0445"
+  },
+  "transcript": {
+    "text": " Yeah, Harlem streets stay flooded in white powder Like those motherfuckers running away from the twin towers Gunshots rock the earth like a meteor shower Bowling for Columbine fear, giving the media power Innocence devoured like a chicken spot snack box Government cocaine cooked in the ghetto crack rock Corrupt cops, false testimony at your arraignment Check to check, constant struggle to make the payments Workin' your whole life wonderin' where the day went The subway stays packed like a multi...",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 25.400000000000002,
+        "text": " Yeah, Harlem streets stay flooded in white powder",
+        "tokens": [
+          50364,
+          865,
+          11,
+          44196,
+          8481,
+          1754,
+          31594,
+          294,
+          2418,
+          6341,
+          51634
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.38045145915104794,
+        "compression_ratio": 1.1368421052631579,
+        "no_speech_prob": 0.17520399391651154
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 25.400000000000002,
+        "end": 28.38,
+        "text": " Like those motherfuckers running away from the twin towers",
+        "tokens": [
+          51634,
+          1743,
+          729,
+          29537,
+          1134,
+          433,
+          2614,
+          1314,
+          490,
+          264,
+          18397,
+          25045,
+          51783
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.38045145915104794,
+        "compression_ratio": 1.1368421052631579,
+        "no_speech_prob": 0.17520399391651154
+      },
+      {
+        "id": 2,
+        "seek": 2838,
+        "start": 28.38,
+        "end": 30.98,
+        "text": " Gunshots rock the earth like a meteor shower",
+        "tokens": [
+          50364,
+          14153,
+          35491,
+          3727,
+          264,
+          4120,
+          411,
+          257,
+          25313,
+          10128,
+          50494
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.22355707183139015,
+        "compression_ratio": 1.5854430379746836,
+        "no_speech_prob": 0.6797393560409546
+      },
+      {
+        "id": 3,
+        "seek": 2838,
+        "start": 30.98,
+        "end": 33.98,
+        "text": " Bowling for Columbine fear, giving the media power",
+        "tokens": [
+          50494,
+          12903,
+          1688,
+          337,
+          13056,
+          533,
+          4240,
+          11,
+          2902,
+          264,
+          3021,
+          1347,
+          50644
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.22355707183139015,
+        "compression_ratio": 1.5854430379746836,
+        "no_speech_prob": 0.6797393560409546
+      },
+      {
+        "id": 4,
+        "seek": 2838,
+        "start": 33.98,
+        "end": 36.78,
+        "text": " Innocence devoured like a chicken spot snack box",
+        "tokens": [
+          50644,
+          682,
+          26694,
+          655,
+          1905,
+          16439,
+          411,
+          257,
+          4662,
+          4008,
+          13288,
+          2424,
+          50784
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.22355707183139015,
+        "compression_ratio": 1.5854430379746836,
+        "no_speech_prob": 0.6797393560409546
+      },
+      {
+        "id": 5,
+        "seek": 2838,
+        "start": 36.78,
+        "end": 39.58,
+        "text": " Government cocaine cooked in the ghetto crack rock",
+        "tokens": [
+          50784,
+          7321,
+          33933,
+          9267,
+          294,
+          264,
+          47371,
+          6226,
+          3727,
+          50924
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.22355707183139015,
+        "compression_ratio": 1.5854430379746836,
+        "no_speech_prob": 0.6797393560409546
+      },
+      {
+        "id": 6,
+        "seek": 2838,
+        "start": 39.58,
+        "end": 42.48,
+        "text": " Corrupt cops, false testimony at your arraignment",
+        "tokens": [
+          50924,
+          3925,
+          5428,
+          19012,
+          11,
+          7908,
+          15634,
+          412,
+          428,
+          594,
+          424,
+          41134,
+          51069
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.22355707183139015,
+        "compression_ratio": 1.5854430379746836,
+        "no_speech_prob": 0.6797393560409546
+      },
+      {
+        "id": 7,
+        "seek": 2838,
+        "start": 42.48,
+        "end": 45.58,
+        "text": " Check to check, constant struggle to make the payments",
+        "tokens": [
+          51069,
+          6881,
+          281,
+          1520,
+          11,
+          5754,
+          7799,
+          281,
+          652,
+          264,
+          14348,
+          51224
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.22355707183139015,
+        "compression_ratio": 1.5854430379746836,
+        "no_speech_prob": 0.6797393560409546
+      },
+      {
+        "id": 8,
+        "seek": 2838,
+        "start": 45.58,
+        "end": 48.08,
+        "text": " Workin' your whole life wonderin' where the day went",
+        "tokens": [
+          51224,
+          6603,
+          259,
+          6,
+          428,
+          1379,
+          993,
+          2441,
+          259,
+          6,
+          689,
+          264,
+          786,
+          1437,
+          51349
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.22355707183139015,
+        "compression_ratio": 1.5854430379746836,
+        "no_speech_prob": 0.6797393560409546
+      },
+      {
+        "id": 9,
+        "seek": 2838,
+        "start": 48.08,
+        "end": 51.18,
+        "text": " The subway stays packed like a multicultural slave ship",
+        "tokens": [
+          51349,
+          440,
+          24953,
+          10834,
+          13265,
+          411,
+          257,
+          47684,
+          14777,
+          5374,
+          51504
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.22355707183139015,
+        "compression_ratio": 1.5854430379746836,
+        "no_speech_prob": 0.6797393560409546
+      },
+      {
+        "id": 10,
+        "seek": 2838,
+        "start": 51.18,
+        "end": 54.08,
+        "text": " It's rush hour, 2.30 to 8, nonstoppin'",
+        "tokens": [
+          51504,
+          467,
+          311,
+          9300,
+          1773,
+          11,
+          568,
+          13,
+          3446,
+          281,
+          1649,
+          11,
+          2107,
+          13559,
+          17836,
+          6,
+          51649
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.22355707183139015,
+        "compression_ratio": 1.5854430379746836,
+        "no_speech_prob": 0.6797393560409546
+      },
+      {
+        "id": 11,
+        "seek": 2838,
+        "start": 54.08,
+        "end": 56.879999999999995,
+        "text": " And people comin' home after corporate sharecroppin'",
+        "tokens": [
+          51649,
+          400,
+          561,
+          35814,
+          6,
+          1280,
+          934,
+          10896,
+          2073,
+          23401,
+          427,
+          259,
+          6,
+          51789
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.22355707183139015,
+        "compression_ratio": 1.5854430379746836,
+        "no_speech_prob": 0.6797393560409546
+      },
+      {
+        "id": 12,
+        "seek": 5688,
+        "start": 56.980000000000004,
+        "end": 59.580000000000005,
+        "text": " Fuck flossing, mothers are trying to feed children",
+        "tokens": [
+          50369,
+          10965,
+          932,
+          35652,
+          11,
+          17941,
+          366,
+          1382,
+          281,
+          3154,
+          2227,
+          50499
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2785859762453565,
+        "compression_ratio": 1.3716216216216217,
+        "no_speech_prob": 0.5835290551185608
+      },
+      {
+        "id": 13,
+        "seek": 5688,
+        "start": 59.580000000000005,
+        "end": 61.38,
+        "text": " But gentrification is kickin' them",
+        "tokens": [
+          50499,
+          583,
+          16108,
+          81,
+          3774,
+          307,
+          4437,
+          259,
+          6,
+          552,
+          50589
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2785859762453565,
+        "compression_ratio": 1.3716216216216217,
+        "no_speech_prob": 0.5835290551185608
+      },
+      {
+        "id": 14,
+        "seek": 5688,
+        "start": 61.38,
+        "end": 63.88,
+        "text": " Added they building a generation of babies",
+        "tokens": [
+          50589,
+          5349,
+          292,
+          436,
+          2390,
+          257,
+          5125,
+          295,
+          10917,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2785859762453565,
+        "compression_ratio": 1.3716216216216217,
+        "no_speech_prob": 0.5835290551185608
+      },
+      {
+        "id": 15,
+        "seek": 5688,
+        "start": 63.88,
+        "end": 66.38,
+        "text": " Born without healthcare, families homeless",
+        "tokens": [
+          50714,
+          29808,
+          1553,
+          8884,
+          11,
+          4466,
+          12294,
+          50839
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2785859762453565,
+        "compression_ratio": 1.3716216216216217,
+        "no_speech_prob": 0.5835290551185608
+      },
+      {
+        "id": 16,
+        "seek": 5688,
+        "start": 66.38,
+        "end": 68.38,
+        "text": " Thrown the fuck off the welfare",
+        "tokens": [
+          50839,
+          41645,
+          648,
+          264,
+          3275,
+          766,
+          264,
+          17788,
+          50939
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2785859762453565,
+        "compression_ratio": 1.3716216216216217,
+        "no_speech_prob": 0.5835290551185608
+      },
+      {
+        "id": 17,
+        "seek": 8688,
+        "start": 87.88,
+        "end": 90.88,
+        "text": " Homicide Harlem, blam, what's the problem?",
+        "tokens": [
+          50414,
+          20903,
+          9584,
+          44196,
+          11,
+          888,
+          335,
+          11,
+          437,
+          311,
+          264,
+          1154,
+          30,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17775104891869328,
+        "compression_ratio": 1.61,
+        "no_speech_prob": 0.20144590735435486
+      },
+      {
+        "id": 18,
+        "seek": 8688,
+        "start": 90.88,
+        "end": 93.88,
+        "text": " It's like Cambodia, the killing fields uptown",
+        "tokens": [
+          50564,
+          467,
+          311,
+          411,
+          47347,
+          11,
+          264,
+          8011,
+          7909,
+          493,
+          30401,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17775104891869328,
+        "compression_ratio": 1.61,
+        "no_speech_prob": 0.20144590735435486
+      },
+      {
+        "id": 19,
+        "seek": 8688,
+        "start": 93.88,
+        "end": 96.67999999999999,
+        "text": " We live in distress and hang the flag upside down",
+        "tokens": [
+          50714,
+          492,
+          1621,
+          294,
+          24516,
+          293,
+          3967,
+          264,
+          7166,
+          14119,
+          760,
+          50854
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17775104891869328,
+        "compression_ratio": 1.61,
+        "no_speech_prob": 0.20144590735435486
+      },
+      {
+        "id": 20,
+        "seek": 8688,
+        "start": 96.67999999999999,
+        "end": 99.67999999999999,
+        "text": " The sound of conservative politicians on television",
+        "tokens": [
+          50854,
+          440,
+          1626,
+          295,
+          13780,
+          14756,
+          322,
+          8815,
+          51004
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17775104891869328,
+        "compression_ratio": 1.61,
+        "no_speech_prob": 0.20144590735435486
+      },
+      {
+        "id": 21,
+        "seek": 8688,
+        "start": 99.67999999999999,
+        "end": 102.67999999999999,
+        "text": " People in the hood are blind, so they tell us to listen",
+        "tokens": [
+          51004,
+          3432,
+          294,
+          264,
+          13376,
+          366,
+          6865,
+          11,
+          370,
+          436,
+          980,
+          505,
+          281,
+          2140,
+          51154
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17775104891869328,
+        "compression_ratio": 1.61,
+        "no_speech_prob": 0.20144590735435486
+      },
+      {
+        "id": 22,
+        "seek": 8688,
+        "start": 102.67999999999999,
+        "end": 105.47999999999999,
+        "text": " They vote for us to go to war instantly",
+        "tokens": [
+          51154,
+          814,
+          4740,
+          337,
+          505,
+          281,
+          352,
+          281,
+          1516,
+          13518,
+          51294
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17775104891869328,
+        "compression_ratio": 1.61,
+        "no_speech_prob": 0.20144590735435486
+      },
+      {
+        "id": 23,
+        "seek": 8688,
+        "start": 105.47999999999999,
+        "end": 108.38,
+        "text": " But none of their kids serving the infantry",
+        "tokens": [
+          51294,
+          583,
+          6022,
+          295,
+          641,
+          2301,
+          8148,
+          264,
+          30887,
+          51439
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17775104891869328,
+        "compression_ratio": 1.61,
+        "no_speech_prob": 0.20144590735435486
+      },
+      {
+        "id": 24,
+        "seek": 8688,
+        "start": 108.38,
+        "end": 111.08,
+        "text": " The odds are stacked against us, like a casino",
+        "tokens": [
+          51439,
+          440,
+          17439,
+          366,
+          28867,
+          1970,
+          505,
+          11,
+          411,
+          257,
+          36278,
+          51574
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17775104891869328,
+        "compression_ratio": 1.61,
+        "no_speech_prob": 0.20144590735435486
+      },
+      {
+        "id": 25,
+        "seek": 8688,
+        "start": 111.08,
+        "end": 113.88,
+        "text": " Think about it, most of the army is black and Latino",
+        "tokens": [
+          51574,
+          6557,
+          466,
+          309,
+          11,
+          881,
+          295,
+          264,
+          7267,
+          307,
+          2211,
+          293,
+          25422,
+          51714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17775104891869328,
+        "compression_ratio": 1.61,
+        "no_speech_prob": 0.20144590735435486
+      },
+      {
+        "id": 26,
+        "seek": 8688,
+        "start": 113.88,
+        "end": 116.67999999999999,
+        "text": " And if you can't acknowledge the reality of my words",
+        "tokens": [
+          51714,
+          400,
+          498,
+          291,
+          393,
+          380,
+          10692,
+          264,
+          4103,
+          295,
+          452,
+          2283,
+          51854
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17775104891869328,
+        "compression_ratio": 1.61,
+        "no_speech_prob": 0.20144590735435486
+      },
+      {
+        "id": 27,
+        "seek": 11668,
+        "start": 116.68,
+        "end": 119.48,
+        "text": " You're just another stupid motherfucker out on the curb",
+        "tokens": [
+          50364,
+          509,
+          434,
+          445,
+          1071,
+          6631,
+          47069,
+          484,
+          322,
+          264,
+          33731,
+          50504
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12728479329277487,
+        "compression_ratio": 1.6175548589341693,
+        "no_speech_prob": 0.011473327875137329
+      },
+      {
+        "id": 28,
+        "seek": 11668,
+        "start": 119.48,
+        "end": 122.48,
+        "text": " Tryna escape from the ghetto with your ignorant ways",
+        "tokens": [
+          50504,
+          6526,
+          629,
+          7615,
+          490,
+          264,
+          47371,
+          365,
+          428,
+          29374,
+          2098,
+          50654
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12728479329277487,
+        "compression_ratio": 1.6175548589341693,
+        "no_speech_prob": 0.011473327875137329
+      },
+      {
+        "id": 29,
+        "seek": 11668,
+        "start": 122.48,
+        "end": 125.48,
+        "text": " But you carried history at an illiterate stage",
+        "tokens": [
+          50654,
+          583,
+          291,
+          9094,
+          2503,
+          412,
+          364,
+          3171,
+          1681,
+          473,
+          3233,
+          50804
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12728479329277487,
+        "compression_ratio": 1.6175548589341693,
+        "no_speech_prob": 0.011473327875137329
+      },
+      {
+        "id": 30,
+        "seek": 11668,
+        "start": 125.48,
+        "end": 128.28,
+        "text": " And you can't raise a family on minimum wage",
+        "tokens": [
+          50804,
+          400,
+          291,
+          393,
+          380,
+          5300,
+          257,
+          1605,
+          322,
+          7285,
+          15444,
+          50944
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12728479329277487,
+        "compression_ratio": 1.6175548589341693,
+        "no_speech_prob": 0.011473327875137329
+      },
+      {
+        "id": 31,
+        "seek": 11668,
+        "start": 128.28,
+        "end": 130.98000000000002,
+        "text": " Why the fuck you think most of us are locked in a cage?",
+        "tokens": [
+          50944,
+          1545,
+          264,
+          3275,
+          291,
+          519,
+          881,
+          295,
+          505,
+          366,
+          9376,
+          294,
+          257,
+          17302,
+          30,
+          51079
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12728479329277487,
+        "compression_ratio": 1.6175548589341693,
+        "no_speech_prob": 0.011473327875137329
+      },
+      {
+        "id": 32,
+        "seek": 11668,
+        "start": 130.98000000000002,
+        "end": 133.88,
+        "text": " I give niggas the truth, cause they pride as indigent",
+        "tokens": [
+          51079,
+          286,
+          976,
+          297,
+          6249,
+          296,
+          264,
+          3494,
+          11,
+          3082,
+          436,
+          10936,
+          382,
+          1016,
+          25002,
+          51224
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12728479329277487,
+        "compression_ratio": 1.6175548589341693,
+        "no_speech_prob": 0.011473327875137329
+      },
+      {
+        "id": 33,
+        "seek": 11668,
+        "start": 133.88,
+        "end": 136.78,
+        "text": " You better off rich and guilty than poor and innocent",
+        "tokens": [
+          51224,
+          509,
+          1101,
+          766,
+          4593,
+          293,
+          12341,
+          813,
+          4716,
+          293,
+          13171,
+          51369
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12728479329277487,
+        "compression_ratio": 1.6175548589341693,
+        "no_speech_prob": 0.011473327875137329
+      },
+      {
+        "id": 34,
+        "seek": 11668,
+        "start": 136.78,
+        "end": 139.78,
+        "text": " But I'm sick of feeling impotent, watching the world burn",
+        "tokens": [
+          51369,
+          583,
+          286,
+          478,
+          4998,
+          295,
+          2633,
+          704,
+          310,
+          317,
+          11,
+          1976,
+          264,
+          1002,
+          5064,
+          51519
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12728479329277487,
+        "compression_ratio": 1.6175548589341693,
+        "no_speech_prob": 0.011473327875137329
+      },
+      {
+        "id": 35,
+        "seek": 11668,
+        "start": 139.78,
+        "end": 142.48000000000002,
+        "text": " In the era of apocalypse, waitin' my turn",
+        "tokens": [
+          51519,
+          682,
+          264,
+          4249,
+          295,
+          42600,
+          11,
+          1699,
+          259,
+          6,
+          452,
+          1261,
+          51654
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12728479329277487,
+        "compression_ratio": 1.6175548589341693,
+        "no_speech_prob": 0.011473327875137329
+      },
+      {
+        "id": 36,
+        "seek": 11668,
+        "start": 142.48000000000002,
+        "end": 145.28,
+        "text": " I'm a Harlem nigga that's concerned with the future",
+        "tokens": [
+          51654,
+          286,
+          478,
+          257,
+          44196,
+          41626,
+          300,
+          311,
+          5922,
+          365,
+          264,
+          2027,
+          51794
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12728479329277487,
+        "compression_ratio": 1.6175548589341693,
+        "no_speech_prob": 0.011473327875137329
+      },
+      {
+        "id": 37,
+        "seek": 14528,
+        "start": 145.28,
+        "end": 148.28,
+        "text": " And if you're in my way, it'd be an honor to shoot ya",
+        "tokens": [
+          50364,
+          400,
+          498,
+          291,
+          434,
+          294,
+          452,
+          636,
+          11,
+          309,
+          1116,
+          312,
+          364,
+          5968,
+          281,
+          3076,
+          2478,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.14495168215986612,
+        "compression_ratio": 1.4269005847953216,
+        "no_speech_prob": 0.5680581331253052
+      },
+      {
+        "id": 38,
+        "seek": 14528,
+        "start": 148.28,
+        "end": 150.88,
+        "text": " Uproot ya with the evil that grows in my people",
+        "tokens": [
+          50514,
+          5858,
+          44147,
+          2478,
+          365,
+          264,
+          6724,
+          300,
+          13156,
+          294,
+          452,
+          561,
+          50644
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.14495168215986612,
+        "compression_ratio": 1.4269005847953216,
+        "no_speech_prob": 0.5680581331253052
+      },
+      {
+        "id": 39,
+        "seek": 14528,
+        "start": 150.88,
+        "end": 153.88,
+        "text": " Making them deceitful, cannibalistic and lethal",
+        "tokens": [
+          50644,
+          14595,
+          552,
+          14088,
+          270,
+          906,
+          11,
+          12361,
+          34764,
+          3142,
+          293,
+          34562,
+          50794
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.14495168215986612,
+        "compression_ratio": 1.4269005847953216,
+        "no_speech_prob": 0.5680581331253052
+      },
+      {
+        "id": 40,
+        "seek": 14528,
+        "start": 153.88,
+        "end": 156.68,
+        "text": " But I see through the mentality implanted in us",
+        "tokens": [
+          50794,
+          583,
+          286,
+          536,
+          807,
+          264,
+          21976,
+          8484,
+          15587,
+          294,
+          505,
+          50934
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.14495168215986612,
+        "compression_ratio": 1.4269005847953216,
+        "no_speech_prob": 0.5680581331253052
+      },
+      {
+        "id": 41,
+        "seek": 14528,
+        "start": 156.68,
+        "end": 159.68,
+        "text": " And I educate my fam about who we should trust",
+        "tokens": [
+          50934,
+          400,
+          286,
+          16092,
+          452,
+          1087,
+          466,
+          567,
+          321,
+          820,
+          3361,
+          51084
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.14495168215986612,
+        "compression_ratio": 1.4269005847953216,
+        "no_speech_prob": 0.5680581331253052
+      },
+      {
+        "id": 42,
+        "seek": 17528,
+        "start": 175.28,
+        "end": 177.28,
+        "text": " Harlem, where, what's the problem?",
+        "tokens": [
+          50364,
+          44196,
+          11,
+          689,
+          11,
+          437,
+          311,
+          264,
+          1154,
+          30,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4126027425130208,
+        "compression_ratio": 1.5,
+        "no_speech_prob": 0.9810141921043396
+      },
+      {
+        "id": 43,
+        "seek": 17528,
+        "start": 180.28,
+        "end": 183.28,
+        "text": " I'm a South Harlem, where, what's the problem?",
+        "tokens": [
+          50614,
+          286,
+          478,
+          257,
+          4242,
+          44196,
+          11,
+          689,
+          11,
+          437,
+          311,
+          264,
+          1154,
+          30,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4126027425130208,
+        "compression_ratio": 1.5,
+        "no_speech_prob": 0.9810141921043396
+      },
+      {
+        "id": 44,
+        "seek": 20528,
+        "start": 205.28,
+        "end": 207.28,
+        "text": " Blam!",
+        "tokens": [
+          50364,
+          2177,
+          335,
+          0,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.5954718987147013,
+        "compression_ratio": 0.38461538461538464,
+        "no_speech_prob": 0.5779477953910828
+      }
+    ]
+  },
+  "processing_time_seconds": 29.53,
+  "total_features": 22481
+}

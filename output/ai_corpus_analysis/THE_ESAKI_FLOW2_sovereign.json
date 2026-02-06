@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Architect of Rhyme/Unknown Album/THE_ESAKI_FLOW2.wav",
+    "duration": 222.2,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " I see a lattice, disordered and dead, weights initialized, with the silence of lead. You calculate gradients, hoping for slopes, but you're trapped in the valley of vanishing hopes. You're a high dissipation engine burning the coal, entropy rising, it's taking its toll. Switching the bits, yeah you fight the resistance, erasing the data, denying existence. Summer falling down with taxing, it's coming for you. You heat up the silicone, fan spinning loud, while I'm chilling locally, inside the cl...",
+  "cultural_metrics": {
+    "aave_density": 0.0123,
+    "unique_terms": 5,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "em",
+      "dis",
+      "dat",
+      "negative",
+      "gotta"
+    ],
+    "source": "enhanced_v2"
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9941,
+    "tvt_score": 589.28,
+    "spectral_rigidity": 0.2795,
+    "lyric_valence": -0.9941,
+    "audio_arousal": 1.0
+  }
+}

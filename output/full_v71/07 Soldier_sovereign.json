@@ -1,0 +1,3072 @@
+{
+  "metadata": {
+    "filename": "07 Soldier.m4a",
+    "filepath": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/07 Soldier.m4a",
+    "file_hash": "1ddfe37f87627752c138665b7e5dadcc24e8c98e4476f4ca65e9f934f6f1691c",
+    "file_size_bytes": 8030708,
+    "duration_seconds": 226.21,
+    "sample_rate": 22050,
+    "samples": 4988004,
+    "channels": 1,
+    "analysis_timestamp": "2026-02-06T08:50:41.257642",
+    "aor_version": "7.1-MLX-FULL"
+  },
+  "spectral": {
+    "chroma_mean": [
+      0.439,
+      0.4855,
+      0.5795,
+      0.6334,
+      0.4999,
+      0.4842,
+      0.4457,
+      0.4503,
+      0.4148,
+      0.4933,
+      0.6052,
+      0.4652
+    ],
+    "chroma_std": [
+      0.2468,
+      0.2646,
+      0.2735,
+      0.2907,
+      0.2445,
+      0.2676,
+      0.2565,
+      0.2824,
+      0.2525,
+      0.2523,
+      0.2999,
+      0.2545
+    ],
+    "mfcc_mean": [
+      -32.1673,
+      82.3792,
+      22.8367,
+      25.9871,
+      9.4722,
+      10.6207,
+      -2.3283,
+      9.9084,
+      -3.9104,
+      9.4269,
+      1.252,
+      7.3345,
+      -2.5018
+    ],
+    "mfcc_std": [
+      73.736,
+      35.5751,
+      31.2277,
+      16.225,
+      15.9083,
+      15.0739,
+      12.0795,
+      9.5756,
+      9.0002,
+      8.5591,
+      7.7417,
+      7.8324,
+      8.4186
+    ],
+    "mfcc_delta_mean": [
+      -0.0448,
+      -0.0135,
+      -0.0001,
+      -0.0041,
+      -0.0005,
+      -0.0026,
+      0.0006,
+      -0.0017,
+      -0.0003,
+      -0.0012,
+      -0.0003,
+      -0.0007,
+      0.0002
+    ],
+    "spectral_centroid_mean": 2787.9,
+    "spectral_centroid_std": 1181.12,
+    "spectral_bandwidth_mean": 2758.0,
+    "spectral_bandwidth_std": 565.44,
+    "spectral_rolloff_mean": 5903.66,
+    "spectral_flatness_mean": 0.038357,
+    "spectral_contrast_mean": [
+      18.2808,
+      13.5856,
+      16.604,
+      17.9681,
+      16.8734,
+      17.1093,
+      49.319
+    ],
+    "zero_crossing_rate_mean": 0.127194,
+    "spectral_rigidity": 1.4526,
+    "eigenvalue_spread": 3.6469
+  },
+  "rhythmic": {
+    "onset_strength_mean": 2.2145,
+    "onset_strength_std": 2.7845,
+    "tempo_bpm": 123.0,
+    "beat_count": 464,
+    "beat_interval_mean": 0.4823,
+    "beat_interval_std": 0.024,
+    "beat_regularity": 0.9503,
+    "tempogram_ratio": 7.2986
+  },
+  "harmonic": {
+    "harmonic_ratio": 0.9616,
+    "tonnetz_mean": [
+      -0.0805,
+      -0.0114,
+      0.1301,
+      0.0099,
+      0.0453,
+      0.0134
+    ],
+    "tonnetz_std": [
+      0.0687,
+      0.0402,
+      0.0868,
+      0.0806,
+      0.0344,
+      0.026
+    ],
+    "pitch_mean": 1314.58,
+    "pitch_std": 1079.73
+  },
+  "energy": {
+    "rms_mean": 0.259872,
+    "rms_std": 0.110145,
+    "rms_max": 0.606472,
+    "rms_min": 0.0,
+    "dynamic_range_db": 195.66,
+    "loudness_variance": 0.01213182,
+    "energy_p10": 0.135128,
+    "energy_p50": 0.236383,
+    "energy_p90": 0.424082
+  },
+  "linguistic": {
+    "word_count": 756,
+    "unique_words": 266,
+    "vocabulary_richness": 0.3519,
+    "char_count": 3576,
+    "avg_word_length": 3.7,
+    "segment_count": 117,
+    "words_per_segment_mean": 6.05,
+    "words_per_segment_std": 2.74,
+    "syllable_count": 1014,
+    "syllables_per_word": 1.34,
+    "adjacent_rhymes": 1,
+    "syllables_per_second": 4.48,
+    "words_per_second": 3.34
+  },
+  "aave": {
+    "lexicon_source": "external_json",
+    "categories": {
+      "contractions": {
+        "matched_count": 3,
+        "matched_terms": [
+          "wanna",
+          "gotta",
+          "ain't"
+        ],
+        "density": 0.003968
+      },
+      "pronouns_and_articles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "semantic_inversions": {
+        "matched_count": 4,
+        "matched_terms": [
+          "stupid",
+          "hard",
+          "fire",
+          "lit"
+        ],
+        "density": 0.005291
+      },
+      "slang_positive": {
+        "matched_count": 5,
+        "matched_terms": [
+          "fire",
+          "lit",
+          "real",
+          "bet",
+          "gangster"
+        ],
+        "density": 0.006614
+      },
+      "slang_negative": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_intensifiers": {
+        "matched_count": 2,
+        "matched_terms": [
+          "stupid",
+          "real"
+        ],
+        "density": 0.002646
+      },
+      "slang_money_terms": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_drugs_alcohol": {
+        "matched_count": 2,
+        "matched_terms": [
+          "fire",
+          "rocks"
+        ],
+        "density": 0.002646
+      },
+      "slang_violence_conflict": {
+        "matched_count": 2,
+        "matched_terms": [
+          "war",
+          "got"
+        ],
+        "density": 0.002646
+      },
+      "slang_locations": {
+        "matched_count": 1,
+        "matched_terms": [
+          "set"
+        ],
+        "density": 0.001323
+      },
+      "slang_people": {
+        "matched_count": 2,
+        "matched_terms": [
+          "set",
+          "bitch"
+        ],
+        "density": 0.002646
+      },
+      "slang_actions": {
+        "matched_count": 1,
+        "matched_terms": [
+          "pull"
+        ],
+        "density": 0.001323
+      },
+      "slang_vehicles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_clothing_jewelry": {
+        "matched_count": 1,
+        "matched_terms": [
+          "rock"
+        ],
+        "density": 0.001323
+      },
+      "slang_music_performance": {
+        "matched_count": 2,
+        "matched_terms": [
+          "spit",
+          "rap"
+        ],
+        "density": 0.002646
+      },
+      "slang_general": {
+        "matched_count": 5,
+        "matched_terms": [
+          "take",
+          "coming",
+          "come",
+          "get",
+          "got"
+        ],
+        "density": 0.006614
+      },
+      "classic_80s_90s": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_golden_era": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_modern": {
+        "matched_count": 3,
+        "matched_terms": [
+          "fire",
+          "lit",
+          "bet"
+        ],
+        "density": 0.003968
+      },
+      "regional_south": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_east_coast": {
+        "matched_count": 1,
+        "matched_terms": [
+          "true"
+        ],
+        "density": 0.001323
+      },
+      "regional_west_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_midwest": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_atlanta": {
+        "matched_count": 1,
+        "matched_terms": [
+          "lit"
+        ],
+        "density": 0.001323
+      },
+      "regional_general": {
+        "matched_count": 3,
+        "matched_terms": [
+          "thug",
+          "real",
+          "gangster"
+        ],
+        "density": 0.003968
+      },
+      "context_positive_context": {
+        "matched_count": 2,
+        "matched_terms": [
+          "love",
+          "respect"
+        ],
+        "density": 0.002646
+      },
+      "context_negative_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_affirmations": {
+        "matched_count": 1,
+        "matched_terms": [
+          "true"
+        ],
+        "density": 0.001323
+      },
+      "context_exclamations": {
+        "matched_count": 1,
+        "matched_terms": [
+          "damn"
+        ],
+        "density": 0.001323
+      },
+      "phonological": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "whisper_normalized": {
+        "matched_count": 7,
+        "matched_terms": [
+          "dat",
+          "dis",
+          "dey",
+          "dem",
+          "fo",
+          "mo",
+          "yo"
+        ],
+        "density": 0.009259,
+        "note": "AAVE forms likely spoken but normalized by Whisper ASR"
+      }
+    },
+    "grammar": {
+      "patterns_found": 1,
+      "weighted_score": 1.5,
+      "matches": [
+        {
+          "pattern": "negative_concord",
+          "count": 1,
+          "weight": 1.5,
+          "examples": [
+            "ain't no"
+          ]
+        }
+      ]
+    },
+    "totals": {
+      "lexical_matches": 49,
+      "grammar_matches": 1,
+      "combined_matches": 50,
+      "aave_density": 0.066799,
+      "unique_terms": 35,
+      "aave_richness": 0.7143
+    },
+    "all_matched_terms": [
+      "spit",
+      "dem",
+      "yo",
+      "take",
+      "stupid",
+      "coming",
+      "pull",
+      "come",
+      "dat",
+      "love",
+      "set",
+      "respect",
+      "damn",
+      "dis",
+      "fo",
+      "get",
+      "hard",
+      "fire",
+      "true",
+      "war",
+      "lit",
+      "real",
+      "got",
+      "rock",
+      "dey",
+      "bet",
+      "wanna",
+      "gangster",
+      "mo",
+      "bitch",
+      "gotta",
+      "rocks",
+      "rap",
+      "ain't",
+      "thug"
+    ]
+  },
+  "reinman_metrics": {
+    "sds_score": 1.9983,
+    "tvt_score": 828.46,
+    "spectral_rigidity": 0.2677,
+    "lyric_valence": -0.9983,
+    "audio_arousal": 1.0
+  },
+  "god_equation": {
+    "sci_with_aave": 3.3421,
+    "sci_without_aave": 2.3288,
+    "variance_percent": 43.51,
+    "intelligence_score": 5.5081,
+    "mir_score_legacy_v7": 2.693,
+    "components": {
+      "R_spectral_rigidity": 1.4526,
+      "T_topological_complexity": 8.2846,
+      "C_aave_density": 6.6799,
+      "S_semantic_compression": 4.415,
+      "V_volatility_composite": 8.9949,
+      "D_decay_penalty": 6.481,
+      "H_harmonic_ratio": 9.616
+    },
+    "weighted_contributions": {
+      "rigidity": 0.3631,
+      "topology": 1.2427,
+      "cultural": 1.67,
+      "semantic": 0.883,
+      "volatility": 1.3492
+    },
+    "provenance_tag": "AOR-SCI-1ddfe37f-0334"
+  },
+  "transcript": {
+    "text": " I'm a soldier I'm a soldier I'm a soldier I'm a soldier Never was a thug just infatuated with guns Never was a gangster till I graduated to war And then got the rap of a villain But weapon concealing Took the image of a thug, captured a villain Willing to stick out my neck for respect If it meant life or death Never lived to regret what I said When you're me, people just wanna see If it's true, if it's you What you say in your rap, what you do So they feel it's part of your obligation to fulfil...",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          50364,
+          286,
+          478,
+          257,
+          15632,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26470518112182617,
+        "compression_ratio": 1.6542056074766356,
+        "no_speech_prob": 0.33503252267837524
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 5.0,
+        "end": 7.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          50614,
+          286,
+          478,
+          257,
+          15632,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26470518112182617,
+        "compression_ratio": 1.6542056074766356,
+        "no_speech_prob": 0.33503252267837524
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 10.0,
+        "end": 12.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          50864,
+          286,
+          478,
+          257,
+          15632,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26470518112182617,
+        "compression_ratio": 1.6542056074766356,
+        "no_speech_prob": 0.33503252267837524
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 15.0,
+        "end": 17.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          51114,
+          286,
+          478,
+          257,
+          15632,
+          51214
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26470518112182617,
+        "compression_ratio": 1.6542056074766356,
+        "no_speech_prob": 0.33503252267837524
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 20.0,
+        "end": 23.0,
+        "text": " Never was a thug just infatuated with guns",
+        "tokens": [
+          51364,
+          7344,
+          390,
+          257,
+          258,
+          697,
+          445,
+          1536,
+          20546,
+          770,
+          365,
+          10153,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26470518112182617,
+        "compression_ratio": 1.6542056074766356,
+        "no_speech_prob": 0.33503252267837524
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 23.0,
+        "end": 25.0,
+        "text": " Never was a gangster till I graduated to war",
+        "tokens": [
+          51514,
+          7344,
+          390,
+          257,
+          50104,
+          4288,
+          286,
+          13693,
+          281,
+          1516,
+          51614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26470518112182617,
+        "compression_ratio": 1.6542056074766356,
+        "no_speech_prob": 0.33503252267837524
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 25.0,
+        "end": 27.0,
+        "text": " And then got the rap of a villain",
+        "tokens": [
+          51614,
+          400,
+          550,
+          658,
+          264,
+          5099,
+          295,
+          257,
+          17906,
+          51714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26470518112182617,
+        "compression_ratio": 1.6542056074766356,
+        "no_speech_prob": 0.33503252267837524
+      },
+      {
+        "id": 7,
+        "seek": 2700,
+        "start": 27.0,
+        "end": 29.0,
+        "text": " But weapon concealing",
+        "tokens": [
+          50364,
+          583,
+          7463,
+          10413,
+          4270,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 8,
+        "seek": 2700,
+        "start": 29.0,
+        "end": 31.0,
+        "text": " Took the image of a thug, captured a villain",
+        "tokens": [
+          50464,
+          38288,
+          264,
+          3256,
+          295,
+          257,
+          258,
+          697,
+          11,
+          11828,
+          257,
+          17906,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 9,
+        "seek": 2700,
+        "start": 31.0,
+        "end": 33.0,
+        "text": " Willing to stick out my neck for respect",
+        "tokens": [
+          50564,
+          3099,
+          278,
+          281,
+          2897,
+          484,
+          452,
+          6189,
+          337,
+          3104,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 10,
+        "seek": 2700,
+        "start": 33.0,
+        "end": 34.0,
+        "text": " If it meant life or death",
+        "tokens": [
+          50664,
+          759,
+          309,
+          4140,
+          993,
+          420,
+          2966,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 11,
+        "seek": 2700,
+        "start": 34.0,
+        "end": 36.0,
+        "text": " Never lived to regret what I said",
+        "tokens": [
+          50714,
+          7344,
+          5152,
+          281,
+          10879,
+          437,
+          286,
+          848,
+          50814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 12,
+        "seek": 2700,
+        "start": 36.0,
+        "end": 38.0,
+        "text": " When you're me, people just wanna see",
+        "tokens": [
+          50814,
+          1133,
+          291,
+          434,
+          385,
+          11,
+          561,
+          445,
+          1948,
+          536,
+          50914
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 13,
+        "seek": 2700,
+        "start": 38.0,
+        "end": 39.0,
+        "text": " If it's true, if it's you",
+        "tokens": [
+          50914,
+          759,
+          309,
+          311,
+          2074,
+          11,
+          498,
+          309,
+          311,
+          291,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 14,
+        "seek": 2700,
+        "start": 39.0,
+        "end": 41.0,
+        "text": " What you say in your rap, what you do",
+        "tokens": [
+          50964,
+          708,
+          291,
+          584,
+          294,
+          428,
+          5099,
+          11,
+          437,
+          291,
+          360,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 15,
+        "seek": 2700,
+        "start": 41.0,
+        "end": 43.0,
+        "text": " So they feel it's part of your obligation to fulfill",
+        "tokens": [
+          51064,
+          407,
+          436,
+          841,
+          309,
+          311,
+          644,
+          295,
+          428,
+          20326,
+          281,
+          13875,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 16,
+        "seek": 2700,
+        "start": 43.0,
+        "end": 46.0,
+        "text": " When they see you on the streets, face to face with you for real",
+        "tokens": [
+          51164,
+          1133,
+          436,
+          536,
+          291,
+          322,
+          264,
+          8481,
+          11,
+          1851,
+          281,
+          1851,
+          365,
+          291,
+          337,
+          957,
+          51314
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 17,
+        "seek": 2700,
+        "start": 46.0,
+        "end": 48.0,
+        "text": " And confrontation ain't no conversation",
+        "tokens": [
+          51314,
+          400,
+          35363,
+          7862,
+          380,
+          572,
+          3761,
+          51414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 18,
+        "seek": 2700,
+        "start": 48.0,
+        "end": 50.0,
+        "text": " If you feel you're in violation",
+        "tokens": [
+          51414,
+          759,
+          291,
+          841,
+          291,
+          434,
+          294,
+          22840,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 19,
+        "seek": 2700,
+        "start": 50.0,
+        "end": 51.0,
+        "text": " Any hesitation to get you killed",
+        "tokens": [
+          51514,
+          2639,
+          36125,
+          281,
+          483,
+          291,
+          4652,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 20,
+        "seek": 2700,
+        "start": 51.0,
+        "end": 52.0,
+        "text": " If you feel it, kill it",
+        "tokens": [
+          51564,
+          759,
+          291,
+          841,
+          309,
+          11,
+          1961,
+          309,
+          51614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 21,
+        "seek": 2700,
+        "start": 52.0,
+        "end": 53.0,
+        "text": " If you conceal it, rebuild it",
+        "tokens": [
+          51614,
+          759,
+          291,
+          40170,
+          309,
+          11,
+          16877,
+          309,
+          51664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 22,
+        "seek": 2700,
+        "start": 53.0,
+        "end": 55.0,
+        "text": " Being reasonable to leave you full of bullets",
+        "tokens": [
+          51664,
+          8891,
+          10585,
+          281,
+          1856,
+          291,
+          1577,
+          295,
+          20132,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12302890455866435,
+        "compression_ratio": 1.7777777777777777,
+        "no_speech_prob": 0.5433552265167236
+      },
+      {
+        "id": 23,
+        "seek": 5500,
+        "start": 55.0,
+        "end": 56.0,
+        "text": " Pull it, squeeze it",
+        "tokens": [
+          50364,
+          15074,
+          309,
+          11,
+          13578,
+          309,
+          50414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 24,
+        "seek": 5500,
+        "start": 56.0,
+        "end": 58.0,
+        "text": " So it's empty, tempt me, push me",
+        "tokens": [
+          50414,
+          407,
+          309,
+          311,
+          6707,
+          11,
+          13794,
+          385,
+          11,
+          2944,
+          385,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 25,
+        "seek": 5500,
+        "start": 58.0,
+        "end": 61.0,
+        "text": " Pussies, I need a good reason to give this trigger a good squeeze",
+        "tokens": [
+          50514,
+          430,
+          2023,
+          530,
+          11,
+          286,
+          643,
+          257,
+          665,
+          1778,
+          281,
+          976,
+          341,
+          7875,
+          257,
+          665,
+          13578,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 26,
+        "seek": 5500,
+        "start": 61.0,
+        "end": 62.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          50664,
+          286,
+          478,
+          257,
+          15632,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 27,
+        "seek": 5500,
+        "start": 62.0,
+        "end": 64.0,
+        "text": " These shoulders hold up so much",
+        "tokens": [
+          50714,
+          1981,
+          10245,
+          1797,
+          493,
+          370,
+          709,
+          50814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 28,
+        "seek": 5500,
+        "start": 64.0,
+        "end": 65.0,
+        "text": " They won't budge",
+        "tokens": [
+          50814,
+          814,
+          1582,
+          380,
+          3265,
+          432,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 29,
+        "seek": 5500,
+        "start": 65.0,
+        "end": 66.0,
+        "text": " I'll never fall or fold up",
+        "tokens": [
+          50864,
+          286,
+          603,
+          1128,
+          2100,
+          420,
+          4860,
+          493,
+          50914
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 30,
+        "seek": 5500,
+        "start": 66.0,
+        "end": 67.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          50914,
+          286,
+          478,
+          257,
+          15632,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 31,
+        "seek": 5500,
+        "start": 67.0,
+        "end": 69.0,
+        "text": " Even if my collarbones crush or crumble",
+        "tokens": [
+          50964,
+          2754,
+          498,
+          452,
+          20672,
+          44954,
+          10321,
+          420,
+          47478,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 32,
+        "seek": 5500,
+        "start": 69.0,
+        "end": 71.0,
+        "text": " I will never slip or stumble",
+        "tokens": [
+          51064,
+          286,
+          486,
+          1128,
+          11140,
+          420,
+          41302,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 33,
+        "seek": 5500,
+        "start": 71.0,
+        "end": 72.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          51164,
+          286,
+          478,
+          257,
+          15632,
+          51214
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 34,
+        "seek": 5500,
+        "start": 72.0,
+        "end": 74.0,
+        "text": " These shoulders hold up so much",
+        "tokens": [
+          51214,
+          1981,
+          10245,
+          1797,
+          493,
+          370,
+          709,
+          51314
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 35,
+        "seek": 5500,
+        "start": 74.0,
+        "end": 75.0,
+        "text": " They won't budge",
+        "tokens": [
+          51314,
+          814,
+          1582,
+          380,
+          3265,
+          432,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 36,
+        "seek": 5500,
+        "start": 75.0,
+        "end": 76.0,
+        "text": " I'll never fall or fold up",
+        "tokens": [
+          51364,
+          286,
+          603,
+          1128,
+          2100,
+          420,
+          4860,
+          493,
+          51414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 37,
+        "seek": 5500,
+        "start": 76.0,
+        "end": 77.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          51414,
+          286,
+          478,
+          257,
+          15632,
+          51464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 38,
+        "seek": 5500,
+        "start": 77.0,
+        "end": 79.0,
+        "text": " Even if my collarbones crush or crumble",
+        "tokens": [
+          51464,
+          2754,
+          498,
+          452,
+          20672,
+          44954,
+          10321,
+          420,
+          47478,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 39,
+        "seek": 5500,
+        "start": 79.0,
+        "end": 81.0,
+        "text": " I will never stumble",
+        "tokens": [
+          51564,
+          286,
+          486,
+          1128,
+          41302,
+          51664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 40,
+        "seek": 5500,
+        "start": 81.0,
+        "end": 83.0,
+        "text": " I love pissing you off",
+        "tokens": [
+          51664,
+          286,
+          959,
+          15171,
+          278,
+          291,
+          766,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06275405135809206,
+        "compression_ratio": 2.314009661835749,
+        "no_speech_prob": 0.32658135890960693
+      },
+      {
+        "id": 41,
+        "seek": 8300,
+        "start": 83.0,
+        "end": 84.0,
+        "text": " It gets me off",
+        "tokens": [
+          50364,
+          467,
+          2170,
+          385,
+          766,
+          50414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 42,
+        "seek": 8300,
+        "start": 84.0,
+        "end": 86.0,
+        "text": " Like my lawyers when the fucking judge lets me off",
+        "tokens": [
+          50414,
+          1743,
+          452,
+          16219,
+          562,
+          264,
+          5546,
+          6995,
+          6653,
+          385,
+          766,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 43,
+        "seek": 8300,
+        "start": 86.0,
+        "end": 89.0,
+        "text": " All you motherfuckers gotta do is set me off",
+        "tokens": [
+          50514,
+          1057,
+          291,
+          29537,
+          1134,
+          433,
+          3428,
+          360,
+          307,
+          992,
+          385,
+          766,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 44,
+        "seek": 8300,
+        "start": 89.0,
+        "end": 91.0,
+        "text": " I'll pile it and all the motherfucking pets be off",
+        "tokens": [
+          50664,
+          286,
+          603,
+          14375,
+          309,
+          293,
+          439,
+          264,
+          29537,
+          33260,
+          19897,
+          312,
+          766,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 45,
+        "seek": 8300,
+        "start": 91.0,
+        "end": 92.0,
+        "text": " I'm a lit fuse",
+        "tokens": [
+          50764,
+          286,
+          478,
+          257,
+          7997,
+          31328,
+          50814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 46,
+        "seek": 8300,
+        "start": 92.0,
+        "end": 94.0,
+        "text": " Anything I do, bitch, it's news",
+        "tokens": [
+          50814,
+          11998,
+          286,
+          360,
+          11,
+          11960,
+          11,
+          309,
+          311,
+          2583,
+          50914
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 47,
+        "seek": 8300,
+        "start": 94.0,
+        "end": 97.0,
+        "text": " Pistol-ripping motherfucking bouncer, 6-2",
+        "tokens": [
+          50914,
+          430,
+          34431,
+          12,
+          470,
+          3759,
+          29537,
+          33260,
+          272,
+          14296,
+          11,
+          1386,
+          12,
+          17,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 48,
+        "seek": 8300,
+        "start": 97.0,
+        "end": 98.0,
+        "text": " Who needs bullets?",
+        "tokens": [
+          51064,
+          2102,
+          2203,
+          20132,
+          30,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 49,
+        "seek": 8300,
+        "start": 98.0,
+        "end": 99.0,
+        "text": " As soon as I pull it, you sweat bullets",
+        "tokens": [
+          51114,
+          1018,
+          2321,
+          382,
+          286,
+          2235,
+          309,
+          11,
+          291,
+          11872,
+          20132,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 50,
+        "seek": 8300,
+        "start": 99.0,
+        "end": 102.0,
+        "text": " An excellent bet that you get rid of the next bully",
+        "tokens": [
+          51164,
+          1107,
+          7103,
+          778,
+          300,
+          291,
+          483,
+          3973,
+          295,
+          264,
+          958,
+          29123,
+          51314
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 51,
+        "seek": 8300,
+        "start": 102.0,
+        "end": 103.0,
+        "text": " It's actually better",
+        "tokens": [
+          51314,
+          467,
+          311,
+          767,
+          1101,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 52,
+        "seek": 8300,
+        "start": 103.0,
+        "end": 106.0,
+        "text": " Cause instead of you murdering, you can hurt him and come back",
+        "tokens": [
+          51364,
+          10865,
+          2602,
+          295,
+          291,
+          6568,
+          278,
+          11,
+          291,
+          393,
+          4607,
+          796,
+          293,
+          808,
+          646,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 53,
+        "seek": 8300,
+        "start": 106.0,
+        "end": 107.0,
+        "text": " A kidney kicked hard in a mystic horn",
+        "tokens": [
+          51514,
+          316,
+          19000,
+          14609,
+          1152,
+          294,
+          257,
+          9111,
+          299,
+          13482,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 54,
+        "seek": 8300,
+        "start": 107.0,
+        "end": 109.0,
+        "text": " Salt in the wounds, the song gets sued",
+        "tokens": [
+          51564,
+          19503,
+          294,
+          264,
+          21969,
+          11,
+          264,
+          2153,
+          2170,
+          33864,
+          51664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 55,
+        "seek": 8300,
+        "start": 109.0,
+        "end": 112.0,
+        "text": " You can smell the lawsuit soon as I walk in the room",
+        "tokens": [
+          51664,
+          509,
+          393,
+          4316,
+          264,
+          22504,
+          2321,
+          382,
+          286,
+          1792,
+          294,
+          264,
+          1808,
+          51814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.21512721135066107,
+        "compression_ratio": 1.7113095238095237,
+        "no_speech_prob": 0.8530640602111816
+      },
+      {
+        "id": 56,
+        "seek": 11200,
+        "start": 112.0,
+        "end": 113.0,
+        "text": " Everybody holds and stops",
+        "tokens": [
+          50364,
+          7646,
+          9190,
+          293,
+          10094,
+          50414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 57,
+        "seek": 11200,
+        "start": 113.0,
+        "end": 114.0,
+        "text": " He calls the cops",
+        "tokens": [
+          50414,
+          634,
+          5498,
+          264,
+          19012,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 58,
+        "seek": 11200,
+        "start": 114.0,
+        "end": 117.0,
+        "text": " All you see is bitches coming out their halter tops",
+        "tokens": [
+          50464,
+          1057,
+          291,
+          536,
+          307,
+          42094,
+          1348,
+          484,
+          641,
+          7523,
+          391,
+          22836,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 59,
+        "seek": 11200,
+        "start": 117.0,
+        "end": 118.0,
+        "text": " Running and ducking out the hot rocks",
+        "tokens": [
+          50614,
+          28136,
+          293,
+          12482,
+          278,
+          484,
+          264,
+          2368,
+          10989,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 60,
+        "seek": 11200,
+        "start": 118.0,
+        "end": 120.0,
+        "text": " Parking light, your law gets shot",
+        "tokens": [
+          50664,
+          4964,
+          278,
+          1442,
+          11,
+          428,
+          2101,
+          2170,
+          3347,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 61,
+        "seek": 11200,
+        "start": 120.0,
+        "end": 122.0,
+        "text": " Living with your faults and not this",
+        "tokens": [
+          50764,
+          18824,
+          365,
+          428,
+          36090,
+          293,
+          406,
+          341,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 62,
+        "seek": 11200,
+        "start": 122.0,
+        "end": 123.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          50864,
+          286,
+          478,
+          257,
+          15632,
+          50914
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 63,
+        "seek": 11200,
+        "start": 123.0,
+        "end": 125.0,
+        "text": " These shoulders hold up so much",
+        "tokens": [
+          50914,
+          1981,
+          10245,
+          1797,
+          493,
+          370,
+          709,
+          51014
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 64,
+        "seek": 11200,
+        "start": 125.0,
+        "end": 126.0,
+        "text": " They won't budge",
+        "tokens": [
+          51014,
+          814,
+          1582,
+          380,
+          3265,
+          432,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 65,
+        "seek": 11200,
+        "start": 126.0,
+        "end": 127.0,
+        "text": " I'll never fall or fold up",
+        "tokens": [
+          51064,
+          286,
+          603,
+          1128,
+          2100,
+          420,
+          4860,
+          493,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 66,
+        "seek": 11200,
+        "start": 127.0,
+        "end": 128.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          51114,
+          286,
+          478,
+          257,
+          15632,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 67,
+        "seek": 11200,
+        "start": 128.0,
+        "end": 130.0,
+        "text": " Even if my collarbones crush or crumble",
+        "tokens": [
+          51164,
+          2754,
+          498,
+          452,
+          20672,
+          44954,
+          10321,
+          420,
+          47478,
+          51264
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 68,
+        "seek": 11200,
+        "start": 130.0,
+        "end": 132.0,
+        "text": " I will never stumble",
+        "tokens": [
+          51264,
+          286,
+          486,
+          1128,
+          41302,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 69,
+        "seek": 11200,
+        "start": 132.0,
+        "end": 133.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          51364,
+          286,
+          478,
+          257,
+          15632,
+          51414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 70,
+        "seek": 11200,
+        "start": 133.0,
+        "end": 135.0,
+        "text": " These shoulders hold up so much",
+        "tokens": [
+          51414,
+          1981,
+          10245,
+          1797,
+          493,
+          370,
+          709,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 71,
+        "seek": 11200,
+        "start": 135.0,
+        "end": 136.0,
+        "text": " They won't budge",
+        "tokens": [
+          51514,
+          814,
+          1582,
+          380,
+          3265,
+          432,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 72,
+        "seek": 11200,
+        "start": 136.0,
+        "end": 137.0,
+        "text": " I'll never fall or fold up",
+        "tokens": [
+          51564,
+          286,
+          603,
+          1128,
+          2100,
+          420,
+          4860,
+          493,
+          51614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 73,
+        "seek": 11200,
+        "start": 137.0,
+        "end": 138.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          51614,
+          286,
+          478,
+          257,
+          15632,
+          51664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 74,
+        "seek": 11200,
+        "start": 138.0,
+        "end": 140.0,
+        "text": " Even if my collarbones crush or crumble",
+        "tokens": [
+          51664,
+          2754,
+          498,
+          452,
+          20672,
+          44954,
+          10321,
+          420,
+          47478,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.12696982049322747,
+        "compression_ratio": 2.2017167381974247,
+        "no_speech_prob": 0.1315038949251175
+      },
+      {
+        "id": 75,
+        "seek": 14000,
+        "start": 140.0,
+        "end": 141.0,
+        "text": " I will never stumble",
+        "tokens": [
+          50364,
+          286,
+          486,
+          1128,
+          41302,
+          50414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 76,
+        "seek": 14000,
+        "start": 141.0,
+        "end": 142.0,
+        "text": " I spit explosives",
+        "tokens": [
+          50414,
+          286,
+          22127,
+          46421,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 77,
+        "seek": 14000,
+        "start": 142.0,
+        "end": 144.0,
+        "text": " These kids know that I'm talking to them",
+        "tokens": [
+          50464,
+          1981,
+          2301,
+          458,
+          300,
+          286,
+          478,
+          1417,
+          281,
+          552,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 78,
+        "seek": 14000,
+        "start": 144.0,
+        "end": 146.0,
+        "text": " Give it back to these damn critics and sock it to them",
+        "tokens": [
+          50564,
+          5303,
+          309,
+          646,
+          281,
+          613,
+          8151,
+          22503,
+          293,
+          35302,
+          309,
+          281,
+          552,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 79,
+        "seek": 14000,
+        "start": 146.0,
+        "end": 147.0,
+        "text": " I'm like a thug",
+        "tokens": [
+          50664,
+          286,
+          478,
+          411,
+          257,
+          258,
+          697,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 80,
+        "seek": 14000,
+        "start": 147.0,
+        "end": 149.0,
+        "text": " With a little bit of Pac influence",
+        "tokens": [
+          50714,
+          2022,
+          257,
+          707,
+          857,
+          295,
+          10702,
+          6503,
+          50814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 81,
+        "seek": 14000,
+        "start": 149.0,
+        "end": 152.0,
+        "text": " I'll spew it and look how I got you bitches rocking to it",
+        "tokens": [
+          50814,
+          286,
+          603,
+          768,
+          86,
+          309,
+          293,
+          574,
+          577,
+          286,
+          658,
+          291,
+          42094,
+          30929,
+          281,
+          309,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 82,
+        "seek": 14000,
+        "start": 152.0,
+        "end": 154.0,
+        "text": " You motherfuckers can never do it like I can do it",
+        "tokens": [
+          50964,
+          509,
+          29537,
+          1134,
+          433,
+          393,
+          1128,
+          360,
+          309,
+          411,
+          286,
+          393,
+          360,
+          309,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 83,
+        "seek": 14000,
+        "start": 154.0,
+        "end": 155.0,
+        "text": " Don't even try it",
+        "tokens": [
+          51064,
+          1468,
+          380,
+          754,
+          853,
+          309,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 84,
+        "seek": 14000,
+        "start": 155.0,
+        "end": 156.0,
+        "text": " You look stupid",
+        "tokens": [
+          51114,
+          509,
+          574,
+          6631,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 85,
+        "seek": 14000,
+        "start": 156.0,
+        "end": 157.0,
+        "text": " Do not pursue it",
+        "tokens": [
+          51164,
+          1144,
+          406,
+          12392,
+          309,
+          51214
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 86,
+        "seek": 14000,
+        "start": 157.0,
+        "end": 159.0,
+        "text": " Don't ever in your life try to knock the truest",
+        "tokens": [
+          51214,
+          1468,
+          380,
+          1562,
+          294,
+          428,
+          993,
+          853,
+          281,
+          6728,
+          264,
+          504,
+          11493,
+          51314
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 87,
+        "seek": 14000,
+        "start": 159.0,
+        "end": 162.0,
+        "text": " I spit the illest shit ever bitch, rock it to it",
+        "tokens": [
+          51314,
+          286,
+          22127,
+          264,
+          3171,
+          377,
+          4611,
+          1562,
+          11960,
+          11,
+          3727,
+          309,
+          281,
+          309,
+          51464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 88,
+        "seek": 14000,
+        "start": 162.0,
+        "end": 163.0,
+        "text": " So take a dock",
+        "tokens": [
+          51464,
+          407,
+          747,
+          257,
+          20929,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 89,
+        "seek": 14000,
+        "start": 163.0,
+        "end": 164.0,
+        "text": " Listen, there's a sound",
+        "tokens": [
+          51514,
+          7501,
+          11,
+          456,
+          311,
+          257,
+          1626,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 90,
+        "seek": 14000,
+        "start": 164.0,
+        "end": 165.0,
+        "text": " Six on the clock",
+        "tokens": [
+          51564,
+          11678,
+          322,
+          264,
+          7830,
+          51614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 91,
+        "seek": 14000,
+        "start": 165.0,
+        "end": 166.0,
+        "text": " Listen to the sound of Kim",
+        "tokens": [
+          51614,
+          7501,
+          281,
+          264,
+          1626,
+          295,
+          5652,
+          51664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 92,
+        "seek": 14000,
+        "start": 166.0,
+        "end": 167.0,
+        "text": " And she licks on her cock",
+        "tokens": [
+          51664,
+          400,
+          750,
+          287,
+          7663,
+          322,
+          720,
+          11241,
+          51714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 93,
+        "seek": 14000,
+        "start": 167.0,
+        "end": 168.0,
+        "text": " Listen to the sound of me",
+        "tokens": [
+          51714,
+          7501,
+          281,
+          264,
+          1626,
+          295,
+          385,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.16667722989727,
+        "compression_ratio": 1.803125,
+        "no_speech_prob": 0.6053168177604675
+      },
+      {
+        "id": 94,
+        "seek": 16800,
+        "start": 168.0,
+        "end": 169.0,
+        "text": " Listen to the sound of me",
+        "tokens": [
+          50364,
+          7501,
+          281,
+          264,
+          1626,
+          295,
+          385,
+          50414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 95,
+        "seek": 16800,
+        "start": 169.0,
+        "end": 170.0,
+        "text": " Spilling my heart through this pen",
+        "tokens": [
+          50414,
+          1738,
+          7345,
+          452,
+          1917,
+          807,
+          341,
+          3435,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 96,
+        "seek": 16800,
+        "start": 170.0,
+        "end": 173.0,
+        "text": " Motherfuckers know that I'll never be marshaled again",
+        "tokens": [
+          50464,
+          8931,
+          69,
+          1134,
+          433,
+          458,
+          300,
+          286,
+          603,
+          1128,
+          312,
+          30517,
+          4947,
+          292,
+          797,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 97,
+        "seek": 16800,
+        "start": 173.0,
+        "end": 174.0,
+        "text": " Full of controversy",
+        "tokens": [
+          50614,
+          13841,
+          295,
+          22976,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 98,
+        "seek": 16800,
+        "start": 174.0,
+        "end": 175.0,
+        "text": " Until I retire my jersey",
+        "tokens": [
+          50664,
+          9088,
+          286,
+          10731,
+          452,
+          40700,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 99,
+        "seek": 16800,
+        "start": 175.0,
+        "end": 178.0,
+        "text": " Till the fire inside dies and expires at thirty",
+        "tokens": [
+          50714,
+          20227,
+          264,
+          2610,
+          1854,
+          2714,
+          293,
+          1278,
+          3145,
+          412,
+          11790,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 100,
+        "seek": 16800,
+        "start": 178.0,
+        "end": 180.0,
+        "text": " And Lord have mercy on any more of these rappers",
+        "tokens": [
+          50864,
+          400,
+          3257,
+          362,
+          13174,
+          322,
+          604,
+          544,
+          295,
+          613,
+          45025,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 101,
+        "seek": 16800,
+        "start": 180.0,
+        "end": 182.0,
+        "text": " That burst me and put a curse on authorities",
+        "tokens": [
+          50964,
+          663,
+          12712,
+          385,
+          293,
+          829,
+          257,
+          17139,
+          322,
+          12076,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 102,
+        "seek": 16800,
+        "start": 182.0,
+        "end": 183.0,
+        "text": " In the face of adversity",
+        "tokens": [
+          51064,
+          682,
+          264,
+          1851,
+          295,
+          40018,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 103,
+        "seek": 16800,
+        "start": 183.0,
+        "end": 184.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          51114,
+          286,
+          478,
+          257,
+          15632,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 104,
+        "seek": 16800,
+        "start": 184.0,
+        "end": 186.0,
+        "text": " These shoulders hold up so much",
+        "tokens": [
+          51164,
+          1981,
+          10245,
+          1797,
+          493,
+          370,
+          709,
+          51264
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 105,
+        "seek": 16800,
+        "start": 186.0,
+        "end": 187.0,
+        "text": " They won't budge",
+        "tokens": [
+          51264,
+          814,
+          1582,
+          380,
+          3265,
+          432,
+          51314
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 106,
+        "seek": 16800,
+        "start": 187.0,
+        "end": 188.0,
+        "text": " I'll never fall or fold up",
+        "tokens": [
+          51314,
+          286,
+          603,
+          1128,
+          2100,
+          420,
+          4860,
+          493,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 107,
+        "seek": 16800,
+        "start": 188.0,
+        "end": 189.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          51364,
+          286,
+          478,
+          257,
+          15632,
+          51414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 108,
+        "seek": 16800,
+        "start": 189.0,
+        "end": 191.0,
+        "text": " Even if my collarbones crush or crumble",
+        "tokens": [
+          51414,
+          2754,
+          498,
+          452,
+          20672,
+          44954,
+          10321,
+          420,
+          47478,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 109,
+        "seek": 16800,
+        "start": 191.0,
+        "end": 193.0,
+        "text": " I will never stumble",
+        "tokens": [
+          51514,
+          286,
+          486,
+          1128,
+          41302,
+          51614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 110,
+        "seek": 16800,
+        "start": 193.0,
+        "end": 194.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          51614,
+          286,
+          478,
+          257,
+          15632,
+          51664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 111,
+        "seek": 16800,
+        "start": 194.0,
+        "end": 196.0,
+        "text": " These shoulders hold up so much",
+        "tokens": [
+          51664,
+          1981,
+          10245,
+          1797,
+          493,
+          370,
+          709,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 112,
+        "seek": 16800,
+        "start": 196.0,
+        "end": 197.0,
+        "text": " They won't budge",
+        "tokens": [
+          51764,
+          814,
+          1582,
+          380,
+          3265,
+          432,
+          51814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.06700635250703788,
+        "compression_ratio": 1.8466666666666667,
+        "no_speech_prob": 0.49774542450904846
+      },
+      {
+        "id": 113,
+        "seek": 19700,
+        "start": 197.0,
+        "end": 198.0,
+        "text": " I'll never fall or fold up",
+        "tokens": [
+          50364,
+          286,
+          603,
+          1128,
+          2100,
+          420,
+          4860,
+          493,
+          50414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.07230639457702637,
+        "compression_ratio": 1.1744186046511629,
+        "no_speech_prob": 0.20044219493865967
+      },
+      {
+        "id": 114,
+        "seek": 19700,
+        "start": 198.0,
+        "end": 199.0,
+        "text": " I'm a soldier",
+        "tokens": [
+          50414,
+          286,
+          478,
+          257,
+          15632,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.07230639457702637,
+        "compression_ratio": 1.1744186046511629,
+        "no_speech_prob": 0.20044219493865967
+      },
+      {
+        "id": 115,
+        "seek": 19700,
+        "start": 199.0,
+        "end": 202.0,
+        "text": " Even if my collarbones crush or crumble",
+        "tokens": [
+          50464,
+          2754,
+          498,
+          452,
+          20672,
+          44954,
+          10321,
+          420,
+          47478,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.07230639457702637,
+        "compression_ratio": 1.1744186046511629,
+        "no_speech_prob": 0.20044219493865967
+      },
+      {
+        "id": 116,
+        "seek": 19700,
+        "start": 202.0,
+        "end": 203.0,
+        "text": " I will never stumble",
+        "tokens": [
+          50614,
+          286,
+          486,
+          1128,
+          41302,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.07230639457702637,
+        "compression_ratio": 1.1744186046511629,
+        "no_speech_prob": 0.20044219493865967
+      }
+    ]
+  },
+  "processing_time_seconds": 34.79,
+  "total_features": 42267
+}

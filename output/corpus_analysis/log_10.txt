@@ -1,0 +1,13 @@
+============================================================
+AoR v7.0 SOVEREIGN - DEPENDENCY STATUS
+============================================================
+  PyTorch:    ❌ 
+  Whisper:    ❌
+  Librosa:    ❌
+  VADER:      ❌
+  Matplotlib: ❌
+  UMAP:       ❌
+  Essentia:   ❌
+  GUDHI:      ❌
+============================================================
+⚠️  Whisper unavailable - transcription disabled

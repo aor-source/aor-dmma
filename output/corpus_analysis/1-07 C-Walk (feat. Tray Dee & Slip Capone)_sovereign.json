@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Kurupt/Kuruption!/1-07 C-Walk (feat. Tray Dee & Slip Capone).m4a",
+    "duration": 311.67,
+    "analyzer": "AoR v7.0 MLX"
+  },
+  "transcript": " Yeah, this for the West Coast CD Let me clear my throat Check it out, check it out, check it out We gon' drop it like this Yeah, yeah, yeah, yeah This album is the best of both worlds Yeah, yeah, yeah This for the West Coast side Don't forget about Tradi If slips could hurt For the West Coast one Sagan, nigga, G'd up, sippin' Sip, nigga, dip, nigga, set, trip, nigga Got a grip, nigga, get a grip, nigga, with the gang in Rollin' with the out, I'm bangin' Homie, what you got? A couple sacks to se...",
+  "cultural_metrics": {
+    "aave_density": 0.0127,
+    "unique_terms": 8,
+    "grammar_patterns": 0,
+    "found_terms": [
+      "gotta",
+      "em",
+      "ain't",
+      "gon",
+      "dis",
+      "bout",
+      "tryna",
+      "gon'"
+    ],
+    "source": "enhanced_v2"
+  },
+  "reinman_metrics": {
+    "sds_score": 0.041,
+    "tvt_score": 726.0,
+    "spectral_rigidity": 0.2357,
+    "lyric_valence": 0.959,
+    "audio_arousal": 1.0
+  }
+}

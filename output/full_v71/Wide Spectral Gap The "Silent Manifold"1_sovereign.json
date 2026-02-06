@@ -1,0 +1,1746 @@
+{
+  "metadata": {
+    "filename": "Wide Spectral Gap The \"Silent Manifold\"1.wav",
+    "filepath": "/Users/alignmentnerd/aor-dmma/Wide Spectral Gap The \"Silent Manifold\"1.wav",
+    "file_hash": "16e4b399b67aefe574532322945921dd1bae57f170dd681185c7eaf34de7f511",
+    "file_size_bytes": 34752168,
+    "duration_seconds": 181.0,
+    "sample_rate": 22050,
+    "samples": 3991050,
+    "channels": 1,
+    "analysis_timestamp": "2026-02-06T09:02:59.449912",
+    "aor_version": "7.1-MLX-FULL"
+  },
+  "spectral": {
+    "chroma_mean": [
+      0.3004,
+      0.2759,
+      0.3492,
+      0.2958,
+      0.2746,
+      0.3357,
+      0.2923,
+      0.3899,
+      0.311,
+      0.333,
+      0.413,
+      0.2872
+    ],
+    "chroma_std": [
+      0.3555,
+      0.2678,
+      0.3468,
+      0.3026,
+      0.2835,
+      0.3285,
+      0.2594,
+      0.3572,
+      0.2726,
+      0.305,
+      0.375,
+      0.2658
+    ],
+    "mfcc_mean": [
+      -165.4972,
+      92.1693,
+      24.9675,
+      30.371,
+      8.456,
+      18.4869,
+      4.5991,
+      7.1936,
+      5.9606,
+      1.7317,
+      7.1315,
+      -1.3104,
+      -7.241
+    ],
+    "mfcc_std": [
+      80.2363,
+      32.467,
+      19.9041,
+      17.6762,
+      12.8161,
+      11.22,
+      11.4595,
+      11.014,
+      10.85,
+      10.7401,
+      9.0896,
+      9.1436,
+      8.0857
+    ],
+    "mfcc_delta_mean": [
+      0.0109,
+      0.0115,
+      0.0042,
+      0.0001,
+      -0.0008,
+      -0.0002,
+      0.0007,
+      0.0011,
+      0.0008,
+      0.0006,
+      0.0002,
+      -0.0008,
+      -0.0014
+    ],
+    "spectral_centroid_mean": 1894.06,
+    "spectral_centroid_std": 784.59,
+    "spectral_bandwidth_mean": 2488.82,
+    "spectral_bandwidth_std": 404.49,
+    "spectral_rolloff_mean": 4397.57,
+    "spectral_flatness_mean": 0.009361,
+    "spectral_contrast_mean": [
+      22.791,
+      20.5551,
+      21.7344,
+      19.8874,
+      18.2978,
+      17.1321,
+      46.7315
+    ],
+    "zero_crossing_rate_mean": 0.053462,
+    "spectral_rigidity": 1.2056,
+    "eigenvalue_spread": 3.527
+  },
+  "rhythmic": {
+    "onset_strength_mean": 1.1513,
+    "onset_strength_std": 1.102,
+    "tempo_bpm": 152.0,
+    "beat_count": 455,
+    "beat_interval_mean": 0.3938,
+    "beat_interval_std": 0.0243,
+    "beat_regularity": 0.9384,
+    "tempogram_ratio": 5.2516
+  },
+  "harmonic": {
+    "harmonic_ratio": 0.9906,
+    "tonnetz_mean": [
+      -0.0842,
+      0.2032,
+      0.1019,
+      -0.1107,
+      0.0232,
+      0.0065
+    ],
+    "tonnetz_std": [
+      0.263,
+      0.1409,
+      0.3077,
+      0.1755,
+      0.098,
+      0.107
+    ],
+    "pitch_mean": 986.87,
+    "pitch_std": 982.06
+  },
+  "energy": {
+    "rms_mean": 0.161141,
+    "rms_std": 0.081807,
+    "rms_max": 0.393993,
+    "rms_min": 8.1e-05,
+    "dynamic_range_db": 73.73,
+    "loudness_variance": 0.00669232,
+    "energy_p10": 0.056966,
+    "energy_p50": 0.153283,
+    "energy_p90": 0.275619
+  },
+  "linguistic": {
+    "word_count": 214,
+    "unique_words": 97,
+    "vocabulary_richness": 0.4533,
+    "char_count": 1115,
+    "avg_word_length": 4.2,
+    "segment_count": 81,
+    "words_per_segment_mean": 2.57,
+    "words_per_segment_std": 3.05,
+    "syllable_count": 318,
+    "syllables_per_word": 1.49,
+    "adjacent_rhymes": 0,
+    "syllables_per_second": 1.76,
+    "words_per_second": 1.18
+  },
+  "aave": {
+    "lexicon_source": "external_json",
+    "categories": {
+      "contractions": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "pronouns_and_articles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "semantic_inversions": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_positive": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_negative": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_intensifiers": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_money_terms": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_drugs_alcohol": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_violence_conflict": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_locations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_people": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_actions": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_vehicles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_clothing_jewelry": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_music_performance": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_general": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_80s_90s": {
+        "matched_count": 2,
+        "matched_terms": [
+          "loop",
+          "break"
+        ],
+        "density": 0.009346
+      },
+      "classic_golden_era": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_modern": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_south": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_east_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_west_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_midwest": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_atlanta": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_general": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_positive_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_negative_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_affirmations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_exclamations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "phonological": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "whisper_normalized": {
+        "matched_count": 1,
+        "matched_terms": [
+          "dat"
+        ],
+        "density": 0.004673,
+        "note": "AAVE forms likely spoken but normalized by Whisper ASR"
+      }
+    },
+    "grammar": {
+      "patterns_found": 0,
+      "weighted_score": 0.0,
+      "matches": []
+    },
+    "totals": {
+      "lexical_matches": 3,
+      "grammar_matches": 0,
+      "combined_matches": 3,
+      "aave_density": 0.014019,
+      "unique_terms": 3,
+      "aave_richness": 1.0
+    },
+    "all_matched_terms": [
+      "loop",
+      "dat",
+      "break"
+    ]
+  },
+  "reinman_metrics": {
+    "sds_score": 0.1519,
+    "tvt_score": 278.28,
+    "spectral_rigidity": 0.1994,
+    "lyric_valence": 0.8481,
+    "audio_arousal": 1.0
+  },
+  "god_equation": {
+    "sci_with_aave": 1.5839,
+    "sci_without_aave": 1.3573,
+    "variance_percent": 16.69,
+    "intelligence_score": 2.4498,
+    "mir_score_legacy_v7": 2.413,
+    "components": {
+      "R_spectral_rigidity": 1.2056,
+      "T_topological_complexity": 2.7828,
+      "C_aave_density": 1.4019,
+      "S_semantic_compression": 4.885,
+      "V_volatility_composite": 2.6899,
+      "D_decay_penalty": 5.467,
+      "H_harmonic_ratio": 9.906
+    },
+    "weighted_contributions": {
+      "rigidity": 0.3014,
+      "topology": 0.4174,
+      "cultural": 0.3505,
+      "semantic": 0.977,
+      "volatility": 0.4035
+    },
+    "provenance_tag": "AOR-SCI-16e4b399-0158"
+  },
+  "transcript": {
+    "text": " P clich\u00e9 Little loop in my head Tracing paths that never close Every thought finds a shortcut Back to where it started All the rooms in my chest Doors that open into doors I keep walking in a circle Naming every corridor I'm a strange loop Calling my own name Wide spectral gap between the heart and the brain Silence is a structure I can't break through Pure tone, humming like it already knew I'm a strange loop Folding into line Echo on echo in the back of the mind Subtle little tunnel under eve...",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 9.28,
+        "text": " P clich\u00e9",
+        "tokens": [
+          50364,
+          430,
+          39190,
+          526,
+          50828
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 25,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 26,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 27,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 28,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 29,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 30,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 31,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 32,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 33,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 34,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 35,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 36,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 37,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 38,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 39,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 40,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 41,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 42,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 43,
+        "seek": 0,
+        "start": 9.28,
+        "end": 9.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 1.0,
+        "avg_logprob": -0.39446292453342013,
+        "compression_ratio": 19.52173913043478,
+        "no_speech_prob": 0.3884314000606537,
+        "words": []
+      },
+      {
+        "id": 44,
+        "seek": 928,
+        "start": 9.28,
+        "end": 13.28,
+        "text": " Little loop in my head",
+        "tokens": [
+          50364,
+          8022,
+          6367,
+          294,
+          452,
+          1378,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11748594804243608,
+        "compression_ratio": 1.3695652173913044,
+        "no_speech_prob": 0.583034336566925
+      },
+      {
+        "id": 45,
+        "seek": 928,
+        "start": 13.28,
+        "end": 17.28,
+        "text": " Tracing paths that never close",
+        "tokens": [
+          50564,
+          1765,
+          5615,
+          14518,
+          300,
+          1128,
+          1998,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11748594804243608,
+        "compression_ratio": 1.3695652173913044,
+        "no_speech_prob": 0.583034336566925
+      },
+      {
+        "id": 46,
+        "seek": 928,
+        "start": 17.28,
+        "end": 21.28,
+        "text": " Every thought finds a shortcut",
+        "tokens": [
+          50764,
+          2048,
+          1194,
+          10704,
+          257,
+          24822,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11748594804243608,
+        "compression_ratio": 1.3695652173913044,
+        "no_speech_prob": 0.583034336566925
+      },
+      {
+        "id": 47,
+        "seek": 928,
+        "start": 21.28,
+        "end": 25.28,
+        "text": " Back to where it started",
+        "tokens": [
+          50964,
+          5833,
+          281,
+          689,
+          309,
+          1409,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11748594804243608,
+        "compression_ratio": 1.3695652173913044,
+        "no_speech_prob": 0.583034336566925
+      },
+      {
+        "id": 48,
+        "seek": 928,
+        "start": 25.28,
+        "end": 29.28,
+        "text": " All the rooms in my chest",
+        "tokens": [
+          51164,
+          1057,
+          264,
+          9396,
+          294,
+          452,
+          7443,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11748594804243608,
+        "compression_ratio": 1.3695652173913044,
+        "no_speech_prob": 0.583034336566925
+      },
+      {
+        "id": 49,
+        "seek": 928,
+        "start": 29.28,
+        "end": 33.28,
+        "text": " Doors that open into doors",
+        "tokens": [
+          51364,
+          1144,
+          830,
+          300,
+          1269,
+          666,
+          8077,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11748594804243608,
+        "compression_ratio": 1.3695652173913044,
+        "no_speech_prob": 0.583034336566925
+      },
+      {
+        "id": 50,
+        "seek": 928,
+        "start": 33.28,
+        "end": 37.28,
+        "text": " I keep walking in a circle",
+        "tokens": [
+          51564,
+          286,
+          1066,
+          4494,
+          294,
+          257,
+          6329,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11748594804243608,
+        "compression_ratio": 1.3695652173913044,
+        "no_speech_prob": 0.583034336566925
+      },
+      {
+        "id": 51,
+        "seek": 3728,
+        "start": 37.28,
+        "end": 41.28,
+        "text": " Naming every corridor",
+        "tokens": [
+          50364,
+          426,
+          5184,
+          633,
+          25602,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11294344236265938,
+        "compression_ratio": 1.3265306122448979,
+        "no_speech_prob": 0.005430460907518864
+      },
+      {
+        "id": 52,
+        "seek": 3728,
+        "start": 43.28,
+        "end": 47.28,
+        "text": " I'm a strange loop",
+        "tokens": [
+          50664,
+          286,
+          478,
+          257,
+          5861,
+          6367,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11294344236265938,
+        "compression_ratio": 1.3265306122448979,
+        "no_speech_prob": 0.005430460907518864
+      },
+      {
+        "id": 53,
+        "seek": 3728,
+        "start": 47.28,
+        "end": 51.28,
+        "text": " Calling my own name",
+        "tokens": [
+          50864,
+          44150,
+          452,
+          1065,
+          1315,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11294344236265938,
+        "compression_ratio": 1.3265306122448979,
+        "no_speech_prob": 0.005430460907518864
+      },
+      {
+        "id": 54,
+        "seek": 3728,
+        "start": 51.28,
+        "end": 57.28,
+        "text": " Wide spectral gap between the heart and the brain",
+        "tokens": [
+          51064,
+          42543,
+          42761,
+          7417,
+          1296,
+          264,
+          1917,
+          293,
+          264,
+          3567,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11294344236265938,
+        "compression_ratio": 1.3265306122448979,
+        "no_speech_prob": 0.005430460907518864
+      },
+      {
+        "id": 55,
+        "seek": 3728,
+        "start": 57.28,
+        "end": 61.28,
+        "text": " Silence is a structure I can't break through",
+        "tokens": [
+          51364,
+          34570,
+          307,
+          257,
+          3877,
+          286,
+          393,
+          380,
+          1821,
+          807,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11294344236265938,
+        "compression_ratio": 1.3265306122448979,
+        "no_speech_prob": 0.005430460907518864
+      },
+      {
+        "id": 56,
+        "seek": 3728,
+        "start": 61.28,
+        "end": 65.28,
+        "text": " Pure tone, humming like it already knew",
+        "tokens": [
+          51564,
+          29474,
+          8027,
+          11,
+          34965,
+          411,
+          309,
+          1217,
+          2586,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.11294344236265938,
+        "compression_ratio": 1.3265306122448979,
+        "no_speech_prob": 0.005430460907518864
+      },
+      {
+        "id": 57,
+        "seek": 6528,
+        "start": 65.28,
+        "end": 69.28,
+        "text": " I'm a strange loop",
+        "tokens": [
+          50364,
+          286,
+          478,
+          257,
+          5861,
+          6367,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18881977688182483,
+        "compression_ratio": 1.2991452991452992,
+        "no_speech_prob": 0.01521514542400837
+      },
+      {
+        "id": 58,
+        "seek": 6528,
+        "start": 69.28,
+        "end": 73.28,
+        "text": " Folding into line",
+        "tokens": [
+          50564,
+          24609,
+          278,
+          666,
+          1622,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18881977688182483,
+        "compression_ratio": 1.2991452991452992,
+        "no_speech_prob": 0.01521514542400837
+      },
+      {
+        "id": 59,
+        "seek": 6528,
+        "start": 73.28,
+        "end": 77.28,
+        "text": " Echo on echo in the back of the mind",
+        "tokens": [
+          50764,
+          31887,
+          322,
+          14300,
+          294,
+          264,
+          646,
+          295,
+          264,
+          1575,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18881977688182483,
+        "compression_ratio": 1.2991452991452992,
+        "no_speech_prob": 0.01521514542400837
+      },
+      {
+        "id": 60,
+        "seek": 6528,
+        "start": 77.28,
+        "end": 83.28,
+        "text": " Subtle little tunnel under every dark sideway",
+        "tokens": [
+          50964,
+          8511,
+          10972,
+          707,
+          13186,
+          833,
+          633,
+          2877,
+          1252,
+          676,
+          51264
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18881977688182483,
+        "compression_ratio": 1.2991452991452992,
+        "no_speech_prob": 0.01521514542400837
+      },
+      {
+        "id": 61,
+        "seek": 6528,
+        "start": 83.28,
+        "end": 89.28,
+        "text": " Singing till the world drops out",
+        "tokens": [
+          51264,
+          39483,
+          4288,
+          264,
+          1002,
+          11438,
+          484,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18881977688182483,
+        "compression_ratio": 1.2991452991452992,
+        "no_speech_prob": 0.01521514542400837
+      },
+      {
+        "id": 62,
+        "seek": 9528,
+        "start": 95.28,
+        "end": 99.28,
+        "text": " Write an answer in the air",
+        "tokens": [
+          50364,
+          23499,
+          364,
+          1867,
+          294,
+          264,
+          1988,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04510682316149695,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.016073040664196014
+      },
+      {
+        "id": 63,
+        "seek": 9528,
+        "start": 99.28,
+        "end": 103.28,
+        "text": " Proof that folds into a question",
+        "tokens": [
+          50564,
+          1705,
+          2670,
+          300,
+          31341,
+          666,
+          257,
+          1168,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04510682316149695,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.016073040664196014
+      },
+      {
+        "id": 64,
+        "seek": 9528,
+        "start": 103.28,
+        "end": 107.28,
+        "text": " Every line becomes a ladder",
+        "tokens": [
+          50764,
+          2048,
+          1622,
+          3643,
+          257,
+          18325,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04510682316149695,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.016073040664196014
+      },
+      {
+        "id": 65,
+        "seek": 9528,
+        "start": 107.28,
+        "end": 111.28,
+        "text": " Climbing back inside the theorem",
+        "tokens": [
+          50964,
+          2033,
+          332,
+          4324,
+          646,
+          1854,
+          264,
+          20904,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04510682316149695,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.016073040664196014
+      },
+      {
+        "id": 66,
+        "seek": 9528,
+        "start": 111.28,
+        "end": 115.28,
+        "text": " In weightless fields in the dark",
+        "tokens": [
+          51164,
+          682,
+          3364,
+          1832,
+          7909,
+          294,
+          264,
+          2877,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04510682316149695,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.016073040664196014
+      },
+      {
+        "id": 67,
+        "seek": 9528,
+        "start": 115.28,
+        "end": 119.28,
+        "text": " Curved space under my skin",
+        "tokens": [
+          51364,
+          7907,
+          937,
+          1901,
+          833,
+          452,
+          3178,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04510682316149695,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.016073040664196014
+      },
+      {
+        "id": 68,
+        "seek": 9528,
+        "start": 119.28,
+        "end": 123.28,
+        "text": " I keep testing every boundary",
+        "tokens": [
+          51564,
+          286,
+          1066,
+          4997,
+          633,
+          12866,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04510682316149695,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.016073040664196014
+      },
+      {
+        "id": 69,
+        "seek": 12328,
+        "start": 123.28,
+        "end": 129.28,
+        "text": " Just to fall back in",
+        "tokens": [
+          50364,
+          1449,
+          281,
+          2100,
+          646,
+          294,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04234691902443215,
+        "compression_ratio": 1.3287671232876712,
+        "no_speech_prob": 0.013200333341956139
+      },
+      {
+        "id": 70,
+        "seek": 12328,
+        "start": 129.28,
+        "end": 133.28,
+        "text": " I'm a strange loop",
+        "tokens": [
+          50664,
+          286,
+          478,
+          257,
+          5861,
+          6367,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04234691902443215,
+        "compression_ratio": 1.3287671232876712,
+        "no_speech_prob": 0.013200333341956139
+      },
+      {
+        "id": 71,
+        "seek": 12328,
+        "start": 133.28,
+        "end": 137.28,
+        "text": " Calling my own name",
+        "tokens": [
+          50864,
+          44150,
+          452,
+          1065,
+          1315,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04234691902443215,
+        "compression_ratio": 1.3287671232876712,
+        "no_speech_prob": 0.013200333341956139
+      },
+      {
+        "id": 72,
+        "seek": 12328,
+        "start": 137.28,
+        "end": 143.28,
+        "text": " Wide spectral gap between the heart and the brain",
+        "tokens": [
+          51064,
+          42543,
+          42761,
+          7417,
+          1296,
+          264,
+          1917,
+          293,
+          264,
+          3567,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04234691902443215,
+        "compression_ratio": 1.3287671232876712,
+        "no_speech_prob": 0.013200333341956139
+      },
+      {
+        "id": 73,
+        "seek": 12328,
+        "start": 143.28,
+        "end": 147.28,
+        "text": " Silence is a structure I can't break through",
+        "tokens": [
+          51364,
+          34570,
+          307,
+          257,
+          3877,
+          286,
+          393,
+          380,
+          1821,
+          807,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04234691902443215,
+        "compression_ratio": 1.3287671232876712,
+        "no_speech_prob": 0.013200333341956139
+      },
+      {
+        "id": 74,
+        "seek": 12328,
+        "start": 147.28,
+        "end": 151.28,
+        "text": " Pure tone, humming like it already knew",
+        "tokens": [
+          51564,
+          29474,
+          8027,
+          11,
+          34965,
+          411,
+          309,
+          1217,
+          2586,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.04234691902443215,
+        "compression_ratio": 1.3287671232876712,
+        "no_speech_prob": 0.013200333341956139
+      },
+      {
+        "id": 75,
+        "seek": 15128,
+        "start": 151.28,
+        "end": 155.28,
+        "text": " Calling",
+        "tokens": [
+          50364,
+          44150,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.05691390341900764,
+        "compression_ratio": 1.3008130081300813,
+        "no_speech_prob": 0.02239857241511345
+      },
+      {
+        "id": 76,
+        "seek": 15128,
+        "start": 155.28,
+        "end": 157.28,
+        "text": " I'm a strange loop",
+        "tokens": [
+          50564,
+          286,
+          478,
+          257,
+          5861,
+          6367,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.05691390341900764,
+        "compression_ratio": 1.3008130081300813,
+        "no_speech_prob": 0.02239857241511345
+      },
+      {
+        "id": 77,
+        "seek": 15128,
+        "start": 157.28,
+        "end": 159.28,
+        "text": " Folding into line",
+        "tokens": [
+          50664,
+          24609,
+          278,
+          666,
+          1622,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.05691390341900764,
+        "compression_ratio": 1.3008130081300813,
+        "no_speech_prob": 0.02239857241511345
+      },
+      {
+        "id": 78,
+        "seek": 15128,
+        "start": 159.28,
+        "end": 163.28,
+        "text": " Echo on echo in the back of the mind",
+        "tokens": [
+          50764,
+          31887,
+          322,
+          14300,
+          294,
+          264,
+          646,
+          295,
+          264,
+          1575,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.05691390341900764,
+        "compression_ratio": 1.3008130081300813,
+        "no_speech_prob": 0.02239857241511345
+      },
+      {
+        "id": 79,
+        "seek": 15128,
+        "start": 163.28,
+        "end": 169.28,
+        "text": " Subtle little tunnel under every dark sideway",
+        "tokens": [
+          50964,
+          8511,
+          10972,
+          707,
+          13186,
+          833,
+          633,
+          2877,
+          1252,
+          676,
+          51264
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.05691390341900764,
+        "compression_ratio": 1.3008130081300813,
+        "no_speech_prob": 0.02239857241511345
+      },
+      {
+        "id": 80,
+        "seek": 15128,
+        "start": 169.28,
+        "end": 179.28,
+        "text": " Singing till the world drops out",
+        "tokens": [
+          51264,
+          39483,
+          4288,
+          264,
+          1002,
+          11438,
+          484,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.05691390341900764,
+        "compression_ratio": 1.3008130081300813,
+        "no_speech_prob": 0.02239857241511345
+      }
+    ]
+  },
+  "processing_time_seconds": 27.24,
+  "total_features": 27466
+}

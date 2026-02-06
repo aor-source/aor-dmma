@@ -1,0 +1,53 @@
+{
+  "corpus_summary": {
+    "total_tracks": 17,
+    "total_duration_minutes": 86.9,
+    "avg_duration_seconds": 306.6
+  },
+  "aave_metrics": {
+    "mean_density": 0.69,
+    "std_density": 0.3,
+    "max_density": 1.23,
+    "min_density": 0.0,
+    "total_unique_terms": 79,
+    "total_grammar_patterns": 0
+  },
+  "reinman_metrics": {
+    "mean_sds": 0.7233,
+    "mean_tvt": 498.87,
+    "mean_spectral_rigidity": 0.2697,
+    "sds_tvt_correlation": 0.2715
+  },
+  "sentiment_analysis": {
+    "mean_lyric_valence": 0.2767,
+    "mean_audio_arousal": 1.0,
+    "valence_arousal_correlation": NaN
+  },
+  "high_impact_tracks": [
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Architect of Rhyme/Unknown Album/THE_ESAKI_FLOW2.wav",
+      "aave_density": 0.0123,
+      "sds_score": 1.9941
+    },
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Architect of Rhyme/Unknown Album/The Eigen Value of silence (Part 1 of 2, Option 2 of 2).wav",
+      "aave_density": 0.0108,
+      "sds_score": 1.9892
+    },
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Architect of Rhyme/Unknown Album/The Eigen Value of silence (Part 1 of 2, Option 1 of 2).wav",
+      "aave_density": 0.0085,
+      "sds_score": 1.9708
+    },
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Architect of Rhyme/Unknown Album/The Eigen Value of silence (Part 1 of 2, Option 2 of 2)(1).wav",
+      "aave_density": 0.0085,
+      "sds_score": 1.9708
+    },
+    {
+      "file": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/Architect of Rhyme/Unknown Album/I am recording my screen.wav",
+      "aave_density": 0.0071,
+      "sds_score": 0.0608
+    }
+  ]
+}

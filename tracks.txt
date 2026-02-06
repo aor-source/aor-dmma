@@ -1,0 +1,42 @@
+# AoR-DMMA Track List
+# One absolute path per line. Lines starting with # are ignored.
+
+# === ORIGINAL REPORT TRACKS (17 - from iCloud Music Input folder) ===
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/01 Lose Yourself.m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/02 G Funk Intro.m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/02 Kill You.m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/04 Harlem Streets.m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/07 Soldier.m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/1-03 The Watcher 2 (feat. Dr. Dre, Rakim & Truth Hurts).m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/1-04 Hellrazor.m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/1-06 2 Of Amerikaz Most Wanted (feat. Snoop Dogg).m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/1-07 C-Walk (feat. Tray Dee & Slip Capone).m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/10 Forgot About Dre (feat. Eminem).m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/10 Juicy (2005 Remaster).m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/11 Dance with the Devil.m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/11 The Next Episode (feat. Snoop Dogg).m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/2-05 Changes (feat. Talent).m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/2-06 California Love (feat. Roger Troutman & Dr. Dre).m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/20 Ackrite (feat. Hittman).m4a
+/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/20 Fight the Power.m4a
+
+# === EXPERIMENTAL / CONCEPT TRACKS (WAV) ===
+/Users/alignmentnerd/aor-dmma/Keon's Cassette.wav
+/Users/alignmentnerd/aor-dmma/No Temple, No Cage.wav
+/Users/alignmentnerd/aor-dmma/Tau_Critical DriftThe "Berry-Tabor" Chaos.wav
+/Users/alignmentnerd/aor-dmma/The Eigen Value of silence (Part 2 of 2, Option 2 of 2).wav
+/Users/alignmentnerd/aor-dmma/THE_ESAKI_FLOW1.wav
+/Users/alignmentnerd/aor-dmma/THE_ESAKI_FLOW2.wav
+/Users/alignmentnerd/aor-dmma/THE_ESAKI_FLOW3.wav
+/Users/alignmentnerd/aor-dmma/THE_ESAKI_FLOW4.wav
+/Users/alignmentnerd/aor-dmma/Wide Spectral Gap  The "Silent Manifold"2.wav
+/Users/alignmentnerd/aor-dmma/Wide Spectral Gap The "Silent Manifold"1.wav
+
+# === NEW MP3 TRACKS ===
+/Users/alignmentnerd/aor-dmma/Chaotica (The Glitch Switch) (1).mp3
+/Users/alignmentnerd/aor-dmma/Chaotica (The Glitch Switch).mp3
+/Users/alignmentnerd/aor-dmma/Checksum of the soul.mp3
+/Users/alignmentnerd/aor-dmma/System Shock.mp3
+/Users/alignmentnerd/aor-dmma/The Fractal (Z=Z²+C).mp3
+/Users/alignmentnerd/aor-dmma/The Semantic Breach (Tear The Code Up).mp3
+/Users/alignmentnerd/aor-dmma/The Unerasable (Ghost in the Terminal)._.mp3

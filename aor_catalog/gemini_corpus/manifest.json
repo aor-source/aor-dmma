@@ -1,0 +1,108 @@
+{
+  "extraction_started": "2026-02-04T07:16:47.887100",
+  "conversations": [
+    {
+      "number": 1,
+      "title": "Chats",
+      "filename": "0001_Chats.json",
+      "is_aor": true,
+      "text_length": 278458
+    },
+    {
+      "number": 2,
+      "title": "Chats",
+      "filename": "0002_Chats.json",
+      "is_aor": true,
+      "text_length": 305217
+    },
+    {
+      "number": 3,
+      "title": "Chats",
+      "filename": "0003_Chats.json",
+      "is_aor": true,
+      "text_length": 74594
+    },
+    {
+      "number": 4,
+      "title": "Chats",
+      "filename": "0004_Chats.json",
+      "is_aor": false,
+      "text_length": 46213
+    },
+    {
+      "number": 5,
+      "title": "Chats",
+      "filename": "0005_Chats.json",
+      "is_aor": true,
+      "text_length": 170706
+    },
+    {
+      "number": 6,
+      "title": "Chats",
+      "filename": "0006_Chats.json",
+      "is_aor": true,
+      "text_length": 44565
+    },
+    {
+      "number": 7,
+      "title": "Chats",
+      "filename": "0007_Chats.json",
+      "is_aor": true,
+      "text_length": 99267
+    },
+    {
+      "number": 8,
+      "title": "Chats",
+      "filename": "0008_Chats.json",
+      "is_aor": true,
+      "text_length": 104455
+    },
+    {
+      "number": 9,
+      "title": "Chats",
+      "filename": "0009_Chats.json",
+      "is_aor": false,
+      "text_length": 177381
+    },
+    {
+      "number": 10,
+      "title": "Conversation with Gemini",
+      "filename": "0010_Conversation_with_Gemini.json",
+      "is_aor": false,
+      "text_length": 110578
+    },
+    {
+      "number": 11,
+      "title": "Conversation with Gemini",
+      "filename": "0011_Conversation_with_Gemini.json",
+      "is_aor": false,
+      "text_length": 110578
+    },
+    {
+      "number": 12,
+      "title": "Conversation with Gemini",
+      "filename": "0012_Conversation_with_Gemini.json",
+      "is_aor": false,
+      "text_length": 110578
+    },
+    {
+      "number": 13,
+      "title": "Conversation with Gemini",
+      "filename": "0013_Conversation_with_Gemini.json",
+      "is_aor": false,
+      "text_length": 110578
+    }
+  ],
+  "aor_tracks": [
+    "0001_Chats.json",
+    "0002_Chats.json",
+    "0003_Chats.json",
+    "0005_Chats.json",
+    "0006_Chats.json",
+    "0007_Chats.json",
+    "0008_Chats.json"
+  ],
+  "total_extracted": 13,
+  "total_aor": 7,
+  "extraction_completed": "2026-02-04T07:20:30.260566"
+}

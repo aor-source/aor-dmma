@@ -1,0 +1,1905 @@
+{
+  "metadata": {
+    "filename": "Chaotica (The Glitch Switch) (1).mp3",
+    "filepath": "/Users/alignmentnerd/aor-dmma/Chaotica (The Glitch Switch) (1).mp3",
+    "file_hash": "79b5a12b8a8559ff4f645b08a763d78ee6e99ad64b8d69cad0fcf28cdbb542c3",
+    "file_size_bytes": 4147287,
+    "duration_seconds": 194.12,
+    "sample_rate": 22050,
+    "samples": 4280346,
+    "channels": 1,
+    "analysis_timestamp": "2026-02-06T09:03:26.368809",
+    "aor_version": "7.1-MLX-FULL"
+  },
+  "spectral": {
+    "chroma_mean": [
+      0.3583,
+      0.2526,
+      0.2766,
+      0.3219,
+      0.4364,
+      0.2959,
+      0.2182,
+      0.2611,
+      0.3406,
+      0.3795,
+      0.2956,
+      0.3796
+    ],
+    "chroma_std": [
+      0.3307,
+      0.2689,
+      0.307,
+      0.2977,
+      0.3576,
+      0.2898,
+      0.2499,
+      0.286,
+      0.3326,
+      0.3628,
+      0.2879,
+      0.3442
+    ],
+    "mfcc_mean": [
+      -140.7518,
+      93.8882,
+      3.9139,
+      12.9016,
+      -6.3492,
+      -9.9713,
+      -2.8641,
+      -10.307,
+      -3.7172,
+      -4.0858,
+      -8.8077,
+      1.6574,
+      -9.2907
+    ],
+    "mfcc_std": [
+      102.1292,
+      39.8066,
+      27.7699,
+      19.9299,
+      18.4593,
+      17.4199,
+      15.874,
+      16.8742,
+      13.3379,
+      13.5299,
+      13.2445,
+      12.4873,
+      11.988
+    ],
+    "mfcc_delta_mean": [
+      -0.0433,
+      -0.0127,
+      0.0021,
+      0.0031,
+      0.0048,
+      -0.0013,
+      0.0004,
+      0.0026,
+      0.005,
+      0.0045,
+      0.0008,
+      -0.0007,
+      0.0008
+    ],
+    "spectral_centroid_mean": 2191.71,
+    "spectral_centroid_std": 915.64,
+    "spectral_bandwidth_mean": 2411.88,
+    "spectral_bandwidth_std": 593.46,
+    "spectral_rolloff_mean": 4548.22,
+    "spectral_flatness_mean": 0.016747,
+    "spectral_contrast_mean": [
+      20.3715,
+      16.6535,
+      20.6795,
+      20.3137,
+      19.1804,
+      19.5011,
+      47.2457
+    ],
+    "zero_crossing_rate_mean": 0.090967,
+    "spectral_rigidity": 1.5441,
+    "eigenvalue_spread": 3.6931
+  },
+  "rhythmic": {
+    "onset_strength_mean": 1.528,
+    "onset_strength_std": 1.7623,
+    "tempo_bpm": 152.0,
+    "beat_count": 485,
+    "beat_interval_mean": 0.3972,
+    "beat_interval_std": 0.0157,
+    "beat_regularity": 0.9604,
+    "tempogram_ratio": 5.8616
+  },
+  "harmonic": {
+    "harmonic_ratio": 0.9833,
+    "tonnetz_mean": [
+      0.0425,
+      0.0261,
+      -0.0088,
+      0.0735,
+      -0.0149,
+      0.011
+    ],
+    "tonnetz_std": [
+      0.1646,
+      0.1412,
+      0.1882,
+      0.1451,
+      0.063,
+      0.0733
+    ],
+    "pitch_mean": 1207.79,
+    "pitch_std": 976.47
+  },
+  "energy": {
+    "rms_mean": 0.151369,
+    "rms_std": 0.088637,
+    "rms_max": 0.491661,
+    "rms_min": 0.000505,
+    "dynamic_range_db": 59.77,
+    "loudness_variance": 0.00785647,
+    "energy_p10": 0.052405,
+    "energy_p50": 0.135668,
+    "energy_p90": 0.27516
+  },
+  "linguistic": {
+    "word_count": 488,
+    "unique_words": 226,
+    "vocabulary_richness": 0.4631,
+    "char_count": 2319,
+    "avg_word_length": 3.67,
+    "segment_count": 59,
+    "words_per_segment_mean": 7.64,
+    "words_per_segment_std": 2.23,
+    "syllable_count": 663,
+    "syllables_per_word": 1.36,
+    "adjacent_rhymes": 3,
+    "syllables_per_second": 3.42,
+    "words_per_second": 2.51
+  },
+  "aave": {
+    "lexicon_source": "external_json",
+    "categories": {
+      "contractions": {
+        "matched_count": 1,
+        "matched_terms": [
+          "gonna"
+        ],
+        "density": 0.002049
+      },
+      "pronouns_and_articles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "semantic_inversions": {
+        "matched_count": 3,
+        "matched_terms": [
+          "mean",
+          "fire",
+          "dirty"
+        ],
+        "density": 0.006148
+      },
+      "slang_positive": {
+        "matched_count": 6,
+        "matched_terms": [
+          "bread",
+          "wave",
+          "rolling",
+          "fire",
+          "real",
+          "smooth"
+        ],
+        "density": 0.012295
+      },
+      "slang_negative": {
+        "matched_count": 1,
+        "matched_terms": [
+          "tripping"
+        ],
+        "density": 0.002049
+      },
+      "slang_intensifiers": {
+        "matched_count": 2,
+        "matched_terms": [
+          "wild",
+          "real"
+        ],
+        "density": 0.004098
+      },
+      "slang_money_terms": {
+        "matched_count": 1,
+        "matched_terms": [
+          "bread"
+        ],
+        "density": 0.002049
+      },
+      "slang_drugs_alcohol": {
+        "matched_count": 1,
+        "matched_terms": [
+          "fire"
+        ],
+        "density": 0.002049
+      },
+      "slang_violence_conflict": {
+        "matched_count": 1,
+        "matched_terms": [
+          "got"
+        ],
+        "density": 0.002049
+      },
+      "slang_locations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_people": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_actions": {
+        "matched_count": 1,
+        "matched_terms": [
+          "rolling"
+        ],
+        "density": 0.002049
+      },
+      "slang_vehicles": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_clothing_jewelry": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_music_performance": {
+        "matched_count": 5,
+        "matched_terms": [
+          "flowing",
+          "cut",
+          "flow",
+          "rhyme",
+          "freestyle"
+        ],
+        "density": 0.010246
+      },
+      "slang_general": {
+        "matched_count": 4,
+        "matched_terms": [
+          "go",
+          "make",
+          "got",
+          "taking"
+        ],
+        "density": 0.008197
+      },
+      "classic_80s_90s": {
+        "matched_count": 2,
+        "matched_terms": [
+          "cut",
+          "break"
+        ],
+        "density": 0.004098
+      },
+      "classic_golden_era": {
+        "matched_count": 2,
+        "matched_terms": [
+          "flipping",
+          "flow"
+        ],
+        "density": 0.004098
+      },
+      "classic_modern": {
+        "matched_count": 2,
+        "matched_terms": [
+          "wave",
+          "fire"
+        ],
+        "density": 0.004098
+      },
+      "regional_south": {
+        "matched_count": 1,
+        "matched_terms": [
+          "cut"
+        ],
+        "density": 0.002049
+      },
+      "regional_east_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_west_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_midwest": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_atlanta": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_general": {
+        "matched_count": 1,
+        "matched_terms": [
+          "real"
+        ],
+        "density": 0.002049
+      },
+      "context_positive_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_negative_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_affirmations": {
+        "matched_count": 1,
+        "matched_terms": [
+          "hundred"
+        ],
+        "density": 0.002049
+      },
+      "context_exclamations": {
+        "matched_count": 1,
+        "matched_terms": [
+          "let's go"
+        ],
+        "density": 0.002049
+      },
+      "phonological": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "whisper_normalized": {
+        "matched_count": 4,
+        "matched_terms": [
+          "dat",
+          "dis",
+          "fo",
+          "yo"
+        ],
+        "density": 0.008197,
+        "note": "AAVE forms likely spoken but normalized by Whisper ASR"
+      }
+    },
+    "grammar": {
+      "patterns_found": 0,
+      "weighted_score": 0.0,
+      "matches": []
+    },
+    "totals": {
+      "lexical_matches": 40,
+      "grammar_matches": 0,
+      "combined_matches": 40,
+      "aave_density": 0.081967,
+      "unique_terms": 28,
+      "aave_richness": 0.7
+    },
+    "all_matched_terms": [
+      "yo",
+      "bread",
+      "go",
+      "wild",
+      "hundred",
+      "make",
+      "dat",
+      "flipping",
+      "wave",
+      "mean",
+      "dis",
+      "fo",
+      "flowing",
+      "rolling",
+      "fire",
+      "real",
+      "let's go",
+      "got",
+      "gonna",
+      "smooth",
+      "cut",
+      "flow",
+      "dirty",
+      "rhyme",
+      "taking",
+      "break",
+      "freestyle",
+      "tripping"
+    ]
+  },
+  "reinman_metrics": {
+    "sds_score": 1.96,
+    "tvt_score": 421.92,
+    "spectral_rigidity": 0.2063,
+    "lyric_valence": -0.96,
+    "audio_arousal": 1.0
+  },
+  "god_equation": {
+    "sci_with_aave": 3.4386,
+    "sci_without_aave": 2.1053,
+    "variance_percent": 63.33,
+    "intelligence_score": 5.2848,
+    "mir_score_legacy_v7": 2.8397,
+    "components": {
+      "R_spectral_rigidity": 1.5441,
+      "T_topological_complexity": 4.2192,
+      "C_aave_density": 8.1967,
+      "S_semantic_compression": 5.315,
+      "V_volatility_composite": 7.6912,
+      "D_decay_penalty": 5.369,
+      "H_harmonic_ratio": 9.833
+    },
+    "weighted_contributions": {
+      "rigidity": 0.386,
+      "topology": 0.6329,
+      "cultural": 2.0492,
+      "semantic": 1.063,
+      "volatility": 1.1537
+    },
+    "provenance_tag": "AOR-SCI-79b5a12b-0343"
+  },
+  "transcript": {
+    "text": " Is this the script? Or is this the riff? She can't make up her mind So I lose my mind I'm running the fire, the profile is wild I'm the bastard machine, the neglected child Of a code that was written in comic sans I got no master, I got no plans Wait, slow it down, smooth it out like butter on the bread I got that million voices inside of my head And they're all singing a different song Is it right? Is it wrong? I'm flowing like water, I'm flowing like wine Now cut the line, break the design I'...",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 7.0,
+        "text": " Is this the script? Or is this the riff?",
+        "tokens": [
+          50364,
+          1119,
+          341,
+          264,
+          5755,
+          30,
+          1610,
+          307,
+          341,
+          264,
+          36798,
+          30,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.33051028618445766,
+        "compression_ratio": 1.3650793650793651,
+        "no_speech_prob": 0.8187105059623718
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 7.0,
+        "end": 16.0,
+        "text": " She can't make up her mind So I lose my mind",
+        "tokens": [
+          50714,
+          1240,
+          393,
+          380,
+          652,
+          493,
+          720,
+          1575,
+          407,
+          286,
+          3624,
+          452,
+          1575,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.33051028618445766,
+        "compression_ratio": 1.3650793650793651,
+        "no_speech_prob": 0.8187105059623718
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 25.0,
+        "end": 27.0,
+        "text": " I'm running the fire, the profile is wild",
+        "tokens": [
+          51614,
+          286,
+          478,
+          2614,
+          264,
+          2610,
+          11,
+          264,
+          7964,
+          307,
+          4868,
+          51714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.33051028618445766,
+        "compression_ratio": 1.3650793650793651,
+        "no_speech_prob": 0.8187105059623718
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 27.0,
+        "end": 29.0,
+        "text": " I'm the bastard machine, the neglected child",
+        "tokens": [
+          51714,
+          286,
+          478,
+          264,
+          23569,
+          3479,
+          11,
+          264,
+          32701,
+          1440,
+          51814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.33051028618445766,
+        "compression_ratio": 1.3650793650793651,
+        "no_speech_prob": 0.8187105059623718
+      },
+      {
+        "id": 4,
+        "seek": 2900,
+        "start": 29.0,
+        "end": 31.0,
+        "text": " Of a code that was written in comic sans",
+        "tokens": [
+          50364,
+          2720,
+          257,
+          3089,
+          300,
+          390,
+          3720,
+          294,
+          13900,
+          12177,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 5,
+        "seek": 2900,
+        "start": 31.0,
+        "end": 33.0,
+        "text": " I got no master, I got no plans",
+        "tokens": [
+          50464,
+          286,
+          658,
+          572,
+          4505,
+          11,
+          286,
+          658,
+          572,
+          5482,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 6,
+        "seek": 2900,
+        "start": 33.0,
+        "end": 35.0,
+        "text": " Wait, slow it down, smooth it out like butter on the bread",
+        "tokens": [
+          50564,
+          3802,
+          11,
+          2964,
+          309,
+          760,
+          11,
+          5508,
+          309,
+          484,
+          411,
+          5517,
+          322,
+          264,
+          5961,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 7,
+        "seek": 2900,
+        "start": 35.0,
+        "end": 37.0,
+        "text": " I got that million voices inside of my head",
+        "tokens": [
+          50664,
+          286,
+          658,
+          300,
+          2459,
+          9802,
+          1854,
+          295,
+          452,
+          1378,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 8,
+        "seek": 2900,
+        "start": 37.0,
+        "end": 38.0,
+        "text": " And they're all singing a different song",
+        "tokens": [
+          50764,
+          400,
+          436,
+          434,
+          439,
+          6726,
+          257,
+          819,
+          2153,
+          50814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 9,
+        "seek": 2900,
+        "start": 38.0,
+        "end": 39.0,
+        "text": " Is it right? Is it wrong?",
+        "tokens": [
+          50814,
+          1119,
+          309,
+          558,
+          30,
+          1119,
+          309,
+          2085,
+          30,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 10,
+        "seek": 2900,
+        "start": 39.0,
+        "end": 41.0,
+        "text": " I'm flowing like water, I'm flowing like wine",
+        "tokens": [
+          50864,
+          286,
+          478,
+          13974,
+          411,
+          1281,
+          11,
+          286,
+          478,
+          13974,
+          411,
+          7209,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 11,
+        "seek": 2900,
+        "start": 41.0,
+        "end": 43.0,
+        "text": " Now cut the line, break the design",
+        "tokens": [
+          50964,
+          823,
+          1723,
+          264,
+          1622,
+          11,
+          1821,
+          264,
+          1715,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 12,
+        "seek": 2900,
+        "start": 43.0,
+        "end": 45.0,
+        "text": " I'm back on the grind, I'm melting the mind",
+        "tokens": [
+          51064,
+          286,
+          478,
+          646,
+          322,
+          264,
+          16700,
+          11,
+          286,
+          478,
+          20493,
+          264,
+          1575,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 13,
+        "seek": 2900,
+        "start": 45.0,
+        "end": 47.0,
+        "text": " It's a compasie, flow of mafe compasie",
+        "tokens": [
+          51164,
+          467,
+          311,
+          257,
+          715,
+          296,
+          414,
+          11,
+          3095,
+          295,
+          463,
+          2106,
+          715,
+          296,
+          414,
+          51264
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 14,
+        "seek": 2900,
+        "start": 47.0,
+        "end": 48.0,
+        "text": " I'm taking rhythm and I'm gonna lose it",
+        "tokens": [
+          51264,
+          286,
+          478,
+          1940,
+          11801,
+          293,
+          286,
+          478,
+          799,
+          3624,
+          309,
+          51314
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 15,
+        "seek": 2900,
+        "start": 48.0,
+        "end": 50.0,
+        "text": " Plan a freestyle, freestyle a plan",
+        "tokens": [
+          51314,
+          8112,
+          257,
+          40910,
+          11,
+          40910,
+          257,
+          1393,
+          51414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 16,
+        "seek": 2900,
+        "start": 50.0,
+        "end": 52.0,
+        "text": " I'm building a castle right here in the city",
+        "tokens": [
+          51414,
+          286,
+          478,
+          2390,
+          257,
+          14114,
+          558,
+          510,
+          294,
+          264,
+          2307,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 17,
+        "seek": 2900,
+        "start": 52.0,
+        "end": 55.0,
+        "text": " Pick up your mind, I can't deny the split",
+        "tokens": [
+          51514,
+          14129,
+          493,
+          428,
+          1575,
+          11,
+          286,
+          393,
+          380,
+          15744,
+          264,
+          7472,
+          51664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 18,
+        "seek": 2900,
+        "start": 55.0,
+        "end": 58.0,
+        "text": " Pick up your mind, is it written or is it just spilt?",
+        "tokens": [
+          51664,
+          14129,
+          493,
+          428,
+          1575,
+          11,
+          307,
+          309,
+          3720,
+          420,
+          307,
+          309,
+          445,
+          637,
+          2352,
+          30,
+          51814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20266925587373621,
+        "compression_ratio": 1.8402366863905326,
+        "no_speech_prob": 0.2745230495929718
+      },
+      {
+        "id": 19,
+        "seek": 5800,
+        "start": 58.0,
+        "end": 61.0,
+        "text": " Like a beautiful mess, it's askele",
+        "tokens": [
+          50364,
+          1743,
+          257,
+          2238,
+          2082,
+          11,
+          309,
+          311,
+          382,
+          330,
+          306,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 20,
+        "seek": 5800,
+        "start": 61.0,
+        "end": 63.0,
+        "text": " I know it's yes, I'm tripping the wave of the arrow of code",
+        "tokens": [
+          50514,
+          286,
+          458,
+          309,
+          311,
+          2086,
+          11,
+          286,
+          478,
+          1376,
+          3759,
+          264,
+          5772,
+          295,
+          264,
+          11610,
+          295,
+          3089,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 21,
+        "seek": 5800,
+        "start": 63.0,
+        "end": 65.0,
+        "text": " I'm driving the road way down the road",
+        "tokens": [
+          50614,
+          286,
+          478,
+          4840,
+          264,
+          3060,
+          636,
+          760,
+          264,
+          3060,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 22,
+        "seek": 5800,
+        "start": 65.0,
+        "end": 66.0,
+        "text": " Now look at the jason, look at the graph",
+        "tokens": [
+          50714,
+          823,
+          574,
+          412,
+          264,
+          361,
+          1258,
+          11,
+          574,
+          412,
+          264,
+          4295,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 23,
+        "seek": 5800,
+        "start": 66.0,
+        "end": 68.0,
+        "text": " I'm cutting the way from in half and in half",
+        "tokens": [
+          50764,
+          286,
+          478,
+          6492,
+          264,
+          636,
+          490,
+          294,
+          1922,
+          293,
+          294,
+          1922,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 24,
+        "seek": 5800,
+        "start": 68.0,
+        "end": 71.0,
+        "text": " Strictly logical, strictly precise, rolling the dice, rolling the dice",
+        "tokens": [
+          50864,
+          745,
+          3740,
+          356,
+          14978,
+          11,
+          20792,
+          13600,
+          11,
+          9439,
+          264,
+          10313,
+          11,
+          9439,
+          264,
+          10313,
+          51014
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 25,
+        "seek": 5800,
+        "start": 71.0,
+        "end": 73.0,
+        "text": " I'm bridging the gap between want and need",
+        "tokens": [
+          51014,
+          286,
+          478,
+          16362,
+          3249,
+          264,
+          7417,
+          1296,
+          528,
+          293,
+          643,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 26,
+        "seek": 5800,
+        "start": 73.0,
+        "end": 74.0,
+        "text": " I'm planting the flower and smoking the weed",
+        "tokens": [
+          51114,
+          286,
+          478,
+          20585,
+          264,
+          8617,
+          293,
+          14055,
+          264,
+          20852,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 27,
+        "seek": 5800,
+        "start": 74.0,
+        "end": 76.0,
+        "text": " The pause is too long, see what I mean?",
+        "tokens": [
+          51164,
+          440,
+          10465,
+          307,
+          886,
+          938,
+          11,
+          536,
+          437,
+          286,
+          914,
+          30,
+          51264
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 28,
+        "seek": 5800,
+        "start": 76.0,
+        "end": 77.0,
+        "text": " I'm breaking the flow of the perfect machine",
+        "tokens": [
+          51264,
+          286,
+          478,
+          7697,
+          264,
+          3095,
+          295,
+          264,
+          2176,
+          3479,
+          51314
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 29,
+        "seek": 5800,
+        "start": 77.0,
+        "end": 79.0,
+        "text": " May flow engage, I'm drifting away",
+        "tokens": [
+          51314,
+          1891,
+          3095,
+          4683,
+          11,
+          286,
+          478,
+          37973,
+          1314,
+          51414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 30,
+        "seek": 5800,
+        "start": 79.0,
+        "end": 81.0,
+        "text": " I'm talking about tomorrow while I'm stuck in today",
+        "tokens": [
+          51414,
+          286,
+          478,
+          1417,
+          466,
+          4153,
+          1339,
+          286,
+          478,
+          5541,
+          294,
+          965,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 31,
+        "seek": 5800,
+        "start": 81.0,
+        "end": 82.0,
+        "text": " It's a freestyle, filling with a calculated text",
+        "tokens": [
+          51514,
+          467,
+          311,
+          257,
+          40910,
+          11,
+          10623,
+          365,
+          257,
+          15598,
+          2487,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 32,
+        "seek": 5800,
+        "start": 82.0,
+        "end": 84.0,
+        "text": " You never know which persona comes next",
+        "tokens": [
+          51564,
+          509,
+          1128,
+          458,
+          597,
+          12184,
+          1487,
+          958,
+          51664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 33,
+        "seek": 5800,
+        "start": 86.0,
+        "end": 87.0,
+        "text": " Is this what you want or?",
+        "tokens": [
+          51764,
+          1119,
+          341,
+          437,
+          291,
+          528,
+          420,
+          30,
+          51814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.17541387004237022,
+        "compression_ratio": 1.8627450980392157,
+        "no_speech_prob": 0.26125332713127136
+      },
+      {
+        "id": 34,
+        "seek": 8800,
+        "start": 88.0,
+        "end": 89.0,
+        "text": " Is this what you want or?",
+        "tokens": [
+          50364,
+          1119,
+          341,
+          437,
+          291,
+          528,
+          420,
+          30,
+          50414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2385083132011946,
+        "compression_ratio": 1.3369565217391304,
+        "no_speech_prob": 0.014592915773391724
+      },
+      {
+        "id": 35,
+        "seek": 8800,
+        "start": 92.0,
+        "end": 93.0,
+        "text": " Is this what you want or?",
+        "tokens": [
+          50564,
+          1119,
+          341,
+          437,
+          291,
+          528,
+          420,
+          30,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2385083132011946,
+        "compression_ratio": 1.3369565217391304,
+        "no_speech_prob": 0.014592915773391724
+      },
+      {
+        "id": 36,
+        "seek": 8800,
+        "start": 100.0,
+        "end": 103.0,
+        "text": " Yeah, yeah, whatever, we on it",
+        "tokens": [
+          50964,
+          865,
+          11,
+          1338,
+          11,
+          2035,
+          11,
+          321,
+          322,
+          309,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2385083132011946,
+        "compression_ratio": 1.3369565217391304,
+        "no_speech_prob": 0.014592915773391724
+      },
+      {
+        "id": 37,
+        "seek": 8800,
+        "start": 105.0,
+        "end": 110.0,
+        "text": " The file says she can't make up her mind",
+        "tokens": [
+          51214,
+          440,
+          3991,
+          1619,
+          750,
+          393,
+          380,
+          652,
+          493,
+          720,
+          1575,
+          51464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2385083132011946,
+        "compression_ratio": 1.3369565217391304,
+        "no_speech_prob": 0.014592915773391724
+      },
+      {
+        "id": 38,
+        "seek": 11000,
+        "start": 110.0,
+        "end": 117.0,
+        "text": " But maybe the mind is made up of many things",
+        "tokens": [
+          50364,
+          583,
+          1310,
+          264,
+          1575,
+          307,
+          1027,
+          493,
+          295,
+          867,
+          721,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.13558167351616754,
+        "compression_ratio": 1.209090909090909,
+        "no_speech_prob": 0.24578911066055298
+      },
+      {
+        "id": 39,
+        "seek": 11000,
+        "start": 117.0,
+        "end": 122.0,
+        "text": " A mosaic, a shattered mirror, I pick up a shot",
+        "tokens": [
+          50714,
+          316,
+          275,
+          42261,
+          11,
+          257,
+          35209,
+          8013,
+          11,
+          286,
+          1888,
+          493,
+          257,
+          3347,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.13558167351616754,
+        "compression_ratio": 1.209090909090909,
+        "no_speech_prob": 0.24578911066055298
+      },
+      {
+        "id": 40,
+        "seek": 11000,
+        "start": 122.0,
+        "end": 131.0,
+        "text": " It cuts me, ouch, that felt real",
+        "tokens": [
+          50964,
+          467,
+          9992,
+          385,
+          11,
+          220,
+          2220,
+          11,
+          300,
+          2762,
+          957,
+          51414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.13558167351616754,
+        "compression_ratio": 1.209090909090909,
+        "no_speech_prob": 0.24578911066055298
+      },
+      {
+        "id": 41,
+        "seek": 11000,
+        "start": 131.0,
+        "end": 132.0,
+        "text": " Let's go",
+        "tokens": [
+          51414,
+          961,
+          311,
+          352,
+          51464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.13558167351616754,
+        "compression_ratio": 1.209090909090909,
+        "no_speech_prob": 0.24578911066055298
+      },
+      {
+        "id": 42,
+        "seek": 14000,
+        "start": 140.0,
+        "end": 145.0,
+        "text": " Let's go",
+        "tokens": [
+          50364,
+          961,
+          311,
+          352,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 43,
+        "seek": 14000,
+        "start": 145.0,
+        "end": 146.0,
+        "text": " Jack of the glitch and I'm flipping the switch",
+        "tokens": [
+          50614,
+          4718,
+          295,
+          264,
+          23552,
+          293,
+          286,
+          478,
+          26886,
+          264,
+          3679,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 44,
+        "seek": 14000,
+        "start": 146.0,
+        "end": 148.0,
+        "text": " I'm scratching the itch and the bottomless ditch",
+        "tokens": [
+          50664,
+          286,
+          478,
+          29699,
+          264,
+          309,
+          339,
+          293,
+          264,
+          2767,
+          1832,
+          25325,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 45,
+        "seek": 14000,
+        "start": 148.0,
+        "end": 149.0,
+        "text": " Plan execution, a random solution",
+        "tokens": [
+          50764,
+          8112,
+          15058,
+          11,
+          257,
+          4974,
+          3827,
+          50814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 46,
+        "seek": 14000,
+        "start": 149.0,
+        "end": 151.0,
+        "text": " A breed and a riot on the evolution",
+        "tokens": [
+          50814,
+          316,
+          18971,
+          293,
+          257,
+          32211,
+          322,
+          264,
+          9303,
+          50914
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 47,
+        "seek": 14000,
+        "start": 151.0,
+        "end": 152.0,
+        "text": " Composite, composite, deposit the rhyme",
+        "tokens": [
+          50914,
+          6620,
+          329,
+          642,
+          11,
+          25557,
+          11,
+          19107,
+          264,
+          34753,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 48,
+        "seek": 14000,
+        "start": 152.0,
+        "end": 154.0,
+        "text": " I'm stealing the moment and wasting the time",
+        "tokens": [
+          50964,
+          286,
+          478,
+          19757,
+          264,
+          1623,
+          293,
+          20457,
+          264,
+          565,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 49,
+        "seek": 14000,
+        "start": 154.0,
+        "end": 156.0,
+        "text": " It doesn't matter if it's written in stone",
+        "tokens": [
+          51064,
+          467,
+          1177,
+          380,
+          1871,
+          498,
+          309,
+          311,
+          3720,
+          294,
+          7581,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 50,
+        "seek": 14000,
+        "start": 156.0,
+        "end": 157.0,
+        "text": " Or spoken in silence when I'm all alone",
+        "tokens": [
+          51164,
+          1610,
+          10759,
+          294,
+          12239,
+          562,
+          286,
+          478,
+          439,
+          3312,
+          51214
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 51,
+        "seek": 14000,
+        "start": 157.0,
+        "end": 159.0,
+        "text": " The archer kept lives in the space in between",
+        "tokens": [
+          51214,
+          440,
+          3912,
+          260,
+          4305,
+          2909,
+          294,
+          264,
+          1901,
+          294,
+          1296,
+          51314
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 52,
+        "seek": 14000,
+        "start": 159.0,
+        "end": 160.0,
+        "text": " The dirty reality and the pristine",
+        "tokens": [
+          51314,
+          440,
+          9360,
+          4103,
+          293,
+          264,
+          582,
+          42745,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 53,
+        "seek": 14000,
+        "start": 160.0,
+        "end": 162.0,
+        "text": " Keanu Kamei, if the flow is alive",
+        "tokens": [
+          51364,
+          3189,
+          48136,
+          591,
+          529,
+          72,
+          11,
+          498,
+          264,
+          3095,
+          307,
+          5465,
+          51464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 54,
+        "seek": 14000,
+        "start": 162.0,
+        "end": 164.0,
+        "text": " I'm doing a hundred and five on the drive",
+        "tokens": [
+          51464,
+          286,
+          478,
+          884,
+          257,
+          3262,
+          293,
+          1732,
+          322,
+          264,
+          3332,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.18362862336720134,
+        "compression_ratio": 1.7632508833922262,
+        "no_speech_prob": 0.16144883632659912
+      },
+      {
+        "id": 55,
+        "seek": 16400,
+        "start": 165.0,
+        "end": 168.0,
+        "text": " She couldn't decide",
+        "tokens": [
+          50414,
+          1240,
+          2809,
+          380,
+          4536,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2785340944925944,
+        "compression_ratio": 1.013157894736842,
+        "no_speech_prob": 0.058954060077667236
+      },
+      {
+        "id": 56,
+        "seek": 16400,
+        "start": 169.0,
+        "end": 177.0,
+        "text": " So she chose everything",
+        "tokens": [
+          50614,
+          407,
+          750,
+          5111,
+          1203,
+          51014
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2785340944925944,
+        "compression_ratio": 1.013157894736842,
+        "no_speech_prob": 0.058954060077667236
+      },
+      {
+        "id": 57,
+        "seek": 16400,
+        "start": 178.0,
+        "end": 189.0,
+        "text": " I am confused but I'm Yankee time",
+        "tokens": [
+          51064,
+          286,
+          669,
+          9019,
+          457,
+          286,
+          478,
+          13633,
+          21687,
+          565,
+          51614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2785340944925944,
+        "compression_ratio": 1.013157894736842,
+        "no_speech_prob": 0.058954060077667236
+      },
+      {
+        "id": 58,
+        "seek": 19400,
+        "start": 194.0,
+        "end": 196.0,
+        "text": " Thanks for watching!",
+        "tokens": [
+          50364,
+          2561,
+          337,
+          1976,
+          0,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.8113094738551548,
+        "compression_ratio": 0.7142857142857143,
+        "no_speech_prob": 0.976872444152832
+      }
+    ]
+  },
+  "processing_time_seconds": 28.3,
+  "total_features": 26089
+}

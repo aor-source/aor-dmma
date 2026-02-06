@@ -37,23 +37,44 @@ During development, we discovered that **OpenAI's Whisper systematically erases 
 
 This constitutes **algorithmic whitewashing** - a form of ML bias that erases Black linguistic identity at the transcription layer. Downstream NLP systems trained on Whisper transcripts inherit this bias. Full documentation in `output/FINDING_ASR_AAVE_BIAS.md`.
 
-### Discovery 2: AI Cultural Intelligence Gap
+### Discovery 2: AI Cultural Intelligence Gap (Updated v7.1)
 
-Using our expanded lexicon (807 terms) and Reinman metrics, we found that **AI-generated hip-hop demonstrates significantly lower Semantic Cultural Intelligence (SCI)**:
+Using our expanded lexicon (807 terms), Reinman metrics, and corrected SCI formula across a 34-track corpus (17 human hip-hop, 7 AI/Suno-generated, 10 experimental), we found that **AI-generated hip-hop is closing the cultural intelligence gap**:
 
-| Metric | Human Artists | AI Generated | Human Advantage |
-|--------|---------------|--------------|-----------------|
-| AAVE Density | 6.18% | 3.72% | **+66%** |
-| Unique AAVE Terms | 135 | 60 | **+125%** |
-| SDS (Semantic Dissonance) | 1.51 | 0.72 | **+110%** |
-| TVT (Tonal Complexity) | 588 | 499 | **+18%** |
+| Metric | Human Hip-Hop (17) | AI/Suno (7) | Gap |
+|--------|-------------------|-------------|-----|
+| **SCI (Spectral Coherence Index)** | **3.32** | **3.05** | 8% |
+| AAVE Density | Higher | Lower | Varies |
+| SDS (Semantic Dissonance) | 1.51 | 0.72 | +110% |
+| TVT (Tonal Complexity) | 588 | 499 | +18% |
 
-**Interpretation:** AI systems trained without adequate AAVE representation produce content that:
-- Uses less diverse Black vernacular vocabulary
-- Lacks the ironic/subversive layering (low SDS) characteristic of authentic hip-hop
-- Demonstrates flattened tonal complexity
+**Key Findings (v7.1):**
 
-This suggests current AI models have a **cultural intelligence deficit** when generating content rooted in Black American linguistic traditions. The absence of AAVE in training data results in outputs that are measurably less authentic.
+1. **AI tracks achieve 92% of human SCI** — The cultural intelligence gap is narrowing. AI-generated hip-hop (lyrics by Claude, audio by Suno) scores within 8% of canonical human hip-hop on the composite SCI metric.
+
+2. **AAVE bias causes 50-88% undervaluation** — Tracks scored without AAVE context lose up to 88% of their true cultural intelligence score. This confirms AAVE detection is critical infrastructure, not optional.
+
+3. **The Fractal (Z=Z²+C)** — An AI-written mathematical hip-hop track featuring a Fibonacci sequence in both lyric content AND structural form, demonstrating emergent creative sophistication.
+
+4. **SCI Scale Correction** — The v7.1 SCI formula now matches the original research scale where scores above 4.0 are exceptional and 6.0+ was theoretically unreachable. Previous versions inflated scores to a 10/10 ceiling.
+
+### SCI Formula (v7.1 — "The God Equation")
+
+The Spectral Coherence Index combines five weighted components with a decay penalty:
+
+```
+R = Spectral Rigidity       (w=0.25)
+T = Topological Valence      (w=0.15)
+C = Cultural/AAVE Density    (w=0.25)
+S = Semantic Richness         (w=0.20)
+V = Volatility/Dynamics       (w=0.15)
+D = Decay Penalty (vocab sparsity)
+
+I = (0.25*R) + (0.15*T) + (0.25*C) + (0.20*S) + (0.15*V)
+SCI = I / (1 + D*0.1)
+```
+
+Scale: 0-5 range. Scores above 4.0 indicate exceptional cultural-sonic coherence.
 
 ---
 
@@ -92,20 +113,40 @@ pip install -r requirements.txt
 ```bash
 # Analyze a single track
 python aor_mir.py track.mp3 --lexicon aave_lexicon.json --visualize
-
-# Batch processing
-python aor_mir.py /path/to/music/ --batch --output results/
 ```
+
+### Batch Processing
+
+There are two ways to batch process multiple tracks:
+
+**Option 1: Directory mode** — point at a folder and all audio files (`.mp3`, `.wav`, `.flac`, `.m4a`) inside it are processed:
+
+```bash
+python aor_mir.py /path/to/music/ --batch --lexicon aave_lexicon.json --output results/
+```
+
+**Option 2: Track list mode** — create a `tracks.txt` file with one absolute path per line, then pass it directly:
+
+```bash
+# Create tracks.txt (one absolute path per line)
+find /path/to/music -name "*.wav" -o -name "*.mp3" -o -name "*.m4a" > tracks.txt
+
+# Or create it manually:
+# /Users/you/music/track1.wav
+# /Users/you/music/track2.mp3
+# Lines starting with # are ignored
+
+# Run analysis
+python aor_mir.py tracks.txt --lexicon aave_lexicon.json --output results/ --visualize
+```
+
+Both `aor_mir.py` and `aor_mir_mlx.py` accept `tracks.txt` as input.
 
 ### MLX-Optimized (Apple Silicon)
 
 For 5-10x faster processing on M-series Macs:
 
 ```bash
-# Create track list
-find /path/to/music -name "*.m4a" > tracks.txt
-
-# Run with MLX acceleration
 python aor_mir_mlx.py tracks.txt --lexicon aave_lexicon.json --output results/ --visualize
 ```
 
@@ -127,12 +168,19 @@ Each analyzed track produces:
 - `{track}_tvt_umap.png` - Topological trajectory UMAP
 - `{track}_correlation.png` - Feature correlation heatmap
 
-Corpus-level analytics:
+Corpus-level analytics (v7.1):
+
+- `sci_comparison.png` - SCI scores by corpus group (Human vs AI vs Experimental)
+- `aave_bias_variance.png` - AAVE bias impact ranked by track
+- `reinman_plane_comparison.png` - SDS vs TVT scatter with group coloring
+- `sci_radar_comparison.png` - Spider chart of 5 SCI components
+- `sci_bias_scatter.png` - With/without AAVE bias demonstration
+
+Legacy analytics:
 
 - `reinman_plane.png` - SDS vs TVT scatter plot
 - `aave_distribution.png` - AAVE density histogram
 - `irony_matrix.png` - Sentiment-audio alignment
-- `aave_wordcloud.png` - Detected term frequencies
 - `paper_statistics.json` - Key metrics for publication
 
 ---
@@ -188,15 +236,20 @@ Regional variants: 133
 ```
 aor-dmma/
 ├── aor_mir.py              # Main analysis script (v7.0 SOVEREIGN)
-├── aor_mir_mlx.py          # Apple Silicon optimized version
+├── aor_mir_mlx.py          # Apple Silicon MLX — full 300+ feature extraction (v7.1)
+├── aor_mir_full.py         # Reference full-feature script
 ├── aave_lexicon.json       # AAVE lexicon v3.0 (807 terms)
+├── tracks.txt              # Batch track list (one absolute path per line)
+├── check_progress.sh       # Quick progress checker for batch runs
+├── progress_monitor.sh     # Live progress monitor for terminal
 ├── advanced_analytics.py   # Publication visualization suite
 ├── compare_human_ai.py     # Corpus comparison tools
+├── components/             # Pipeline components (assemble, analyze, etc.)
 ├── requirements.txt        # Python dependencies
 ├── output/
-│   ├── corpus_analysis_v3/     # Human corpus results
-│   ├── ai_corpus_analysis_v3/  # AI corpus results
-│   ├── human_vs_ai_comparison_v3.png
+│   ├── full_v71/               # v7.1 MLX results (34 tracks + comparisons)
+│   ├── corpus_analysis/        # Human corpus results
+│   ├── ai_corpus_analysis/     # AI corpus results
 │   ├── FINDING_ASR_AAVE_BIAS.md
 │   └── FINDING_ASR_AAVE_BIAS.json
 └── README.md

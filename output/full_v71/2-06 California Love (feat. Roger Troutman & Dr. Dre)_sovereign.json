@@ -1,0 +1,2456 @@
+{
+  "metadata": {
+    "filename": "2-06 California Love (feat. Roger Troutman & Dr. Dre).m4a",
+    "filepath": "/Users/alignmentnerd/Library/Mobile Documents/com~apple~CloudDocs/Music/Music/Media.localized/Music/forensics_toolkit_9/maif_files/Input/2-06 California Love (feat. Roger Troutman & Dr. Dre).m4a",
+    "file_hash": "7371e48c5cc6fb81aff107112759963f2f6ff92a6b47170fa6c73dfd5cea859e",
+    "file_size_bytes": 10270030,
+    "duration_seconds": 284.91,
+    "sample_rate": 22050,
+    "samples": 6282192,
+    "channels": 1,
+    "analysis_timestamp": "2026-02-06T08:56:31.554941",
+    "aor_version": "7.1-MLX-FULL"
+  },
+  "spectral": {
+    "chroma_mean": [
+      0.3812,
+      0.3558,
+      0.4947,
+      0.3064,
+      0.3525,
+      0.4542,
+      0.4754,
+      0.5938,
+      0.4382,
+      0.4959,
+      0.409,
+      0.3337
+    ],
+    "chroma_std": [
+      0.3101,
+      0.2529,
+      0.3008,
+      0.2161,
+      0.2647,
+      0.3171,
+      0.2785,
+      0.3149,
+      0.2697,
+      0.3012,
+      0.2811,
+      0.2592
+    ],
+    "mfcc_mean": [
+      -24.2738,
+      50.3151,
+      -3.9281,
+      23.6496,
+      9.4576,
+      6.7371,
+      -1.2541,
+      6.3427,
+      -0.4626,
+      7.6981,
+      0.8356,
+      0.3213,
+      -3.0778
+    ],
+    "mfcc_std": [
+      85.256,
+      23.497,
+      23.6024,
+      18.6767,
+      17.7741,
+      14.5058,
+      13.3671,
+      13.059,
+      11.732,
+      10.57,
+      11.2015,
+      9.7035,
+      9.2636
+    ],
+    "mfcc_delta_mean": [
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0
+    ],
+    "spectral_centroid_mean": 3123.96,
+    "spectral_centroid_std": 633.17,
+    "spectral_bandwidth_mean": 2840.62,
+    "spectral_bandwidth_std": 302.33,
+    "spectral_rolloff_mean": 6582.67,
+    "spectral_flatness_mean": 0.045339,
+    "spectral_contrast_mean": [
+      18.6004,
+      15.9077,
+      19.7281,
+      20.1699,
+      19.0249,
+      17.4539,
+      45.9717
+    ],
+    "zero_crossing_rate_mean": 0.153693,
+    "spectral_rigidity": 1.4513,
+    "eigenvalue_spread": 3.4314
+  },
+  "rhythmic": {
+    "onset_strength_mean": 1.5929,
+    "onset_strength_std": 2.1471,
+    "tempo_bpm": 92.3,
+    "beat_count": 421,
+    "beat_interval_mean": 0.6559,
+    "beat_interval_std": 0.011,
+    "beat_regularity": 0.9833,
+    "tempogram_ratio": 7.9916
+  },
+  "harmonic": {
+    "harmonic_ratio": 0.9547,
+    "tonnetz_mean": [
+      0.0293,
+      0.1041,
+      -0.0004,
+      -0.0112,
+      -0.0118,
+      -0.0292
+    ],
+    "tonnetz_std": [
+      0.0798,
+      0.0792,
+      0.1437,
+      0.0779,
+      0.0431,
+      0.0292
+    ],
+    "pitch_mean": 1628.07,
+    "pitch_std": 1124.71
+  },
+  "energy": {
+    "rms_mean": 0.242941,
+    "rms_std": 0.099828,
+    "rms_max": 0.524789,
+    "rms_min": 2.4e-05,
+    "dynamic_range_db": 86.7,
+    "loudness_variance": 0.00996556,
+    "energy_p10": 0.113293,
+    "energy_p50": 0.241585,
+    "energy_p90": 0.376062
+  },
+  "linguistic": {
+    "word_count": 554,
+    "unique_words": 223,
+    "vocabulary_richness": 0.4025,
+    "char_count": 2761,
+    "avg_word_length": 3.87,
+    "segment_count": 86,
+    "words_per_segment_mean": 6.23,
+    "words_per_segment_std": 3.02,
+    "syllable_count": 796,
+    "syllables_per_word": 1.44,
+    "adjacent_rhymes": 4,
+    "syllables_per_second": 2.79,
+    "words_per_second": 1.94
+  },
+  "aave": {
+    "lexicon_source": "external_json",
+    "categories": {
+      "contractions": {
+        "matched_count": 2,
+        "matched_terms": [
+          "tryna",
+          "ain't"
+        ],
+        "density": 0.00361
+      },
+      "pronouns_and_articles": {
+        "matched_count": 1,
+        "matched_terms": [
+          "y'all"
+        ],
+        "density": 0.001805
+      },
+      "semantic_inversions": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_positive": {
+        "matched_count": 4,
+        "matched_terms": [
+          "ride",
+          "player",
+          "fresh",
+          "bomb"
+        ],
+        "density": 0.00722
+      },
+      "slang_negative": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_intensifiers": {
+        "matched_count": 2,
+        "matched_terms": [
+          "wild",
+          "straight"
+        ],
+        "density": 0.00361
+      },
+      "slang_money_terms": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_drugs_alcohol": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "slang_violence_conflict": {
+        "matched_count": 1,
+        "matched_terms": [
+          "mission"
+        ],
+        "density": 0.001805
+      },
+      "slang_locations": {
+        "matched_count": 2,
+        "matched_terms": [
+          "house",
+          "area"
+        ],
+        "density": 0.00361
+      },
+      "slang_people": {
+        "matched_count": 2,
+        "matched_terms": [
+          "baby",
+          "bitch"
+        ],
+        "density": 0.00361
+      },
+      "slang_actions": {
+        "matched_count": 2,
+        "matched_terms": [
+          "shining",
+          "flossing"
+        ],
+        "density": 0.00361
+      },
+      "slang_vehicles": {
+        "matched_count": 1,
+        "matched_terms": [
+          "ride"
+        ],
+        "density": 0.001805
+      },
+      "slang_clothing_jewelry": {
+        "matched_count": 1,
+        "matched_terms": [
+          "watch"
+        ],
+        "density": 0.001805
+      },
+      "slang_music_performance": {
+        "matched_count": 4,
+        "matched_terms": [
+          "track",
+          "beat",
+          "jam",
+          "rap"
+        ],
+        "density": 0.00722
+      },
+      "slang_general": {
+        "matched_count": 5,
+        "matched_terms": [
+          "make",
+          "come",
+          "making",
+          "get",
+          "bumping"
+        ],
+        "density": 0.009025
+      },
+      "classic_80s_90s": {
+        "matched_count": 3,
+        "matched_terms": [
+          "fresh",
+          "beat",
+          "bomb"
+        ],
+        "density": 0.005415
+      },
+      "classic_golden_era": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "classic_modern": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_south": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_east_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_west_coast": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_midwest": {
+        "matched_count": 1,
+        "matched_terms": [
+          "ass"
+        ],
+        "density": 0.001805
+      },
+      "regional_atlanta": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "regional_general": {
+        "matched_count": 1,
+        "matched_terms": [
+          "player"
+        ],
+        "density": 0.001805
+      },
+      "context_positive_context": {
+        "matched_count": 1,
+        "matched_terms": [
+          "love"
+        ],
+        "density": 0.001805
+      },
+      "context_negative_context": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_affirmations": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "context_exclamations": {
+        "matched_count": 1,
+        "matched_terms": [
+          "man"
+        ],
+        "density": 0.001805
+      },
+      "phonological": {
+        "matched_count": 0,
+        "matched_terms": [],
+        "density": 0.0
+      },
+      "whisper_normalized": {
+        "matched_count": 6,
+        "matched_terms": [
+          "dat",
+          "dis",
+          "dey",
+          "dem",
+          "fo",
+          "yo"
+        ],
+        "density": 0.01083,
+        "note": "AAVE forms likely spoken but normalized by Whisper ASR"
+      }
+    },
+    "grammar": {
+      "patterns_found": 2,
+      "weighted_score": 3.5,
+      "matches": [
+        {
+          "pattern": "negative_concord",
+          "count": 1,
+          "weight": 1.5,
+          "examples": [
+            "ain't no"
+          ]
+        },
+        {
+          "pattern": "locative_at",
+          "count": 2,
+          "weight": 1.0,
+          "examples": [
+            "where you at",
+            "where you at"
+          ]
+        }
+      ]
+    },
+    "totals": {
+      "lexical_matches": 40,
+      "grammar_matches": 3,
+      "combined_matches": 43,
+      "aave_density": 0.07852,
+      "unique_terms": 35,
+      "aave_richness": 0.875
+    },
+    "all_matched_terms": [
+      "ride",
+      "man",
+      "dem",
+      "yo",
+      "track",
+      "tryna",
+      "wild",
+      "house",
+      "make",
+      "shining",
+      "flossing",
+      "player",
+      "watch",
+      "fresh",
+      "beat",
+      "come",
+      "dat",
+      "y'all",
+      "making",
+      "love",
+      "dis",
+      "fo",
+      "bomb",
+      "get",
+      "straight",
+      "mission",
+      "dey",
+      "bumping",
+      "jam",
+      "area",
+      "ass",
+      "baby",
+      "bitch",
+      "rap",
+      "ain't"
+    ]
+  },
+  "reinman_metrics": {
+    "sds_score": 1.937,
+    "tvt_score": 344.8,
+    "spectral_rigidity": 0.2985,
+    "lyric_valence": -0.937,
+    "audio_arousal": 1.0
+  },
+  "god_equation": {
+    "sci_with_aave": 3.1458,
+    "sci_without_aave": 1.917,
+    "variance_percent": 64.1,
+    "intelligence_score": 5.0254,
+    "mir_score_legacy_v7": 2.7374,
+    "components": {
+      "R_spectral_rigidity": 1.4513,
+      "T_topological_complexity": 3.448,
+      "C_aave_density": 7.852,
+      "S_semantic_compression": 4.583,
+      "V_volatility_composite": 8.4383,
+      "D_decay_penalty": 5.975,
+      "H_harmonic_ratio": 9.547
+    },
+    "weighted_contributions": {
+      "rigidity": 0.3628,
+      "topology": 0.5172,
+      "cultural": 1.963,
+      "semantic": 0.9166,
+      "volatility": 1.2657
+    },
+    "provenance_tag": "AOR-SCI-7371e48c-0314"
+  },
+  "transcript": {
+    "text": " California love California, no sign of party California, no sign of party In the city of L.A. In the city, no good old ones In the city, city of content We keep it rockin', we keep it rockin' Now let me welcome everybody to the wild wild west A state that's untouchable like Elliot Nest The track hits your eardrum like a slug to your chest Like a vest for your Jimmy in the city of sex We in that sunshine state where the bomb ass him be The state where you'll never find a dance floor empty In pim...",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 3.0,
+        "text": " California love",
+        "tokens": [
+          50364,
+          5384,
+          959,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.47521060705184937,
+        "compression_ratio": 1.4761904761904763,
+        "no_speech_prob": 0.3780810236930847
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 13.0,
+        "end": 17.0,
+        "text": " California, no sign of party",
+        "tokens": [
+          51014,
+          5384,
+          11,
+          572,
+          1465,
+          295,
+          3595,
+          51214
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.47521060705184937,
+        "compression_ratio": 1.4761904761904763,
+        "no_speech_prob": 0.3780810236930847
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 18.0,
+        "end": 22.0,
+        "text": " California, no sign of party",
+        "tokens": [
+          51264,
+          5384,
+          11,
+          572,
+          1465,
+          295,
+          3595,
+          51464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.47521060705184937,
+        "compression_ratio": 1.4761904761904763,
+        "no_speech_prob": 0.3780810236930847
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 23.0,
+        "end": 27.0,
+        "text": " In the city of L.A.",
+        "tokens": [
+          51514,
+          682,
+          264,
+          2307,
+          295,
+          441,
+          13,
+          32,
+          13,
+          51714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.47521060705184937,
+        "compression_ratio": 1.4761904761904763,
+        "no_speech_prob": 0.3780810236930847
+      },
+      {
+        "id": 4,
+        "seek": 2700,
+        "start": 28.0,
+        "end": 32.0,
+        "text": " In the city, no good old ones",
+        "tokens": [
+          50414,
+          682,
+          264,
+          2307,
+          11,
+          572,
+          665,
+          1331,
+          2306,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1610393849286166,
+        "compression_ratio": 1.5869565217391304,
+        "no_speech_prob": 0.1369413435459137
+      },
+      {
+        "id": 5,
+        "seek": 2700,
+        "start": 33.0,
+        "end": 37.0,
+        "text": " In the city, city of content",
+        "tokens": [
+          50664,
+          682,
+          264,
+          2307,
+          11,
+          2307,
+          295,
+          2701,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1610393849286166,
+        "compression_ratio": 1.5869565217391304,
+        "no_speech_prob": 0.1369413435459137
+      },
+      {
+        "id": 6,
+        "seek": 2700,
+        "start": 38.0,
+        "end": 43.0,
+        "text": " We keep it rockin', we keep it rockin'",
+        "tokens": [
+          50914,
+          492,
+          1066,
+          309,
+          3727,
+          259,
+          6098,
+          321,
+          1066,
+          309,
+          3727,
+          259,
+          6,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1610393849286166,
+        "compression_ratio": 1.5869565217391304,
+        "no_speech_prob": 0.1369413435459137
+      },
+      {
+        "id": 7,
+        "seek": 2700,
+        "start": 44.0,
+        "end": 47.0,
+        "text": " Now let me welcome everybody to the wild wild west",
+        "tokens": [
+          51214,
+          823,
+          718,
+          385,
+          2928,
+          2201,
+          281,
+          264,
+          4868,
+          4868,
+          7009,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1610393849286166,
+        "compression_ratio": 1.5869565217391304,
+        "no_speech_prob": 0.1369413435459137
+      },
+      {
+        "id": 8,
+        "seek": 2700,
+        "start": 47.0,
+        "end": 49.0,
+        "text": " A state that's untouchable like Elliot Nest",
+        "tokens": [
+          51364,
+          316,
+          1785,
+          300,
+          311,
+          1701,
+          2220,
+          712,
+          411,
+          38986,
+          31581,
+          51464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1610393849286166,
+        "compression_ratio": 1.5869565217391304,
+        "no_speech_prob": 0.1369413435459137
+      },
+      {
+        "id": 9,
+        "seek": 2700,
+        "start": 49.0,
+        "end": 52.0,
+        "text": " The track hits your eardrum like a slug to your chest",
+        "tokens": [
+          51464,
+          440,
+          2837,
+          8664,
+          428,
+          308,
+          515,
+          6247,
+          411,
+          257,
+          1061,
+          697,
+          281,
+          428,
+          7443,
+          51614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1610393849286166,
+        "compression_ratio": 1.5869565217391304,
+        "no_speech_prob": 0.1369413435459137
+      },
+      {
+        "id": 10,
+        "seek": 2700,
+        "start": 52.0,
+        "end": 55.0,
+        "text": " Like a vest for your Jimmy in the city of sex",
+        "tokens": [
+          51614,
+          1743,
+          257,
+          15814,
+          337,
+          428,
+          15709,
+          294,
+          264,
+          2307,
+          295,
+          3260,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.1610393849286166,
+        "compression_ratio": 1.5869565217391304,
+        "no_speech_prob": 0.1369413435459137
+      },
+      {
+        "id": 11,
+        "seek": 5500,
+        "start": 55.0,
+        "end": 58.0,
+        "text": " We in that sunshine state where the bomb ass him be",
+        "tokens": [
+          50364,
+          492,
+          294,
+          300,
+          25219,
+          1785,
+          689,
+          264,
+          7851,
+          1256,
+          796,
+          312,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.19612616651198445,
+        "compression_ratio": 1.6134185303514377,
+        "no_speech_prob": 0.1785699427127838
+      },
+      {
+        "id": 12,
+        "seek": 5500,
+        "start": 58.0,
+        "end": 60.0,
+        "text": " The state where you'll never find a dance floor empty",
+        "tokens": [
+          50514,
+          440,
+          1785,
+          689,
+          291,
+          603,
+          1128,
+          915,
+          257,
+          4489,
+          4123,
+          6707,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.19612616651198445,
+        "compression_ratio": 1.6134185303514377,
+        "no_speech_prob": 0.1785699427127838
+      },
+      {
+        "id": 13,
+        "seek": 5500,
+        "start": 60.0,
+        "end": 63.0,
+        "text": " In pimp's feet, on a mission for them greens",
+        "tokens": [
+          50614,
+          682,
+          280,
+          8814,
+          311,
+          3521,
+          11,
+          322,
+          257,
+          4447,
+          337,
+          552,
+          22897,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.19612616651198445,
+        "compression_ratio": 1.6134185303514377,
+        "no_speech_prob": 0.1785699427127838
+      },
+      {
+        "id": 14,
+        "seek": 5500,
+        "start": 63.0,
+        "end": 66.0,
+        "text": " Leave me money making machines, serving fiends",
+        "tokens": [
+          50764,
+          9825,
+          385,
+          1460,
+          1455,
+          8379,
+          11,
+          8148,
+          283,
+          1174,
+          82,
+          50914
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.19612616651198445,
+        "compression_ratio": 1.6134185303514377,
+        "no_speech_prob": 0.1785699427127838
+      },
+      {
+        "id": 15,
+        "seek": 5500,
+        "start": 66.0,
+        "end": 69.0,
+        "text": " I've been in the game for ten years making rap tunes",
+        "tokens": [
+          50914,
+          286,
+          600,
+          668,
+          294,
+          264,
+          1216,
+          337,
+          2064,
+          924,
+          1455,
+          5099,
+          38498,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.19612616651198445,
+        "compression_ratio": 1.6134185303514377,
+        "no_speech_prob": 0.1785699427127838
+      },
+      {
+        "id": 16,
+        "seek": 5500,
+        "start": 69.0,
+        "end": 71.0,
+        "text": " Ever since Hunnies was wearing Sassoon",
+        "tokens": [
+          51064,
+          12123,
+          1670,
+          11648,
+          40549,
+          390,
+          4769,
+          36613,
+          34605,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.19612616651198445,
+        "compression_ratio": 1.6134185303514377,
+        "no_speech_prob": 0.1785699427127838
+      },
+      {
+        "id": 17,
+        "seek": 5500,
+        "start": 71.0,
+        "end": 74.0,
+        "text": " Now it's 95 and they clock me and watch me diamond shining",
+        "tokens": [
+          51164,
+          823,
+          309,
+          311,
+          13420,
+          293,
+          436,
+          7830,
+          385,
+          293,
+          1159,
+          385,
+          16059,
+          18269,
+          51314
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.19612616651198445,
+        "compression_ratio": 1.6134185303514377,
+        "no_speech_prob": 0.1785699427127838
+      },
+      {
+        "id": 18,
+        "seek": 5500,
+        "start": 74.0,
+        "end": 76.0,
+        "text": " Looking like I robbed Liberace",
+        "tokens": [
+          51314,
+          11053,
+          411,
+          286,
+          35772,
+          14175,
+          617,
+          51414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.19612616651198445,
+        "compression_ratio": 1.6134185303514377,
+        "no_speech_prob": 0.1785699427127838
+      },
+      {
+        "id": 19,
+        "seek": 5500,
+        "start": 76.0,
+        "end": 79.0,
+        "text": " It's all good from Diego to the Bay",
+        "tokens": [
+          51414,
+          467,
+          311,
+          439,
+          665,
+          490,
+          16377,
+          281,
+          264,
+          7840,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.19612616651198445,
+        "compression_ratio": 1.6134185303514377,
+        "no_speech_prob": 0.1785699427127838
+      },
+      {
+        "id": 20,
+        "seek": 5500,
+        "start": 79.0,
+        "end": 82.0,
+        "text": " Your city is the bomb if your city making pain",
+        "tokens": [
+          51564,
+          2260,
+          2307,
+          307,
+          264,
+          7851,
+          498,
+          428,
+          2307,
+          1455,
+          1822,
+          51714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.19612616651198445,
+        "compression_ratio": 1.6134185303514377,
+        "no_speech_prob": 0.1785699427127838
+      },
+      {
+        "id": 21,
+        "seek": 5500,
+        "start": 82.0,
+        "end": 84.0,
+        "text": " Throw up a finger if you feel the same way",
+        "tokens": [
+          51714,
+          22228,
+          493,
+          257,
+          5984,
+          498,
+          291,
+          841,
+          264,
+          912,
+          636,
+          51814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.19612616651198445,
+        "compression_ratio": 1.6134185303514377,
+        "no_speech_prob": 0.1785699427127838
+      },
+      {
+        "id": 22,
+        "seek": 8400,
+        "start": 84.0,
+        "end": 86.0,
+        "text": " Straight from the town of California",
+        "tokens": [
+          50364,
+          26908,
+          490,
+          264,
+          3954,
+          295,
+          5384,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32797529697418215,
+        "compression_ratio": 1.4479166666666667,
+        "no_speech_prob": 0.0760631263256073
+      },
+      {
+        "id": 23,
+        "seek": 8400,
+        "start": 86.0,
+        "end": 94.0,
+        "text": " California, California, West Coast",
+        "tokens": [
+          50464,
+          5384,
+          11,
+          5384,
+          11,
+          4055,
+          14960,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32797529697418215,
+        "compression_ratio": 1.4479166666666667,
+        "no_speech_prob": 0.0760631263256073
+      },
+      {
+        "id": 24,
+        "seek": 8400,
+        "start": 97.0,
+        "end": 101.0,
+        "text": " In the city, city of content",
+        "tokens": [
+          51014,
+          682,
+          264,
+          2307,
+          11,
+          2307,
+          295,
+          2701,
+          51214
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32797529697418215,
+        "compression_ratio": 1.4479166666666667,
+        "no_speech_prob": 0.0760631263256073
+      },
+      {
+        "id": 25,
+        "seek": 8400,
+        "start": 102.0,
+        "end": 113.0,
+        "text": " We keep it rockin', we keep it rockin'",
+        "tokens": [
+          51264,
+          492,
+          1066,
+          309,
+          3727,
+          259,
+          6098,
+          321,
+          1066,
+          309,
+          3727,
+          259,
+          6,
+          51814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32797529697418215,
+        "compression_ratio": 1.4479166666666667,
+        "no_speech_prob": 0.0760631263256073
+      },
+      {
+        "id": 26,
+        "seek": 11400,
+        "start": 114.0,
+        "end": 116.0,
+        "text": " Keep it rockin', keep it rockin'",
+        "tokens": [
+          50364,
+          5527,
+          309,
+          3727,
+          259,
+          6098,
+          1066,
+          309,
+          3727,
+          259,
+          6,
+          50464
+        ],
+        "temperature": 0.2,
+        "avg_logprob": -0.310773640462797,
+        "compression_ratio": 1.954954954954955,
+        "no_speech_prob": 0.16339488327503204
+      },
+      {
+        "id": 27,
+        "seek": 11400,
+        "start": 116.0,
+        "end": 120.0,
+        "text": " Shake it, shake it, shake it, baby",
+        "tokens": [
+          50464,
+          27809,
+          309,
+          11,
+          10283,
+          309,
+          11,
+          10283,
+          309,
+          11,
+          3186,
+          50664
+        ],
+        "temperature": 0.2,
+        "avg_logprob": -0.310773640462797,
+        "compression_ratio": 1.954954954954955,
+        "no_speech_prob": 0.16339488327503204
+      },
+      {
+        "id": 28,
+        "seek": 11400,
+        "start": 120.0,
+        "end": 123.0,
+        "text": " Shake it, shake it, shake it, baby",
+        "tokens": [
+          50664,
+          27809,
+          309,
+          11,
+          10283,
+          309,
+          11,
+          10283,
+          309,
+          11,
+          3186,
+          50814
+        ],
+        "temperature": 0.2,
+        "avg_logprob": -0.310773640462797,
+        "compression_ratio": 1.954954954954955,
+        "no_speech_prob": 0.16339488327503204
+      },
+      {
+        "id": 29,
+        "seek": 11400,
+        "start": 123.0,
+        "end": 138.0,
+        "text": " Shake it, shake it, shake it, baby",
+        "tokens": [
+          50814,
+          27809,
+          309,
+          11,
+          10283,
+          309,
+          11,
+          10283,
+          309,
+          11,
+          3186,
+          51564
+        ],
+        "temperature": 0.2,
+        "avg_logprob": -0.310773640462797,
+        "compression_ratio": 1.954954954954955,
+        "no_speech_prob": 0.16339488327503204
+      },
+      {
+        "id": 30,
+        "seek": 11400,
+        "start": 138.0,
+        "end": 140.0,
+        "text": " Out on bail, fresh out of jail",
+        "tokens": [
+          51564,
+          5925,
+          322,
+          19313,
+          11,
+          4451,
+          484,
+          295,
+          10511,
+          51664
+        ],
+        "temperature": 0.2,
+        "avg_logprob": -0.310773640462797,
+        "compression_ratio": 1.954954954954955,
+        "no_speech_prob": 0.16339488327503204
+      },
+      {
+        "id": 31,
+        "seek": 11400,
+        "start": 140.0,
+        "end": 142.0,
+        "text": " California dreamin', soon as I step on the scene",
+        "tokens": [
+          51664,
+          5384,
+          3055,
+          259,
+          6098,
+          2321,
+          382,
+          286,
+          1823,
+          322,
+          264,
+          4145,
+          51764
+        ],
+        "temperature": 0.2,
+        "avg_logprob": -0.310773640462797,
+        "compression_ratio": 1.954954954954955,
+        "no_speech_prob": 0.16339488327503204
+      },
+      {
+        "id": 32,
+        "seek": 14200,
+        "start": 142.0,
+        "end": 145.0,
+        "text": " I'm hearing hoochie screaming, feening for money and alcohol",
+        "tokens": [
+          50364,
+          286,
+          478,
+          4763,
+          1106,
+          8997,
+          414,
+          12636,
+          11,
+          579,
+          4559,
+          337,
+          1460,
+          293,
+          7658,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32801554154376594,
+        "compression_ratio": 1.5822784810126582,
+        "no_speech_prob": 0.451067715883255
+      },
+      {
+        "id": 33,
+        "seek": 14200,
+        "start": 145.0,
+        "end": 149.0,
+        "text": " For life of a Westside player with capsaicin and a strongball",
+        "tokens": [
+          50514,
+          1171,
+          993,
+          295,
+          257,
+          4055,
+          1812,
+          4256,
+          365,
+          1410,
+          5790,
+          299,
+          259,
+          293,
+          257,
+          2068,
+          3129,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32801554154376594,
+        "compression_ratio": 1.5822784810126582,
+        "no_speech_prob": 0.451067715883255
+      },
+      {
+        "id": 34,
+        "seek": 14200,
+        "start": 149.0,
+        "end": 152.0,
+        "text": " Only in Cali will we riot, not rally to live and die",
+        "tokens": [
+          50714,
+          5686,
+          294,
+          3511,
+          72,
+          486,
+          321,
+          32211,
+          11,
+          406,
+          17584,
+          281,
+          1621,
+          293,
+          978,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32801554154376594,
+        "compression_ratio": 1.5822784810126582,
+        "no_speech_prob": 0.451067715883255
+      },
+      {
+        "id": 35,
+        "seek": 14200,
+        "start": 152.0,
+        "end": 154.0,
+        "text": " In LA we wear chucks, not ballies",
+        "tokens": [
+          50864,
+          682,
+          9855,
+          321,
+          3728,
+          417,
+          15493,
+          11,
+          406,
+          2594,
+          530,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32801554154376594,
+        "compression_ratio": 1.5822784810126582,
+        "no_speech_prob": 0.451067715883255
+      },
+      {
+        "id": 36,
+        "seek": 14200,
+        "start": 154.0,
+        "end": 157.0,
+        "text": " Trust in locs and catty suits and ride is what we do",
+        "tokens": [
+          50964,
+          11580,
+          294,
+          1628,
+          82,
+          293,
+          3857,
+          874,
+          15278,
+          293,
+          5077,
+          307,
+          437,
+          321,
+          360,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32801554154376594,
+        "compression_ratio": 1.5822784810126582,
+        "no_speech_prob": 0.451067715883255
+      },
+      {
+        "id": 37,
+        "seek": 14200,
+        "start": 157.0,
+        "end": 160.0,
+        "text": " Flossing but have caution, we collide with other fools",
+        "tokens": [
+          51114,
+          3235,
+          35652,
+          457,
+          362,
+          23585,
+          11,
+          321,
+          49093,
+          365,
+          661,
+          38625,
+          51264
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32801554154376594,
+        "compression_ratio": 1.5822784810126582,
+        "no_speech_prob": 0.451067715883255
+      },
+      {
+        "id": 38,
+        "seek": 14200,
+        "start": 160.0,
+        "end": 162.0,
+        "text": " Famous because we throw rams",
+        "tokens": [
+          51264,
+          7342,
+          563,
+          570,
+          321,
+          3507,
+          367,
+          4070,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32801554154376594,
+        "compression_ratio": 1.5822784810126582,
+        "no_speech_prob": 0.451067715883255
+      },
+      {
+        "id": 39,
+        "seek": 14200,
+        "start": 162.0,
+        "end": 165.0,
+        "text": " Worldwide, let them recognize from Long Beach to Rosecrans",
+        "tokens": [
+          51364,
+          3937,
+          7990,
+          11,
+          718,
+          552,
+          5521,
+          490,
+          8282,
+          14866,
+          281,
+          12765,
+          10757,
+          599,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32801554154376594,
+        "compression_ratio": 1.5822784810126582,
+        "no_speech_prob": 0.451067715883255
+      },
+      {
+        "id": 40,
+        "seek": 14200,
+        "start": 165.0,
+        "end": 167.0,
+        "text": " Bumping and groggin' like a slow jam",
+        "tokens": [
+          51514,
+          363,
+          35313,
+          293,
+          4634,
+          70,
+          1494,
+          6,
+          411,
+          257,
+          2964,
+          7872,
+          51614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32801554154376594,
+        "compression_ratio": 1.5822784810126582,
+        "no_speech_prob": 0.451067715883255
+      },
+      {
+        "id": 41,
+        "seek": 14200,
+        "start": 167.0,
+        "end": 170.0,
+        "text": " It's Westside so you know the roar of bow down the no man",
+        "tokens": [
+          51614,
+          467,
+          311,
+          4055,
+          1812,
+          370,
+          291,
+          458,
+          264,
+          40347,
+          295,
+          4503,
+          760,
+          264,
+          572,
+          587,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32801554154376594,
+        "compression_ratio": 1.5822784810126582,
+        "no_speech_prob": 0.451067715883255
+      },
+      {
+        "id": 42,
+        "seek": 17000,
+        "start": 170.0,
+        "end": 173.0,
+        "text": " Say what you say, but give me that bomb beat from Drake",
+        "tokens": [
+          50364,
+          6463,
+          437,
+          291,
+          584,
+          11,
+          457,
+          976,
+          385,
+          300,
+          7851,
+          4224,
+          490,
+          27465,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.31346826200132016,
+        "compression_ratio": 1.7285714285714286,
+        "no_speech_prob": 0.43264302611351013
+      },
+      {
+        "id": 43,
+        "seek": 17000,
+        "start": 173.0,
+        "end": 175.0,
+        "text": " Let me serenade the streets of L.A.",
+        "tokens": [
+          50514,
+          961,
+          385,
+          816,
+          268,
+          762,
+          264,
+          8481,
+          295,
+          441,
+          13,
+          32,
+          13,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.31346826200132016,
+        "compression_ratio": 1.7285714285714286,
+        "no_speech_prob": 0.43264302611351013
+      },
+      {
+        "id": 44,
+        "seek": 17000,
+        "start": 175.0,
+        "end": 178.0,
+        "text": " From Oakland to Sac-Tam, the Bay Area from back down",
+        "tokens": [
+          50614,
+          3358,
+          34868,
+          281,
+          19356,
+          12,
+          51,
+          335,
+          11,
+          264,
+          7840,
+          19405,
+          490,
+          646,
+          760,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.31346826200132016,
+        "compression_ratio": 1.7285714285714286,
+        "no_speech_prob": 0.43264302611351013
+      },
+      {
+        "id": 45,
+        "seek": 17000,
+        "start": 178.0,
+        "end": 180.0,
+        "text": " Cali is where they put they mag down",
+        "tokens": [
+          50764,
+          3511,
+          72,
+          307,
+          689,
+          436,
+          829,
+          436,
+          2258,
+          760,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.31346826200132016,
+        "compression_ratio": 1.7285714285714286,
+        "no_speech_prob": 0.43264302611351013
+      },
+      {
+        "id": 46,
+        "seek": 17000,
+        "start": 180.0,
+        "end": 184.0,
+        "text": " California, California, knows how to party",
+        "tokens": [
+          50864,
+          5384,
+          11,
+          5384,
+          11,
+          3255,
+          577,
+          281,
+          3595,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.31346826200132016,
+        "compression_ratio": 1.7285714285714286,
+        "no_speech_prob": 0.43264302611351013
+      },
+      {
+        "id": 47,
+        "seek": 17000,
+        "start": 184.0,
+        "end": 186.0,
+        "text": " Really knows how to party",
+        "tokens": [
+          51064,
+          4083,
+          3255,
+          577,
+          281,
+          3595,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.31346826200132016,
+        "compression_ratio": 1.7285714285714286,
+        "no_speech_prob": 0.43264302611351013
+      },
+      {
+        "id": 48,
+        "seek": 17000,
+        "start": 186.0,
+        "end": 190.0,
+        "text": " California, California, knows how to party",
+        "tokens": [
+          51164,
+          5384,
+          11,
+          5384,
+          11,
+          3255,
+          577,
+          281,
+          3595,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.31346826200132016,
+        "compression_ratio": 1.7285714285714286,
+        "no_speech_prob": 0.43264302611351013
+      },
+      {
+        "id": 49,
+        "seek": 17000,
+        "start": 190.0,
+        "end": 193.0,
+        "text": " Come on baby, in the city",
+        "tokens": [
+          51364,
+          2492,
+          322,
+          3186,
+          11,
+          294,
+          264,
+          2307,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.31346826200132016,
+        "compression_ratio": 1.7285714285714286,
+        "no_speech_prob": 0.43264302611351013
+      },
+      {
+        "id": 50,
+        "seek": 17000,
+        "start": 193.0,
+        "end": 196.0,
+        "text": " We're all better than you bitch",
+        "tokens": [
+          51514,
+          492,
+          434,
+          439,
+          1101,
+          813,
+          291,
+          11960,
+          51664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.31346826200132016,
+        "compression_ratio": 1.7285714285714286,
+        "no_speech_prob": 0.43264302611351013
+      },
+      {
+        "id": 51,
+        "seek": 17000,
+        "start": 196.0,
+        "end": 198.0,
+        "text": " In the city",
+        "tokens": [
+          51664,
+          682,
+          264,
+          2307,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.31346826200132016,
+        "compression_ratio": 1.7285714285714286,
+        "no_speech_prob": 0.43264302611351013
+      },
+      {
+        "id": 52,
+        "seek": 19800,
+        "start": 198.0,
+        "end": 200.0,
+        "text": " Don't know who I'm with",
+        "tokens": [
+          50364,
+          1468,
+          380,
+          458,
+          567,
+          286,
+          478,
+          365,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 53,
+        "seek": 19800,
+        "start": 200.0,
+        "end": 203.0,
+        "text": " In the city",
+        "tokens": [
+          50464,
+          682,
+          264,
+          2307,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 54,
+        "seek": 19800,
+        "start": 203.0,
+        "end": 205.0,
+        "text": " In the city of Compton",
+        "tokens": [
+          50614,
+          682,
+          264,
+          2307,
+          295,
+          2432,
+          21987,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 55,
+        "seek": 19800,
+        "start": 205.0,
+        "end": 208.0,
+        "text": " We keep it rockin'",
+        "tokens": [
+          50714,
+          492,
+          1066,
+          309,
+          3727,
+          259,
+          6,
+          50864
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 56,
+        "seek": 19800,
+        "start": 208.0,
+        "end": 210.0,
+        "text": " We keep it rockin'",
+        "tokens": [
+          50864,
+          492,
+          1066,
+          309,
+          3727,
+          259,
+          6,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 57,
+        "seek": 19800,
+        "start": 210.0,
+        "end": 212.0,
+        "text": " Yeah, yeah, we make it shake",
+        "tokens": [
+          50964,
+          865,
+          11,
+          1338,
+          11,
+          321,
+          652,
+          309,
+          10283,
+          51064
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 58,
+        "seek": 19800,
+        "start": 212.0,
+        "end": 214.0,
+        "text": " Shake it, shake it baby",
+        "tokens": [
+          51064,
+          27809,
+          309,
+          11,
+          10283,
+          309,
+          3186,
+          51164
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 59,
+        "seek": 19800,
+        "start": 214.0,
+        "end": 216.0,
+        "text": " Shake it, shake it",
+        "tokens": [
+          51164,
+          27809,
+          309,
+          11,
+          10283,
+          309,
+          51264
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 60,
+        "seek": 19800,
+        "start": 216.0,
+        "end": 218.0,
+        "text": " Shake it, shake it",
+        "tokens": [
+          51264,
+          27809,
+          309,
+          11,
+          10283,
+          309,
+          51364
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 61,
+        "seek": 19800,
+        "start": 218.0,
+        "end": 220.0,
+        "text": " Shake it, shake it",
+        "tokens": [
+          51364,
+          27809,
+          309,
+          11,
+          10283,
+          309,
+          51464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 62,
+        "seek": 19800,
+        "start": 220.0,
+        "end": 222.0,
+        "text": " Shake it Cali",
+        "tokens": [
+          51464,
+          27809,
+          309,
+          3511,
+          72,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 63,
+        "seek": 19800,
+        "start": 222.0,
+        "end": 223.0,
+        "text": " Shake it Cali",
+        "tokens": [
+          51564,
+          27809,
+          309,
+          3511,
+          72,
+          51614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 64,
+        "seek": 19800,
+        "start": 223.0,
+        "end": 225.0,
+        "text": " Shake it, shake it baby",
+        "tokens": [
+          51614,
+          27809,
+          309,
+          11,
+          10283,
+          309,
+          3186,
+          51714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 65,
+        "seek": 19800,
+        "start": 225.0,
+        "end": 226.0,
+        "text": " Shake it Cali",
+        "tokens": [
+          51714,
+          27809,
+          309,
+          3511,
+          72,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2695923033214751,
+        "compression_ratio": 2.2666666666666666,
+        "no_speech_prob": 0.4286334812641144
+      },
+      {
+        "id": 66,
+        "seek": 22600,
+        "start": 226.0,
+        "end": 227.0,
+        "text": " Shake it",
+        "tokens": [
+          50364,
+          27809,
+          309,
+          50414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2698302413478042,
+        "compression_ratio": 1.560747663551402,
+        "no_speech_prob": 0.030259817838668823
+      },
+      {
+        "id": 67,
+        "seek": 22600,
+        "start": 227.0,
+        "end": 228.0,
+        "text": " Shake it",
+        "tokens": [
+          50414,
+          27809,
+          309,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2698302413478042,
+        "compression_ratio": 1.560747663551402,
+        "no_speech_prob": 0.030259817838668823
+      },
+      {
+        "id": 68,
+        "seek": 22600,
+        "start": 228.0,
+        "end": 229.0,
+        "text": " Shake it Cali",
+        "tokens": [
+          50464,
+          27809,
+          309,
+          3511,
+          72,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2698302413478042,
+        "compression_ratio": 1.560747663551402,
+        "no_speech_prob": 0.030259817838668823
+      },
+      {
+        "id": 69,
+        "seek": 22600,
+        "start": 229.0,
+        "end": 230.0,
+        "text": " Shake it Cali",
+        "tokens": [
+          50514,
+          27809,
+          309,
+          3511,
+          72,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2698302413478042,
+        "compression_ratio": 1.560747663551402,
+        "no_speech_prob": 0.030259817838668823
+      },
+      {
+        "id": 70,
+        "seek": 22600,
+        "start": 230.0,
+        "end": 231.0,
+        "text": " West Coast",
+        "tokens": [
+          50564,
+          4055,
+          14960,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2698302413478042,
+        "compression_ratio": 1.560747663551402,
+        "no_speech_prob": 0.030259817838668823
+      },
+      {
+        "id": 71,
+        "seek": 22600,
+        "start": 231.0,
+        "end": 232.0,
+        "text": " Shake it Cali",
+        "tokens": [
+          50614,
+          27809,
+          309,
+          3511,
+          72,
+          50664
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2698302413478042,
+        "compression_ratio": 1.560747663551402,
+        "no_speech_prob": 0.030259817838668823
+      },
+      {
+        "id": 72,
+        "seek": 22600,
+        "start": 239.0,
+        "end": 241.0,
+        "text": " Long Beach in the house",
+        "tokens": [
+          51014,
+          8282,
+          14866,
+          294,
+          264,
+          1782,
+          51114
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2698302413478042,
+        "compression_ratio": 1.560747663551402,
+        "no_speech_prob": 0.030259817838668823
+      },
+      {
+        "id": 73,
+        "seek": 22600,
+        "start": 244.0,
+        "end": 245.0,
+        "text": " Oak Town",
+        "tokens": [
+          51264,
+          19692,
+          15954,
+          51314
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2698302413478042,
+        "compression_ratio": 1.560747663551402,
+        "no_speech_prob": 0.030259817838668823
+      },
+      {
+        "id": 74,
+        "seek": 22600,
+        "start": 246.0,
+        "end": 248.0,
+        "text": " Oakland definitely in the house",
+        "tokens": [
+          51364,
+          34868,
+          2138,
+          294,
+          264,
+          1782,
+          51464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2698302413478042,
+        "compression_ratio": 1.560747663551402,
+        "no_speech_prob": 0.030259817838668823
+      },
+      {
+        "id": 75,
+        "seek": 22600,
+        "start": 249.0,
+        "end": 250.0,
+        "text": " Frisco",
+        "tokens": [
+          51514,
+          1526,
+          8610,
+          51564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2698302413478042,
+        "compression_ratio": 1.560747663551402,
+        "no_speech_prob": 0.030259817838668823
+      },
+      {
+        "id": 76,
+        "seek": 22600,
+        "start": 252.0,
+        "end": 254.0,
+        "text": " Ain't no L.A. up in this",
+        "tokens": [
+          51664,
+          29672,
+          380,
+          572,
+          441,
+          13,
+          32,
+          13,
+          493,
+          294,
+          341,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2698302413478042,
+        "compression_ratio": 1.560747663551402,
+        "no_speech_prob": 0.030259817838668823
+      },
+      {
+        "id": 77,
+        "seek": 25400,
+        "start": 254.0,
+        "end": 255.0,
+        "text": " Pasadena",
+        "tokens": [
+          50364,
+          14199,
+          345,
+          4118,
+          50414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20960472689734566,
+        "compression_ratio": 1.5037037037037038,
+        "no_speech_prob": 0.06771241873502731
+      },
+      {
+        "id": 78,
+        "seek": 25400,
+        "start": 255.0,
+        "end": 256.0,
+        "text": " Where you at?",
+        "tokens": [
+          50414,
+          2305,
+          291,
+          412,
+          30,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20960472689734566,
+        "compression_ratio": 1.5037037037037038,
+        "no_speech_prob": 0.06771241873502731
+      },
+      {
+        "id": 79,
+        "seek": 25400,
+        "start": 257.0,
+        "end": 259.0,
+        "text": " Yeah, Inglewood",
+        "tokens": [
+          50514,
+          865,
+          11,
+          682,
+          22631,
+          6092,
+          50614
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20960472689734566,
+        "compression_ratio": 1.5037037037037038,
+        "no_speech_prob": 0.06771241873502731
+      },
+      {
+        "id": 80,
+        "seek": 25400,
+        "start": 259.0,
+        "end": 261.0,
+        "text": " Inglewood always up to no good",
+        "tokens": [
+          50614,
+          682,
+          22631,
+          6092,
+          1009,
+          493,
+          281,
+          572,
+          665,
+          50714
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20960472689734566,
+        "compression_ratio": 1.5037037037037038,
+        "no_speech_prob": 0.06771241873502731
+      },
+      {
+        "id": 81,
+        "seek": 25400,
+        "start": 261.0,
+        "end": 263.0,
+        "text": " Even Hollywood tryna get a pizza baby",
+        "tokens": [
+          50714,
+          2754,
+          11628,
+          49597,
+          483,
+          257,
+          8298,
+          3186,
+          50814
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20960472689734566,
+        "compression_ratio": 1.5037037037037038,
+        "no_speech_prob": 0.06771241873502731
+      },
+      {
+        "id": 82,
+        "seek": 25400,
+        "start": 264.0,
+        "end": 265.0,
+        "text": " Sacramento",
+        "tokens": [
+          50864,
+          38360,
+          50914
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20960472689734566,
+        "compression_ratio": 1.5037037037037038,
+        "no_speech_prob": 0.06771241873502731
+      },
+      {
+        "id": 83,
+        "seek": 25400,
+        "start": 265.0,
+        "end": 267.0,
+        "text": " Sacramento where you at?",
+        "tokens": [
+          50914,
+          38360,
+          689,
+          291,
+          412,
+          30,
+          51014
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20960472689734566,
+        "compression_ratio": 1.5037037037037038,
+        "no_speech_prob": 0.06771241873502731
+      },
+      {
+        "id": 84,
+        "seek": 25400,
+        "start": 271.0,
+        "end": 273.0,
+        "text": " Throw it up, y'all, throw it up, throw it up",
+        "tokens": [
+          51214,
+          22228,
+          309,
+          493,
+          11,
+          288,
+          6,
+          336,
+          11,
+          3507,
+          309,
+          493,
+          11,
+          3507,
+          309,
+          493,
+          51314
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20960472689734566,
+        "compression_ratio": 1.5037037037037038,
+        "no_speech_prob": 0.06771241873502731
+      },
+      {
+        "id": 85,
+        "seek": 25400,
+        "start": 273.0,
+        "end": 275.0,
+        "text": " I can't see ya",
+        "tokens": [
+          51314,
+          286,
+          393,
+          380,
+          536,
+          2478,
+          51414
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.20960472689734566,
+        "compression_ratio": 1.5037037037037038,
+        "no_speech_prob": 0.06771241873502731
+      }
+    ]
+  },
+  "processing_time_seconds": 28.87,
+  "total_features": 33771
+}

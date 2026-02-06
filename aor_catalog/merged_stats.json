@@ -1,0 +1,14 @@
+{
+  "generated": "2026-02-04T06:54:46.233596",
+  "total_tracks": 126,
+  "total_verses": 0,
+  "total_bars": 1736,
+  "sources": {
+    "cli": 126,
+    "chrome": 0
+  },
+  "date_range": {
+    "first": "2026-01-28T14:42:58.845Z",
+    "last": "2026-02-04T12:42:37.098Z"
+  }
+}
