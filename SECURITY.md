@@ -38,8 +38,17 @@ All contributors must:
 2. Provide their **GitHub username** linked to a verifiable identity
 3. Include a DCO sign-off on every commit (see CONTRIBUTING.md)
 4. Agree to the Developer Certificate of Origin
+5. **Not use VPN, proxy, Tor, or any IP-masking service** when interacting with this repository
 
 Anonymous contributions, bot-authored commits without human sign-off, and pseudonymous accounts (e.g., "a-googler", "dependabot-contributor") are **not accepted**.
+
+Contributors who cannot meet these requirements may submit changes via email instead. See PRIVACY.md for details.
+
+### Network Access Policy
+
+**VPN, proxy, and Tor connections are prohibited** for all repository interactions (clone, push, PR, review, comment). GitHub logs IP addresses on all git operations, and this project relies on those logs for security forensics. Masked IP addresses undermine our ability to investigate unauthorized access.
+
+See PRIVACY.md for the full privacy policy, data handling practices, and the email-based alternative contribution method.
 
 ### Audit Trail
 
@@ -53,6 +62,8 @@ Anonymous contributions, bot-authored commits without human sign-off, and pseudo
 - Co-authored-by tags for individuals who did not review or write the code
 - Automated commits from third-party bots without explicit owner authorization
 - Force pushes or history rewrites to protected branches
+- Contributions from VPN, proxy, Tor, or otherwise masked IP addresses
+- Contributions from accounts that cannot be traced to a real person
 
 ## Data Handling
 

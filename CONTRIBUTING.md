@@ -1,6 +1,15 @@
 # Contributing to AoR-DMMA
 
-Contributions are welcome. This document describes the requirements for contributing to this project.
+Contributions are welcome. This document describes the requirements for contributing to this project. **By contributing, you agree to the terms in PRIVACY.md.**
+
+## Before You Start
+
+Read these documents first:
+
+- **PRIVACY.md** — What data is collected and why (IP addresses, identity, etc.)
+- **SECURITY.md** — Repository security controls and branch protection rules
+
+If you cannot accept the terms in those documents, use the email contribution method described below.
 
 ## Identity Requirements
 
@@ -22,7 +31,13 @@ Before your first contribution, you must:
    ```
    This adds a `Signed-off-by: Your Name <email>` line confirming you have the right to submit the code and that you are who you say you are.
 
+4. **Do not use a VPN, proxy, Tor, or any IP-masking service** when interacting with this repository. Your IP address is logged by GitHub and may be reviewed during security audits. This is required, not optional. If this is a problem for you, use the email method below.
+
 ## How to Contribute
+
+There are two ways to contribute:
+
+### Option 1: Pull Request (Standard)
 
 1. **Fork the repository** to your own GitHub account.
 
@@ -46,6 +61,17 @@ Before your first contribution, you must:
 
 6. **Wait for review.** The repository owner will review all PRs. At least one approving review is required before merge.
 
+### Option 2: Email Submission (Privacy-Preserving Alternative)
+
+If you are not comfortable with the IP logging requirements, you may email your contribution directly to the repository owner:
+
+1. Prepare your changes as a patch (`git diff > my_changes.patch`) or include the full modified code in the email body.
+2. Include your **full legal name** and a description of the changes and why you made them.
+3. Send to: **k8xhyw6xb9@privaterelay.appleid.com**
+4. Subject line: `[AoR-DMMA Contribution] Brief description`
+
+The owner will review and, if accepted, commit the changes with attribution to your stated name. Email contributions may take longer to process than pull requests.
+
 ## What We Accept
 
 - Expanded AAVE lexicon terms (with citations or sourcing)
@@ -64,6 +90,8 @@ Before your first contribution, you must:
 - Co-authored-by tags for people who did not write or review the code
 - Dependency additions without justification
 - Changes to branch protection or security policies via PR
+- Contributions made from VPN, proxy, Tor, or masked IP addresses
+- Pull requests from GitHub accounts with no verifiable real-world identity
 
 ## Code of Conduct
 
