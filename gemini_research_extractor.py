@@ -28,7 +28,8 @@ from datetime import datetime
 try:
     from playwright.async_api import async_playwright
 except ImportError:
-    os.system("pip install playwright --break-system-packages")
+    import subprocess
+    subprocess.run(["pip", "install", "playwright"], check=True)
     from playwright.async_api import async_playwright
 
 

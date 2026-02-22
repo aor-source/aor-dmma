@@ -26,9 +26,10 @@ from datetime import datetime
 try:
     from playwright.async_api import async_playwright
 except ImportError:
+    import subprocess
     print("Installing playwright...")
-    os.system("pip install playwright --break-system-packages")
-    os.system("playwright install chromium")
+    subprocess.run(["pip", "install", "playwright"], check=True)
+    subprocess.run(["playwright", "install", "chromium"], check=True)
     from playwright.async_api import async_playwright
 
 
