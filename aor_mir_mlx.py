@@ -1,9 +1,18 @@
 #!/usr/bin/env python3
 """
-AoR v7.1 MLX - Apple Silicon Optimized, Full Feature Extraction
+AoR v7.2 MLX - Apple Silicon Optimized, Full Feature Extraction
 ================================================================
 Uses mlx-whisper for 5-10x faster transcription on M-series chips.
 300+ features per track with modular output schema.
+
+v7.2 Changes (Clint Eastwood code review):
+- Fix: bare except blocks now catch specific exceptions with logging
+- Fix: chunked file hashing (prevents OOM on large WAVs)
+- Fix: pre-compiled AAVE grammar regex (avoids recompilation per track)
+- Fix: singleton VADER analyzer (avoids re-instantiation per track)
+- Fix: lexicon load error now catches specific exceptions
+- Add: batch resume support (skip already-processed files)
+- Bump: version 7.1 -> 7.2
 
 Feature Groups:
 - metadata: file info, duration, provenance, hash
@@ -51,6 +60,14 @@ try:
     HAS_VADER = True
 except ImportError:
     HAS_VADER = False
+
+# Singleton VADER analyzer (avoid re-instantiation per track)
+_VADER_ANALYZER = None
+def get_vader():
+    global _VADER_ANALYZER
+    if _VADER_ANALYZER is None and HAS_VADER:
+        _VADER_ANALYZER = SentimentIntensityAnalyzer()
+    return _VADER_ANALYZER
 
 # Visualization
 try:
@@ -142,6 +159,12 @@ AAVE_GRAMMAR_PATTERNS = [
     (r"\bcome\s+\w+ing\b", "camouflage_come", 1.5),
 ]
 
+# Pre-compiled patterns for performance (avoids recompilation per track)
+AAVE_GRAMMAR_COMPILED = [
+    (re.compile(pattern), name, weight)
+    for pattern, name, weight in AAVE_GRAMMAR_PATTERNS
+]
+
 
 # ==============================================================================
 #  FEATURE EXTRACTION MODULES
@@ -149,8 +172,11 @@ AAVE_GRAMMAR_PATTERNS = [
 
 def extract_metadata(filepath: Path, y, sr: int) -> Dict:
     """Basic file and audio metadata"""
+    sha256 = hashlib.sha256()
     with open(filepath, 'rb') as f:
-        file_hash = hashlib.sha256(f.read()).hexdigest()
+        for chunk in iter(lambda: f.read(65536), b''):
+            sha256.update(chunk)
+    file_hash = sha256.hexdigest()
 
     return {
         "filename": filepath.name,
@@ -162,7 +188,7 @@ def extract_metadata(filepath: Path, y, sr: int) -> Dict:
         "samples": len(y),
         "channels": 1,
         "analysis_timestamp": datetime.now().isoformat(),
-        "aor_version": "7.1-MLX-FULL"
+        "aor_version": "7.2-MLX-FULL"
     }
 
 
@@ -216,7 +242,8 @@ def extract_spectral_features(y, sr: int) -> Dict:
             spacings = np.diff(eigs_sorted)
             features["spectral_rigidity"] = round(float(np.std(spacings) / (np.mean(spacings) + 1e-10)), 4)
             features["eigenvalue_spread"] = round(float(eigs.max() - eigs.min()), 4)
-        except:
+        except (np.linalg.LinAlgError, ValueError) as e:
+            print(f"  WARNING: spectral rigidity calc failed: {e}")
             features["spectral_rigidity"] = 0.0
             features["eigenvalue_spread"] = 0.0
 
@@ -279,7 +306,8 @@ def extract_harmonic_features(y, sr: int) -> Dict:
             tonnetz = librosa.feature.tonnetz(chroma=chroma)
             features["tonnetz_mean"] = [round(float(x), 4) for x in tonnetz.mean(axis=1)]
             features["tonnetz_std"] = [round(float(x), 4) for x in tonnetz.std(axis=1)]
-        except:
+        except Exception as e:
+            print(f"  WARNING: tonnetz extraction failed: {e}")
             features["tonnetz_mean"] = [0.0] * 6
             features["tonnetz_std"] = [0.0] * 6
 
@@ -373,7 +401,8 @@ def extract_linguistic_features(text: str, segments: List[Dict], duration: float
                 if words[i + 1] in rhymes:
                     rhyme_pairs += 1
             features["adjacent_rhymes"] = rhyme_pairs
-        except:
+        except Exception as e:
+            print(f"  WARNING: rhyme analysis failed: {e}")
             features["adjacent_rhymes"] = 0
 
     return features
@@ -391,8 +420,8 @@ def load_lexicon(lexicon_path):
     try:
         with open(lexicon_path, 'r') as f:
             return json.load(f)
-    except:
-        print("⚠️ Failed to load lexicon. Using HARDENED FALLBACK.")
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"⚠️ Failed to load lexicon ({e}). Using HARDENED FALLBACK.")
         return None
 
 
@@ -527,8 +556,8 @@ def analyze_aave(text: str, lexicon: Dict = None) -> Dict:
     # Grammar patterns (always applied)
     grammar_matches = []
     grammar_score = 0.0
-    for pattern, name, weight in AAVE_GRAMMAR_PATTERNS:
-        matches = re.findall(pattern, text_lower)
+    for compiled_pat, name, weight in AAVE_GRAMMAR_COMPILED:
+        matches = compiled_pat.findall(text_lower)
         if matches:
             grammar_matches.append({
                 "pattern": name,
@@ -853,8 +882,8 @@ def process_track(audio_path, lexicon, output_dir, visualize=False):
 
     # Sentiment analysis
     sentiment_score = 0.0
-    if HAS_VADER:
-        analyzer = SentimentIntensityAnalyzer()
+    analyzer = get_vader()
+    if analyzer:
         sentiment = analyzer.polarity_scores(transcript)
         sentiment_score = sentiment['compound']
 
@@ -966,15 +995,24 @@ def main():
     # Create output directory
     Path(args.output).mkdir(parents=True, exist_ok=True)
 
-    # Process each track
+    # Process each track (with resume support — skips already-processed files)
     results = []
     for i, track in enumerate(tracks, 1):
+        output_json = Path(args.output) / f"{Path(track).stem}_sovereign.json"
+        if output_json.exists():
+            print(f"\n[{i}/{len(tracks)}] SKIP (exists): {output_json.name}")
+            try:
+                with open(output_json) as f:
+                    results.append(json.load(f))
+            except Exception:
+                pass
+            continue
         print(f"\n[{i}/{len(tracks)}] ", end='')
         try:
             result = process_track(track, lexicon, args.output, args.visualize)
             results.append(result)
         except Exception as e:
-            print(f"❌ Failed: {e}")
+            print(f"FAILED: {e}")
 
     # Final summary
     print(f"\n{'=' * 60}")
