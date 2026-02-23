@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 """
-AoR v7.2 MLX - Apple Silicon Optimized, Full Feature Extraction
+AoR v7.3 MLX - Apple Silicon Optimized, Full Feature Extraction
 ================================================================
 Uses mlx-whisper for 5-10x faster transcription on M-series chips.
 300+ features per track with modular output schema.
+
+v7.3 Changes (Clint Eastwood — The Forge):
+- Fix: SDS restored to dissertation-correct quadrant-based dissonance volatility
+- Fix: TVT restored to UMAP tonnetz+MFCC trajectory with hull_area/spread/length
+- Fix: spectral_rigidity in reinman now passthrough from spectral eigenvalue analysis
+- Full dissonance_vector and tvt_coordinates in JSON output (time-series data)
+- Bump: version 7.2 -> 7.3
 
 v7.2 Changes (Clint Eastwood code review):
 - Fix: bare except blocks now catch specific exceptions with logging
@@ -188,7 +195,7 @@ def extract_metadata(filepath: Path, y, sr: int) -> Dict:
         "samples": len(y),
         "channels": 1,
         "analysis_timestamp": datetime.now().isoformat(),
-        "aor_version": "7.2-MLX-FULL"
+        "aor_version": "7.3-MLX-FULL"
     }
 
 
@@ -593,32 +600,169 @@ def analyze_aave(text: str, lexicon: Dict = None) -> Dict:
 #  REINMAN METRICS
 # ==============================================================================
 
-def compute_reinman_metrics(y, sr, sentiment_score):
-    """Compute Reinman topology metrics"""
-    spectral_centroid = librosa.feature.spectral_centroid(y=y, sr=sr)[0]
-    spectral_rolloff = librosa.feature.spectral_rolloff(y=y, sr=sr)[0]
+def compute_reinman_metrics(y, sr, sentiment_score, transcript_segments=None, duration=0.0):
+    """Compute Reinman topology metrics (v7.3 — dissertation-correct implementations)"""
+    num_quadrants = 4
 
-    rms = librosa.feature.rms(y=y)[0]
-    audio_arousal = float(np.mean(rms))
-    audio_arousal = min(1.0, audio_arousal * 10)
+    # =========================================================================
+    # Arousal per quadrant (RMS * 0.6 + spectral centroid * 0.4)
+    # =========================================================================
+    try:
+        rms = librosa.feature.rms(y=y)[0]
+        centroid = librosa.feature.spectral_centroid(y=y, sr=sr)[0]
+        centroid_norm = (centroid - centroid.min()) / (centroid.max() - centroid.min() + 1e-6)
+        arousal = (rms / (rms.max() + 1e-6)) * 0.6 + centroid_norm * 0.4
+        frames_per_q = len(arousal) // num_quadrants
+        arousal_per_quadrant = []
+        for i in range(num_quadrants):
+            start = i * frames_per_q
+            end = start + frames_per_q if i < num_quadrants - 1 else len(arousal)
+            arousal_per_quadrant.append(float(np.mean(arousal[start:end])))
+    except Exception:
+        arousal_per_quadrant = [0.5] * num_quadrants
 
-    # SDS: Semantic Dissonance Score (irony detection)
-    sds = abs(sentiment_score - (audio_arousal - 0.5) * 2)
+    audio_arousal = float(np.mean(arousal_per_quadrant))
 
-    # TVT: Topological Valence Trajectory
-    centroid_diff = np.diff(spectral_centroid)
-    tvt = float(np.std(centroid_diff))
+    # =========================================================================
+    # Sentiment per quadrant (VADER on transcript chunks, or uniform fallback)
+    # =========================================================================
+    sentiment_per_quadrant = [0.0] * num_quadrants
+    analyzer = get_vader()
+    if analyzer and transcript_segments and duration > 0:
+        quadrant_duration = duration / num_quadrants
+        quadrant_texts = [[] for _ in range(num_quadrants)]
+        for seg in transcript_segments:
+            seg_start = seg.get('start', 0)
+            text = seg.get('text', seg.get('word', ''))
+            q_idx = min(int(seg_start / quadrant_duration), num_quadrants - 1)
+            quadrant_texts[q_idx].append(text)
+        for i, texts in enumerate(quadrant_texts):
+            if texts:
+                sentiment_per_quadrant[i] = analyzer.polarity_scores(' '.join(texts))['compound']
+    elif analyzer:
+        # No segments — use uniform sentiment across quadrants
+        sentiment_per_quadrant = [sentiment_score] * num_quadrants
 
-    # Spectral Rigidity
-    spectral_rigidity = float(np.mean(spectral_rolloff) / sr)
+    # =========================================================================
+    # BUG 1 FIX: SDS — quadrant-based dissonance volatility (v5.2 calculate_sds)
+    # =========================================================================
+    dissonance_vector = [s - a for s, a in zip(sentiment_per_quadrant, arousal_per_quadrant)]
+    sds = float(np.std(dissonance_vector))
 
-    return {
+    # =========================================================================
+    # BUG 2 FIX: TVT — UMAP tonnetz+MFCC trajectory (v5.2 generate_tvt)
+    # =========================================================================
+    tvt_score = 0.0
+    tvt_extra = {}
+    try:
+        if HAS_UMAP:
+            segment_len = min(len(y), sr * 300)
+            y_seg = y[:segment_len]
+            tonnetz = librosa.feature.tonnetz(y=librosa.effects.harmonic(y_seg), sr=sr)
+            mfcc = librosa.feature.mfcc(y=y_seg, sr=sr, n_mfcc=13)
+            min_len = min(tonnetz.shape[1], mfcc.shape[1])
+            combined = np.vstack([tonnetz[:, :min_len], mfcc[:, :min_len]]).T
+
+            # Downsample if too long
+            if combined.shape[0] > 2000:
+                step = combined.shape[0] // 2000
+                combined = combined[::step]
+
+            reducer = umap.UMAP(n_components=2, n_neighbors=min(15, combined.shape[0] - 1),
+                                min_dist=0.1, random_state=42)
+            embedding = reducer.fit_transform(combined)
+
+            tvt_coordinates = [[round(float(x), 4), round(float(yy), 4)] for x, yy in embedding]
+
+            # Hull area
+            hull_area = 0.0
+            try:
+                from scipy.spatial import ConvexHull
+                hull = ConvexHull(embedding)
+                hull_area = float(hull.volume)
+            except Exception:
+                pass
+
+            # Trajectory length
+            diffs = np.diff(embedding, axis=0)
+            trajectory_length = float(np.sum(np.sqrt(np.sum(diffs**2, axis=1))))
+
+            # Spread
+            centroid_2d = np.mean(embedding, axis=0)
+            distances = np.sqrt(np.sum((embedding - centroid_2d)**2, axis=1))
+            spread = float(np.std(distances))
+
+            # TVT score = hull_area (primary metric for god equation compatibility)
+            tvt_score = hull_area
+
+            tvt_extra = {
+                'tvt_coordinates': tvt_coordinates,
+                'tvt_hull_area': round(hull_area, 4),
+                'tvt_trajectory_length': round(trajectory_length, 4),
+                'tvt_spread': round(spread, 4),
+                'tvt_num_points': len(tvt_coordinates),
+                'tvt_method': 'umap_projection'
+            }
+        else:
+            # Fallback: spectral centroid std (degraded mode)
+            sc = librosa.feature.spectral_centroid(y=y, sr=sr)[0]
+            tvt_score = float(np.std(np.diff(sc)))
+            tvt_extra = {'tvt_method': 'degraded_centroid_std'}
+    except Exception as e:
+        # Fallback on any UMAP failure
+        try:
+            sc = librosa.feature.spectral_centroid(y=y, sr=sr)[0]
+            tvt_score = float(np.std(np.diff(sc)))
+        except Exception:
+            tvt_score = 0.0
+        tvt_extra = {'tvt_method': f'degraded_fallback ({e})'}
+
+    # =========================================================================
+    # BUG 3 FIX: Spectral Rigidity — eigenvalue spacing of feature correlation
+    # matrix (v5.2 calculate_spectral_rigidity)
+    # =========================================================================
+    try:
+        mfcc_r = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
+        chroma_r = librosa.feature.chroma_stft(y=y, sr=sr)
+        contrast_r = librosa.feature.spectral_contrast(y=y, sr=sr)
+        tonnetz_r = librosa.feature.tonnetz(y=librosa.effects.harmonic(y), sr=sr)
+        min_t = min(mfcc_r.shape[1], chroma_r.shape[1], contrast_r.shape[1], tonnetz_r.shape[1])
+        feature_matrix = np.vstack([
+            mfcc_r[:, :min_t], chroma_r[:, :min_t],
+            contrast_r[:, :min_t], tonnetz_r[:, :min_t]
+        ])
+        f_mean = np.mean(feature_matrix, axis=1, keepdims=True)
+        f_std = np.std(feature_matrix, axis=1, keepdims=True) + 1e-6
+        normalized = (feature_matrix - f_mean) / f_std
+        correlation = np.corrcoef(normalized)
+        eigenvalues = np.sort(np.linalg.eigvalsh(correlation))
+        spacings = np.diff(eigenvalues)
+        spacings = spacings[spacings > 1e-9]
+        if len(spacings) >= 2:
+            mean_spacing = np.mean(spacings)
+            normalized_spacings = spacings / mean_spacing
+            variance = np.var(normalized_spacings)
+            spectral_rigidity = 1.0 / (1.0 + variance)
+        else:
+            spectral_rigidity = 0.0
+    except Exception:
+        spectral_rigidity = 0.0
+
+    # =========================================================================
+    # Build return dict (original keys preserved, new keys added)
+    # =========================================================================
+    result = {
         'sds_score': round(sds, 4),
-        'tvt_score': round(tvt, 2),
+        'tvt_score': round(tvt_score, 2),
         'spectral_rigidity': round(spectral_rigidity, 4),
         'lyric_valence': round(sentiment_score, 4),
-        'audio_arousal': round(audio_arousal, 4)
+        'audio_arousal': round(audio_arousal, 4),
+        'dissonance_vector': [round(d, 4) for d in dissonance_vector],
+        'arousal_per_quadrant': [round(a, 4) for a in arousal_per_quadrant],
+        'sentiment_per_quadrant': [round(s, 4) for s in sentiment_per_quadrant],
     }
+    result.update(tvt_extra)
+    return result
 
 
 # ==============================================================================
@@ -889,7 +1033,7 @@ def process_track(audio_path, lexicon, output_dir, visualize=False):
 
     # Reinman metrics
     print("  📐 Computing Reinman metrics...")
-    reinman = compute_reinman_metrics(y, sr, sentiment_score)
+    reinman = compute_reinman_metrics(y, sr, sentiment_score, transcript_segments=segments, duration=duration)
 
     # God Equation (SCI - restored to original scale)
     god_eq = calculate_god_equation(
